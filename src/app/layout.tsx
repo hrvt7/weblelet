@@ -1,0 +1,47 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
+  description:
+    "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent elemzi a weboldaladat 3 dimenzióban — GEO/SEO, Marketing, Sales. Konkrét pontszámok, problémák, cselekvési terv.",
+  keywords:
+    "weboldal audit, SEO audit, AI audit, magyar vállalkozás, GEO optimalizálás, marketing elemzés",
+  openGraph: {
+    title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
+    description:
+      "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent, 3 dimenzió, 10 oldalas riport.",
+    url: "https://weblelet.hu",
+    siteName: "WebLelet",
+    locale: "hu_HU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
+    description:
+      "Megtudod 48 órán belül, miért nem talál rád az ügyfeled.",
+  },
+  robots: { index: true, follow: true },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="hu" className={`${inter.variable} h-full`}>
+      <body className="min-h-full flex flex-col font-sans antialiased">
+        {children}
+      </body>
+    </html>
+  );
+}
