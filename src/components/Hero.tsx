@@ -68,7 +68,7 @@ export default function Hero() {
                 </div>
                 <span>
                   Eddig <strong className="text-foreground">47+</strong>{" "}
-                  szombathelyi vállalkozást auditáltunk
+                  magyar vállalkozást auditáltunk
                 </span>
               </div>
             </FadeIn>

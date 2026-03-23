@@ -13,7 +13,7 @@ export default function SocialProof() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
           <p className="text-center text-sm font-medium text-foreground-muted mb-10 tracking-wide uppercase">
-            Ezeket a problémákat találtuk a vizsgált szombathelyi cégeknél
+            Ezeket a problémákat találtuk a vizsgált magyar cégeknél
           </p>
         </FadeIn>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
