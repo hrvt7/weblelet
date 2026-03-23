@@ -3,6 +3,9 @@
 import { useState, FormEvent } from "react";
 import FadeIn from "./FadeIn";
 
+const inputClass =
+  "w-full rounded-xl border border-border bg-surface-card px-5 py-4 text-[0.95rem] text-foreground placeholder:text-foreground-muted/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200";
+
 export default function LeadForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -32,42 +35,50 @@ export default function LeadForm() {
   }
 
   return (
-    <section id="kapcsolat" className="py-20 sm:py-28 bg-blue-50">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+    <section id="kapcsolat" className="py-24 sm:py-32 relative overflow-hidden">
+      {/* Gradient background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-50 via-surface-blue to-blue-50" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[radial-gradient(circle,_#DBEAFE_0%,_transparent_70%)] -z-10 opacity-50" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[radial-gradient(circle,_#EFF6FF_0%,_transparent_70%)] -z-10 opacity-60" />
+
+      <div className="mx-auto max-w-2xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
-          <div className="text-center mb-10">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
+              Kapcsolat
+            </p>
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
               Kérd a weboldalad ingyenes{" "}
-              <span className="text-primary">leletét</span>
+              <span className="text-highlight">leletét</span>
             </h2>
-            <p className="mt-3 text-foreground-muted">
+            <p className="mt-4 text-foreground-muted text-lg">
               48 órán belül emailben küldünk egy személyre szabott elemzést.
             </p>
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.1}>
+        <FadeIn delay={0.12}>
           {submitted ? (
-            <div className="rounded-2xl bg-white border border-success/30 p-10 text-center">
-              <div className="mx-auto h-16 w-16 rounded-full bg-success/10 flex items-center justify-center mb-4">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#22C55E" strokeWidth="2.5" strokeLinecap="round">
+            <div className="rounded-2xl bg-surface-card border border-success/20 p-12 text-center shadow-lg">
+              <div className="mx-auto h-18 w-18 rounded-2xl bg-success/10 flex items-center justify-center mb-5">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#22C55E" strokeWidth="2.5" strokeLinecap="round">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">
+              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
                 Köszönjük!
               </h3>
-              <p className="text-foreground-muted">
+              <p className="text-foreground-muted text-lg">
                 48 órán belül küldjük a leletet az email címedre.
               </p>
             </div>
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl bg-white border border-border shadow-lg p-8 space-y-5"
+              className="rounded-2xl bg-surface-card border border-border shadow-2xl shadow-primary/5 p-8 sm:p-10 space-y-5"
             >
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-foreground mb-1.5">
+                <label htmlFor="company" className="block text-sm font-semibold text-foreground mb-2">
                   Cégnév <span className="text-danger">*</span>
                 </label>
                 <input
@@ -75,13 +86,13 @@ export default function LeadForm() {
                   id="company"
                   name="company"
                   required
-                  className="w-full rounded-lg border border-border px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                  className={inputClass}
                   placeholder="Pl. Kovács Szerviz Kft."
                 />
               </div>
 
               <div>
-                <label htmlFor="website" className="block text-sm font-medium text-foreground mb-1.5">
+                <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2">
                   Weboldal URL <span className="text-danger">*</span>
                 </label>
                 <input
@@ -89,13 +100,13 @@ export default function LeadForm() {
                   id="website"
                   name="website"
                   required
-                  className="w-full rounded-lg border border-border px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                  className={inputClass}
                   placeholder="https://pelda.hu"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
+                <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
                   Email cím <span className="text-danger">*</span>
                 </label>
                 <input
@@ -103,52 +114,59 @@ export default function LeadForm() {
                   id="email"
                   name="email"
                   required
-                  className="w-full rounded-lg border border-border px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+                  className={inputClass}
                   placeholder="nev@ceg.hu"
                 />
               </div>
 
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">
-                  Telefonszám <span className="text-foreground-muted text-xs">(opcionális)</span>
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full rounded-lg border border-border px-4 py-3 text-sm text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
-                  placeholder="+36 30 123 4567"
-                />
+              <div className="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
+                    Telefonszám <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className={inputClass}
+                    placeholder="+36 30 123 4567"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="time" className="block text-sm font-semibold text-foreground mb-2">
+                    Időpont preferencia <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
+                  </label>
+                  <select
+                    id="time"
+                    name="preferred_time"
+                    className={inputClass}
+                  >
+                    <option value="">Válassz...</option>
+                    <option value="delelott">Délelőtt</option>
+                    <option value="delutan">Délután</option>
+                    <option value="barmikor">Bármikor</option>
+                  </select>
+                </div>
               </div>
 
-              <div>
-                <label htmlFor="time" className="block text-sm font-medium text-foreground mb-1.5">
-                  Mikor jó időpont egy rövid egyeztetésre?{" "}
-                  <span className="text-foreground-muted text-xs">(opcionális)</span>
-                </label>
-                <select
-                  id="time"
-                  name="preferred_time"
-                  className="w-full rounded-lg border border-border px-4 py-3 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors"
+              <div className="pt-2">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
                 >
-                  <option value="">Válassz...</option>
-                  <option value="delelott">Délelőtt</option>
-                  <option value="delutan">Délután</option>
-                  <option value="barmikor">Bármikor</option>
-                </select>
+                  {loading ? "Küldés..." : "Kérem az ingyenes auditot →"}
+                </button>
               </div>
 
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full rounded-xl bg-accent px-6 py-4 text-base font-bold text-white shadow-lg shadow-accent/25 hover:bg-accent-dark hover:shadow-accent/40 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
-              >
-                {loading ? "Küldés..." : "Kérem az ingyenes auditot →"}
-              </button>
-
-              <p className="text-center text-xs text-foreground-muted">
-                🔒 Az adataidat bizalmasan kezeljük. Nem küldünk spamet.
-              </p>
+              <div className="flex items-center justify-center gap-2 text-xs text-foreground-muted pt-1">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+                <span>Az adataidat bizalmasan kezeljük. Nem küldünk spamet.</span>
+              </div>
             </form>
           )}
         </FadeIn>

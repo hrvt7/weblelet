@@ -1,151 +1,168 @@
 import FadeIn from "./FadeIn";
+import AnimatedGauge from "./AnimatedGauge";
 
 export default function Hero() {
   return (
-    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 overflow-hidden">
-      {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-white to-amber-50/30 -z-10" />
-      <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
+    <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-32 lg:pt-44 lg:pb-36 overflow-hidden wave-divider">
+      {/* Mesh gradient background */}
+      <div className="absolute inset-0 -z-20 bg-[#FAFBFC]" />
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle,_#DBEAFE_0%,_transparent_70%)] -z-10 opacity-60" />
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[radial-gradient(circle,_#FEF3C7_0%,_transparent_70%)] -z-10 opacity-40" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,_#EFF6FF_0%,_transparent_60%)] -z-10 opacity-50" />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left - Text */}
-          <div>
+      {/* Subtle dot grid */}
+      <div className="absolute inset-0 -z-10 dot-grid opacity-[0.35]" />
+
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          {/* Left - Text (5 cols) */}
+          <div className="lg:col-span-5">
             <FadeIn>
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-extrabold leading-tight tracking-tight text-foreground">
+              <h1
+                className="font-heading font-extrabold leading-[1.08] tracking-[-0.03em] text-foreground"
+                style={{ fontSize: "clamp(2.25rem, 4.5vw + 0.5rem, 3.75rem)" }}
+              >
                 Megtudod 48 órán belül,{" "}
-                <span className="text-primary">
+                <span className="text-highlight">
                   miért nem talál rád az ügyfeled
                 </span>
               </h1>
             </FadeIn>
-            <FadeIn delay={0.1}>
-              <p className="mt-6 text-lg text-foreground-muted leading-relaxed max-w-xl">
+            <FadeIn delay={0.12}>
+              <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
                 AI-alapú weboldal audit magyar vállalkozásoknak. Megmutatjuk hol
                 veszíted el a vásárlóidat — és hogyan szerezheted vissza őket.
               </p>
             </FadeIn>
-            <FadeIn delay={0.2}>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <FadeIn delay={0.24}>
+              <div className="mt-9">
                 <a
                   href="#kapcsolat"
-                  className="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-4 text-base font-bold text-white shadow-lg shadow-accent/25 hover:bg-accent-dark hover:shadow-accent/40 transition-all"
+                  className="inline-flex items-center cursor-pointer justify-center rounded-2xl bg-accent px-9 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow"
                 >
                   Kérem az ingyenes auditot&ensp;&rarr;
                 </a>
               </div>
-              <p className="mt-3 text-sm text-foreground-muted">
+              <p className="mt-4 text-sm text-foreground-muted">
                 Nulla kockázat. Nulla kötelezettség. 48 órán belül megkapod.
               </p>
             </FadeIn>
-          </div>
 
-          {/* Right - Report mockup */}
-          <FadeIn direction="right" delay={0.2}>
-            <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="rounded-2xl bg-white border border-border shadow-2xl shadow-primary/10 p-6 sm:p-8">
-                {/* Mockup header */}
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#2563EB"
-                      strokeWidth="2"
-                    >
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                      <polyline points="14 2 14 8 20 8" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-foreground">
-                      WebLelet Riport
-                    </div>
-                    <div className="text-xs text-foreground-muted">
-                      pelda-etterem.hu — 2026. március
-                    </div>
-                  </div>
-                </div>
-
-                {/* Score gauge */}
-                <div className="flex items-center justify-center mb-6">
-                  <div className="relative h-32 w-32">
-                    <svg viewBox="0 0 120 120" className="w-full h-full">
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="50"
-                        fill="none"
-                        stroke="#E2E8F0"
-                        strokeWidth="10"
-                      />
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="50"
-                        fill="none"
-                        stroke="#EF4444"
-                        strokeWidth="10"
-                        strokeDasharray="314"
-                        strokeDashoffset="195"
-                        strokeLinecap="round"
-                        transform="rotate(-90 60 60)"
-                      />
-                    </svg>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center">
-                      <span className="text-3xl font-extrabold text-danger">
-                        38
-                      </span>
-                      <span className="text-xs text-foreground-muted">
-                        /100
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mock items */}
-                <div className="space-y-3">
+            {/* Trust line */}
+            <FadeIn delay={0.36}>
+              <div className="mt-10 flex items-center gap-3 text-sm text-foreground-muted">
+                <div className="flex -space-x-2">
                   {[
-                    { label: "GEO/SEO Pontszám", value: "24/100", bad: true },
-                    {
-                      label: "Marketing Pontszám",
-                      value: "41/100",
-                      bad: true,
-                    },
-                    { label: "Sales Pontszám", value: "52/100", bad: false },
-                  ].map((item) => (
+                    "bg-blue-500",
+                    "bg-emerald-500",
+                    "bg-amber-500",
+                    "bg-purple-500",
+                  ].map((color, i) => (
                     <div
-                      key={item.label}
-                      className="flex items-center justify-between py-2 border-b border-border last:border-0"
+                      key={i}
+                      className={`h-8 w-8 rounded-full ${color} border-2 border-white flex items-center justify-center text-[10px] font-bold text-white`}
                     >
-                      <span className="text-sm text-foreground-muted">
-                        {item.label}
-                      </span>
-                      <span
-                        className={`text-sm font-bold ${item.bad ? "text-danger" : "text-accent"}`}
-                      >
-                        {item.value}
-                      </span>
+                      {["K", "B", "N", "T"][i]}
                     </div>
                   ))}
                 </div>
+                <span>
+                  Eddig <strong className="text-foreground">47+</strong>{" "}
+                  szombathelyi vállalkozást auditáltunk
+                </span>
+              </div>
+            </FadeIn>
+          </div>
 
-                {/* Blurred teaser */}
-                <div className="mt-4 space-y-2 select-none">
-                  <div className="h-3 w-full rounded bg-gray-100 blur-[2px]" />
-                  <div className="h-3 w-4/5 rounded bg-gray-100 blur-[2px]" />
-                  <div className="h-3 w-3/5 rounded bg-gray-100 blur-[2px]" />
+          {/* Right - Report mockup (7 cols, larger) */}
+          <div className="lg:col-span-7 flex justify-center lg:justify-end">
+            <FadeIn direction="right" delay={0.2}>
+              <div className="relative lg:-mr-12 xl:-mr-20">
+                {/* Shadow layer for depth */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-primary/10 transform rotate-2 scale-[1.02] -z-10" />
+
+                <div className="rounded-2xl bg-surface-card border border-border shadow-2xl shadow-primary/8 p-7 sm:p-9 max-w-lg transform lg:rotate-1 hover:rotate-0 transition-transform duration-500">
+                  {/* Mockup header */}
+                  <div className="flex items-center gap-3 mb-7">
+                    <div className="h-11 w-11 rounded-xl bg-primary/8 flex items-center justify-center">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#2563EB"
+                        strokeWidth="1.8"
+                      >
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-heading font-bold text-foreground">
+                        WebLelet Riport
+                      </div>
+                      <div className="text-xs text-foreground-muted">
+                        pelda-etterem.hu — 2026. március
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Animated Score gauge */}
+                  <div className="flex items-center justify-center mb-7">
+                    <AnimatedGauge score={38} maxScore={100} />
+                  </div>
+
+                  {/* Score breakdown */}
+                  <div className="space-y-3.5">
+                    {[
+                      { label: "GEO/SEO Pontszám", value: "24/100", color: "text-danger", bar: "bg-danger", pct: 24 },
+                      { label: "Marketing Pontszám", value: "41/100", color: "text-accent", bar: "bg-accent", pct: 41 },
+                      { label: "Sales Pontszám", value: "52/100", color: "text-amber-600", bar: "bg-amber-500", pct: 52 },
+                    ].map((item) => (
+                      <div key={item.label}>
+                        <div className="flex items-center justify-between mb-1.5">
+                          <span className="text-xs font-medium text-foreground-muted">{item.label}</span>
+                          <span className={`text-xs font-bold ${item.color}`}>{item.value}</span>
+                        </div>
+                        <div className="h-1.5 bg-border-light rounded-full overflow-hidden">
+                          <div className={`h-full ${item.bar} rounded-full`} style={{ width: `${item.pct}%` }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Blurred teaser */}
+                  <div className="mt-5 space-y-2 select-none">
+                    <div className="h-2.5 w-full rounded bg-border-light blur-[2px]" />
+                    <div className="h-2.5 w-4/5 rounded bg-border-light blur-[2px]" />
+                    <div className="h-2.5 w-3/5 rounded bg-border-light blur-[2px]" />
+                  </div>
+                </div>
+
+                {/* Floating badge with pulse */}
+                <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 rounded-2xl bg-primary text-white px-5 py-2.5 text-xs font-bold shadow-xl pulse-badge">
+                  15 AI agent elemzi
                 </div>
               </div>
+            </FadeIn>
+          </div>
+        </div>
 
-              {/* Floating badge */}
-              <div className="absolute -bottom-3 -right-3 rounded-xl bg-primary text-white px-4 py-2 text-xs font-bold shadow-lg">
-                15 AI agent elemzi
-              </div>
-            </div>
-          </FadeIn>
+        {/* Scroll indicator */}
+        <div className="hidden lg:flex justify-center mt-16">
+          <div className="scroll-bounce">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#94A3B8"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
         </div>
       </div>
     </section>

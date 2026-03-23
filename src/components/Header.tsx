@@ -23,15 +23,15 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border"
+          ? "bg-white/90 backdrop-blur-xl shadow-[0_1px_3px_rgba(0,0,0,0.06)] border-b border-border-light"
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="flex h-[72px] items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="relative h-8 w-8 rounded-full bg-primary flex items-center justify-center">
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="relative h-9 w-9 rounded-xl bg-primary flex items-center justify-center shadow-md shadow-primary/20">
               <svg
                 width="18"
                 height="18"
@@ -45,7 +45,7 @@ export default function Header() {
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
-            <span className="text-xl font-bold text-foreground">
+            <span className="text-xl font-heading font-bold tracking-[-0.02em] text-foreground">
               Web<span className="text-primary">Lelet</span>
             </span>
           </a>
@@ -56,14 +56,14 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground-muted hover:text-primary transition-colors"
+                className="text-[0.9rem] font-medium text-foreground-muted hover:text-foreground transition-colors duration-200"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#kapcsolat"
-              className="inline-flex items-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent-dark transition-colors"
+              className="inline-flex items-center cursor-pointer rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-accent/20 hover:bg-accent-dark hover:shadow-md hover:shadow-accent/30 transition-all duration-200"
             >
               Ingyenes audit kérése
             </a>
@@ -72,7 +72,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 rounded-lg text-foreground hover:bg-surface-blue transition-colors"
             aria-label="Menü"
           >
             <svg
@@ -91,9 +91,9 @@ export default function Header() {
                 </>
               ) : (
                 <>
-                  <path d="M4 6h16" />
-                  <path d="M4 12h16" />
-                  <path d="M4 18h16" />
+                  <path d="M4 7h16" />
+                  <path d="M4 12h12" />
+                  <path d="M4 17h16" />
                 </>
               )}
             </svg>
@@ -103,14 +103,14 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-border">
-          <div className="px-4 py-4 space-y-3">
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-border-light">
+          <div className="px-5 py-5 space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block text-base font-medium text-foreground-muted hover:text-primary transition-colors"
+                className="block rounded-lg px-4 py-3 text-base font-medium text-foreground-secondary hover:bg-surface-blue hover:text-primary transition-colors"
               >
                 {link.label}
               </a>
@@ -118,7 +118,7 @@ export default function Header() {
             <a
               href="#kapcsolat"
               onClick={() => setMenuOpen(false)}
-              className="block w-full text-center rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-dark transition-colors"
+              className="block w-full text-center rounded-xl bg-accent px-5 py-3 mt-3 text-sm font-semibold text-white hover:bg-accent-dark transition-colors"
             >
               Ingyenes audit kérése
             </a>

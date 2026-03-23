@@ -8,20 +8,20 @@ export const metadata: Metadata = {
 
 export default function Adatvedelem() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6">
+    <div className="min-h-screen bg-surface">
+      <div className="mx-auto max-w-3xl px-5 py-20 sm:px-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-8"
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-10"
         >
           &larr; Vissza a főoldalra
         </Link>
 
-        <h1 className="text-3xl font-extrabold text-foreground mb-8">
+        <h1 className="font-heading text-3xl font-extrabold tracking-[-0.03em] text-foreground mb-8">
           Adatvédelmi tájékoztató
         </h1>
 
-        <div className="prose prose-slate max-w-none text-foreground-muted space-y-6">
+        <div className="max-w-none text-foreground-secondary space-y-6 leading-relaxed">
           <p>
             A WebLelet (továbbiakban: Szolgáltató) elkötelezett a felhasználók
             személyes adatainak védelme mellett. Jelen adatvédelmi tájékoztató

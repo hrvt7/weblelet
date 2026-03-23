@@ -11,48 +11,61 @@ const features = [
 
 export default function SampleReport() {
   return (
-    <section className="py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="py-24 sm:py-32 bg-surface-warm relative">
+      <div className="absolute inset-0 dot-grid opacity-[0.15] -z-10" />
+
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
-          <div className="text-center mb-14">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
+              Minta riport
+            </p>
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
               Így néz ki egy WebLelet{" "}
-              <span className="text-primary">riport</span>
+              <span className="text-highlight">riport</span>
             </h2>
           </div>
         </FadeIn>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           {/* Left - Mockup */}
           <FadeIn direction="left">
             <div className="relative max-w-md mx-auto lg:max-w-none">
-              <div className="rounded-2xl bg-white border border-border shadow-xl p-6">
+              {/* Background shadow card */}
+              <div className="absolute inset-0 rounded-2xl bg-primary/5 transform rotate-1 scale-[1.01] -z-10" />
+
+              <div className="rounded-2xl bg-surface-card border border-border shadow-xl p-7">
                 {/* PDF header */}
-                <div className="flex items-center gap-3 pb-4 border-b border-border mb-4">
-                  <div className="h-8 w-8 rounded bg-danger/10 flex items-center justify-center">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#EF4444" strokeWidth="2">
+                <div className="flex items-center gap-3 pb-4 border-b border-border-light mb-5">
+                  <div className="h-9 w-9 rounded-xl bg-danger/8 flex items-center justify-center">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EF4444" strokeWidth="1.8">
                       <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                       <polyline points="14 2 14 8 20 8" />
                     </svg>
                   </div>
-                  <div className="text-xs font-semibold text-foreground">
-                    weblelet-riport-2026-03.pdf
+                  <div>
+                    <div className="text-xs font-heading font-bold text-foreground">
+                      weblelet-riport-2026-03.pdf
+                    </div>
+                    <div className="text-[11px] text-foreground-muted">
+                      10 oldal &middot; Személyre szabott elemzés
+                    </div>
                   </div>
                 </div>
 
                 {/* Score bars */}
-                <div className="space-y-3 mb-4">
+                <div className="space-y-3.5 mb-5">
                   {[
                     { label: "GEO/SEO", score: 24, color: "bg-danger" },
                     { label: "Marketing", score: 41, color: "bg-accent" },
-                    { label: "Sales", score: 52, color: "bg-accent" },
+                    { label: "Sales", score: 52, color: "bg-amber-500" },
                   ].map((bar) => (
                     <div key={bar.label}>
-                      <div className="flex justify-between text-xs mb-1">
-                        <span className="text-foreground-muted">{bar.label}</span>
+                      <div className="flex justify-between text-xs mb-1.5">
+                        <span className="font-medium text-foreground-muted">{bar.label}</span>
                         <span className="font-bold text-foreground">{bar.score}/100</span>
                       </div>
-                      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="h-2 bg-border-light rounded-full overflow-hidden">
                         <div
                           className={`h-full ${bar.color} rounded-full`}
                           style={{ width: `${bar.score}%` }}
@@ -63,8 +76,8 @@ export default function SampleReport() {
                 </div>
 
                 {/* Mock table */}
-                <div className="border border-border rounded-lg overflow-hidden text-xs">
-                  <div className="bg-background-alt px-3 py-2 font-semibold text-foreground border-b border-border">
+                <div className="border border-border-light rounded-xl overflow-hidden text-xs">
+                  <div className="bg-surface px-4 py-2.5 font-heading font-bold text-foreground border-b border-border-light">
                     TOP 3 kritikus probléma
                   </div>
                   {[
@@ -74,10 +87,16 @@ export default function SampleReport() {
                   ].map((row) => (
                     <div
                       key={row.issue}
-                      className="flex justify-between px-3 py-2 border-b border-border last:border-0"
+                      className="flex justify-between px-4 py-2.5 border-b border-border-light last:border-0"
                     >
-                      <span className="text-foreground-muted">{row.issue}</span>
-                      <span className={`font-medium ${row.severity === "Kritikus" ? "text-danger" : "text-accent"}`}>
+                      <span className="text-foreground-secondary">{row.issue}</span>
+                      <span
+                        className={`font-semibold rounded-full px-2 py-0.5 text-[10px] ${
+                          row.severity === "Kritikus"
+                            ? "text-danger bg-danger/8"
+                            : "text-accent bg-accent/8"
+                        }`}
+                      >
                         {row.severity}
                       </span>
                     </div>
@@ -85,10 +104,10 @@ export default function SampleReport() {
                 </div>
 
                 {/* Blurred section */}
-                <div className="mt-4 space-y-2 select-none">
-                  <div className="h-2.5 w-full rounded bg-gray-100 blur-[2px]" />
-                  <div className="h-2.5 w-5/6 rounded bg-gray-100 blur-[2px]" />
-                  <div className="h-2.5 w-3/4 rounded bg-gray-100 blur-[2px]" />
+                <div className="mt-5 space-y-2 select-none">
+                  <div className="h-2.5 w-full rounded bg-border-light blur-[2px]" />
+                  <div className="h-2.5 w-5/6 rounded bg-border-light blur-[2px]" />
+                  <div className="h-2.5 w-3/4 rounded bg-border-light blur-[2px]" />
                 </div>
               </div>
             </div>
@@ -96,10 +115,10 @@ export default function SampleReport() {
 
           {/* Right - Feature list */}
           <FadeIn direction="right" delay={0.15}>
-            <div className="space-y-5">
-              {features.map((feature) => (
-                <div key={feature} className="flex items-start gap-4">
-                  <div className="mt-0.5 h-6 w-6 shrink-0 rounded-full bg-success/10 flex items-center justify-center">
+            <div className="space-y-6">
+              {features.map((feature, i) => (
+                <div key={feature} className="flex items-start gap-4 group">
+                  <div className="mt-0.5 h-7 w-7 shrink-0 rounded-xl bg-success/10 flex items-center justify-center group-hover:bg-success/20 transition-colors">
                     <svg
                       width="14"
                       height="14"
@@ -113,7 +132,7 @@ export default function SampleReport() {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <span className="text-base text-foreground leading-relaxed">
+                  <span className="text-[1.05rem] text-foreground-secondary leading-relaxed">
                     {feature}
                   </span>
                 </div>

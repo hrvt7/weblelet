@@ -3,16 +3,22 @@
 @theme inline {
   --color-primary: #2563EB;
   --color-primary-dark: #1D4ED8;
+  --color-primary-deep: #1E3A5F;
   --color-accent: #F59E0B;
   --color-accent-dark: #D97706;
-  --color-background: #FFFFFF;
-  --color-background-alt: #F8FAFC;
-  --color-foreground: #1E293B;
+  --color-surface: #FAFBFC;
+  --color-surface-warm: #FFF8ED;
+  --color-surface-blue: #F0F6FF;
+  --color-surface-card: #FFFFFF;
+  --color-foreground: #0F172A;
+  --color-foreground-secondary: #334155;
   --color-foreground-muted: #64748B;
   --color-success: #22C55E;
   --color-danger: #EF4444;
   --color-border: #E2E8F0;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-border-light: #F1F5F9;
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 html {
@@ -20,12 +26,96 @@ html {
 }
 
 body {
-  background: var(--color-background);
+  background: var(--color-surface);
   color: var(--color-foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
 }
 
 ::selection {
-  background-color: #2563EB;
-  color: white;
+  background-color: #DBEAFE;
+  color: #1E3A5F;
+}
+
+/* Dot grid texture — very subtle */
+.dot-grid {
+  background-image: radial-gradient(circle, #CBD5E1 0.75px, transparent 0.75px);
+  background-size: 28px 28px;
+}
+
+/* Animated gauge stroke */
+@keyframes gauge-fill {
+  from { stroke-dashoffset: 314; }
+}
+
+.gauge-animate {
+  animation: gauge-fill 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Counter animation */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.count-animate {
+  animation: count-up 0.6s ease-out 0.8s both;
+}
+
+/* Pulse for badge */
+@keyframes pulse-soft {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(37, 99, 235, 0); }
+}
+
+.pulse-badge {
+  animation: pulse-soft 2.5s ease-in-out infinite;
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+
+.scroll-bounce {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Heading highlight underline decoration */
+.text-highlight {
+  background: linear-gradient(to top, #FDE68A 0%, #FDE68A 35%, transparent 35%);
+  padding: 0 0.1em;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.1), 0 4px 12px -4px rgba(0, 0, 0, 0.05);
+}
+
+/* CTA glow */
+.cta-glow {
+  transition: all 0.3s ease;
+}
+.cta-glow:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px -4px rgba(245, 158, 11, 0.45);
+}
+
+/* Section divider wave */
+.wave-divider {
+  position: relative;
+}
+.wave-divider::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40'%3E%3Cpath fill='%23FAFBFC' d='M0,32L60,26.7C120,21,240,11,360,8C480,5,600,11,720,16C840,21,960,27,1080,26.7C1200,27,1320,21,1380,18.7L1440,16L1440,40L1380,40C1320,40,1200,40,1080,40C960,40,840,40,720,40C600,40,480,40,360,40C240,40,120,40,60,40L0,40Z'/%3E%3C/svg%3E") no-repeat bottom center;
+  background-size: 100% 100%;
 }

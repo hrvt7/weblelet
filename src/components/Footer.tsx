@@ -1,17 +1,17 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-white py-12">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer className="border-t border-border-light bg-surface-card py-14">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="flex items-center gap-2">
-              <div className="h-7 w-7 rounded-full bg-primary flex items-center justify-center">
+          <div className="flex flex-col items-center md:items-start gap-2.5">
+            <div className="flex items-center gap-2.5">
+              <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center shadow-sm shadow-primary/20">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                 </svg>
               </div>
-              <span className="text-lg font-bold text-foreground">
+              <span className="font-heading text-lg font-bold tracking-[-0.02em] text-foreground">
                 Web<span className="text-primary">Lelet</span>
               </span>
             </div>
@@ -21,17 +21,23 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6 text-sm text-foreground-muted">
-            <a href="mailto:info@weblelet.hu" className="hover:text-primary transition-colors">
+          <div className="flex items-center gap-8 text-sm text-foreground-muted">
+            <a
+              href="mailto:info@weblelet.hu"
+              className="hover:text-primary transition-colors duration-200"
+            >
               info@weblelet.hu
             </a>
-            <a href="/adatvedelem" className="hover:text-primary transition-colors">
+            <a
+              href="/adatvedelem"
+              className="hover:text-primary transition-colors duration-200"
+            >
               Adatvédelmi tájékoztató
             </a>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-border text-center text-xs text-foreground-muted">
+        <div className="mt-10 pt-8 border-t border-border-light text-center text-xs text-foreground-muted">
           &copy; {new Date().getFullYear()} WebLelet. Minden jog fenntartva.
         </div>
       </div>
