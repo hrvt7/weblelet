@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Hogyan fizetünk?",
-    a: "Az ingyenes lelet díjmentes. A Teljes WebLelet-ért átutalással fizetsz (számla + szállítólevél). Bankkártya hamarosan elérhető.",
+    a: "Az ingyenes lelet természetesen díjmentes. A fizetős csomagokról a konzultáción beszélünk — csak akkor fizetsz, ha az audit alapján úgy döntesz, hogy szeretnéd a teljes riportot. Számlát adunk, bankkártyás és átutalásos fizetés egyaránt elérhető.",
   },
 ];
 
