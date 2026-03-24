@@ -19,6 +19,7 @@ const body = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://weblelet.hu"),
   title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
   description:
     "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent elemzi a weboldaladat 3 dimenzióban — GEO/SEO, Marketing, Sales. Konkrét pontszámok, problémák, cselekvési terv.",
@@ -27,19 +28,31 @@ export const metadata: Metadata = {
   openGraph: {
     title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
     description:
-      "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent, 3 dimenzió, 10 oldalas riport.",
+      "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent, 3 dimenzió, 18 oldalas riport.",
     url: "https://weblelet.hu",
     siteName: "WebLelet",
     locale: "hu_HU",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "WebLelet — AI-alapú weboldal diagnosztika",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
     description:
       "Megtudod 48 órán belül, miért nem talál rád az ügyfeled.",
+    images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: "https://weblelet.hu",
+  },
 };
 
 export default function RootLayout({

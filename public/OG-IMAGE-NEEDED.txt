@@ -1,0 +1,8 @@
+Replace this file with a 1200x630px branded image named og-image.jpg
+
+Requirements:
+- Filename: og-image.jpg (place in this /public directory)
+- Size: 1200 x 630 pixels
+- Content: WebLelet logo + tagline "AI-alapú weboldal diagnosztika"
+- Background: match site brand colors
+- Format: JPG or PNG (rename to .jpg)

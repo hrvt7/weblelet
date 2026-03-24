@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Adatvédelmi tájékoztató — WebLelet",
   description: "A WebLelet adatvédelmi tájékoztatója.",
+  alternates: {
+    canonical: "https://weblelet.hu/adatvedelem",
+  },
 };
 
 export default function Adatvedelem() {
