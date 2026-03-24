@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const heading = Plus_Jakarta_Sans({
@@ -49,6 +51,8 @@ export default function RootLayout({
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
       <body className="min-h-full flex flex-col font-body antialiased bg-surface text-foreground">
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
