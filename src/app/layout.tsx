@@ -49,6 +49,92 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
+      <head>
+        {/* Organization JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "WebLelet",
+              url: "https://weblelet.hu",
+              logo: "https://weblelet.hu/icon.svg",
+              description:
+                "AI-alapú weboldal audit szolgáltatás magyar kisvállalkozásoknak. GEO/SEO, Marketing és Üzleti Potenciál elemzés.",
+              email: "info@weblelet.hu",
+              areaServed: {
+                "@type": "Country",
+                name: "Hungary",
+              },
+              sameAs: [
+                "https://www.linkedin.com/company/weblelet",
+              ],
+            }),
+          }}
+        />
+        {/* WebSite JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "WebLelet",
+              url: "https://weblelet.hu",
+              description:
+                "AI-alapú weboldal audit magyar vállalkozásoknak — GEO/SEO, Marketing, Üzleti Potenciál elemzés 48 órán belül.",
+              inLanguage: "hu",
+            }),
+          }}
+        />
+        {/* Service JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "WebLelet — AI Weboldal Audit",
+              provider: {
+                "@type": "Organization",
+                name: "WebLelet",
+                url: "https://weblelet.hu",
+              },
+              description:
+                "Egyetlen URL megadásával AI rendszer elemzi a weboldalt 3 dimenzióban: GEO/SEO, Marketing és Üzleti Potenciál. 48 órán belül részletes PDF diagnózist küldünk.",
+              areaServed: {
+                "@type": "Country",
+                name: "Hungary",
+              },
+              serviceType: "Weboldal audit",
+              offers: [
+                {
+                  "@type": "Offer",
+                  name: "Ingyenes Gyorsdiagnózis",
+                  price: "0",
+                  priceCurrency: "HUF",
+                  description: "5 oldalas gyorsdiagnózis a legfontosabb hibákról",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Teljes WebLelet",
+                  price: "49900",
+                  priceCurrency: "HUF",
+                  description: "18 oldalas részletes riport 3 blokkban + 30 perces konzultáció",
+                },
+                {
+                  "@type": "Offer",
+                  name: "Havi WebLelet Pro",
+                  price: "69900",
+                  priceCurrency: "HUF",
+                  description: "Folyamatos monitoring + havi friss riport + tanácsadás",
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col font-body antialiased bg-surface text-foreground">
         {children}
         <Analytics />

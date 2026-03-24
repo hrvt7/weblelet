@@ -21,12 +21,20 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-8 text-sm text-foreground-muted">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 text-sm text-foreground-muted">
             <a
               href="mailto:info@weblelet.hu"
               className="hover:text-primary transition-colors duration-200"
             >
               info@weblelet.hu
+            </a>
+            <a
+              href="https://www.linkedin.com/company/weblelet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors duration-200"
+            >
+              LinkedIn
             </a>
             <a
               href="/adatvedelem"

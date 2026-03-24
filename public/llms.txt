@@ -1,0 +1,38 @@
+# WebLelet — AI-alapú weboldal audit szolgáltatás
+
+## Rólunk
+A WebLelet egy AI-alapú weboldal audit szolgáltatás magyar kisvállalkozásoknak. Egyetlen URL megadásával elemezzük a weboldalt 3 dimenzióban: GEO/SEO, Marketing és Üzleti Potenciál.
+
+## Szolgáltatások
+
+### Ingyenes Gyorsdiagnózis (0 Ft)
+- 5 oldalas gyorsdiagnózis
+- GEO/SEO + Marketing pontszám
+- TOP 5 probléma címkézve (tény/feltételezés)
+- 3 azonnali teendő + kész megoldások (schema, llms.txt)
+
+### Teljes WebLelet (49.900 Ft, egyszeri)
+- 18 oldalas részletes riport 3 blokkban
+- GEO/SEO + Marketing + Üzleti Potenciál elemzés
+- Versenytárs összehasonlítás
+- Cselekvési terv üzleti hatás értékeléssel
+- Szolgáltatási csomag ajánlat (3 opció)
+- 30 napos tartalom naptár + email szekvenciák
+- 30 perc személyes/online konzultáció
+
+### Havi WebLelet Pro (69.900 Ft/hó)
+- Minden a Teljes verzióból
+- Havi frissített audit
+- Google Business optimalizáció
+- Havi 60 perc tanácsadás
+- Prioritásos email támogatás
+
+## Célcsoport
+Magyar KKV-k: étterem, szerviz, szalon, fogászat, panzió, webshop — bármely vállalkozás amelyik szeretne több ügyfelet az internetről.
+
+## Elérhetőség
+- Web: https://weblelet.hu
+- Email: info@weblelet.hu
+
+## Technológia
+AI-támogatott elemzési rendszer, amely a weboldal nyilvánosan elérhető adatait vizsgálja — forráskód, tartalom, technikai felépítés, online jelenlét.
