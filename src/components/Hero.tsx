@@ -67,8 +67,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <span>
-                  Eddig <strong className="text-foreground">47+</strong>{" "}
-                  magyar vállalkozást auditáltunk
+                  Ingyenes diagnózis — kötelezettség nélkül
                 </span>
               </div>
             </FadeIn>
@@ -117,7 +116,6 @@ export default function Hero() {
                     {[
                       { label: "GEO/SEO Pontszám", value: "24/100", color: "text-danger", bar: "bg-danger", pct: 24 },
                       { label: "Marketing Pontszám", value: "41/100", color: "text-accent", bar: "bg-accent", pct: 41 },
-                      { label: "Sales Pontszám", value: "52/100", color: "text-amber-600", bar: "bg-amber-500", pct: 52 },
                     ].map((item) => (
                       <div key={item.label}>
                         <div className="flex items-center justify-between mb-1.5">
@@ -141,7 +139,7 @@ export default function Hero() {
 
                 {/* Floating badge with pulse */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 rounded-2xl bg-primary text-white px-5 py-2.5 text-xs font-bold shadow-xl pulse-badge">
-                  15 AI agent elemzi
+                  AI elemzés 3 dimenzióban
                 </div>
               </div>
             </FadeIn>

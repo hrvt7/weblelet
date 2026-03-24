@@ -41,8 +41,8 @@ const columns = [
     ],
   },
   {
-    title: "Sales Elemzés",
-    count: "12 szempont",
+    title: "Üzleti Potenciál Elemzés",
+    count: "Teljes WebLelet csomagban",
     color: "text-success",
     bgColor: "bg-success/8",
     borderAccent: "border-t-success",
@@ -53,11 +53,10 @@ const columns = [
       </svg>
     ),
     items: [
-      "Döntéshozó azonosítás",
-      "Üzleti lehetőség értékelés",
-      "Megkeresési stratégia",
-      "Lead minősítés",
-      "Versenykörnyezet",
+      "Versenytárs összehasonlítás",
+      "Növekedési lehetőségek",
+      "Cselekvési terv prioritásokkal",
+      "Üzleti hatás értékelés (alacsony/közepes/magas)",
     ],
   },
 ];

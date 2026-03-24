@@ -4,7 +4,7 @@ const stats = [
   { value: "73%", label: "nincs schema markup", accent: "text-danger" },
   { value: "38/100", label: "átlagos marketing pontszám", accent: "text-accent" },
   { value: "0%", label: "használja az AI keresőoptimalizálást", accent: "text-danger" },
-  { value: "~300K Ft", label: "havonta elveszett bevétel", accent: "text-primary" },
+  { value: "5 perc", label: "ennyi idő egy ingyenes diagnózis elkérése", accent: "text-primary" },
 ];
 
 export default function SocialProof() {

@@ -16,7 +16,7 @@ const steps = [
   },
   {
     num: "02",
-    title: "15 AI agent elemzi az oldalad",
+    title: "AI rendszer elemzi az oldalad 3 dimenzióban",
     description:
       "A mesterséges intelligencia 3 dimenzióban vizsgálja a weboldaladat: Google és AI keresők láthatósága, marketing hatékonyság, és értékesítési potenciál.",
     icon: (
@@ -31,7 +31,7 @@ const steps = [
     num: "03",
     title: "Megkapod a személyre szabott riportot",
     description:
-      "48 órán belül emailben küldünk egy 10+ oldalas PDF riportot — konkrét pontszámokkal, problémalistával és cselekvési tervvel.",
+      "48 órán belül emailben küldünk egy részletes PDF diagnózist — konkrét problémalistával, címkézett megállapításokkal és azonnali teendőkkel.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />

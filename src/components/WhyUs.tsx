@@ -5,7 +5,7 @@ const rows = [
   { feature: "Ár", agency: "200.000 - 600.000 Ft", weblelet: "49.900 Ft" },
   { feature: "AI keresők elemzése", agency: false, weblelet: true },
   { feature: "Személyre szabott", agency: true, weblelet: true },
-  { feature: "Cselekvési terv", agency: "Általános javaslat", weblelet: "Konkrét lépések forintban" },
+  { feature: "Cselekvési terv", agency: "Általános javaslat", weblelet: "Konkrét lépések üzleti hatás értékeléssel" },
   { feature: "Versenytárs elemzés", agency: "Ritkán", weblelet: true },
 ];
 

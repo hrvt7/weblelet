@@ -5,7 +5,7 @@ const features = [
   "TOP 3 kritikus probléma kiemelve",
   "Versenytárs összehasonlító táblázat",
   "Konkrét cselekvési terv (heti/havi/negyedéves)",
-  "Becsült bevételi hatás forintban",
+  "Üzleti hatás értékelés (alacsony/közepes/magas)",
   "Minden magyarul, közérthetően",
 ];
 
