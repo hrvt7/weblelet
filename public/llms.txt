@@ -1,38 +1,33 @@
-# WebLelet — AI-alapú weboldal diagnosztika
+# WebLelet
 
-## Rólunk
-A WebLelet weboldal diagnózist készít 53 szempont alapján, 3 dimenzióban: GEO/SEO, Marketing és Üzleti Potenciál. Kész javaslatokkal és megoldásokkal, nem csak hibalistával.
+> AI-alapú weboldal audit és diagnosztika magyar vállalkozásoknak és marketing ügynökségeknek.
+
+## Mit csinálunk
+A WebLelet 53 szempont alapján elemzi a weboldalakat három dimenzióban: GEO/SEO (Google és AI keresők láthatósága), Marketing (tartalom, konverzió, versenytársak) és Üzleti Potenciál (növekedési lehetőségek, döntéshozók). Az elemzés eredménye egy részletes PDF riport kész megoldásokkal — nem csak hibalistával.
 
 ## Szolgáltatások
+- Ingyenes diagnózis: 5 oldalas gyorsriport, 0 Ft, 48 órán belül
+- Teljes WebLelet audit: 18 oldalas részletes riport + 30 perces konzultáció, 149.000 Ft egyszeri
 
-### Ingyenes Diagnózis (0 Ft)
-- 5 oldalas gyorsdiagnózis
-- GEO/SEO + Marketing pontszám
-- TOP 5 probléma címkézve (tény / feltételezés / javaslat)
-- 3 azonnali teendő (ki csinálja, mennyi idő, mennyibe kerül)
-- Kész megoldások (schema kód + llms.txt fájl)
+## Amit az audit tartalmaz
+- GEO/SEO elemzés 23 szempont (AI keresők: ChatGPT, Perplexity, Gemini, Google AI Overviews, Bing Copilot)
+- Marketing elemzés 18 szempont (tartalom, CRO, versenytárs, brand, növekedés)
+- Üzleti potenciál 12 szempont (döntéshozók, lehetőség értékelés, megkeresési stratégia)
+- Kész megoldások: Schema markup (JSON-LD) kód + llms.txt fájl
+- Finding címkézés: minden megállapítás tény, feltételezés vagy javaslat címkével
+- Laikus összefoglaló: az első 3 oldal technikai tudás nélkül is érthető
+- Technikai melléklet: amit a webfejlesztőnek adhatsz tovább
 
-### Teljes WebLelet (149.000 Ft, egyszeri)
-- 18 oldalas részletes riport + 30 perces konzultáció
-- GEO/SEO + Marketing + Üzleti Potenciál elemzés
-- Versenytárs összehasonlítás
-- 30-90 napos fejlesztési terv
-- Szolgáltatási ajánlat 3 opcióval
-- Email szekvenciák + tartalom naptár
-
-### Havi WebLelet (99.000 Ft/hó)
-- Minden a Teljes verzióból
-- Havi frissített diagnózis
-- Havonta összehasonlítás az előző állapottal
-- Havi 60 perc tanácsadás
-- Prioritásos email támogatás
-
-## Célcsoport
-Magyar vállalkozások: étterem, szerviz, szalon, fogászat, panzió, webshop — bármely cég amelyik szeretne több ügyfelet az internetről.
+## Hogyan működik
+1. Az ügyfél megadja a weboldala URL-jét
+2. A rendszer 53 szempont alapján elemzi az oldalt
+3. 48 órán belül emailben megkapja a PDF diagnózist kész javaslatokkal
 
 ## Elérhetőség
-- Web: https://weblelet.hu
+- Weboldal: https://weblelet.hu
 - Email: info@weblelet.hu
+- Alapító: Horváth Ádám
+- Helyszín: Magyarország
 
-## Technológia
-A rendszer a weboldal forráskódját, a keresőmotorok és AI keresők viselkedését, valamint a nyilvánosan elérhető adatokat elemzi. 53 szempont, 3 dimenzió.
+## Kulcsszavak
+weboldal audit, SEO audit, GEO optimalizálás, AI keresőoptimalizálás, weboldal elemzés, digitális diagnosztika, magyar vállalkozás, KKV, marketing audit, schema markup, weblelet
