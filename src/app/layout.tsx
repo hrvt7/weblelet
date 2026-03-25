@@ -63,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
       <head>
+        <meta name="google-site-verification" content="3AxdJpMstdvN16odkidb_os6gx1yOLB6683iJC_VZWc" />
         {/* Organization JSON-LD */}
         <script
           type="application/ld+json"
