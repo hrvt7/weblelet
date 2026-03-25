@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-foreground-muted">
-              AI-alapú weboldal diagnosztika
+              AI weboldal audit rendszer
             </p>
           </div>
 

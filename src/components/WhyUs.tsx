@@ -1,12 +1,12 @@
 import FadeIn from "./FadeIn";
 
 const rows = [
-  { feature: "Átfutási idő", agency: "2-6 hét", weblelet: "48 óra" },
-  { feature: "Ár", agency: "200K - 2M Ft", weblelet: "0 Ft / 149K Ft" },
+  { feature: "Átfutási idő", agency: "2-4 hét", weblelet: "15 perc" },
+  { feature: "Szempontok száma", agency: "10-20", weblelet: "53" },
   { feature: "AI keresők elemzése", agency: false, weblelet: true },
   { feature: "Kész kód és fájlok", agency: false, weblelet: true },
-  { feature: "Laikus összefoglaló", agency: false, weblelet: true },
-  { feature: "Fejlesztőnek átadható melléklet", agency: "Ritkán", weblelet: true },
+  { feature: "Finding címkézés", agency: false, weblelet: true },
+  { feature: "White-label", agency: false, weblelet: true },
 ];
 
 function Check() {
@@ -42,8 +42,8 @@ export default function WhyUs() {
               Összehasonlítás
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Miért más ez mint egy{" "}
-              <span className="text-highlight">hagyományos SEO audit?</span>
+              Miért más ez mint amit{" "}
+              <span className="text-highlight">eddig láttál?</span>
             </h2>
           </div>
         </FadeIn>
@@ -62,7 +62,7 @@ export default function WhyUs() {
                     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-lg font-bold text-foreground-muted">Hagyományos SEO audit</h3>
+                <h3 className="font-heading text-lg font-bold text-foreground-muted">Kézi audit</h3>
               </div>
               <div className="space-y-4">
                 {rows.map((row) => (
@@ -90,7 +90,7 @@ export default function WhyUs() {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-lg font-bold text-primary">WebLelet</h3>
+                <h3 className="font-heading text-lg font-bold text-primary">WebLelet rendszer</h3>
               </div>
               <div className="space-y-4">
                 {rows.map((row) => (

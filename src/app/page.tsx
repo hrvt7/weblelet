@@ -22,26 +22,18 @@ export default function Home() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "Tényleg ingyenes az első diagnózis?",
+                name: "Hogyan működik a demo?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen. Az 5 oldalas diagnózist ingyen elkészítjük és emailben elküldjük. Nincs apróbetűs rész, nincs rejtett költség.",
+                  text: "Megadod a weboldal URL-jét, mi lefuttatjuk a rendszert és elküldjük az eredményt emailben. Utána egyeztetünk egy 30 perces hívást ahol végigmegyünk a riporton.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Mit tudok kezdeni a diagnózissal?",
+                name: "Kinek szól ez a rendszer?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "A diagnózisban minden probléma mellett le van írva: ki csinálja meg, mennyi idő, mennyibe kerül. Ha van webfejlesztőd, odaadod neki a technikai mellékletet. Ha nincs, mi is meg tudjuk csinálni.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Honnan tudjátok ezeket a weboldalam alapján?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "A rendszer a weboldal forráskódját, a keresőmotorok és AI keresők viselkedését, valamint a nyilvánosan elérhető adatokat elemzi. Nem kell jelszó és nem férünk hozzá belső adatokhoz.",
+                  text: "Marketing ügynökségeknek akik gyorsabban akarnak auditot csinálni az ügyfeleiknek, és vállalkozásoknak akik szeretnék tudni hol áll a weboldaluk a Google-ben és az AI keresőkben.",
                 },
               },
               {
@@ -49,31 +41,31 @@ export default function Home() {
                 name: "Mi az a GEO és miért fontos?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "A GEO (Generative Engine Optimization) azt jelenti, hogy a weboldalad hogyan jelenik meg az AI keresőkben — amikor valaki megkérdezi a ChatGPT-t vagy a Google AI-t. 2025-ben ez már ugyanolyan fontos mint a hagyományos Google keresés.",
+                  text: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések 40%-a már AI-ból indul. Ha ott nem vagy, láthatatlan vagy.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Mennyivel jobb ez mint egy ingyenes online SEO checker?",
+                name: "Miben más ez mint egy SEMrush vagy Ahrefs?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Az ingyenes checkerek 10-15 technikai szempontot vizsgálnak. Mi 53 szempontot nézünk 3 dimenzióban, és nem csak hibákat keresünk — kész megoldásokat is adunk amit a fejlesztőd azonnal használhat.",
+                  text: "Azok a toolok technikai SEO-ra fókuszálnak. Mi három dimenzióban elemzünk: GEO/SEO + Marketing + Üzleti Potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk és minden megállapítás címkézve van.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Mi történik az ingyenes diagnózis után?",
+                name: "Mennyibe kerül?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Semmi, hacsak nem szeretnéd a teljes elemzést. Ha igen, elkészítjük a 18 oldalas részletes riportot + 30 perc konzultációt tartunk ahol végigmegyünk az eredményeken.",
+                  text: "Az árazás az együttműködés formájától függ — egyedi projekt, havi megbízás, vagy rendszeres audit csomag. Az első demo audit ingyenes. Írj a részletekért.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Hogyan fizethetek?",
+                name: "Használhatom az ügyfeleimnek is?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Banki átutalással, a diagnózis elkészülte után. Számlát küldünk emailben.",
+                  text: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül.",
                 },
               },
             ],

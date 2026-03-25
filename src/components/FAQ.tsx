@@ -5,32 +5,28 @@ import FadeIn from "./FadeIn";
 
 const faqs = [
   {
-    q: "Tényleg ingyenes az első diagnózis?",
-    a: "Igen. Az 5 oldalas diagnózist ingyen elkészítjük és emailben elküldjük. Nincs apróbetűs rész, nincs rejtett költség.",
+    q: "Hogyan működik a demo?",
+    a: "Megadod a weboldal URL-jét, mi lefuttatjuk a rendszert és elküldjük az eredményt emailben. Utána egyeztetünk egy 30 perces hívást ahol végigmegyünk a riporton.",
   },
   {
-    q: "Mit tudok kezdeni a diagnózissal?",
-    a: "A diagnózisban minden probléma mellett le van írva: ki csinálja meg (a fejlesztőd vagy mi), mennyi idő, mennyibe kerül. Ha van webfejlesztőd, odaadod neki a technikai mellékletet — minden le van benne írva. Ha nincs, mi is meg tudjuk csinálni.",
-  },
-  {
-    q: "Honnan tudjátok ezeket a weboldalam alapján?",
-    a: "A rendszer a weboldal forráskódját, a keresőmotorok és AI keresők viselkedését, valamint a nyilvánosan elérhető adatokat (Google értékelések, versenytársak) elemzi. Nem kell jelszó és nem férünk hozzá belső adatokhoz.",
+    q: "Kinek szól ez a rendszer?",
+    a: "Marketing ügynökségeknek akik gyorsabban akarnak auditot csinálni az ügyfeleiknek, és vállalkozásoknak akik szeretnék tudni hol áll a weboldaluk a Google-ben és az AI keresőkben.",
   },
   {
     q: "Mi az a GEO és miért fontos?",
-    a: "A GEO (Generative Engine Optimization) azt jelenti, hogy a weboldalad hogyan jelenik meg az AI keresőkben — amikor valaki megkérdezi a ChatGPT-t vagy a Google AI-t. 2025-ben ez már ugyanolyan fontos mint a hagyományos Google keresés.",
+    a: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések 40%-a már AI-ból indul. Ha ott nem vagy, láthatatlan vagy.",
   },
   {
-    q: "Mennyivel jobb ez mint egy ingyenes online SEO checker?",
-    a: "Az ingyenes checkerek 10-15 technikai szempontot vizsgálnak. Mi 53 szempontot nézünk 3 dimenzióban, és nem csak hibákat keresünk — kész megoldásokat is adunk (kódot, fájlokat) amit a fejlesztőd azonnal használhat.",
+    q: "Miben más ez mint egy SEMrush vagy Ahrefs?",
+    a: "Azok a toolok technikai SEO-ra fókuszálnak. Mi három dimenzióban elemzünk: GEO/SEO + Marketing + Üzleti Potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk (schema kód, llms.txt) és minden megállapítás címkézve van hogy tény, feltételezés vagy javaslat.",
   },
   {
-    q: "Mi történik az ingyenes diagnózis után?",
-    a: "Semmi, hacsak nem szeretnéd a teljes elemzést. Ha igen, kitöltesz egy rövid adatlapot (forgalom, célok, büdzsé) és mi elkészítjük a 18 oldalas részletes riportot + 30 perc konzultációt tartunk ahol végigmegyünk az eredményeken.",
+    q: "Mennyibe kerül?",
+    a: "Az árazás az együttműködés formájától függ — egyedi projekt, havi megbízás, vagy rendszeres audit csomag. Az első demo audit ingyenes. Írj a részletekért.",
   },
   {
-    q: "Hogyan fizethetek?",
-    a: "Banki átutalással, a diagnózis elkészülte után. Számlát küldünk emailben.",
+    q: "Használhatom az ügyfeleimnek is?",
+    a: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül. Az ügyfeled a te termékedet látja.",
   },
 ];
 

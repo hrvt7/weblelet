@@ -3,9 +3,9 @@ import FadeIn from "./FadeIn";
 const steps = [
   {
     num: "01",
-    title: "Megadod a weboldalad címét",
+    title: "Egy URL az input",
     description:
-      "Kitöltöd az űrlapot a URL-eddel. Nem kell jelszó, nem kell hozzáférés, nem kell telepíteni semmit.",
+      "A rendszer egyetlen URL-ből dolgozik. Nem kell jelszó, hozzáférés, vagy API kulcs. Ha van partner adatlap is (forgalom, célok, büdzsé), azzal a mélyelemzés is lefut.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -16,9 +16,9 @@ const steps = [
   },
   {
     num: "02",
-    title: "Elemezzük 53 szempont alapján",
+    title: "13 agent elemez párhuzamosan",
     description:
-      "A rendszer 3 dimenzióban vizsgálja a weboldaladat: hogyan látja a Google és az AI keresők (ChatGPT, Perplexity, Gemini), mennyire hatékony a marketing, és mekkora az üzleti potenciál.",
+      "5 GEO/SEO agent a keresőláthatóságot vizsgálja — beleértve 5 AI platformot külön-külön (ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot). 4 Marketing agent a tartalmat, konverziót, versenytársakat elemzi. 4 Sales agent a döntéshozókat és az üzleti lehetőségeket térképezi fel.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -29,9 +29,9 @@ const steps = [
   },
   {
     num: "03",
-    title: "Megkapod a diagnózist kész javaslatokkal",
+    title: "Kész riport + kész megoldások",
     description:
-      "48 órán belül emailben küldünk egy részletes PDF-et — konkrét problémalistával, azonnali teendőkkel és kész megoldásokkal amit a fejlesztőd azonnal beilleszthet.",
+      "Az output egy 18 oldalas PDF riport 3 blokkban: Audit → Szolgáltatási Ajánlat → Operatív Mellékletek. Mellé jön kész schema JSON-LD kód és llms.txt fájl amit a fejlesztő azonnal beilleszthet. Minden megállapítás címkézve: 🔴 tény, 🟡 feltételezés, 🟢 javaslat.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -56,8 +56,8 @@ export default function HowItWorks() {
               Hogyan működik
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              3 lépés a weboldalad{" "}
-              <span className="text-highlight">leletéhez</span>
+              Hogyan működik{" "}
+              <span className="text-highlight">a rendszer</span>
             </h2>
           </div>
         </FadeIn>

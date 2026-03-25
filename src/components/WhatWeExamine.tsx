@@ -14,12 +14,12 @@ const columns = [
       </svg>
     ),
     items: [
-      "AI keresőkben való láthatóság (ChatGPT, Perplexity, Gemini)",
-      "Google keresőoptimalizálás",
-      "Schema markup és strukturált adatok",
-      "Technikai hibák feltárása",
-      "Tartalom minőség és hitelesség (E-E-A-T)",
-      "Kész megoldás: schema kód amit a fejlesztőd beilleszthet",
+      "AI keresőkben való láthatóság (5 platform: ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot)",
+      "Google keresőoptimalizálás és technikai SEO",
+      "Schema markup és strukturált adatok elemzése",
+      "AI Citability scoring (mennyire idézhető a tartalom)",
+      "Brand Authority mérés (online jelenlét erőssége)",
+      "Output: kész schema JSON-LD kód + llms.txt fájl",
     ],
   },
   {
@@ -34,11 +34,11 @@ const columns = [
       </svg>
     ),
     items: [
-      "Tartalom és üzenetek hatékonysága",
-      "Konverzió optimalizáció (hívásra ösztönzés, űrlapok)",
+      "Tartalom minőség és E-E-A-T értékelés",
+      "Konverzió optimalizáció elemzés",
       "Versenytárs összehasonlítás",
-      "Brand és bizalomépítés",
-      "Növekedési stratégia",
+      "Brand és bizalomépítés mérés",
+      "Output: 30 napos tartalom naptár + email szekvenciák",
     ],
   },
   {
@@ -54,10 +54,10 @@ const columns = [
       </svg>
     ),
     items: [
-      "Döntéshozók elérhetősége",
-      "Üzleti lehetőség értékelés",
-      "Versenykörnyezet elemzés",
-      "Megkeresési stratégia",
+      "Döntéshozók és kapcsolati pontok feltérképezése",
+      "BANT lead scoring",
+      "Outreach stratégia és megkeresési terv",
+      "Output: 3 szintű szolgáltatási csomag ajánlat",
     ],
   },
 ];
@@ -72,7 +72,7 @@ export default function WhatWeExamine() {
               Részletes elemzés
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Amit az audit <span className="text-highlight">tartalmaz</span>
+              Amit a rendszer <span className="text-highlight">vizsgál</span>
             </h2>
           </div>
         </FadeIn>

@@ -22,17 +22,17 @@ export default function Hero() {
                 className="font-heading font-extrabold leading-[1.08] tracking-[-0.03em] text-foreground"
                 style={{ fontSize: "clamp(2.25rem, 4.5vw + 0.5rem, 3.75rem)" }}
               >
-                Megmutatjuk{" "}
+                Weboldal audit rendszer ami{" "}
                 <span className="text-highlight">
-                  mit nem lát a Google az oldaladról
+                  10x gyorsabb mint a kézi munka
                 </span>
               </h1>
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                Weboldal diagnózis 53 szempont alapján — GEO, SEO, marketing és
-                üzleti potenciál elemzéssel. Kész javaslatokkal és megoldásokkal,
-                nem csak hibalistával.
+                13 AI agent elemzi párhuzamosan a weboldalakat — GEO, SEO,
+                marketing és üzleti potenciál dimenzióban. A rendszer 15 perc
+                alatt produkálja amit egy csapat hetekig csinálna.
               </p>
             </FadeIn>
             <FadeIn delay={0.24}>
@@ -41,37 +41,14 @@ export default function Hero() {
                   href="#kapcsolat"
                   className="inline-flex items-center cursor-pointer justify-center rounded-2xl bg-accent px-9 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow"
                 >
-                  Kérem az ingyenes diagnózist&ensp;&rarr;
+                  Beszéljünk&ensp;&rarr;
                 </a>
               </div>
               <p className="mt-4 text-sm text-foreground-muted">
-                0 Ft, 0 kötelezettség. 48 órán belül megkapod.
+                Kérd a demo auditot a te oldaladra vagy az ügyfeled oldalára
               </p>
             </FadeIn>
 
-            {/* Trust line */}
-            <FadeIn delay={0.36}>
-              <div className="mt-10 flex items-center gap-3 text-sm text-foreground-muted">
-                <div className="flex -space-x-2">
-                  {[
-                    "bg-blue-500",
-                    "bg-emerald-500",
-                    "bg-amber-500",
-                    "bg-purple-500",
-                  ].map((color, i) => (
-                    <div
-                      key={i}
-                      className={`h-8 w-8 rounded-full ${color} border-2 border-white flex items-center justify-center text-[10px] font-bold text-white`}
-                    >
-                      {["K", "B", "N", "T"][i]}
-                    </div>
-                  ))}
-                </div>
-                <span>
-                  Kötelezettségmentes diagnózis — nézd meg mit találunk
-                </span>
-              </div>
-            </FadeIn>
           </div>
 
           {/* Right - Report mockup (7 cols, larger) */}

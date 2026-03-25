@@ -130,23 +130,6 @@ export default function RootLayout({
                 name: "Hungary",
               },
               serviceType: "Weboldal audit",
-              offers: [
-                {
-                  "@type": "Offer",
-                  name: "Ingyenes Diagnózis",
-                  price: "0",
-                  priceCurrency: "HUF",
-                  description: "5 oldalas gyorsdiagnózis a legfontosabb problémákról",
-                },
-                {
-                  "@type": "Offer",
-                  name: "Teljes WebLelet",
-                  price: "149000",
-                  priceCurrency: "HUF",
-                  description: "18 oldalas részletes riport + 30 perces konzultáció",
-                },
-
-              ],
             }),
           }}
         />

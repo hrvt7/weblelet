@@ -48,11 +48,11 @@ export default function LeadForm() {
               Kapcsolat
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Kérd a weboldalad ingyenes{" "}
-              <span className="text-highlight">diagnózisát</span>
+              Kérj egy{" "}
+              <span className="text-highlight">demo auditot</span>
             </h2>
             <p className="mt-4 text-foreground-muted text-lg">
-              48 órán belül emailben küldünk egy személyre szabott elemzést.
+              Lefuttatjuk a rendszert a te weboldaladra vagy az ügyfeled oldalára — és megmutatjuk az eredményt.
             </p>
           </div>
         </FadeIn>
@@ -69,7 +69,7 @@ export default function LeadForm() {
                 Köszönjük!
               </h3>
               <p className="text-foreground-muted text-lg">
-                48 órán belül küldjük a diagnózist az email címedre.
+                Hamarosan jelentkezünk a demo audit eredményével.
               </p>
             </div>
           ) : (
@@ -78,30 +78,16 @@ export default function LeadForm() {
               className="rounded-2xl bg-surface-card border border-border shadow-2xl shadow-primary/5 p-8 sm:p-10 space-y-5"
             >
               <div>
-                <label htmlFor="company" className="block text-sm font-semibold text-foreground mb-2">
-                  Cégnév <span className="text-danger">*</span>
+                <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
+                  Név <span className="text-danger">*</span>
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
+                  id="name"
+                  name="name"
                   required
                   className={inputClass}
-                  placeholder="Pl. Kovács Szerviz Kft."
-                />
-              </div>
-
-              <div>
-                <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2">
-                  Weboldal URL <span className="text-danger">*</span>
-                </label>
-                <input
-                  type="url"
-                  id="website"
-                  name="website"
-                  required
-                  className={inputClass}
-                  placeholder="https://pelda.hu"
+                  placeholder="Vezetéknév Keresztnév"
                 />
               </div>
 
@@ -120,15 +106,16 @@ export default function LeadForm() {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
-                  Telefonszám <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
+                <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2">
+                  Weboldal URL (amit elemezni szeretnél) <span className="text-danger">*</span>
                 </label>
                 <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
+                  type="url"
+                  id="website"
+                  name="website"
+                  required
                   className={inputClass}
-                  placeholder="+36 30 123 4567"
+                  placeholder="https://pelda.hu"
                 />
               </div>
 
@@ -141,7 +128,7 @@ export default function LeadForm() {
                   name="notes"
                   rows={3}
                   className={inputClass}
-                  placeholder="pl. mi érdekli leginkább, van-e webfejlesztője"
+                  placeholder="pl. ügynökség vagyok / saját weboldal / mi érdekel leginkább"
                 />
               </div>
 
@@ -151,7 +138,7 @@ export default function LeadForm() {
                   disabled={loading}
                   className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
                 >
-                  {loading ? "Küldés..." : "Kérem az ingyenes diagnózist →"}
+                  {loading ? "Küldés..." : "Kérem a demo auditot →"}
                 </button>
               </div>
 

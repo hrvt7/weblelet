@@ -1,11 +1,13 @@
 import FadeIn from "./FadeIn";
 
 const features = [
-  "Összesített pontszám 0-100 skálán",
-  "Minden probléma címkézve: tény, feltételezés vagy javaslat",
-  "Laikus összefoglaló az elején — nem kell hozzá informatikusnak lenni",
-  "Technikai melléklet amit a fejlesztődnek adhatsz tovább",
-  "Kész megoldások csatolva (kód, fájlok)",
+  "18 oldalas PDF riport, 3 blokkban (Audit → Ajánlat → Operatív)",
+  "Laikus összefoglaló az elején — informatikus nélkül is érthető",
+  "Technikai melléklet amit a fejlesztőnek adhatsz",
+  "Finding címkézés: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
+  "Kész megoldások csatolva (schema kód, llms.txt)",
+  "Üzleti hatás értékelés (🟢 alacsony / 🟡 közepes / 🔴 magas)",
+  "White-label: a te logód, a te céged neve, a te színeid",
 ];
 
 export default function SampleReport() {
@@ -20,8 +22,8 @@ export default function SampleReport() {
               Minta riport
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Így néz ki egy WebLelet{" "}
-              <span className="text-highlight">diagnózis</span>
+              Minta: amit a rendszer{" "}
+              <span className="text-highlight">produkál</span>
             </h2>
           </div>
         </FadeIn>
