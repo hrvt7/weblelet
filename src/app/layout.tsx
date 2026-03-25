@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const heading = Plus_Jakarta_Sans({
@@ -154,6 +155,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <CookieConsent />
       </body>
     </html>
   );
