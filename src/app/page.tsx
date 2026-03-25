@@ -22,10 +22,18 @@ export default function Home() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "Tényleg ingyenes?",
+                name: "Tényleg ingyenes az első diagnózis?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen. Az ingyenes lelet 2 oldalas összefoglalót tartalmaz a legfontosabb problémákról. Semmilyen kötelezettséggel nem jár, és nem kell bankkártya.",
+                  text: "Igen. Az 5 oldalas diagnózist ingyen elkészítjük és emailben elküldjük. Nincs apróbetűs rész, nincs rejtett költség.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Mit tudok kezdeni a diagnózissal?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A diagnózisban minden probléma mellett le van írva: ki csinálja meg, mennyi idő, mennyibe kerül. Ha van webfejlesztőd, odaadod neki a technikai mellékletet. Ha nincs, mi is meg tudjuk csinálni.",
                 },
               },
               {
@@ -33,39 +41,39 @@ export default function Home() {
                 name: "Honnan tudjátok ezeket a weboldalam alapján?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Pontosan azt elemezzük amit a világ — a Google, a ChatGPT, és a potenciális ügyfeleid — látnak rólad. Nem kell jelszó vagy hozzáférés. Kívülről vizsgáljuk az oldalad, ahogy egy új ügyfeled tenné.",
+                  text: "A rendszer a weboldal forráskódját, a keresőmotorok és AI keresők viselkedését, valamint a nyilvánosan elérhető adatokat elemzi. Nem kell jelszó és nem férünk hozzá belső adatokhoz.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Mi az a GEO/SEO és miért fontos?",
+                name: "Mi az a GEO és miért fontos?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "A GEO (Generative Engine Optimization) azt jelenti, hogy a weboldal hogyan jelenik meg az AI keresőkben — ChatGPT, Google AI, Perplexity. 2026-ban az emberek egyre többen keresnek AI-val. Ha ott nem jelensz meg, ügyfeleket veszítesz.",
+                  text: "A GEO (Generative Engine Optimization) azt jelenti, hogy a weboldalad hogyan jelenik meg az AI keresőkben — amikor valaki megkérdezi a ChatGPT-t vagy a Google AI-t. 2025-ben ez már ugyanolyan fontos mint a hagyományos Google keresés.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Mennyivel jobb ez mint ha egy ügynökséget bízok meg?",
+                name: "Mennyivel jobb ez mint egy ingyenes online SEO checker?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Gyorsabb (48 óra vs. 5-10 nap), olcsóbb (49.900 Ft vs. 200-600.000 Ft), és tartalmazza az AI keresők elemzését is, amit a legtöbb magyar ügynökség nem kínál.",
+                  text: "Az ingyenes checkerek 10-15 technikai szempontot vizsgálnak. Mi 53 szempontot nézünk 3 dimenzióban, és nem csak hibákat keresünk — kész megoldásokat is adunk amit a fejlesztőd azonnal használhat.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Mi történik az audit után?",
+                name: "Mi történik az ingyenes diagnózis után?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Megkapod a riportot, és ha szeretnéd, 30 percben átbeszéljük személyesen vagy online. Utána te döntöd el mit csinálsz: megcsinálod magad, odaadod a webfejlesztődnek, vagy megbízol minket.",
+                  text: "Semmi, hacsak nem szeretnéd a teljes elemzést. Ha igen, elkészítjük a 18 oldalas részletes riportot + 30 perc konzultációt tartunk ahol végigmegyünk az eredményeken.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Hogyan fizetünk?",
+                name: "Hogyan fizethetek?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Az ingyenes lelet természetesen díjmentes. A fizetős csomagokról a konzultáción beszélünk — csak akkor fizetsz, ha az audit alapján úgy döntesz, hogy szeretnéd a teljes riportot. Számlát adunk, bankkártyás és átutalásos fizetés egyaránt elérhető.",
+                  text: "Banki átutalással, a diagnózis elkészülte után. Számlát küldünk emailben.",
                 },
               },
             ],

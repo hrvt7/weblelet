@@ -17,8 +17,9 @@ const columns = [
       "AI keresőkben való láthatóság (ChatGPT, Perplexity, Gemini)",
       "Google keresőoptimalizálás",
       "Schema markup és strukturált adatok",
-      "Technikai SEO hibák",
-      "Tartalom minőség (E-E-A-T)",
+      "Technikai hibák feltárása",
+      "Tartalom minőség és hitelesség (E-E-A-T)",
+      "Kész megoldás: schema kód amit a fejlesztőd beilleszthet",
     ],
   },
   {
@@ -34,15 +35,15 @@ const columns = [
     ),
     items: [
       "Tartalom és üzenetek hatékonysága",
-      "Konverzió optimalizáció (CTA, form, funnel)",
+      "Konverzió optimalizáció (hívásra ösztönzés, űrlapok)",
       "Versenytárs összehasonlítás",
       "Brand és bizalomépítés",
       "Növekedési stratégia",
     ],
   },
   {
-    title: "Üzleti Potenciál Elemzés",
-    count: "Teljes WebLelet csomagban",
+    title: "Üzleti Potenciál",
+    count: "12 szempont — Teljes WebLelet csomagban",
     color: "text-success",
     bgColor: "bg-success/8",
     borderAccent: "border-t-success",
@@ -53,10 +54,10 @@ const columns = [
       </svg>
     ),
     items: [
-      "Versenytárs összehasonlítás",
-      "Növekedési lehetőségek",
-      "Cselekvési terv prioritásokkal",
-      "Üzleti hatás értékelés (alacsony/közepes/magas)",
+      "Döntéshozók elérhetősége",
+      "Üzleti lehetőség értékelés",
+      "Versenykörnyezet elemzés",
+      "Megkeresési stratégia",
     ],
   },
 ];

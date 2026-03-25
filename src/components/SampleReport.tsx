@@ -2,11 +2,10 @@ import FadeIn from "./FadeIn";
 
 const features = [
   "Összesített pontszám 0-100 skálán",
-  "TOP 3 kritikus probléma kiemelve",
-  "Versenytárs összehasonlító táblázat",
-  "Konkrét cselekvési terv (heti/havi/negyedéves)",
-  "Üzleti hatás értékelés (alacsony/közepes/magas)",
-  "Minden magyarul, közérthetően",
+  "Minden probléma címkézve: tény, feltételezés vagy javaslat",
+  "Laikus összefoglaló az elején — nem kell hozzá informatikusnak lenni",
+  "Technikai melléklet amit a fejlesztődnek adhatsz tovább",
+  "Kész megoldások csatolva (kód, fájlok)",
 ];
 
 export default function SampleReport() {
@@ -22,7 +21,7 @@ export default function SampleReport() {
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
               Így néz ki egy WebLelet{" "}
-              <span className="text-highlight">riport</span>
+              <span className="text-highlight">diagnózis</span>
             </h2>
           </div>
         </FadeIn>

@@ -3,9 +3,9 @@ import FadeIn from "./FadeIn";
 const steps = [
   {
     num: "01",
-    title: "Megadod a weboldal címét",
+    title: "Megadod a weboldalad címét",
     description:
-      "Kitöltöd az űrlapot a weboldalad URL-jével. Ennyi. Nem kell jelszó, nem kell hozzáférés, nem kell semmit telepíteni.",
+      "Kitöltöd az űrlapot a URL-eddel. Nem kell jelszó, nem kell hozzáférés, nem kell telepíteni semmit.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -16,9 +16,9 @@ const steps = [
   },
   {
     num: "02",
-    title: "AI rendszer elemzi az oldalad 3 dimenzióban",
+    title: "Elemezzük 53 szempont alapján",
     description:
-      "A mesterséges intelligencia 3 dimenzióban vizsgálja a weboldaladat: Google és AI keresők láthatósága, marketing hatékonyság, és értékesítési potenciál.",
+      "A rendszer 3 dimenzióban vizsgálja a weboldaladat: hogyan látja a Google és az AI keresők (ChatGPT, Perplexity, Gemini), mennyire hatékony a marketing, és mekkora az üzleti potenciál.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -29,9 +29,9 @@ const steps = [
   },
   {
     num: "03",
-    title: "Megkapod a személyre szabott riportot",
+    title: "Megkapod a diagnózist kész javaslatokkal",
     description:
-      "48 órán belül emailben küldünk egy részletes PDF diagnózist — konkrét problémalistával, címkézett megállapításokkal és azonnali teendőkkel.",
+      "48 órán belül emailben küldünk egy részletes PDF-et — konkrét problémalistával, azonnali teendőkkel és kész megoldásokkal amit a fejlesztőd azonnal beilleszthet.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />

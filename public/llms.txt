@@ -1,38 +1,38 @@
-# WebLelet — AI-alapú weboldal audit szolgáltatás
+# WebLelet — AI-alapú weboldal diagnosztika
 
 ## Rólunk
-A WebLelet egy AI-alapú weboldal audit szolgáltatás magyar kisvállalkozásoknak. Egyetlen URL megadásával elemezzük a weboldalt 3 dimenzióban: GEO/SEO, Marketing és Üzleti Potenciál.
+A WebLelet weboldal diagnózist készít 53 szempont alapján, 3 dimenzióban: GEO/SEO, Marketing és Üzleti Potenciál. Kész javaslatokkal és megoldásokkal, nem csak hibalistával.
 
 ## Szolgáltatások
 
-### Ingyenes Gyorsdiagnózis (0 Ft)
+### Ingyenes Diagnózis (0 Ft)
 - 5 oldalas gyorsdiagnózis
 - GEO/SEO + Marketing pontszám
-- TOP 5 probléma címkézve (tény/feltételezés)
-- 3 azonnali teendő + kész megoldások (schema, llms.txt)
+- TOP 5 probléma címkézve (tény / feltételezés / javaslat)
+- 3 azonnali teendő (ki csinálja, mennyi idő, mennyibe kerül)
+- Kész megoldások (schema kód + llms.txt fájl)
 
-### Teljes WebLelet (49.900 Ft, egyszeri)
-- 18 oldalas részletes riport 3 blokkban
+### Teljes WebLelet (149.000 Ft, egyszeri)
+- 18 oldalas részletes riport + 30 perces konzultáció
 - GEO/SEO + Marketing + Üzleti Potenciál elemzés
 - Versenytárs összehasonlítás
-- Cselekvési terv üzleti hatás értékeléssel
-- Szolgáltatási csomag ajánlat (3 opció)
-- 30 napos tartalom naptár + email szekvenciák
-- 30 perc személyes/online konzultáció
+- 30-90 napos fejlesztési terv
+- Szolgáltatási ajánlat 3 opcióval
+- Email szekvenciák + tartalom naptár
 
-### Havi WebLelet Pro (69.900 Ft/hó)
+### Havi WebLelet (99.000 Ft/hó)
 - Minden a Teljes verzióból
-- Havi frissített audit
-- Google Business optimalizáció
+- Havi frissített diagnózis
+- Havonta összehasonlítás az előző állapottal
 - Havi 60 perc tanácsadás
 - Prioritásos email támogatás
 
 ## Célcsoport
-Magyar KKV-k: étterem, szerviz, szalon, fogászat, panzió, webshop — bármely vállalkozás amelyik szeretne több ügyfelet az internetről.
+Magyar vállalkozások: étterem, szerviz, szalon, fogászat, panzió, webshop — bármely cég amelyik szeretne több ügyfelet az internetről.
 
 ## Elérhetőség
 - Web: https://weblelet.hu
 - Email: info@weblelet.hu
 
 ## Technológia
-AI-támogatott elemzési rendszer, amely a weboldal nyilvánosan elérhető adatait vizsgálja — forráskód, tartalom, technikai felépítés, online jelenlét.
+A rendszer a weboldal forráskódját, a keresőmotorok és AI keresők viselkedését, valamint a nyilvánosan elérhető adatokat elemzi. 53 szempont, 3 dimenzió.

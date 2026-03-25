@@ -22,16 +22,17 @@ export default function Hero() {
                 className="font-heading font-extrabold leading-[1.08] tracking-[-0.03em] text-foreground"
                 style={{ fontSize: "clamp(2.25rem, 4.5vw + 0.5rem, 3.75rem)" }}
               >
-                Megtudod 48 órán belül,{" "}
+                Megmutatjuk{" "}
                 <span className="text-highlight">
-                  miért nem talál rád az ügyfeled
+                  mit nem lát a Google az oldaladról
                 </span>
               </h1>
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                AI-alapú weboldal audit magyar vállalkozásoknak. Megmutatjuk hol
-                veszíted el a vásárlóidat — és hogyan szerezheted vissza őket.
+                Weboldal diagnózis 53 szempont alapján — GEO, SEO, marketing és
+                üzleti potenciál elemzéssel. Kész javaslatokkal és megoldásokkal,
+                nem csak hibalistával.
               </p>
             </FadeIn>
             <FadeIn delay={0.24}>
@@ -40,11 +41,11 @@ export default function Hero() {
                   href="#kapcsolat"
                   className="inline-flex items-center cursor-pointer justify-center rounded-2xl bg-accent px-9 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow"
                 >
-                  Kérem az ingyenes auditot&ensp;&rarr;
+                  Kérem az ingyenes diagnózist&ensp;&rarr;
                 </a>
               </div>
               <p className="mt-4 text-sm text-foreground-muted">
-                Nulla kockázat. Nulla kötelezettség. 48 órán belül megkapod.
+                0 Ft, 0 kötelezettség. 48 órán belül megkapod.
               </p>
             </FadeIn>
 
@@ -67,7 +68,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <span>
-                  Ingyenes diagnózis — kötelezettség nélkül
+                  Kötelezettségmentes diagnózis — nézd meg mit találunk
                 </span>
               </div>
             </FadeIn>
@@ -98,7 +99,7 @@ export default function Hero() {
                     </div>
                     <div>
                       <div className="text-sm font-heading font-bold text-foreground">
-                        WebLelet Riport
+                        WebLelet Diagnózis
                       </div>
                       <div className="text-xs text-foreground-muted">
                         pelda-etterem.hu — 2026. március
@@ -139,7 +140,7 @@ export default function Hero() {
 
                 {/* Floating badge with pulse */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 rounded-2xl bg-primary text-white px-5 py-2.5 text-xs font-bold shadow-xl pulse-badge">
-                  AI elemzés 3 dimenzióban
+                  53 szempont, 3 dimenzió
                 </div>
               </div>
             </FadeIn>

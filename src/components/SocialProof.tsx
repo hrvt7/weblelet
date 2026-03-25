@@ -1,10 +1,10 @@
 import FadeIn from "./FadeIn";
 
 const stats = [
-  { value: "73%", label: "nincs schema markup", accent: "text-danger" },
-  { value: "38/100", label: "átlagos marketing pontszám", accent: "text-accent" },
-  { value: "0%", label: "használja az AI keresőoptimalizálást", accent: "text-danger" },
-  { value: "5 perc", label: "ennyi idő egy ingyenes diagnózis elkérése", accent: "text-primary" },
+  { value: "53", label: "szempont — GEO/SEO + Marketing + Üzleti potenciál", accent: "text-primary" },
+  { value: "48 óra", label: "alatt megkapod a személyre szabott diagnózist", accent: "text-accent" },
+  { value: "Kész kód", label: "nem csak hibákat keresünk — kész megoldásokat is kapsz", accent: "text-success" },
+  { value: "0 Ft", label: "az első diagnózis ingyenes, kötelezettség nélkül", accent: "text-primary" },
 ];
 
 export default function SocialProof() {
@@ -13,7 +13,7 @@ export default function SocialProof() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
           <p className="text-center text-sm font-medium text-foreground-muted mb-10 tracking-wide uppercase">
-            Ezeket a problémákat találtuk a vizsgált magyar cégeknél
+            Amit a diagnózis ad
           </p>
         </FadeIn>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">

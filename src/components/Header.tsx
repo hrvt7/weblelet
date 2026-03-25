@@ -65,7 +65,7 @@ export default function Header() {
               href="#kapcsolat"
               className="inline-flex items-center cursor-pointer rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-accent/20 hover:bg-accent-dark hover:shadow-md hover:shadow-accent/30 transition-all duration-200"
             >
-              Ingyenes audit kérése
+              Ingyenes diagnózis
             </a>
           </nav>
 
@@ -120,7 +120,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="block w-full text-center rounded-xl bg-accent px-5 py-3 mt-3 text-sm font-semibold text-white hover:bg-accent-dark transition-colors"
             >
-              Ingyenes audit kérése
+              Ingyenes diagnózis
             </a>
           </div>
         </div>

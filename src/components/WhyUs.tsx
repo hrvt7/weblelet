@@ -1,12 +1,12 @@
 import FadeIn from "./FadeIn";
 
 const rows = [
-  { feature: "Átfutási idő", agency: "5-10 munkanap", weblelet: "48 óra" },
-  { feature: "Ár", agency: "200.000 - 600.000 Ft", weblelet: "49.900 Ft" },
-  { feature: "AI keresők elemzése", agency: false, weblelet: true },
-  { feature: "Személyre szabott", agency: true, weblelet: true },
-  { feature: "Cselekvési terv", agency: "Általános javaslat", weblelet: "Konkrét lépések üzleti hatás értékeléssel" },
-  { feature: "Versenytárs elemzés", agency: "Ritkán", weblelet: true },
+  { feature: "Átfutási idő", agency: "2-6 hét", weblelet: "48 óra" },
+  { feature: "Ár", agency: "200.000 - 2.000.000 Ft", weblelet: "Ingyenes diagnózis / 149.000 Ft teljes" },
+  { feature: "AI keresők elemzése (ChatGPT, Perplexity)", agency: false, weblelet: true },
+  { feature: "Kész megoldások (kód, fájlok)", agency: "Nem — csak hibalista", weblelet: "Igen — azonnal használható" },
+  { feature: "Érthetőség", agency: "Technikai szaknyelv", weblelet: "Laikus összefoglaló + technikai melléklet" },
+  { feature: "Mit csinálsz utána", agency: "\"Keress egy fejlesztőt\"", weblelet: "\"Add oda a fejlesztődnek — le van írva benne\"" },
 ];
 
 function Check() {
@@ -42,8 +42,8 @@ export default function WhyUs() {
               Összehasonlítás
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Miért jobb ez mint egy{" "}
-              <span className="text-highlight">hagyományos ügynökség?</span>
+              Miért más ez mint egy{" "}
+              <span className="text-highlight">hagyományos SEO audit?</span>
             </h2>
           </div>
         </FadeIn>
@@ -62,7 +62,7 @@ export default function WhyUs() {
                     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                   </svg>
                 </div>
-                <h3 className="font-heading text-lg font-bold text-foreground-muted">Marketing ügynökség</h3>
+                <h3 className="font-heading text-lg font-bold text-foreground-muted">Hagyományos SEO audit</h3>
               </div>
               <div className="space-y-4">
                 {rows.map((row) => (

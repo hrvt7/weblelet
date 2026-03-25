@@ -49,7 +49,7 @@ export default function LeadForm() {
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
               Kérd a weboldalad ingyenes{" "}
-              <span className="text-highlight">leletét</span>
+              <span className="text-highlight">diagnózisát</span>
             </h2>
             <p className="mt-4 text-foreground-muted text-lg">
               48 órán belül emailben küldünk egy személyre szabott elemzést.
@@ -69,7 +69,7 @@ export default function LeadForm() {
                 Köszönjük!
               </h3>
               <p className="text-foreground-muted text-lg">
-                48 órán belül küldjük a leletet az email címedre.
+                48 órán belül küldjük a diagnózist az email címedre.
               </p>
             </div>
           ) : (
@@ -119,35 +119,30 @@ export default function LeadForm() {
                 />
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
-                    Telefonszám <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className={inputClass}
-                    placeholder="+36 30 123 4567"
-                  />
-                </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-semibold text-foreground mb-2">
+                  Telefonszám <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className={inputClass}
+                  placeholder="+36 30 123 4567"
+                />
+              </div>
 
-                <div>
-                  <label htmlFor="time" className="block text-sm font-semibold text-foreground mb-2">
-                    Időpont preferencia <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
-                  </label>
-                  <select
-                    id="time"
-                    name="preferred_time"
-                    className={inputClass}
-                  >
-                    <option value="">Válassz...</option>
-                    <option value="delelott">Délelőtt</option>
-                    <option value="delutan">Délután</option>
-                    <option value="barmikor">Bármikor</option>
-                  </select>
-                </div>
+              <div>
+                <label htmlFor="notes" className="block text-sm font-semibold text-foreground mb-2">
+                  Megjegyzés <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
+                </label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows={3}
+                  className={inputClass}
+                  placeholder="pl. mi érdekli leginkább, van-e webfejlesztője"
+                />
               </div>
 
               <div className="pt-2">
@@ -156,7 +151,7 @@ export default function LeadForm() {
                   disabled={loading}
                   className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
                 >
-                  {loading ? "Küldés..." : "Kérem az ingyenes auditot →"}
+                  {loading ? "Küldés..." : "Kérem az ingyenes diagnózist →"}
                 </button>
               </div>
 
