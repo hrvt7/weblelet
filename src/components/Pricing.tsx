@@ -31,22 +31,7 @@ const plans = [
     ],
     cta: "Megrendelem →",
     featured: true,
-  },
-  {
-    name: "Havi WebLelet",
-    price: "99.000 Ft",
-    period: "/hó",
-    description: "Folyamatos monitoring + havi friss diagnózis + tanácsadás",
-    features: [
-      "Minden a Teljes verzióból",
-      "Havi frissített diagnózis",
-      "Havonta összehasonlítás az előző állapottal",
-      "Havi 60 perc tanácsadás",
-      "Prioritásos email támogatás",
-    ],
-    cta: "Érdekel →",
-    featured: false,
-  },
+  }
 ];
 
 export default function Pricing() {
@@ -65,7 +50,7 @@ export default function Pricing() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-stretch max-w-5xl mx-auto">
           {plans.map((plan, i) => (
             <FadeIn key={plan.name} delay={i * 0.12}>
               <div

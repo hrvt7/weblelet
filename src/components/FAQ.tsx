@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Mennyivel jobb ez mint egy ingyenes online SEO checker?",
-    a: "Az ingyenes checkerek (pl. HubSpot Website Grader) 10-15 technikai szempontot vizsgálnak. Mi 53 szempontot nézünk 3 dimenzióban, és nem csak hibákat keresünk — kész megoldásokat is adunk (kódot, fájlokat) amit a fejlesztőd azonnal használhat.",
+    a: "Az ingyenes checkerek 10-15 technikai szempontot vizsgálnak. Mi 53 szempontot nézünk 3 dimenzióban, és nem csak hibákat keresünk — kész megoldásokat is adunk (kódot, fájlokat) amit a fejlesztőd azonnal használhat.",
   },
   {
     q: "Mi történik az ingyenes diagnózis után?",

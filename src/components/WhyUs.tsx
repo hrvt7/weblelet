@@ -2,11 +2,11 @@ import FadeIn from "./FadeIn";
 
 const rows = [
   { feature: "Átfutási idő", agency: "2-6 hét", weblelet: "48 óra" },
-  { feature: "Ár", agency: "200.000 - 2.000.000 Ft", weblelet: "Ingyenes diagnózis / 149.000 Ft teljes" },
-  { feature: "AI keresők elemzése (ChatGPT, Perplexity)", agency: false, weblelet: true },
-  { feature: "Kész megoldások (kód, fájlok)", agency: "Nem — csak hibalista", weblelet: "Igen — azonnal használható" },
-  { feature: "Érthetőség", agency: "Technikai szaknyelv", weblelet: "Laikus összefoglaló + technikai melléklet" },
-  { feature: "Mit csinálsz utána", agency: "\"Keress egy fejlesztőt\"", weblelet: "\"Add oda a fejlesztődnek — le van írva benne\"" },
+  { feature: "Ár", agency: "200K - 2M Ft", weblelet: "0 Ft / 149K Ft" },
+  { feature: "AI keresők elemzése", agency: false, weblelet: true },
+  { feature: "Kész kód és fájlok", agency: false, weblelet: true },
+  { feature: "Laikus összefoglaló", agency: false, weblelet: true },
+  { feature: "Fejlesztőnek átadható melléklet", agency: "Ritkán", weblelet: true },
 ];
 
 function Check() {

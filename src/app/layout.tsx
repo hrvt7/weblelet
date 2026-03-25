@@ -136,13 +136,7 @@ export default function RootLayout({
                   priceCurrency: "HUF",
                   description: "18 oldalas részletes riport + 30 perces konzultáció",
                 },
-                {
-                  "@type": "Offer",
-                  name: "Havi WebLelet",
-                  price: "99000",
-                  priceCurrency: "HUF",
-                  description: "Folyamatos monitoring + havi friss diagnózis + tanácsadás",
-                },
+
               ],
             }),
           }}
