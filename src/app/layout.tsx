@@ -64,6 +64,13 @@ export default function RootLayout({
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
       <head>
         <meta name="google-site-verification" content="3AxdJpMstdvN16odkidb_os6gx1yOLB6683iJC_VZWc" />
+        {/* Google Analytics 4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z0X4D2K2J" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-0Z0X4D2K2J");`,
+          }}
+        />
         {/* Organization JSON-LD */}
         <script
           type="application/ld+json"
