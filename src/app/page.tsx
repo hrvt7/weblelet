@@ -41,7 +41,7 @@ export default function Home() {
                 name: "Mi az a GEO és miért fontos?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések 40%-a már AI-ból indul. Ha ott nem vagy, láthatatlan vagy.",
+                  text: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések jelentős része AI keresőkből indul. Ha ott nem jelensz meg, láthatatlan vagy a felhasználók számára.",
                 },
               },
               {
@@ -49,7 +49,7 @@ export default function Home() {
                 name: "Miben más ez mint egy SEMrush vagy Ahrefs?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Azok a toolok technikai SEO-ra fókuszálnak. Mi három dimenzióban elemzünk: GEO/SEO + Marketing + Üzleti Potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk és minden megállapítás címkézve van.",
+                  text: "Azok a toolok technikai SEO-ra fókuszálnak. Mi négy dimenzióban elemzünk: keresőoptimalizálás, marketing, jogi megfelelőség és üzleti potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk és minden megállapítás jelölve van.",
                 },
               },
               {
@@ -62,10 +62,10 @@ export default function Home() {
               },
               {
                 "@type": "Question",
-                name: "A compliance audit kiterjed a magyar jogra is?",
+                name: "Az elemzés kiterjed a magyar jogszabályokra is?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), ADA/WCAG akadálymentesség (10 pont), PCI-DSS fizetési biztonság (6 pont) és CAN-SPAM email compliance (5 pont). Összesen 43 szempont.",
+                  text: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR adatvédelem (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), akadálymentesség (10 pont), fizetési biztonság (6 pont) és e-mail szabályozás (5 pont). Összesen 43 szempont.",
                 },
               },
               {

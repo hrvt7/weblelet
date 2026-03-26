@@ -3,9 +3,9 @@ import FadeIn from "./FadeIn";
 const steps = [
   {
     num: "01",
-    title: "Egy URL az input",
+    title: "Egyetlen link elég",
     description:
-      "A rendszer egyetlen URL-ből dolgozik. Nem kell jelszó, hozzáférés, vagy API kulcs. Ha van partner adatlap is (forgalom, célok, büdzsé), azzal a mélyelemzés is lefut.",
+      "A rendszer egyetlen webcímből dolgozik. Nem kell jelszó, nem kell hozzáférés. Ha van kitöltött adatlap is (forgalom, célok, költségkeret), azzal részletesebb elemzés készül.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -16,9 +16,9 @@ const steps = [
   },
   {
     num: "02",
-    title: "13 agent elemez párhuzamosan",
+    title: "Párhuzamos elemzés",
     description:
-      "5 GEO/SEO agent a keresőláthatóságot vizsgálja — beleértve 5 AI platformot (ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot). 2 Marketing agent a tartalmat és konverziót elemzi. A Compliance modul 43 pontban ellenőrzi a GDPR-t, a magyar jogi megfelelőséget és az akadálymentességet.",
+      "5 keresőoptimalizálási modul vizsgálja a Google és az AI keresők láthatóságát — külön a ChatGPT-t, Perplexity-t, Gemini-t, Google AI-t és Bing Copilot-ot. 2 marketing modul a tartalmat és a konverziót elemzi. A jogi modul 43 pontban ellenőrzi a GDPR megfelelőséget, a magyar jogszabályokat és az akadálymentességet.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -29,9 +29,9 @@ const steps = [
   },
   {
     num: "03",
-    title: "Kész riport + kész megoldások",
+    title: "Kész riport, kész megoldások",
     description:
-      "Az output egy 18 oldalas PDF riport 3 blokkban: Audit → Szolgáltatási Ajánlat → Operatív Mellékletek. Mellé jön kész schema JSON-LD kód és llms.txt fájl amit a fejlesztő azonnal beilleszthet. Minden megállapítás címkézve: 🔴 tény, 🟡 feltételezés, 🟢 javaslat.",
+      "Az eredmény egy 15+ oldalas PDF riport három részben: elemzés, javaslatok és technikai mellékletek. A riporthoz kész beilleszthető kódok tartoznak (strukturált adatok, llms.txt) amiket a fejlesztő azonnal használhat. Minden megállapítás jelölve: 🔴 tény, 🟡 feltételezés, 🟢 javaslat.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />

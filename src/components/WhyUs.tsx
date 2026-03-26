@@ -1,12 +1,12 @@
 import FadeIn from "./FadeIn";
 
 const rows = [
-  { feature: "Átfutási idő", agency: "2-4 hét", weblelet: "15 perc" },
-  { feature: "Szempontok száma", agency: "10-20", weblelet: "53" },
+  { feature: "Átfutási idő", agency: "2–4 hét", weblelet: "~15 perc" },
+  { feature: "Vizsgált szempontok", agency: "10–20", weblelet: "96" },
   { feature: "AI keresők elemzése", agency: false, weblelet: true },
-  { feature: "Kész kód és fájlok", agency: false, weblelet: true },
-  { feature: "Finding címkézés", agency: false, weblelet: true },
-  { feature: "White-label", agency: false, weblelet: true },
+  { feature: "Jogi megfelelőség ellenőrzés", agency: false, weblelet: true },
+  { feature: "Kész beilleszthető kódok", agency: false, weblelet: true },
+  { feature: "White-label (saját márka)", agency: false, weblelet: true },
 ];
 
 function Check() {

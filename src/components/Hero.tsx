@@ -30,9 +30,9 @@ export default function Hero() {
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                13 AI agent elemzi párhuzamosan a weboldalakat — GEO, SEO,
-                marketing, jogi compliance és üzleti potenciál dimenzióban. A
-                rendszer 15 perc alatt produkálja amit egy csapat hetekig csinálna.
+                Egyetlen URL-ből komplett elemzés: keresőoptimalizálás, AI
+                keresők, marketing, jogi megfelelőség — kész megoldásokkal, nem
+                csak hibalistával.
               </p>
             </FadeIn>
             <FadeIn delay={0.24}>
@@ -92,8 +92,9 @@ export default function Hero() {
                   {/* Score breakdown */}
                   <div className="space-y-3.5">
                     {[
-                      { label: "GEO/SEO Pontszám", value: "24/100", color: "text-danger", bar: "bg-danger", pct: 24 },
-                      { label: "Marketing Pontszám", value: "41/100", color: "text-accent", bar: "bg-accent", pct: 41 },
+                      { label: "GEO/SEO", value: "24/100", color: "text-danger", bar: "bg-danger", pct: 24 },
+                      { label: "Marketing", value: "41/100", color: "text-accent", bar: "bg-accent", pct: 41 },
+                      { label: "Megfelelőség", value: "35/100", color: "text-purple-600", bar: "bg-purple-600", pct: 35 },
                     ].map((item) => (
                       <div key={item.label}>
                         <div className="flex items-center justify-between mb-1.5">
@@ -117,7 +118,7 @@ export default function Hero() {
 
                 {/* Floating badge with pulse */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 rounded-2xl bg-primary text-white px-5 py-2.5 text-xs font-bold shadow-xl pulse-badge">
-                  96 szempont, 4 dimenzió
+                  96 szempont · 4 dimenzió · 5 jogi keretrendszer
                 </div>
               </div>
             </FadeIn>

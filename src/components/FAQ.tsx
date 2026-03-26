@@ -14,19 +14,19 @@ const faqs = [
   },
   {
     q: "Mi az a GEO és miért fontos?",
-    a: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések 40%-a már AI-ból indul. Ha ott nem vagy, láthatatlan vagy.",
+    a: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések jelentős része AI keresőkből indul. Ha ott nem jelensz meg, láthatatlan vagy a felhasználók számára.",
   },
   {
     q: "Miben más ez mint egy SEMrush vagy Ahrefs?",
-    a: "Azok a toolok technikai SEO-ra fókuszálnak. Mi három dimenzióban elemzünk: GEO/SEO + Marketing + Üzleti Potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk (schema kód, llms.txt) és minden megállapítás címkézve van hogy tény, feltételezés vagy javaslat.",
+    a: "Azok a toolok technikai SEO-ra fókuszálnak. Mi négy dimenzióban elemzünk: keresőoptimalizálás, marketing, jogi megfelelőség és üzleti potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk (strukturált adat kód, llms.txt) és minden megállapítás jelölve van: tény, feltételezés vagy javaslat.",
   },
   {
     q: "Mennyibe kerül?",
     a: "Az árazás az együttműködés formájától függ — egyedi projekt, havi megbízás, vagy rendszeres audit csomag. Az első demo audit ingyenes. Írj a részletekért.",
   },
   {
-    q: "A compliance audit kiterjed a magyar jogra is?",
-    a: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), ADA/WCAG akadálymentesség (10 pont), PCI-DSS fizetési biztonság (6 pont) és CAN-SPAM email compliance (5 pont). Összesen 43 szempont — és minden hiányosság mellé konkrét javítási javaslatot ad.",
+    q: "Az elemzés kiterjed a magyar jogszabályokra is?",
+    a: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR adatvédelem (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), akadálymentesség (10 pont), fizetési biztonság (6 pont) és e-mail szabályozás (5 pont). Összesen 43 szempont — és minden hiányosság mellé konkrét javítási javaslatot ad.",
   },
   {
     q: "Használhatom az ügyfeleimnek is?",

@@ -1,12 +1,12 @@
 import FadeIn from "./FadeIn";
 
 const features = [
-  "18 oldalas PDF riport, 3 blokkban (Audit → Ajánlat → Operatív)",
-  "Laikus összefoglaló az elején — informatikus nélkül is érthető",
+  "15+ oldalas PDF riport, 3 részben: Elemzés → Javaslatok → Mellékletek",
+  "Közérthető összefoglaló az elején — informatikus nélkül is érthető",
   "Technikai melléklet amit a fejlesztőnek adhatsz",
-  "Finding címkézés: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
-  "Kész megoldások csatolva (schema kód, llms.txt)",
-  "Üzleti hatás értékelés (🟢 alacsony / 🟡 közepes / 🔴 magas)",
+  "Megállapítások jelölve: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
+  "Kész megoldások csatolva (strukturált adatok, llms.txt)",
+  "Jogi megfelelőségi pontszám (A–F) és GDPR ellenőrzés",
   "White-label: a te logód, a te céged neve, a te színeid",
 ];
 

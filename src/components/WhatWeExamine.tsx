@@ -2,7 +2,7 @@ import FadeIn from "./FadeIn";
 
 const columns = [
   {
-    title: "GEO/SEO Elemzés",
+    title: "Keresőoptimalizálás",
     count: "23 szempont",
     color: "text-primary",
     bgColor: "bg-primary/8",
@@ -14,16 +14,16 @@ const columns = [
       </svg>
     ),
     items: [
-      "AI keresőkben való láthatóság (5 platform: ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot)",
-      "Google keresőoptimalizálás és technikai SEO",
-      "Schema markup és strukturált adatok elemzése",
-      "AI Citability scoring (mennyire idézhető a tartalom)",
-      "Brand Authority mérés (online jelenlét erőssége)",
-      "Output: kész schema JSON-LD kód + llms.txt fájl",
+      "Láthatóság az AI keresőkben (ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot — külön-külön)",
+      "Hagyományos Google keresőoptimalizálás és technikai SEO",
+      "Strukturált adatok (schema markup) elemzése",
+      "AI idézhetőségi pontszám — mennyire hivatkoznak az oldalra az AI válaszokban",
+      "Online jelenlét erőssége (márkaismertség mérés)",
+      "Kimenet: kész strukturált adat kód + llms.txt fájl",
     ],
   },
   {
-    title: "Marketing Elemzés",
+    title: "Marketing elemzés",
     count: "18 szempont",
     color: "text-accent",
     bgColor: "bg-accent/8",
@@ -34,16 +34,16 @@ const columns = [
       </svg>
     ),
     items: [
-      "Tartalom minőség és E-E-A-T értékelés",
-      "Konverzió optimalizáció elemzés",
+      "Tartalom minőség és szakértői hitelesség (E-E-A-T)",
+      "Konverzió optimalizálás — hány látogató lesz ügyfél",
       "Versenytárs összehasonlítás",
-      "Brand és bizalomépítés mérés",
-      "Output: 30 napos tartalom naptár + email szekvenciák",
+      "Márkaépítés és bizalmi elemek értékelése",
+      "Kimenet: 30 napos tartalom naptár és e-mail szekvenciák",
     ],
   },
   {
-    title: "Jogi Compliance",
-    count: "43 szempont — 5 framework",
+    title: "Jogi megfelelőség",
+    count: "43 szempont · 5 keretrendszer",
     color: "text-purple-600",
     bgColor: "bg-purple-600/8",
     borderAccent: "border-t-purple-600",
@@ -54,17 +54,17 @@ const columns = [
       </svg>
     ),
     items: [
-      "GDPR és adatvédelem (14 pont: cookie consent, tájékoztató, érintetti jogok)",
-      "Magyar jogi követelmények (8 pont: impresszum, ÁSZF, NAIH, Eker. tv.)",
-      "Akadálymentesség — ADA/WCAG (10 pont: alt szöveg, kontraszt, navigáció)",
-      "Fizetési biztonság — PCI-DSS (6 pont: HTTPS, hosted payment)",
-      "Email compliance — CAN-SPAM (5 pont: leiratkozás, consent)",
-      "Output: Compliance Score (A-F osztályzat) + framework-riport",
+      "GDPR és adatvédelem (14 pont: sütitájékoztató, adatkezelési szabályzat, érintetti jogok)",
+      "Magyar jogszabályi követelmények (8 pont: impresszum, ÁSZF, NAIH, e-kereskedelmi törvény)",
+      "Akadálymentesség (10 pont: képek alternatív szövege, kontraszt, billentyűzetes kezelés)",
+      "Fizetési biztonság (6 pont: titkosított kapcsolat, biztonságos fizetési felület)",
+      "E-mail szabályozás (5 pont: leiratkozás, hozzájárulás kezelése)",
+      "Kimenet: Megfelelőségi pontszám (A–F) és részletes keretrendszer-riport",
     ],
   },
   {
     title: "Üzleti Potenciál",
-    count: "12 szempont — Teljes WebLelet csomagban",
+    count: "12 szempont — a teljes WebLelet csomagban",
     color: "text-success",
     bgColor: "bg-success/8",
     borderAccent: "border-t-success",
@@ -75,10 +75,10 @@ const columns = [
       </svg>
     ),
     items: [
-      "Döntéshozók és kapcsolati pontok feltérképezése",
-      "BANT lead scoring",
-      "Outreach stratégia és megkeresési terv",
-      "Output: 3 szintű szolgáltatási csomag ajánlat",
+      "Döntéshozók és kapcsolattartók azonosítása",
+      "Ügyfélminősítés (BANT módszer)",
+      "Megkeresési stratégia és ajánlatkészítés",
+      "Kimenet: Háromszintű szolgáltatási csomag ajánlat",
     ],
   },
 ];
