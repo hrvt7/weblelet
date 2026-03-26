@@ -18,7 +18,7 @@ const steps = [
     num: "02",
     title: "13 agent elemez párhuzamosan",
     description:
-      "5 GEO/SEO agent a keresőláthatóságot vizsgálja — beleértve 5 AI platformot külön-külön (ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot). 4 Marketing agent a tartalmat, konverziót, versenytársakat elemzi. 4 Sales agent a döntéshozókat és az üzleti lehetőségeket térképezi fel.",
+      "5 GEO/SEO agent a keresőláthatóságot vizsgálja — beleértve 5 AI platformot (ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot). 2 Marketing agent a tartalmat és konverziót elemzi. A Compliance modul 43 pontban ellenőrzi a GDPR-t, a magyar jogi megfelelőséget és az akadálymentességet.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="2" />

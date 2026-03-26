@@ -62,6 +62,14 @@ export default function Home() {
               },
               {
                 "@type": "Question",
+                name: "A compliance audit kiterjed a magyar jogra is?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), ADA/WCAG akadálymentesség (10 pont), PCI-DSS fizetési biztonság (6 pont) és CAN-SPAM email compliance (5 pont). Összesen 43 szempont.",
+                },
+              },
+              {
+                "@type": "Question",
                 name: "Használhatom az ügyfeleimnek is?",
                 acceptedAnswer: {
                   "@type": "Answer",

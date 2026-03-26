@@ -31,8 +31,8 @@ export default function Hero() {
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
                 13 AI agent elemzi párhuzamosan a weboldalakat — GEO, SEO,
-                marketing és üzleti potenciál dimenzióban. A rendszer 15 perc
-                alatt produkálja amit egy csapat hetekig csinálna.
+                marketing, jogi compliance és üzleti potenciál dimenzióban. A
+                rendszer 15 perc alatt produkálja amit egy csapat hetekig csinálna.
               </p>
             </FadeIn>
             <FadeIn delay={0.24}>
@@ -117,7 +117,7 @@ export default function Hero() {
 
                 {/* Floating badge with pulse */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 rounded-2xl bg-primary text-white px-5 py-2.5 text-xs font-bold shadow-xl pulse-badge">
-                  53 szempont, 3 dimenzió
+                  96 szempont, 4 dimenzió
                 </div>
               </div>
             </FadeIn>

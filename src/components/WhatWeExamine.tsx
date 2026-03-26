@@ -42,6 +42,27 @@ const columns = [
     ],
   },
   {
+    title: "Jogi Compliance",
+    count: "43 szempont — 5 framework",
+    color: "text-purple-600",
+    bgColor: "bg-purple-600/8",
+    borderAccent: "border-t-purple-600",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <polyline points="9 12 11 14 15 10" />
+      </svg>
+    ),
+    items: [
+      "GDPR és adatvédelem (14 pont: cookie consent, tájékoztató, érintetti jogok)",
+      "Magyar jogi követelmények (8 pont: impresszum, ÁSZF, NAIH, Eker. tv.)",
+      "Akadálymentesség — ADA/WCAG (10 pont: alt szöveg, kontraszt, navigáció)",
+      "Fizetési biztonság — PCI-DSS (6 pont: HTTPS, hosted payment)",
+      "Email compliance — CAN-SPAM (5 pont: leiratkozás, consent)",
+      "Output: Compliance Score (A-F osztályzat) + framework-riport",
+    ],
+  },
+  {
     title: "Üzleti Potenciál",
     count: "12 szempont — Teljes WebLelet csomagban",
     color: "text-success",
@@ -77,7 +98,7 @@ export default function WhatWeExamine() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
           {columns.map((col, i) => (
             <FadeIn key={col.title} delay={i * 0.15}>
               <div className={`rounded-2xl border border-border border-t-[3px] ${col.borderAccent} bg-surface-card p-8 lg:p-9 h-full card-hover`}>

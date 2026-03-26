@@ -25,6 +25,10 @@ const faqs = [
     a: "Az árazás az együttműködés formájától függ — egyedi projekt, havi megbízás, vagy rendszeres audit csomag. Az első demo audit ingyenes. Írj a részletekért.",
   },
   {
+    q: "A compliance audit kiterjed a magyar jogra is?",
+    a: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), ADA/WCAG akadálymentesség (10 pont), PCI-DSS fizetési biztonság (6 pont) és CAN-SPAM email compliance (5 pont). Összesen 43 szempont — és minden hiányosság mellé konkrét javítási javaslatot ad.",
+  },
+  {
     q: "Használhatom az ügyfeleimnek is?",
     a: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül. Az ügyfeled a te termékedet látja.",
   },
