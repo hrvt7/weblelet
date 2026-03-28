@@ -173,7 +173,7 @@ export default function Hero() {
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                Valódi Perplexity mérés, 14 AI crawler elemzés, 6-dimenziós GEO score. 2 perc — és megtudod, megtalál-e a ChatGPT.
+                Valódi Perplexity mérés, 14 AI robot ellenőrzés, 6-dimenziós GEO score. 2 perc — és megtudod, megtalál-e a ChatGPT.
               </p>
             </FadeIn>
 
@@ -206,7 +206,7 @@ export default function Hero() {
                       </button>
                     </div>
                     <p className="mt-3 text-sm text-foreground-muted">
-                      Komplett elemzés 30 mp alatt · SEO + AI + Marketing + Jogi
+                      GEO Audit 2 perc alatt · ChatGPT · Perplexity · Google AI · Gemini
                     </p>
                   </form>
                 )}
@@ -259,8 +259,8 @@ export default function Hero() {
                       </div>
                     )}
 
-                    {/* Score preview (once analyzing starts) */}
-                    {(scores.geo !== null || isDone) && (
+                    {/* Score preview during analysis (compact) */}
+                    {!isDone && scores.geo !== null && (
                       <div className="mt-5 grid grid-cols-3 gap-3 pt-4 border-t border-border">
                         {[
                           { label: "GEO Score", value: scores.geo, color: "#2563eb" },
@@ -278,30 +278,91 @@ export default function Hero() {
                       </div>
                     )}
 
-                    {/* Download button */}
-                    {isDone && pdfUrl && (
-                      <a
-                        href={pdfUrl}
-                        download
-                        className="mt-5 flex items-center justify-center gap-2.5 w-full rounded-2xl bg-accent px-6 py-4 text-[1rem] font-bold text-white shadow-xl shadow-accent/25 hover:opacity-90 transition-opacity"
-                      >
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                          <polyline points="7 10 12 15 17 10" />
-                          <line x1="12" y1="15" x2="12" y2="3" />
-                        </svg>
-                        PDF Riport Letöltése
-                      </a>
-                    )}
+                    {/* Full visual results panel when done */}
+                    {isDone && scores.geo !== null && (() => {
+                      const g = scores.geo ?? 0;
+                      const geoColor = g >= 70 ? "#10b981" : g >= 45 ? "#f59e0b" : "#ef4444";
+                      const geoLabel = g >= 70 ? "Jó GEO láthatóság" : g >= 45 ? "Fejlesztendő" : "Gyenge láthatóság";
+                      const geoBg = g >= 70 ? "#d1fae5" : g >= 45 ? "#fef3c7" : "#fee2e2";
+                      return (
+                        <div className="mt-5 pt-5 border-t border-border">
+                          {/* Header */}
+                          <div className="flex items-center justify-between mb-4">
+                            <span className="text-sm font-semibold text-green-600 flex items-center gap-1.5">
+                              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
+                              GEO Audit kész
+                            </span>
+                            <span className="text-xs text-foreground-muted truncate max-w-[150px]">
+                              {url.replace(/^https?:\/\//, "").split("/")[0]}
+                            </span>
+                          </div>
 
-                    {/* Done but no PDF yet (generating) */}
-                    {isDone && !pdfUrl && (
-                      <p className="mt-4 text-sm text-center text-foreground-muted">
-                        PDF generálás befejezés alatt...
-                      </p>
-                    )}
+                          {/* Big GEO score */}
+                          <div className="text-center mb-5">
+                            <div className="inline-flex flex-col items-center">
+                              <span
+                                className="font-heading font-extrabold leading-none"
+                                style={{ fontSize: "4rem", color: geoColor }}
+                              >
+                                {g}
+                              </span>
+                              <span className="text-xs text-foreground-muted mt-1">/100 pont · GEO Score</span>
+                              <span
+                                className="mt-2 inline-block text-xs font-bold px-3 py-1 rounded-full"
+                                style={{ background: geoBg, color: geoColor }}
+                              >
+                                {geoLabel}
+                              </span>
+                            </div>
+                          </div>
 
-                    {/* Error */}
+                          {/* Score bars */}
+                          <div className="space-y-3 mb-5">
+                            {[
+                              { label: "AI Citability", value: scores.marketing, color: "#10b981" },
+                              { label: "Brand Authority", value: scores.compliance, color: "#f59e0b" },
+                            ].map((item) => (
+                              <div key={item.label}>
+                                <div className="flex justify-between text-xs mb-1.5">
+                                  <span className="text-foreground-secondary font-medium">{item.label}</span>
+                                  <span className="font-bold" style={{ color: item.color }}>
+                                    {item.value ?? "–"}/100
+                                  </span>
+                                </div>
+                                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
+                                  <div
+                                    className="h-full rounded-full transition-all duration-1000"
+                                    style={{ width: `${item.value ?? 0}%`, background: item.color }}
+                                  />
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+
+                          {/* PDF download */}
+                          {pdfUrl ? (
+                            <a
+                              href={pdfUrl}
+                              download
+                              className="flex items-center justify-center gap-2.5 w-full rounded-2xl bg-primary px-6 py-3.5 text-[0.95rem] font-bold text-white shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity"
+                            >
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                              </svg>
+                              Részletes GEO Riport letöltése
+                            </a>
+                          ) : (
+                            <div className="flex items-center justify-center gap-2 py-3 text-sm text-foreground-muted">
+                              <svg className="animate-spin" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+                              PDF generálás folyamatban...
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })()}
+                                        {/* Error */}
                     {isFailed && error && (
                       <p className="mt-3 text-sm text-red-500">{error}</p>
                     )}
@@ -322,7 +383,7 @@ export default function Hero() {
             {status === "idle" && (
               <FadeIn delay={0.36}>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  {["96 szempont", "4 dimenzió", "5 jogi keretrendszer"].map((badge) => (
+                  {["14 AI robot ellenőrzés", "6 GEO dimenzió", "Valódi Perplexity mérés"].map((badge) => (
                     <span key={badge} className="inline-flex items-center rounded-full bg-primary/6 border border-primary/10 px-4 py-1.5 text-xs font-semibold text-primary">
                       {badge}
                     </span>

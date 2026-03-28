@@ -8,7 +8,7 @@ const plans = [
     highlighted: false,
     features: [
       "Komplett GEO diagnózis PDF riportban",
-      "6 GEO dimenzió, 14 AI crawler elemzés",
+      "6 GEO dimenzió, 14 AI robot ellenőrzés",
       "Perplexity valós láthatóság mérés",
       "AI Citability + Brand Authority score",
       "Priorizált GEO hibák és azonnali teendők",

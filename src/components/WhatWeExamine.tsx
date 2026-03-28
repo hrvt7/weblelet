@@ -13,7 +13,7 @@ const columns = [
       </svg>
     ),
     items: [
-      "14 AI crawler hozzáférés: GPTBot, PerplexityBot, ClaudeBot, Google-Extended és még 10 más",
+      "14 AI robot hozzáférés: GPTBot, PerplexityBot, ClaudeBot, Google-Extended és még 10 más",
       "llms.txt & llms-full.txt jelenlét — az AI keresők útmutatója az oldaladhoz",
       "Passzus minőség: optimális 134–167 szavas szakaszok a könnyű AI idézéshez",
       "FAQ és strukturált kérdés-válasz tartalom — amit az AI szeret idézni",
