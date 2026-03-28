@@ -2,28 +2,28 @@ import FadeIn from "./FadeIn";
 
 const plans = [
   {
-    name: "AUDIT",
+    name: "GEO ALAP",
     price: "0,99 €",
     priceNote: "egyszeri díj",
     highlighted: false,
     features: [
-      "Komplett diagnózis PDF riportban",
-      "96 szempont, 4 dimenzió",
-      "SEO + AI keresők + Marketing + Jogi",
-      "43 compliance szempont (5 keretrendszer)",
-      "Priorizált hibák és azonnali teendők",
+      "Komplett GEO diagnózis PDF riportban",
+      "6 GEO dimenzió, 14 AI crawler elemzés",
+      "Perplexity valós láthatóság mérés",
+      "AI Citability + Brand Authority score",
+      "Priorizált GEO hibák és azonnali teendők",
       "Megállapítások jelölve: TÉNY / BECSLÉS / JAVASLAT",
     ],
-    cta: "Audit indítása",
+    cta: "GEO Audit indítása",
     ctaHref: "#kapcsolat",
   },
   {
-    name: "PRO",
+    name: "GEO PRO",
     price: "Személyre szabott",
     priceNote: "a weboldalad alapján",
     highlighted: true,
     features: [
-      "Minden ami az AUDIT csomagban",
+      "Minden ami a GEO ALAP csomagban",
       "Kész Schema Markup (JSON-LD) kód — csak be kell illeszteni",
       "llms.txt fájl generálás — AI keresőkre optimalizálva",
       "Egyedi stratégia és implementációs terv",

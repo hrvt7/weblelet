@@ -2,79 +2,118 @@ import FadeIn from "./FadeIn";
 
 const columns = [
   {
-    title: "Keresőoptimalizálás (SEO)",
-    count: "23 szempont",
+    title: "AI Idézhetőség & Láthatóság",
+    count: "25% súlyozás",
     color: "text-primary",
     bgColor: "bg-primary/8",
     borderAccent: "border-t-primary",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8" />
-        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>
     ),
     items: [
-      "Megtalálnak a Google-ben? Canonical URL, sitemap, meta adatok, heading struktúra, kép alt textek",
-      "Technikai SEO: betöltési sebesség, mobilbarát design, HTTPS, robots.txt",
-      "Strukturált adatok (schema markup) elemzése — hiányok és hibák azonosítása",
-      "Tartalom minőség és keresési szándék illeszkedés",
+      "14 AI crawler hozzáférés: GPTBot, PerplexityBot, ClaudeBot, Google-Extended és még 10 más",
+      "llms.txt & llms-full.txt jelenlét — az AI keresők útmutatója az oldaladhoz",
+      "Passzus minőség: optimális 134–167 szavas szakaszok a könnyű AI idézéshez",
+      "FAQ és strukturált kérdés-válasz tartalom — amit az AI szeret idézni",
     ],
   },
   {
-    title: "AI Keresők (GEO)",
-    count: "30 szempont",
-    color: "text-accent",
-    bgColor: "bg-accent/8",
-    borderAccent: "border-t-accent",
+    title: "Márkaautoritás",
+    count: "20% súlyozás",
+    color: "text-amber-500",
+    bgColor: "bg-amber-500/8",
+    borderAccent: "border-t-amber-500",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="4" y="4" width="16" height="16" rx="2" />
-        <path d="M9 9h6v6H9z" />
-        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
       </svg>
     ),
     items: [
-      "Megtalálnak a ChatGPT, Perplexity, Gemini? AI crawler hozzáférés elemzés",
-      "AI idézhetőségi pontszám — mennyire hivatkoznak rád az AI válaszokban",
-      "llms.txt szükségesség elemzése — megtalálnak-e az AI keresők?",
-      "Platform-specifikus readiness: Google AI Mode, Bing Copilot, Claude",
+      "Szerzői jelzések: megnevezett szerző, publikálási dátum — amit az AI forrásnak fogad el",
+      "Adatok és statisztikák jelenléte — az AI pontosan ezt idézi hivatkozásként",
+      "Entity sűrűség: cégek, személyek, helyek és fogalmak konkrétan megnevezve",
+      "Perplexity valós láthatóság mérés — ténylegesen idéz-e ma a Perplexity?",
     ],
   },
   {
-    title: "Marketing Hatékonyság",
-    count: "18 szempont",
-    color: "text-success",
-    bgColor: "bg-success/8",
-    borderAccent: "border-t-success",
+    title: "Tartalom Minőség & E-E-A-T",
+    count: "20% súlyozás",
+    color: "text-green-600",
+    bgColor: "bg-green-600/8",
+    borderAccent: "border-t-green-600",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M18 20V10M12 20V4M6 20v-6" />
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
       </svg>
     ),
     items: [
-      "A weboldal eladja a terméket? CTA gombok, értékajánlat, social proof elemzés",
-      "Konverziós útvonal vizsgálat — hány kattintás a vásárlásig/kapcsolatfelvételig",
-      "Bizalomépítő elemek: vélemények, referenciák, garancia, elérhetőség",
-      "Analytics beállítás ellenőrzés — méred egyáltalán ami számít?",
+      "Meta leírás, H1 minőség, kép alt szövegek és html lang attribútum vizsgálat",
+      "Experience, Expertise, Authoritativeness, Trustworthiness jelek azonosítása",
+      "Tartalom frissesség: van-e publikálási dátum és friss tartalom az oldalon?",
+      "Keresési szándék illeszkedés — a tartalom megválaszolja-e a kérdéseket?",
     ],
   },
   {
-    title: "Jogi Megfelelőség",
-    count: "43 szempont · 5 keretrendszer",
+    title: "Technikai Alapok",
+    count: "15% súlyozás",
+    color: "text-blue-600",
+    bgColor: "bg-blue-600/8",
+    borderAccent: "border-t-blue-600",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="16 18 22 12 16 6" />
+        <polyline points="8 6 2 12 8 18" />
+      </svg>
+    ),
+    items: [
+      "HTTPS biztonság, canonical URL, sitemap.xml és robots.txt helyesség",
+      "Mobilbarát design és alapvető betöltési sebesség ellenőrzés",
+      "Viewport meta és technikai on-page alapok vizsgálata",
+      "Crawler hozzáférhetőség — nem blokkolja-e a szerver az AI robotokat?",
+    ],
+  },
+  {
+    title: "Strukturált Adatok",
+    count: "10% súlyozás",
     color: "text-purple-600",
     bgColor: "bg-purple-600/8",
     borderAccent: "border-t-purple-600",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        <polyline points="9 12 11 14 15 10" />
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M9 9h6v6H9z" />
       </svg>
     ),
     items: [
-      "GDPR adatvédelem (14 pont): sütitájékoztató, adatkezelési szabályzat, érintetti jogok",
-      "Magyar e-kereskedelmi jog (8 pont): impresszum, ÁSZF, NAIH, e-kereskedelmi törvény",
-      "Akadálymentesség (10 pont): kép alt textek, kontraszt, billentyűzetes kezelés",
-      "Fizetési biztonság (6 pont) + Email szabályozás (5 pont)",
+      "Schema markup típusok: Organization, FAQPage, Article, LocalBusiness",
+      "JSON-LD implementáció teljessége és hibamentessége",
+      "Open Graph és Twitter Card meta adatok meglétének vizsgálata",
+      "Rich result jogosultság: megjelenhetsz-e kiemelt találatként?",
+    ],
+  },
+  {
+    title: "Platform Optimalizálás",
+    count: "10% súlyozás",
+    color: "text-indigo-600",
+    bgColor: "bg-indigo-600/8",
+    borderAccent: "border-t-indigo-600",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+      </svg>
+    ),
+    items: [
+      "ChatGPT readiness: tartalom struktúra, idézhetőség, entitás jelek megléte",
+      "Perplexity: valódi lekérdezéseknél forrásként szerepel-e az oldalad?",
+      "Google AI Overviews: schema és E-E-A-T jelek megfelelősége",
+      "Gemini & Bing Copilot: platform-specifikus optimalizálási lehetőségek",
     ],
   },
 ];
@@ -86,18 +125,20 @@ export default function WhatWeExamine() {
         <FadeIn>
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
-              Mit vizsgálunk
+              Mit mérünk
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              4 dimenzió,{" "}
-              <span className="text-highlight">96 szempont</span>
+              6 GEO dimenzió,{" "}
+              <span className="text-highlight">100 pontos score</span>
             </h2>
+            <p className="mt-4 text-foreground-secondary text-lg">
+              Princeton kutatás alapján — a GEO pontszám megmutatja, mennyire idéznek az AI keresők.
+            </p>
           </div>
         </FadeIn>
-
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {columns.map((col, i) => (
-            <FadeIn key={col.title} delay={i * 0.15}>
+            <FadeIn key={col.title} delay={i * 0.1}>
               <div className={`rounded-2xl border border-border border-t-[3px] ${col.borderAccent} bg-surface-card p-8 lg:p-9 h-full card-hover`}>
                 <div className={`h-13 w-13 rounded-2xl ${col.bgColor} ${col.color} flex items-center justify-center mb-5`}>
                   {col.icon}

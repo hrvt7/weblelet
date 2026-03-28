@@ -167,13 +167,13 @@ export default function Hero() {
                 className="font-heading font-extrabold leading-[1.08] tracking-[-0.03em] text-foreground"
                 style={{ fontSize: "clamp(2.25rem, 4.5vw + 0.5rem, 3.75rem)" }}
               >
-                Az AI keresők átalakítják a játékszabályokat.{" "}
-                <span className="text-highlight">Te hol állsz?</span>
+                Megtalál a ChatGPT?{" "}
+                <span className="text-highlight">Mérjük meg.</span>
               </h1>
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                A keresések 37%-a ma már AI eszközökkel indul. Ha a weboldalad nincs felkészítve, láthatatlan vagy a következő generáció számára.
+                Valódi Perplexity mérés, 14 AI crawler elemzés, 6-dimenziós GEO score. 2 perc — és megtudod, megtalál-e a ChatGPT.
               </p>
             </FadeIn>
 
@@ -263,9 +263,9 @@ export default function Hero() {
                     {(scores.geo !== null || isDone) && (
                       <div className="mt-5 grid grid-cols-3 gap-3 pt-4 border-t border-border">
                         {[
-                          { label: "GEO/SEO", value: scores.geo, color: "#2563eb" },
-                          { label: "Marketing", value: scores.marketing, color: "#f59e0b" },
-                          { label: "Compliance", value: scores.compliance, color: "#8b5cf6" },
+                          { label: "GEO Score", value: scores.geo, color: "#2563eb" },
+                          { label: "AI Citability", value: scores.marketing, color: "#10b981" },
+                          { label: "Brand Authority", value: scores.compliance, color: "#f59e0b" },
                         ].map((item) => (
                           <div key={item.label} className="text-center">
                             <p className="text-xs text-foreground-muted mb-0.5">{item.label}</p>
