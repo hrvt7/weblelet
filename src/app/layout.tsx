@@ -65,13 +65,7 @@ export default function RootLayout({
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
       <head>
         <meta name="google-site-verification" content="3AxdJpMstdvN16odkidb_os6gx1yOLB6683iJC_VZWc" />
-        {/* Google Analytics 4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z0X4D2K2J" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-0Z0X4D2K2J");`,
-          }}
-        />
+        {/* GA4 — feltételesen töltődik a CookieConsent komponensből */}
         {/* Organization JSON-LD */}
         <script
           type="application/ld+json"
@@ -79,15 +73,26 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://weblelet.hu/#organization",
               name: "WebLelet",
               url: "https://weblelet.hu",
               logo: "https://weblelet.hu/icon.svg",
               description:
                 "AI-alapú weboldal audit szolgáltatás magyar kisvállalkozásoknak. GEO/SEO, Marketing és Üzleti Potenciál elemzés.",
               email: "info@weblelet.hu",
+              founder: {
+                "@type": "Person",
+                name: "Horváth Ádám",
+              },
               areaServed: {
                 "@type": "Country",
                 name: "Hungary",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer support",
+                email: "info@weblelet.hu",
+                availableLanguage: ["Hungarian", "English"],
               },
               sameAs: [
                 "https://www.linkedin.com/company/weblelet",

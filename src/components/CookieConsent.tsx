@@ -1,26 +1,54 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+
+const GA_ID = "G-0Z0X4D2K2J";
+
+function loadGA4() {
+  if (document.getElementById("ga4-script")) return;
+  const s = document.createElement("script");
+  s.id = "ga4-script";
+  s.async = true;
+  s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(s);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(...args: unknown[]) {
+    (window.dataLayer as unknown[]).push(args);
+  }
+  gtag("js", new Date());
+  gtag("config", GA_ID);
+}
+
+declare global {
+  interface Window {
+    dataLayer: unknown[];
+  }
+}
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const consent = localStorage.getItem("weblelet-cookie-consent");
-    if (!consent) {
+    if (consent === "accepted") {
+      loadGA4();
+    } else if (!consent) {
       setVisible(true);
     }
+    // "declined" → nem töltünk be GA4-et, nem mutatjuk a bannert
   }, []);
 
-  const accept = () => {
+  const accept = useCallback(() => {
     localStorage.setItem("weblelet-cookie-consent", "accepted");
+    loadGA4();
     setVisible(false);
-  };
+  }, []);
 
-  const decline = () => {
+  const decline = useCallback(() => {
     localStorage.setItem("weblelet-cookie-consent", "declined");
     setVisible(false);
-  };
+  }, []);
 
   if (!visible) return null;
 
@@ -29,7 +57,8 @@ export default function CookieConsent() {
       <div className="mx-auto max-w-3xl rounded-2xl border border-border bg-surface-card/95 backdrop-blur-md shadow-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex-1 text-sm text-foreground-secondary leading-relaxed">
           <p>
-            Az oldal sütiket használ a működéshez és a látogatottság méréséhez (Google Analytics).{" "}
+            Az oldal sütiket használ a látogatottság méréséhez (Google Analytics).
+            A mérés csak az Ön hozzájárulásával indul el.{" "}
             <a
               href="/adatvedelem"
               className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"

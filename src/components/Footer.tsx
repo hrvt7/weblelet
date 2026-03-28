@@ -40,13 +40,31 @@ export default function Footer() {
               href="/adatvedelem"
               className="hover:text-primary transition-colors duration-200"
             >
-              Adatvédelmi tájékoztató
+              Adatvédelem
+            </a>
+            <a
+              href="/aszf"
+              className="hover:text-primary transition-colors duration-200"
+            >
+              ÁSZF
             </a>
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-border-light text-center text-xs text-foreground-muted">
-          &copy; {new Date().getFullYear()} WebLelet. Minden jog fenntartva.
+        {/* Impresszum */}
+        <div className="mt-10 pt-8 border-t border-border-light text-center text-xs text-foreground-muted leading-relaxed space-y-1">
+          <p>
+            <strong className="text-foreground-secondary">WebLelet</strong> — Horváth Ádám
+          </p>
+          <p>
+            9700 Szombathely &middot; info@weblelet.hu
+          </p>
+          <p>
+            Tárhelyszolgáltató: Vercel Inc. (340 S Lemon Ave #4133, Walnut, CA 91789, USA)
+          </p>
+          <p className="pt-2">
+            &copy; {new Date().getFullYear()} WebLelet. Minden jog fenntartva.
+          </p>
         </div>
       </div>
     </footer>
