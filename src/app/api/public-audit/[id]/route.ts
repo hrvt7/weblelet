@@ -33,7 +33,7 @@ export async function GET(
   const { data: audit, error } = await supabase
     .from("audits")
     .select(
-      "id, status, pdf_path, geo_score, marketing_score, compliance_score, compliance_grade, error_message"
+      "id, status, pdf_path, geo_score, seo_score, error_message, audit_json"
     )
     .eq("id", id)
     .single();
@@ -53,14 +53,15 @@ export async function GET(
     pdfUrl = signedData?.signedUrl ?? null;
   }
 
+  const auditJson = audit.audit_json as Record<string, unknown> | null;
+
   return NextResponse.json({
     status: audit.status,
     progress,
     pdfUrl,
     geoScore: audit.geo_score,
-    marketingScore: audit.marketing_score,
-    complianceScore: audit.compliance_score,
-    complianceGrade: audit.compliance_grade,
+    seoScore: audit.seo_score,
+    aiCitabilityScore: auditJson?.ai_citability_score ?? null,
     errorMessage: audit.error_message,
   });
 }

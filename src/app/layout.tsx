@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://weblelet.hu"),
   title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
   description:
-    "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent elemzi a weboldaladat 3 dimenzióban — GEO/SEO, Marketing, Sales. Konkrét pontszámok, problémák, cselekvési terv.",
+    "Megtudod 2 perc alatt, megtalál-e a ChatGPT. AI agent elemzi a weboldaladat — GEO láthatóság + SEO. Konkrét pontszámok, problémák, cselekvési terv.",
   keywords:
-    "weboldal audit, SEO audit, AI audit, magyar vállalkozás, GEO optimalizálás, marketing elemzés",
+    "GEO audit, SEO audit, AI audit, magyar vállalkozás, GEO optimalizálás, AI keresők, ChatGPT láthatóság, Perplexity",
   openGraph: {
     title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
     description:
-      "Megtudod 48 órán belül, miért nem talál rád az ügyfeled. 15 AI agent, 3 dimenzió, 18 oldalas riport.",
+      "Megtudod 2 perc alatt, megtalál-e a ChatGPT. AI agent, GEO + SEO audit, részletes riport.",
     url: "https://weblelet.hu",
     siteName: "WebLelet",
     locale: "hu_HU",

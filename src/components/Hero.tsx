@@ -34,7 +34,7 @@ export default function Hero() {
   const [auditId, setAuditId] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
-  const [scores, setScores] = useState<{ geo: number | null; marketing: number | null; compliance: number | null; grade: string | null }>({ geo: null, marketing: null, compliance: null, grade: null });
+  const [scores, setScores] = useState<{ geo: number | null; seo: number | null; citability: number | null }>({ geo: null, seo: null, citability: null });
   const [error, setError] = useState<string | null>(null);
   const [animProgress, setAnimProgress] = useState(0);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -86,7 +86,7 @@ export default function Hero() {
         const newProg = data.progress ?? STATUS_PROGRESS[s] ?? 0;
         setProgress(prev => Math.max(prev, newProg));
         if (data.geoScore !== null && data.geoScore !== undefined) {
-          setScores({ geo: data.geoScore, marketing: data.marketingScore, compliance: data.complianceScore, grade: data.complianceGrade });
+          setScores({ geo: data.geoScore, seo: data.seoScore, citability: data.aiCitabilityScore });
         }
         if (s === "completed") {
           setPdfUrl(data.pdfUrl);
@@ -112,7 +112,7 @@ export default function Hero() {
     setStatus("pending");
     setProgress(5);
     setPdfUrl(null);
-    setScores({ geo: null, marketing: null, compliance: null, grade: null });
+    setScores({ geo: null, seo: null, citability: null });
 
     try {
       const res = await fetch("/api/public-audit", {
@@ -141,7 +141,7 @@ export default function Hero() {
     setPdfUrl(null);
     setError(null);
     setUrl("");
-    setScores({ geo: null, marketing: null, compliance: null, grade: null });
+    setScores({ geo: null, seo: null, citability: null });
   }
 
   const isRunning = status !== "idle" && status !== "completed" && status !== "failed";
@@ -264,8 +264,8 @@ export default function Hero() {
                       <div className="mt-5 grid grid-cols-3 gap-3 pt-4 border-t border-border">
                         {[
                           { label: "GEO Score", value: scores.geo, color: "#2563eb" },
-                          { label: "AI Citability", value: scores.marketing, color: "#10b981" },
-                          { label: "Brand Authority", value: scores.compliance, color: "#f59e0b" },
+                          { label: "SEO Score", value: scores.seo, color: "#3b82f6" },
+                          { label: "AI Citability", value: scores.citability, color: "#10b981" },
                         ].map((item) => (
                           <div key={item.label} className="text-center">
                             <p className="text-xs text-foreground-muted mb-0.5">{item.label}</p>
@@ -319,8 +319,8 @@ export default function Hero() {
                           {/* Score bars */}
                           <div className="space-y-3 mb-5">
                             {[
-                              { label: "AI Citability", value: scores.marketing, color: "#10b981" },
-                              { label: "Brand Authority", value: scores.compliance, color: "#f59e0b" },
+                              { label: "SEO Score", value: scores.seo, color: "#3b82f6" },
+                              { label: "AI Citability", value: scores.citability, color: "#10b981" },
                             ].map((item) => (
                               <div key={item.label}>
                                 <div className="flex justify-between text-xs mb-1.5">
@@ -416,9 +416,9 @@ export default function Hero() {
                   </div>
                   <div className="space-y-3.5">
                     {[
-                      { label: "GEO/SEO", value: "24/100", color: "text-danger", bar: "bg-danger", pct: 24 },
-                      { label: "Marketing", value: "41/100", color: "text-accent", bar: "bg-accent", pct: 41 },
-                      { label: "Megfelelőség", value: "35/100", color: "text-purple-600", bar: "bg-purple-600", pct: 35 },
+                      { label: "GEO Score", value: "38/100", color: "text-danger", bar: "bg-danger", pct: 38 },
+                      { label: "SEO Score", value: "52/100", color: "text-accent", bar: "bg-accent", pct: 52 },
+                      { label: "AI Citability", value: "24/100", color: "text-purple-600", bar: "bg-purple-600", pct: 24 },
                     ].map((item) => (
                       <div key={item.label}>
                         <div className="flex items-center justify-between mb-1.5">
