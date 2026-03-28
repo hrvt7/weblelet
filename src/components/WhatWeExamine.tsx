@@ -16,7 +16,7 @@ const columns = [
     items: [
       "Megtalálnak a Google-ben? Canonical URL, sitemap, meta adatok, heading struktúra, kép alt textek",
       "Technikai SEO: betöltési sebesség, mobilbarát design, HTTPS, robots.txt",
-      "Strukturált adatok (schema markup) elemzése és kész kód generálás",
+      "Strukturált adatok (schema markup) elemzése — hiányok és hibák azonosítása",
       "Tartalom minőség és keresési szándék illeszkedés",
     ],
   },
@@ -36,7 +36,7 @@ const columns = [
     items: [
       "Megtalálnak a ChatGPT, Perplexity, Gemini? AI crawler hozzáférés elemzés",
       "AI idézhetőségi pontszám — mennyire hivatkoznak rád az AI válaszokban",
-      "llms.txt fájl generálás — hogy az AI keresők pontosan megértsék mit csinálsz",
+      "llms.txt szükségesség elemzése — megtalálnak-e az AI keresők?",
       "Platform-specifikus readiness: Google AI Mode, Bing Copilot, Claude",
     ],
   },

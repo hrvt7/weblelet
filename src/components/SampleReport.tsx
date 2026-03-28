@@ -5,7 +5,7 @@ const features = [
   "Közérthető összefoglaló az elején — informatikus nélkül is érthető",
   "Technikai melléklet amit a fejlesztőnek adhatsz",
   "Megállapítások jelölve: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
-  "Kész megoldások csatolva (strukturált adatok, llms.txt)",
+  "Priorizált hibák + azonnali teendők — mit javíts először",
   "Jogi megfelelőségi pontszám (A–F) és GDPR ellenőrzés",
   "White-label: a te logód, a te céged neve, a te színeid",
 ];
