@@ -78,7 +78,7 @@ export default function RootLayout({
               url: "https://weblelet.hu",
               logo: "https://weblelet.hu/icon.svg",
               description:
-                "AI-alapú weboldal audit szolgáltatás magyar kisvállalkozásoknak. GEO/SEO, Marketing és Üzleti Potenciál elemzés.",
+                "AI-alapú GEO + SEO weboldal audit szolgáltatás magyar kisvállalkozásoknak. Megmérjük, megtalál-e a ChatGPT, Perplexity, Gemini.",
               email: "info@weblelet.hu",
               founder: {
                 "@type": "Person",
@@ -110,7 +110,7 @@ export default function RootLayout({
               name: "WebLelet",
               url: "https://weblelet.hu",
               description:
-                "AI-alapú weboldal audit magyar vállalkozásoknak — GEO/SEO, Marketing, Üzleti Potenciál elemzés 48 órán belül.",
+                "AI-alapú GEO + SEO weboldal audit magyar vállalkozásoknak — AI keresőkben való láthatóság mérés 2 perc alatt.",
               inLanguage: "hu",
             }),
           }}
@@ -129,7 +129,7 @@ export default function RootLayout({
                 url: "https://weblelet.hu",
               },
               description:
-                "Egyetlen URL megadásával AI rendszer elemzi a weboldalt 3 dimenzióban: GEO/SEO, Marketing és Üzleti Potenciál. 48 órán belül részletes PDF diagnózist küldünk.",
+                "Egyetlen URL megadásával AI rendszer elemzi a weboldalt 2 dimenzióban: GEO (AI keresők láthatósága) és SEO (hagyományos keresőoptimalizálás). 2 perc alatt részletes PDF diagnózist kapsz.",
               areaServed: {
                 "@type": "Country",
                 name: "Hungary",

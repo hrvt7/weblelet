@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Használhatom az ügyfeleimnek is?",
-    a: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül.",
+    a: "Igen. Ha ügynökség vagy, vagy ügyfélnek dolgozol, a riportot egyszerűen továbbküldheted — minden megállapítás konkrét, érthető és azonnal használható.",
   },
 ];
 

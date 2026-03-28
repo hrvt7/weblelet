@@ -74,7 +74,7 @@ export default function Home() {
                 name: "Használhatom az ügyfeleimnek is?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül.",
+                  text: "Igen. Ha ügynökség vagy, vagy ügyfélnek dolgozol, a riportot egyszerűen továbbküldheted — minden megállapítás konkrét, érthető és azonnal használható.",
                 },
               },
             ],
