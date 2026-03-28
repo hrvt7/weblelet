@@ -68,8 +68,8 @@ export default function WhyUs() {
               Miért a WebLelet
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Miért más ez mint amit{" "}
-              <span className="text-highlight">eddig láttál?</span>
+              Miért más ez mint egy{" "}
+              <span className="text-highlight">hagyományos SEO audit?</span>
             </h2>
           </div>
         </FadeIn>

@@ -128,11 +128,11 @@ export default function WhatWeExamine() {
               Mit mérünk
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              6 GEO dimenzió,{" "}
-              <span className="text-highlight">100 pontos score</span>
+              AI keresőoptimalizálás:{" "}
+              <span className="text-highlight">6 dimenzió, 100 pont</span>
             </h2>
             <p className="mt-4 text-foreground-secondary text-lg">
-              Princeton kutatás alapján — a GEO pontszám megmutatja, mennyire idéznek az AI keresők.
+              Princeton kutatás alapján — a GEO score megmutatja, mennyire látható a weboldalad az AI keresőkben.
             </p>
           </div>
         </FadeIn>

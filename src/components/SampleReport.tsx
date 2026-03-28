@@ -21,8 +21,8 @@ export default function SampleReport() {
               Minta riport
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Minta: amit a rendszer{" "}
-              <span className="text-highlight">produkál</span>
+              Minta riport: amit a{" "}
+              <span className="text-highlight">weboldal audit tartalmaz</span>
             </h2>
           </div>
         </FadeIn>

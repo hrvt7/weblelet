@@ -5,28 +5,40 @@ import FadeIn from "./FadeIn";
 
 const faqs = [
   {
-    q: "Mennyibe kerül?",
-    a: "Az GEO ALAP csomag 0,99 € — komplett GEO audit PDF riporttal, 6 dimenzió, 14 AI robot ellenőrzés, valódi Perplexity mérés. A GEO PRO csomag egyedi árazású, a weboldalad és az igényeid alapján.",
+    q: "Mennyibe kerül egy weboldal audit?",
+    a: "A GEO ALAP csomag 0,99 € — komplett GEO audit PDF riporttal, 6 dimenzió, 14 AI robot ellenőrzés, valódi Perplexity mérés, SEO elemzés. A GEO PRO csomag egyedi árazású, a weboldalad és az igényeid alapján.",
   },
   {
-    q: "Mi az a GEO és miért fontos?",
-    a: "A GEO (Generative Engine Optimization) azt vizsgálja hogyan jelenik meg a weboldalad az AI keresőkben — ChatGPT, Perplexity, Gemini, Google AI Mode. 2026-ban a keresések 37%-a AI eszközökkel indul, és ez gyorsan nő. Ha a weboldalad nincs felkészítve, a következő generáció nem talál rád.",
+    q: "Mi az a GEO és miért fontos 2026-ban?",
+    a: "A GEO (Generative Engine Optimization) azt vizsgálja, hogyan jelenik meg a weboldalad az AI keresőkben — ChatGPT, Perplexity, Gemini, Google AI Mode. 2026-ban a keresések 37%-a AI eszközökkel indul, és ez gyorsan nő. Az AI keresőoptimalizálás nélkül láthatatlan maradsz az új generáció számára.",
+  },
+  {
+    q: "Mi a különbség a SEO és a GEO között?",
+    a: "A hagyományos SEO (keresőoptimalizálás) a Google organikus találataira fókuszál. A GEO az AI keresőkre optimalizál — ChatGPT, Perplexity, Gemini. 2026-ban mindkettő kell: a SEO a klasszikus forgalomhoz, a GEO az AI válaszokban való megjelenéshez. A WebLelet mindkettőt méri egy auditban.",
+  },
+  {
+    q: "Hogyan kerülhet be a weboldalam a ChatGPT válaszaiba?",
+    a: "A ChatGPT-ben való megjelenéshez kell: GPTBot crawler engedélyezése a robots.txt-ben, llms.txt fájl létrehozása, strukturált adatok (schema markup) beépítése, és E-E-A-T jelek erősítése (szerzői információk, adatok, források). A WebLelet GEO audit pontosan ezeket vizsgálja és konkrét javítási tervet ad.",
+  },
+  {
+    q: "Miért nem találnak rám a Google-ben?",
+    a: "A leggyakoribb okok: hiányzó vagy hibás meta címkék (title, description), nincs sitemap.xml, rossz robots.txt beállítás, lassú betöltés, nem mobilbarát design, hiányzó schema markup, gyenge tartalom. A WebLelet SEO audit ezeket mind feltárja és priorizált javítási tervet ad.",
   },
   {
     q: "Miben más ez mint a SEMrush vagy Ahrefs?",
-    a: "Azok technikai SEO toolok. Mi 6 GEO dimenzióban elemzünk: AI citability, brand authority, tartalom minőség, technikai alapok, strukturált adatok, platform optimalizálás. Ráadásul valódi Perplexity méréssel dolgozunk — nem becsüljük, megmérjük.",
+    a: "A SEMrush és Ahrefs hagyományos SEO eszközök. A WebLelet az AI keresőkre is elemez: 6 GEO dimenzió, valódi Perplexity mérés, AI robot hozzáférés vizsgálat, llms.txt ellenőrzés. A klasszikus SEO audit mellett megkapod az AI láthatósági képet is.",
   },
   {
     q: "Mi az a GEO score és hogyan számítják?",
     a: "A GEO score 100 pontos rendszer, Princeton/IIT Delhi KDD '24 kutatás alapján. 6 dimenzió súlyozott átlaga: AI Citability & Láthatóság (25%), Márkaautoritás (20%), Tartalom Minőség & E-E-A-T (20%), Technikai Alapok (15%), Strukturált Adatok (10%), Platform Optimalizálás (10%).",
   },
   {
-    q: "Mennyi ideig tart?",
-    a: "A GEO ALAP csomag 2 perc alatt elkészül. A GEO PRO csomag 1-3 munkanap, mert mélyebb elemzést — E-E-A-T audit, versenytárs GEO összehasonlítás, multi-platform readiness — is tartalmaz.",
+    q: "Mennyi ideig tart a weboldal elemzés?",
+    a: "A GEO ALAP csomag 2 perc alatt elkészül — automatizált AI elemzés. A GEO PRO csomag 1-3 munkanap, mert mélyebb elemzést tartalmaz: E-E-A-T audit, versenytárs GEO összehasonlítás, multi-platform AI readiness vizsgálat.",
   },
   {
     q: "Mi történik az audit után?",
-    a: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A GEO PRO csomagban ezen felül kész schema markup kódot, llms.txt fájlt és teljes implementációs prioritáslistát is kapsz.",
+    a: "Kapsz egy részletes PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A GEO PRO csomagban ezen felül kész schema markup kódot, llms.txt fájlt és teljes implementációs prioritáslistát is kapsz.",
   },
   {
     q: "Használhatom az ügyfeleimnek is?",

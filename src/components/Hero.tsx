@@ -168,12 +168,12 @@ export default function Hero() {
                 style={{ fontSize: "clamp(2.25rem, 4.5vw + 0.5rem, 3.75rem)" }}
               >
                 Megtalál a ChatGPT?{" "}
-                <span className="text-highlight">Mérjük meg.</span>
+                <span className="text-highlight">Weboldal audit, 2 perc.</span>
               </h1>
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                Valódi Perplexity mérés, 14 AI robot ellenőrzés, 6-dimenziós GEO score. 2 perc — és megtudod, megtalál-e a ChatGPT.
+                AI keresőoptimalizálás mérhetően: valódi Perplexity mérés, 14 AI robot ellenőrzés, 6 GEO dimenzió + SEO elemzés. Megtudod, megtalálnak-e az AI keresők — és mit javíts.
               </p>
             </FadeIn>
 
@@ -206,7 +206,7 @@ export default function Hero() {
                       </button>
                     </div>
                     <p className="mt-3 text-sm text-foreground-muted">
-                      GEO Audit 2 perc alatt · ChatGPT · Perplexity · Google AI · Gemini
+                      Weboldal audit 2 perc alatt · ChatGPT · Perplexity · Google AI · Gemini · SEO
                     </p>
                   </form>
                 )}
@@ -383,7 +383,7 @@ export default function Hero() {
             {status === "idle" && (
               <FadeIn delay={0.36}>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  {["14 AI robot ellenőrzés", "6 GEO dimenzió", "Valódi Perplexity mérés"].map((badge) => (
+                  {["14 AI robot ellenőrzés", "6 GEO dimenzió + SEO", "Valódi Perplexity mérés"].map((badge) => (
                     <span key={badge} className="inline-flex items-center rounded-full bg-primary/6 border border-primary/10 px-4 py-1.5 text-xs font-semibold text-primary">
                       {badge}
                     </span>

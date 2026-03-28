@@ -55,8 +55,8 @@ export default function HowItWorks() {
               Hogyan működik
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Három lépés,{" "}
-              <span className="text-highlight">kész GEO score</span>
+              Weboldal elemzés{" "}
+              <span className="text-highlight">3 lépésben</span>
             </h2>
           </div>
         </FadeIn>

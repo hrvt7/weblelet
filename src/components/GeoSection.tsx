@@ -19,13 +19,14 @@ export default function GeoSection() {
               GEO — Generative Engine Optimization
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Miért nem elég már a{" "}
-              <span className="text-highlight">hagyományos SEO?</span>
+              SEO már nem elég —{" "}
+              <span className="text-highlight">kellenek az AI keresők is</span>
             </h2>
             <p className="mt-6 text-lg text-foreground-secondary leading-relaxed max-w-2xl mx-auto">
-              2026-ban az AI keresők átírják a szabályokat. A ChatGPT, Perplexity,
+              2026-ban a keresések 37%-a AI eszközökkel indul. A ChatGPT, Perplexity,
               Gemini és a Google AI Mode nem ugyanúgy dolgozza fel a weboldalakat
-              mint a hagyományos Google kereső.
+              mint a hagyományos Google kereső. A GEO optimalizálás (Generative Engine
+              Optimization) nélkül láthatatlan maradsz.
             </p>
           </div>
         </FadeIn>
@@ -53,8 +54,8 @@ export default function GeoSection() {
         <FadeIn delay={0.3}>
           <div className="text-center">
             <p className="text-lg text-foreground-secondary mb-6 max-w-2xl mx-auto leading-relaxed">
-              A WebLelet nem csak a hagyományos SEO-t vizsgálja — elemzi hogy a
-              weboldalad hogyan teljesít az AI keresőkben is: ChatGPT, Perplexity,
+              A WebLelet weboldal audit nem csak a hagyományos keresőoptimalizálást vizsgálja — elemzi,
+              hogyan teljesít a weboldalad az AI keresőkben is: ChatGPT, Perplexity,
               Gemini, Google AI Mode.
             </p>
             <a

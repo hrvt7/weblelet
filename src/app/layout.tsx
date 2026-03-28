@@ -21,15 +21,18 @@ const body = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://weblelet.hu"),
-  title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
+  title: {
+    default: "Weboldal Audit: GEO + SEO Elemzés AI Keresőkre | WebLelet",
+    template: "%s | WebLelet",
+  },
   description:
-    "Megtudod 2 perc alatt, megtalál-e a ChatGPT. AI agent elemzi a weboldaladat — GEO láthatóság + SEO. Konkrét pontszámok, problémák, cselekvési terv.",
+    "Látható a weboldalad a ChatGPT-ben, Perplexity-ben, Gemini-ben? 2 perc alatt kiderül. AI-alapú weboldal audit — 6 GEO dimenzió, SEO elemzés, azonnali PDF riport magyar vállalkozásoknak.",
   keywords:
-    "GEO audit, SEO audit, AI audit, magyar vállalkozás, GEO optimalizálás, AI keresők, ChatGPT láthatóság, Perplexity",
+    "weboldal audit, SEO audit, GEO optimalizálás, AI keresőoptimalizálás, weboldal elemzés, ChatGPT láthatóság, Perplexity optimalizálás, AI láthatóság, keresőoptimalizálás, weboldal ellenőrzés, online jelenlét, GEO score, AI keresők, Google AI Overviews, magyar vállalkozás, SEO elemzés",
   openGraph: {
-    title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
+    title: "Weboldal Audit: GEO + SEO Elemzés AI Keresőkre | WebLelet",
     description:
-      "Megtudod 2 perc alatt, megtalál-e a ChatGPT. AI agent, GEO + SEO audit, részletes riport.",
+      "Látható a weboldalad a ChatGPT-ben és a Google-ben? AI-alapú weboldal audit 2 perc alatt — GEO score, SEO elemzés, azonnali PDF riport.",
     url: "https://weblelet.hu",
     siteName: "WebLelet",
     locale: "hu_HU",
@@ -39,15 +42,15 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "WebLelet — AI-alapú weboldal diagnosztika",
+        alt: "WebLelet — AI weboldal audit: GEO + SEO elemzés magyar vállalkozásoknak",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "WebLelet — AI weboldal audit magyar vállalkozásoknak",
+    title: "Weboldal Audit: GEO + SEO Elemzés AI Keresőkre | WebLelet",
     description:
-      "Megtudod 48 órán belül, miért nem talál rád az ügyfeled.",
+      "Látható a weboldalad a ChatGPT-ben? 2 perc alatt kiderül. 6 GEO dimenzió, 14 AI robot, SEO elemzés — PDF riport azonnal.",
     images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
@@ -78,7 +81,7 @@ export default function RootLayout({
               url: "https://weblelet.hu",
               logo: "https://weblelet.hu/icon.svg",
               description:
-                "AI-alapú GEO + SEO weboldal audit szolgáltatás magyar kisvállalkozásoknak. Megmérjük, megtalál-e a ChatGPT, Perplexity, Gemini.",
+                "AI-alapú weboldal audit szolgáltatás: GEO optimalizálás (AI keresők láthatósága) és SEO elemzés magyar vállalkozásoknak. ChatGPT, Perplexity, Gemini, Google AI láthatóság mérés.",
               email: "info@weblelet.hu",
               founder: {
                 "@type": "Person",
@@ -97,6 +100,13 @@ export default function RootLayout({
               sameAs: [
                 "https://www.linkedin.com/company/weblelet",
               ],
+              knowsAbout: [
+                "GEO optimalizálás",
+                "Generative Engine Optimization",
+                "SEO audit",
+                "AI keresőoptimalizálás",
+                "weboldal elemzés",
+              ],
             }),
           }}
         />
@@ -107,11 +117,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": "https://weblelet.hu/#website",
               name: "WebLelet",
               url: "https://weblelet.hu",
               description:
-                "AI-alapú GEO + SEO weboldal audit magyar vállalkozásoknak — AI keresőkben való láthatóság mérés 2 perc alatt.",
+                "AI-alapú weboldal audit: GEO optimalizálás és SEO elemzés magyar vállalkozásoknak. Megmérjük, megtalál-e a ChatGPT, Perplexity és a Google.",
               inLanguage: "hu",
+              publisher: { "@id": "https://weblelet.hu/#organization" },
             }),
           }}
         />
@@ -122,19 +134,24 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              name: "WebLelet — AI Weboldal Audit",
-              provider: {
-                "@type": "Organization",
-                name: "WebLelet",
-                url: "https://weblelet.hu",
-              },
+              "@id": "https://weblelet.hu/#service",
+              name: "Weboldal Audit — GEO + SEO Elemzés",
+              provider: { "@id": "https://weblelet.hu/#organization" },
               description:
-                "Egyetlen URL megadásával AI rendszer elemzi a weboldalt 2 dimenzióban: GEO (AI keresők láthatósága) és SEO (hagyományos keresőoptimalizálás). 2 perc alatt részletes PDF diagnózist kapsz.",
+                "Egyetlen URL megadásával AI rendszer elemzi a weboldalt: GEO (AI keresők láthatósága — ChatGPT, Perplexity, Gemini) és SEO (hagyományos keresőoptimalizálás). 2 perc alatt részletes PDF riportot kapsz 6 GEO dimenzióban, 100 pontos score-ral.",
               areaServed: {
                 "@type": "Country",
                 name: "Hungary",
               },
               serviceType: "Weboldal audit",
+              category: "AI keresőoptimalizálás",
+              offers: {
+                "@type": "Offer",
+                name: "GEO ALAP audit",
+                price: "0.99",
+                priceCurrency: "EUR",
+                description: "Komplett GEO audit: 6 dimenzió, 14 AI robot ellenőrzés, Perplexity mérés, SEO elemzés, PDF riport",
+              },
             }),
           }}
         />
