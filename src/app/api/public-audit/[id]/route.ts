@@ -48,7 +48,7 @@ export async function GET(
 
   if (audit.status === "completed" && audit.pdf_path) {
     const { data: signedData } = await supabase.storage
-      .from("audits")
+      .from("audit-pdfs")
       .createSignedUrl(audit.pdf_path, 3600);
     pdfUrl = signedData?.signedUrl ?? null;
   }
