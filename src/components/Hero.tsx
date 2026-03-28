@@ -1,7 +1,26 @@
+"use client";
+
+import { useState, FormEvent } from "react";
 import FadeIn from "./FadeIn";
 import AnimatedGauge from "./AnimatedGauge";
 
 export default function Hero() {
+  const [url, setUrl] = useState("");
+
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    if (!url.trim()) return;
+    const el = document.getElementById("kapcsolat");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      // Pre-fill the URL field in the contact form
+      setTimeout(() => {
+        const urlInput = document.getElementById("website") as HTMLInputElement | null;
+        if (urlInput) urlInput.value = url;
+      }, 400);
+    }
+  }
+
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-32 lg:pt-44 lg:pb-36 overflow-hidden wave-divider">
       {/* Mesh gradient background */}
@@ -15,61 +34,85 @@ export default function Hero() {
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left - Text (5 cols) */}
-          <div className="lg:col-span-5">
+          {/* Left - Text + URL input (6 cols) */}
+          <div className="lg:col-span-6">
             <FadeIn>
               <h1
                 className="font-heading font-extrabold leading-[1.08] tracking-[-0.03em] text-foreground"
                 style={{ fontSize: "clamp(2.25rem, 4.5vw + 0.5rem, 3.75rem)" }}
               >
-                Weboldal audit rendszer ami{" "}
+                Az AI keresők átalakítják a játékszabályokat.{" "}
                 <span className="text-highlight">
-                  10x gyorsabb mint a kézi munka
+                  Te hol állsz?
                 </span>
               </h1>
             </FadeIn>
             <FadeIn delay={0.12}>
               <p className="mt-7 text-lg leading-relaxed text-foreground-secondary max-w-[540px]">
-                Egyetlen URL-ből komplett elemzés: keresőoptimalizálás, AI
-                keresők, marketing, jogi megfelelőség — kész megoldásokkal, nem
-                csak hibalistával.
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.24}>
-              <div className="mt-9">
-                <a
-                  href="#kapcsolat"
-                  className="inline-flex items-center cursor-pointer justify-center rounded-2xl bg-accent px-9 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow"
-                >
-                  Beszéljünk&ensp;&rarr;
-                </a>
-              </div>
-              <p className="mt-4 text-sm text-foreground-muted">
-                Kérd a demo auditot a te oldaladra vagy az ügyfeled oldalára
+                A keresések 37%-a ma már AI eszközökkel indul. Ha a weboldalad
+                nincs felkészítve, láthatatlan vagy a következő generáció
+                számára.
               </p>
             </FadeIn>
 
+            {/* URL Input */}
+            <FadeIn delay={0.24}>
+              <form onSubmit={handleSubmit} className="mt-9">
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <div className="relative flex-1">
+                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground-muted">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                      </svg>
+                    </div>
+                    <input
+                      type="url"
+                      value={url}
+                      onChange={(e) => setUrl(e.target.value)}
+                      placeholder="Add meg a weboldalad URL-jét..."
+                      className="w-full rounded-2xl border border-border bg-white pl-12 pr-5 py-4.5 text-[1rem] text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary shadow-lg shadow-primary/5 transition-all"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="rounded-2xl bg-accent px-8 py-4.5 text-[1rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow whitespace-nowrap cursor-pointer"
+                  >
+                    Audit indítása&ensp;&rarr;
+                  </button>
+                </div>
+                <p className="mt-3 text-sm text-foreground-muted">
+                  Komplett elemzés 30 mp alatt &middot; SEO + AI + Marketing + Jogi
+                </p>
+              </form>
+            </FadeIn>
+
+            {/* Badge */}
+            <FadeIn delay={0.36}>
+              <div className="mt-6 flex flex-wrap gap-3">
+                {["96 szempont", "4 dimenzió", "5 jogi keretrendszer"].map((badge) => (
+                  <span
+                    key={badge}
+                    className="inline-flex items-center rounded-full bg-primary/6 border border-primary/10 px-4 py-1.5 text-xs font-semibold text-primary"
+                  >
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </FadeIn>
           </div>
 
-          {/* Right - Report mockup (7 cols, larger) */}
-          <div className="lg:col-span-7 flex justify-center lg:justify-end">
+          {/* Right - Report mockup (6 cols) */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end">
             <FadeIn direction="right" delay={0.2}>
-              <div className="relative lg:-mr-12 xl:-mr-20">
-                {/* Shadow layer for depth */}
+              <div className="relative lg:-mr-8 xl:-mr-16">
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-primary/10 transform rotate-2 scale-[1.02] -z-10" />
 
                 <div className="rounded-2xl bg-surface-card border border-border shadow-2xl shadow-primary/8 p-7 sm:p-9 max-w-lg transform lg:rotate-1 hover:rotate-0 transition-transform duration-500">
                   {/* Mockup header */}
                   <div className="flex items-center gap-3 mb-7">
                     <div className="h-11 w-11 rounded-xl bg-primary/8 flex items-center justify-center">
-                      <svg
-                        width="22"
-                        height="22"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#2563EB"
-                        strokeWidth="1.8"
-                      >
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="1.8">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                         <polyline points="14 2 14 8 20 8" />
                       </svg>
@@ -116,9 +159,9 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Floating badge with pulse */}
+                {/* Floating badge */}
                 <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 rounded-2xl bg-primary text-white px-5 py-2.5 text-xs font-bold shadow-xl pulse-badge">
-                  96 szempont · 4 dimenzió · 5 jogi keretrendszer
+                  0,99 € &middot; Komplett diagnózis
                 </div>
               </div>
             </FadeIn>
@@ -128,15 +171,7 @@ export default function Hero() {
         {/* Scroll indicator */}
         <div className="hidden lg:flex justify-center mt-16">
           <div className="scroll-bounce">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#94A3B8"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" strokeWidth="2" strokeLinecap="round">
               <polyline points="6 9 12 15 18 9" />
             </svg>
           </div>

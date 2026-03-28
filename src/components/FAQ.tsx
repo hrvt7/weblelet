@@ -5,32 +5,32 @@ import FadeIn from "./FadeIn";
 
 const faqs = [
   {
-    q: "Hogyan működik a demo?",
-    a: "Megadod a weboldal URL-jét, mi lefuttatjuk a rendszert és elküldjük az eredményt emailben. Utána egyeztetünk egy 30 perces hívást ahol végigmegyünk a riporton.",
-  },
-  {
-    q: "Kinek szól ez a rendszer?",
-    a: "Marketing ügynökségeknek akik gyorsabban akarnak auditot csinálni az ügyfeleiknek, és vállalkozásoknak akik szeretnék tudni hol áll a weboldaluk a Google-ben és az AI keresőkben.",
+    q: "Mennyibe kerül?",
+    a: "Az AUDIT csomag 0,99 € — komplett diagnózis PDF riporttal, 96 szempont, 4 dimenzió. A PRO csomag egyedi árazású, a weboldalad és az igényeid alapján.",
   },
   {
     q: "Mi az a GEO és miért fontos?",
-    a: "A GEO (Generative Engine Optimization) azt jelenti hogy a weboldalad hogyan jelenik meg az AI keresőkben — ChatGPT, Perplexity, Gemini. 2026-ban a keresések jelentős része AI keresőkből indul. Ha ott nem jelensz meg, láthatatlan vagy a felhasználók számára.",
+    a: "A GEO (Generative Engine Optimization) azt vizsgálja hogyan jelenik meg a weboldalad az AI keresőkben — ChatGPT, Perplexity, Gemini, Google AI Mode. 2026-ban a keresések 37%-a AI eszközökkel indul, és ez gyorsan nő. Ha a weboldalad nincs felkészítve, a következő generáció nem talál rád.",
   },
   {
-    q: "Miben más ez mint egy SEMrush vagy Ahrefs?",
-    a: "Azok a toolok technikai SEO-ra fókuszálnak. Mi négy dimenzióban elemzünk: keresőoptimalizálás, marketing, jogi megfelelőség és üzleti potenciál. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk (strukturált adat kód, llms.txt) és minden megállapítás jelölve van: tény, feltételezés vagy javaslat.",
+    q: "Miben más ez mint a SEMrush vagy Ahrefs?",
+    a: "Azok technikai SEO toolok. Mi 4 dimenzióban elemzünk: keresőoptimalizálás, AI keresők, marketing, jogi megfelelőség. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk.",
   },
   {
-    q: "Mennyibe kerül?",
-    a: "Az árazás az együttműködés formájától függ — egyedi projekt, havi megbízás, vagy rendszeres audit csomag. Az első demo audit ingyenes. Írj a részletekért.",
+    q: "Az elemzés kiterjed a magyar jogszabályokra?",
+    a: "Igen. 5 jogi keretrendszert vizsgálunk: GDPR (14 pont), magyar e-kereskedelmi jog (8 pont), akadálymentesség (10 pont), fizetési biztonság (6 pont), email szabályozás (5 pont) — összesen 43 szempont.",
   },
   {
-    q: "Az elemzés kiterjed a magyar jogszabályokra is?",
-    a: "Igen. A rendszer 5 jogi keretrendszert vizsgál: GDPR adatvédelem (14 pont), magyar elektronikus kereskedelmi és adatvédelmi törvény (8 pont), akadálymentesség (10 pont), fizetési biztonság (6 pont) és e-mail szabályozás (5 pont). Összesen 43 szempont — és minden hiányosság mellé konkrét javítási javaslatot ad.",
+    q: "Mennyi ideig tart?",
+    a: "Az AUDIT csomag 30 másodperc alatt elkészül. A PRO csomag 1-3 munkanap, mert egyedi elemzést és konzultációt tartalmaz.",
+  },
+  {
+    q: "Mi történik az audit után?",
+    a: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A PRO csomagban személyes konzultáción beszéljük meg a teendőket.",
   },
   {
     q: "Használhatom az ügyfeleimnek is?",
-    a: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül. Az ügyfeled a te termékedet látja.",
+    a: "Igen. A rendszer white-label módban is működik — a riport a te céged nevével, logójával és színeivel készül.",
   },
 ];
 

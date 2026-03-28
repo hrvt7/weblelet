@@ -2,7 +2,7 @@ import FadeIn from "./FadeIn";
 
 const columns = [
   {
-    title: "Keresőoptimalizálás",
+    title: "Keresőoptimalizálás (SEO)",
     count: "23 szempont",
     color: "text-primary",
     bgColor: "bg-primary/8",
@@ -14,35 +14,52 @@ const columns = [
       </svg>
     ),
     items: [
-      "Láthatóság az AI keresőkben (ChatGPT, Perplexity, Gemini, Google AI, Bing Copilot — külön-külön)",
-      "Hagyományos Google keresőoptimalizálás és technikai SEO",
-      "Strukturált adatok (schema markup) elemzése",
-      "AI idézhetőségi pontszám — mennyire hivatkoznak az oldalra az AI válaszokban",
-      "Online jelenlét erőssége (márkaismertség mérés)",
-      "Kimenet: kész strukturált adat kód + llms.txt fájl",
+      "Megtalálnak a Google-ben? Canonical URL, sitemap, meta adatok, heading struktúra, kép alt textek",
+      "Technikai SEO: betöltési sebesség, mobilbarát design, HTTPS, robots.txt",
+      "Strukturált adatok (schema markup) elemzése és kész kód generálás",
+      "Tartalom minőség és keresési szándék illeszkedés",
     ],
   },
   {
-    title: "Marketing elemzés",
-    count: "18 szempont",
+    title: "AI Keresők (GEO)",
+    count: "30 szempont",
     color: "text-accent",
     bgColor: "bg-accent/8",
     borderAccent: "border-t-accent",
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M9 9h6v6H9z" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+      </svg>
+    ),
+    items: [
+      "Megtalálnak a ChatGPT, Perplexity, Gemini? AI crawler hozzáférés elemzés",
+      "AI idézhetőségi pontszám — mennyire hivatkoznak rád az AI válaszokban",
+      "llms.txt fájl generálás — hogy az AI keresők pontosan megértsék mit csinálsz",
+      "Platform-specifikus readiness: Google AI Mode, Bing Copilot, Claude",
+    ],
+  },
+  {
+    title: "Marketing Hatékonyság",
+    count: "18 szempont",
+    color: "text-success",
+    bgColor: "bg-success/8",
+    borderAccent: "border-t-success",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M18 20V10M12 20V4M6 20v-6" />
       </svg>
     ),
     items: [
-      "Tartalom minőség és szakértői hitelesség (E-E-A-T)",
-      "Konverzió optimalizálás — hány látogató lesz ügyfél",
-      "Versenytárs összehasonlítás",
-      "Márkaépítés és bizalmi elemek értékelése",
-      "Kimenet: 30 napos tartalom naptár és e-mail szekvenciák",
+      "A weboldal eladja a terméket? CTA gombok, értékajánlat, social proof elemzés",
+      "Konverziós útvonal vizsgálat — hány kattintás a vásárlásig/kapcsolatfelvételig",
+      "Bizalomépítő elemek: vélemények, referenciák, garancia, elérhetőség",
+      "Analytics beállítás ellenőrzés — méred egyáltalán ami számít?",
     ],
   },
   {
-    title: "Jogi megfelelőség",
+    title: "Jogi Megfelelőség",
     count: "43 szempont · 5 keretrendszer",
     color: "text-purple-600",
     bgColor: "bg-purple-600/8",
@@ -54,46 +71,26 @@ const columns = [
       </svg>
     ),
     items: [
-      "GDPR és adatvédelem (14 pont: sütitájékoztató, adatkezelési szabályzat, érintetti jogok)",
-      "Magyar jogszabályi követelmények (8 pont: impresszum, ÁSZF, NAIH, e-kereskedelmi törvény)",
-      "Akadálymentesség (10 pont: képek alternatív szövege, kontraszt, billentyűzetes kezelés)",
-      "Fizetési biztonság (6 pont: titkosított kapcsolat, biztonságos fizetési felület)",
-      "E-mail szabályozás (5 pont: leiratkozás, hozzájárulás kezelése)",
-      "Kimenet: Megfelelőségi pontszám (A–F) és részletes keretrendszer-riport",
-    ],
-  },
-  {
-    title: "Üzleti Potenciál",
-    count: "12 szempont — a teljes WebLelet csomagban",
-    color: "text-success",
-    bgColor: "bg-success/8",
-    borderAccent: "border-t-success",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <line x1="12" y1="1" x2="12" y2="23" />
-        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-      </svg>
-    ),
-    items: [
-      "Döntéshozók és kapcsolattartók azonosítása",
-      "Ügyfélminősítés (BANT módszer)",
-      "Megkeresési stratégia és ajánlatkészítés",
-      "Kimenet: Háromszintű szolgáltatási csomag ajánlat",
+      "GDPR adatvédelem (14 pont): sütitájékoztató, adatkezelési szabályzat, érintetti jogok",
+      "Magyar e-kereskedelmi jog (8 pont): impresszum, ÁSZF, NAIH, e-kereskedelmi törvény",
+      "Akadálymentesség (10 pont): kép alt textek, kontraszt, billentyűzetes kezelés",
+      "Fizetési biztonság (6 pont) + Email szabályozás (5 pont)",
     ],
   },
 ];
 
 export default function WhatWeExamine() {
   return (
-    <section className="py-24 sm:py-32 bg-surface-blue relative">
+    <section id="mit-vizsgalunk" className="py-24 sm:py-32 bg-surface-blue relative">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
-              Részletes elemzés
+              Mit vizsgálunk
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Amit a rendszer <span className="text-highlight">vizsgál</span>
+              4 dimenzió,{" "}
+              <span className="text-highlight">96 szempont</span>
             </h2>
           </div>
         </FadeIn>

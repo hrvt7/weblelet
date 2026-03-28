@@ -1,34 +1,61 @@
 import FadeIn from "./FadeIn";
 
-const rows = [
-  { feature: "Átfutási idő", agency: "2–4 hét", weblelet: "~15 perc" },
-  { feature: "Vizsgált szempontok", agency: "10–20", weblelet: "96" },
-  { feature: "AI keresők elemzése", agency: false, weblelet: true },
-  { feature: "Jogi megfelelőség ellenőrzés", agency: false, weblelet: true },
-  { feature: "Kész beilleszthető kódok", agency: false, weblelet: true },
-  { feature: "White-label (saját márka)", agency: false, weblelet: true },
+const reasons = [
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+        <line x1="9" y1="9" x2="9.01" y2="9" />
+        <line x1="15" y1="9" x2="15.01" y2="9" />
+      </svg>
+    ),
+    title: "Nem csak hibákat keresünk",
+    desc: "Kész megoldásokat adunk: schema kód, llms.txt, prioritási sorrend. Nem kell kitalálnod mit csinálj — meg van írva.",
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
+      </svg>
+    ),
+    title: "Bizonyíték-alapú",
+    desc: "Minden megállapítás jelölve: TÉNY (amit a kódban látunk), BECSLÉS (amit számolunk) vagy JAVASLAT. Tudod melyikben bízhatsz 100%-ban.",
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <polyline points="9 12 11 14 15 10" />
+      </svg>
+    ),
+    title: "Magyar jogi compliance",
+    desc: "5 keretrendszer, 43 szempont — GDPR, magyar e-kereskedelmi jog, akadálymentesség. Nem csak a Google-nek, a hatóságnak is megfelelsz.",
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M9 9h6v6H9z" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+      </svg>
+    ),
+    title: "AI keresők is",
+    desc: "Nem csak a Google-t nézzük — a ChatGPT, Perplexity, Gemini, Google AI Mode láthatóságot is elemezzük. Ez az ami megkülönböztet.",
+  },
+  {
+    icon: (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
+    ),
+    title: "30 másodperc",
+    desc: "Nem kell napokat várni. URL beírás, audit, PDF riport. Ennyi.",
+  },
 ];
-
-function Check() {
-  return (
-    <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-success/10">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22C55E" strokeWidth="3" strokeLinecap="round">
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </span>
-  );
-}
-
-function Cross() {
-  return (
-    <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-danger/8">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#EF4444" strokeWidth="3" strokeLinecap="round">
-        <line x1="18" y1="6" x2="6" y2="18" />
-        <line x1="6" y1="6" x2="18" y2="18" />
-      </svg>
-    </span>
-  );
-}
 
 export default function WhyUs() {
   return (
@@ -39,7 +66,7 @@ export default function WhyUs() {
         <FadeIn>
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
-              Összehasonlítás
+              Miért a WebLelet
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
               Miért más ez mint amit{" "}
@@ -48,62 +75,22 @@ export default function WhyUs() {
           </div>
         </FadeIn>
 
-        {/* Card-based comparison — two side by side */}
-        <div className="mx-auto max-w-4xl grid md:grid-cols-2 gap-6 lg:gap-8">
-          {/* Agency card - faded */}
-          <FadeIn delay={0.1}>
-            <div className="rounded-2xl border border-border bg-surface p-7 lg:p-9 h-full opacity-80">
-              <div className="text-center mb-7">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-gray-100 text-foreground-muted mb-3">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                    <circle cx="9" cy="7" r="4" />
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                  </svg>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          {reasons.map((reason, i) => (
+            <FadeIn key={reason.title} delay={i * 0.1}>
+              <div className="rounded-2xl border border-border bg-surface-card p-7 lg:p-8 card-hover group h-full">
+                <div className="h-12 w-12 rounded-2xl bg-primary/8 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  {reason.icon}
                 </div>
-                <h3 className="font-heading text-lg font-bold text-foreground-muted">Kézi audit</h3>
+                <h3 className="font-heading text-lg font-bold text-foreground mb-2 tracking-[-0.01em]">
+                  {reason.title}
+                </h3>
+                <p className="text-[0.9rem] text-foreground-muted leading-relaxed">
+                  {reason.desc}
+                </p>
               </div>
-              <div className="space-y-4">
-                {rows.map((row) => (
-                  <div key={row.feature} className="flex items-start justify-between gap-3 py-2 border-b border-border-light last:border-0">
-                    <span className="text-sm font-medium text-foreground-muted">{row.feature}</span>
-                    <span className="text-sm text-right text-foreground-muted shrink-0">
-                      {row.agency === true ? <Check /> : row.agency === false ? <Cross /> : row.agency}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* WebLelet card - highlighted */}
-          <FadeIn delay={0.2}>
-            <div className="rounded-2xl border-2 border-primary bg-surface-card p-7 lg:p-9 h-full shadow-xl shadow-primary/8 relative">
-              {/* Recommended badge */}
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-xs font-bold text-white shadow-md">
-                Ajánlott
-              </div>
-              <div className="text-center mb-7">
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl bg-primary/10 text-primary mb-3">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                  </svg>
-                </div>
-                <h3 className="font-heading text-lg font-bold text-primary">WebLelet rendszer</h3>
-              </div>
-              <div className="space-y-4">
-                {rows.map((row) => (
-                  <div key={row.feature} className="flex items-start justify-between gap-3 py-2 border-b border-border-light last:border-0">
-                    <span className="text-sm font-medium text-foreground">{row.feature}</span>
-                    <span className="text-sm text-right font-medium text-foreground shrink-0">
-                      {row.weblelet === true ? <Check /> : typeof row.weblelet === "string" ? row.weblelet : null}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
+            </FadeIn>
+          ))}
         </div>
       </div>
     </section>

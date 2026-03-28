@@ -3,9 +3,9 @@ import FadeIn from "./FadeIn";
 const steps = [
   {
     num: "01",
-    title: "Egyetlen link elég",
+    title: "Add meg az URL-t",
     description:
-      "A rendszer egyetlen webcímből dolgozik. Nem kell jelszó, nem kell hozzáférés. Ha van kitöltött adatlap is (forgalom, célok, költségkeret), azzal részletesebb elemzés készül.",
+      "Írd be a weboldalad címét — a rendszer letölti és elemzi a teljes oldalt. Nem kell jelszó, nem kell hozzáférés.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -16,9 +16,9 @@ const steps = [
   },
   {
     num: "02",
-    title: "Párhuzamos elemzés",
+    title: "96 szempont, 30 másodperc",
     description:
-      "5 keresőoptimalizálási modul vizsgálja a Google és az AI keresők láthatóságát — külön a ChatGPT-t, Perplexity-t, Gemini-t, Google AI-t és Bing Copilot-ot. 2 marketing modul a tartalmat és a konverziót elemzi. A jogi modul 43 pontban ellenőrzi a GDPR megfelelőséget, a magyar jogszabályokat és az akadálymentességet.",
+      "Az AI rendszer 4 dimenzióban vizsgálja az oldalt: keresőoptimalizálás, AI láthatóság, marketing hatékonyság és jogi megfelelőség.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="2" />
@@ -31,7 +31,7 @@ const steps = [
     num: "03",
     title: "Kész riport, kész megoldások",
     description:
-      "Az eredmény egy 15+ oldalas PDF riport három részben: elemzés, javaslatok és technikai mellékletek. A riporthoz kész beilleszthető kódok tartoznak (strukturált adatok, llms.txt) amiket a fejlesztő azonnal használhat. Minden megállapítás jelölve: 🔴 tény, 🟡 feltételezés, 🟢 javaslat.",
+      "Nem csak hibalistát kapsz — hanem konkrét javítási javaslatokat, kész schema kódot, llms.txt fájlt és prioritási sorrendet.",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -46,7 +46,6 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="hogyan-mukodik" className="py-24 sm:py-32 relative">
-      {/* Subtle dot grid */}
       <div className="absolute inset-0 dot-grid opacity-[0.2] -z-10" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
@@ -56,8 +55,8 @@ export default function HowItWorks() {
               Hogyan működik
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Hogyan működik{" "}
-              <span className="text-highlight">a rendszer</span>
+              Három lépés,{" "}
+              <span className="text-highlight">kész eredmény</span>
             </h2>
           </div>
         </FadeIn>
@@ -65,10 +64,8 @@ export default function HowItWorks() {
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {steps.map((step, i) => (
             <FadeIn key={step.num} delay={i * 0.15}>
-              {/* Staggered offset on md+ */}
               <div className={`${i === 1 ? "md:mt-8" : i === 2 ? "md:mt-16" : ""}`}>
                 <div className="relative rounded-2xl border border-border bg-surface-card p-8 lg:p-9 card-hover group">
-                  {/* Step number */}
                   <div className="text-xs font-heading font-bold text-primary/40 tracking-wider mb-5">
                     {step.num}
                   </div>

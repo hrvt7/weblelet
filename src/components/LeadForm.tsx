@@ -9,6 +9,7 @@ const inputClass =
 export default function LeadForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [plan, setPlan] = useState<"audit" | "pro">("audit");
 
   const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "XXXXXXXX";
 
@@ -17,6 +18,7 @@ export default function LeadForm() {
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
+    formData.set("plan", plan === "audit" ? "AUDIT (0,99 €)" : "PRO (egyedi ár)");
 
     try {
       const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
@@ -45,14 +47,14 @@ export default function LeadForm() {
         <FadeIn>
           <div className="text-center mb-12">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
-              Kapcsolat
+              Indítás
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Kérj egy{" "}
-              <span className="text-highlight">demo auditot</span>
+              Indítsd el az{" "}
+              <span className="text-highlight">auditot</span>
             </h2>
             <p className="mt-4 text-foreground-muted text-lg">
-              Lefuttatjuk a rendszert a te weboldaladra vagy az ügyfeled oldalára — és megmutatjuk az eredményt.
+              Add meg a weboldalad URL-jét és küldünk egy komplett diagnózist.
             </p>
           </div>
         </FadeIn>
@@ -69,7 +71,9 @@ export default function LeadForm() {
                 Köszönjük!
               </h3>
               <p className="text-foreground-muted text-lg">
-                Hamarosan jelentkezünk a demo audit eredményével.
+                {plan === "audit"
+                  ? "Az audit eredményét hamarosan elküldjük emailben."
+                  : "Hamarosan jelentkezünk az egyedi árajánlattal."}
               </p>
             </div>
           ) : (
@@ -78,16 +82,16 @@ export default function LeadForm() {
               className="rounded-2xl bg-surface-card border border-border shadow-2xl shadow-primary/5 p-8 sm:p-10 space-y-5"
             >
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
-                  Név <span className="text-danger">*</span>
+                <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2">
+                  Weboldal URL <span className="text-danger">*</span>
                 </label>
                 <input
-                  type="text"
-                  id="name"
-                  name="name"
+                  type="url"
+                  id="website"
+                  name="website"
                   required
                   className={inputClass}
-                  placeholder="Vezetéknév Keresztnév"
+                  placeholder="https://pelda.hu"
                 />
               </div>
 
@@ -105,32 +109,54 @@ export default function LeadForm() {
                 />
               </div>
 
+              {/* Plan selector */}
               <div>
-                <label htmlFor="website" className="block text-sm font-semibold text-foreground mb-2">
-                  Weboldal URL (amit elemezni szeretnél) <span className="text-danger">*</span>
+                <label className="block text-sm font-semibold text-foreground mb-3">
+                  Csomag
                 </label>
-                <input
-                  type="url"
-                  id="website"
-                  name="website"
-                  required
-                  className={inputClass}
-                  placeholder="https://pelda.hu"
-                />
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => setPlan("audit")}
+                    className={`rounded-xl border px-4 py-3.5 text-sm font-semibold text-center transition-all cursor-pointer ${
+                      plan === "audit"
+                        ? "border-primary bg-primary/5 text-primary ring-2 ring-primary/20"
+                        : "border-border text-foreground-muted hover:border-primary/20"
+                    }`}
+                  >
+                    <div className="font-bold">AUDIT</div>
+                    <div className="text-xs mt-0.5 opacity-70">0,99 €</div>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPlan("pro")}
+                    className={`rounded-xl border px-4 py-3.5 text-sm font-semibold text-center transition-all cursor-pointer ${
+                      plan === "pro"
+                        ? "border-primary bg-primary/5 text-primary ring-2 ring-primary/20"
+                        : "border-border text-foreground-muted hover:border-primary/20"
+                    }`}
+                  >
+                    <div className="font-bold">PRO</div>
+                    <div className="text-xs mt-0.5 opacity-70">egyedi ár</div>
+                  </button>
+                </div>
               </div>
 
-              <div>
-                <label htmlFor="notes" className="block text-sm font-semibold text-foreground mb-2">
-                  Megjegyzés <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
-                </label>
-                <textarea
-                  id="notes"
-                  name="notes"
-                  rows={3}
-                  className={inputClass}
-                  placeholder="pl. ügynökség vagyok / saját weboldal / mi érdekel leginkább"
-                />
-              </div>
+              {/* Message field for PRO */}
+              {plan === "pro" && (
+                <div>
+                  <label htmlFor="notes" className="block text-sm font-semibold text-foreground mb-2">
+                    Miben segíthetünk? <span className="text-foreground-muted text-xs font-normal">(opcionális)</span>
+                  </label>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    rows={3}
+                    className={inputClass}
+                    placeholder="pl. versenytárs elemzés kell / implementációs segítség / több weboldal audit"
+                  />
+                </div>
+              )}
 
               <div className="pt-2">
                 <button
@@ -138,7 +164,11 @@ export default function LeadForm() {
                   disabled={loading}
                   className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-none"
                 >
-                  {loading ? "Küldés..." : "Kérem a demo auditot →"}
+                  {loading
+                    ? "Küldés..."
+                    : plan === "audit"
+                      ? "Audit indítása — 0,99 € →"
+                      : "Egyedi árajánlat kérése →"}
                 </button>
               </div>
 

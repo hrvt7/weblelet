@@ -1,11 +1,10 @@
 import FadeIn from "./FadeIn";
 
 const stats = [
-  { value: "13", label: "Mesterséges intelligencia agent párhuzamosan", accent: "text-primary" },
-  { value: "96", label: "Szempont 4 dimenzióban", accent: "text-accent" },
-  { value: "~15 perc", label: "Egy teljes elemzés elkészítési ideje", accent: "text-success" },
-  { value: "5", label: "Jogi keretrendszer (GDPR, magyar jog, ADA, PCI, e-mail)", accent: "text-purple-600" },
-  { value: "15+", label: "Oldalas PDF riport kész megoldásokkal", accent: "text-primary" },
+  { value: "96", label: "szempont", accent: "text-primary" },
+  { value: "4", label: "dimenzió", accent: "text-accent" },
+  { value: "5", label: "jogi keretrendszer", accent: "text-purple-600" },
+  { value: "43", label: "compliance pont", accent: "text-success" },
 ];
 
 export default function SocialProof() {
@@ -17,7 +16,7 @@ export default function SocialProof() {
             A rendszer számokban
           </p>
         </FadeIn>
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {stats.map((stat, i) => (
             <FadeIn key={stat.label} delay={i * 0.1}>
               <div className="text-center p-5 sm:p-6 rounded-2xl bg-surface border border-border-light card-hover">

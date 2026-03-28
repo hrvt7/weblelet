@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "#hogyan-mukodik", label: "Hogyan működik" },
-  { href: "#miert-mi", label: "Képességek" },
+  { href: "#mit-vizsgalunk", label: "Mit vizsgálunk" },
+  { href: "#arazas", label: "Árazás" },
+  { href: "#miert-mi", label: "Miért mi" },
   { href: "#kapcsolat", label: "Kapcsolat" },
 ];
 
@@ -64,7 +66,7 @@ export default function Header() {
               href="#kapcsolat"
               className="inline-flex items-center cursor-pointer rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-accent/20 hover:bg-accent-dark hover:shadow-md hover:shadow-accent/30 transition-all duration-200"
             >
-              Beszéljünk
+              Audit indítása
             </a>
           </nav>
 
@@ -119,7 +121,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
               className="block w-full text-center rounded-xl bg-accent px-5 py-3 mt-3 text-sm font-semibold text-white hover:bg-accent-dark transition-colors"
             >
-              Beszéljünk
+              Audit indítása
             </a>
           </div>
         </div>
