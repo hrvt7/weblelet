@@ -26,7 +26,7 @@ export default function Home() {
                 name: "Mennyibe kerül?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Az AUDIT csomag 0,99 € — komplett diagnózis PDF riporttal, 96 szempont, 4 dimenzió. A PRO csomag egyedi árazású, a weboldalad és az igényeid alapján.",
+                  text: "Az GEO ALAP csomag 0,99 € — komplett GEO audit PDF riporttal, 6 dimenzió, 14 AI robot ellenőrzés, valódi Perplexity mérés. A GEO PRO csomag egyedi árazású, a weboldalad és az igényeid alapján.",
                 },
               },
               {
@@ -42,15 +42,15 @@ export default function Home() {
                 name: "Miben más ez mint a SEMrush vagy Ahrefs?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Azok technikai SEO toolok. Mi 4 dimenzióban elemzünk: keresőoptimalizálás, AI keresők, marketing, jogi megfelelőség. Ráadásul nem csak hibákat keresünk — kész megoldásokat adunk.",
+                  text: "Azok technikai SEO toolok. Mi 6 GEO dimenzióban elemzünk: AI citability, brand authority, tartalom minőség, technikai alapok, strukturált adatok, platform optimalizálás. Valódi Perplexity méréssel dolgozunk — nem becsüljük, megmérjük.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Az elemzés kiterjed a magyar jogszabályokra?",
+                name: "Mi az a GEO score és hogyan számítják?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen. 5 jogi keretrendszert vizsgálunk: GDPR (14 pont), magyar e-kereskedelmi jog (8 pont), akadálymentesség (10 pont), fizetési biztonság (6 pont), email szabályozás (5 pont) — összesen 43 szempont.",
+                  text: "A GEO score 100 pontos rendszer, Princeton/IIT Delhi KDD '24 kutatás alapján. 6 dimenzió súlyozott átlaga: AI Citability & Láthatóság (25%), Márkaautoritás (20%), Tartalom Minőség & E-E-A-T (20%), Technikai Alapok (15%), Strukturált Adatok (10%), Platform Optimalizálás (10%).",
                 },
               },
               {
@@ -58,7 +58,7 @@ export default function Home() {
                 name: "Mennyi ideig tart?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Az AUDIT csomag 30 másodperc alatt elkészül. A PRO csomag 1-3 munkanap, mert egyedi elemzést és konzultációt tartalmaz.",
+                  text: "A GEO ALAP csomag 2 perc alatt elkészül. A GEO PRO csomag 1-3 munkanap, mert egyedi elemzést és konzultációt tartalmaz.",
                 },
               },
               {
@@ -66,7 +66,7 @@ export default function Home() {
                 name: "Mi történik az audit után?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A PRO csomagban személyes konzultáción beszéljük meg a teendőket.",
+                  text: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben, kész llms.txt és schema markup kóddal. A PRO csomagban személyes konzultáción beszéljük meg a teendőket.",
                 },
               },
               {

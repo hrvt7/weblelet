@@ -1,12 +1,12 @@
 import FadeIn from "./FadeIn";
 
 const features = [
-  "15+ oldalas PDF riport, 3 részben: Elemzés → Javaslatok → Mellékletek",
+  "10+ oldalas GEO riport: AI Score → Dimenzió elemzés → Akciólista",
   "Közérthető összefoglaló az elején — informatikus nélkül is érthető",
   "Technikai melléklet amit a fejlesztőnek adhatsz",
   "Megállapítások jelölve: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
   "Priorizált hibák + azonnali teendők — mit javíts először",
-  "Jogi megfelelőségi pontszám (A–F) és GDPR ellenőrzés",
+  "Kész llms.txt + schema markup kód generálva",
   "White-label: a te logód, a te céged neve, a te színeid",
 ];
 
@@ -46,10 +46,10 @@ export default function SampleReport() {
                   </div>
                   <div>
                     <div className="text-xs font-heading font-bold text-foreground">
-                      weblelet-riport-2026-03.pdf
+                      weblelet-geo-riport-2026-03.pdf
                     </div>
                     <div className="text-[11px] text-foreground-muted">
-                      10 oldal &middot; Személyre szabott elemzés
+                      10 oldal &middot; GEO Score + dimenzió elemzés
                     </div>
                   </div>
                 </div>
@@ -57,9 +57,9 @@ export default function SampleReport() {
                 {/* Score bars */}
                 <div className="space-y-3.5 mb-5">
                   {[
-                    { label: "GEO/SEO", score: 24, color: "bg-danger" },
-                    { label: "Marketing", score: 41, color: "bg-accent" },
-                    { label: "Sales", score: 52, color: "bg-amber-500" },
+                    { label: "GEO Score", score: 38, color: "bg-danger" },
+                    { label: "AI Citability", score: 24, color: "bg-danger" },
+                    { label: "Brand Authority", score: 41, color: "bg-amber-500" },
                   ].map((bar) => (
                     <div key={bar.label}>
                       <div className="flex justify-between text-xs mb-1.5">
@@ -83,8 +83,8 @@ export default function SampleReport() {
                   </div>
                   {[
                     { issue: "Hiányzó schema markup", severity: "Kritikus" },
-                    { issue: "Nincs AI keresőoptimalizálás", severity: "Kritikus" },
-                    { issue: "Gyenge CTA elhelyezés", severity: "Fontos" },
+                    { issue: "llms.txt fájl hiányzik", severity: "Kritikus" },
+                    { issue: "Gyenge Brand Authority jelek", severity: "Fontos" },
                   ].map((row) => (
                     <div
                       key={row.issue}

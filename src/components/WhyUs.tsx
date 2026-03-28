@@ -28,12 +28,11 @@ const reasons = [
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        <polyline points="9 12 11 14 15 10" />
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
       </svg>
     ),
-    title: "Magyar jogi compliance",
-    desc: "5 keretrendszer, 43 szempont — GDPR, magyar e-kereskedelmi jog, akadálymentesség. Nem csak a Google-nek, a hatóságnak is megfelelsz.",
+    title: "Valódi Perplexity mérés",
+    desc: "Nem becsüljük — ténylegesen megkérdezzük a Perplexity AI-t. Látjuk hogy idéz-e, mit mond a weboldaladról, és hogyan pozicionál a versenytársakhoz képest.",
   },
   {
     icon: (
@@ -43,8 +42,8 @@ const reasons = [
         <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
       </svg>
     ),
-    title: "AI keresők is",
-    desc: "Nem csak a Google-t nézzük — a ChatGPT, Perplexity, Gemini, Google AI Mode láthatóságot is elemezzük. Ez az ami megkülönböztet.",
+    title: "Princeton kutatás alapján",
+    desc: "A 6-dimenziós GEO scoring rendszer a Princeton/IIT Delhi KDD '24 kutatásán alapul. Nem vélemény — peer-reviewed tudomány.",
   },
   {
     icon: (
@@ -52,8 +51,8 @@ const reasons = [
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
       </svg>
     ),
-    title: "30 másodperc",
-    desc: "Nem kell napokat várni. URL beírás, audit, PDF riport. Ennyi.",
+    title: "2 perc",
+    desc: "Nem kell napokat várni. URL beírás, GEO audit, PDF riport. Ennyi.",
   },
 ];
 

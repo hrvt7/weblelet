@@ -1,10 +1,10 @@
 import FadeIn from "./FadeIn";
 
 const stats = [
-  { value: "96", label: "szempont", accent: "text-primary" },
-  { value: "4", label: "dimenzió", accent: "text-accent" },
-  { value: "5", label: "jogi keretrendszer", accent: "text-purple-600" },
-  { value: "43", label: "compliance pont", accent: "text-success" },
+  { value: "6", label: "GEO dimenzió", accent: "text-primary" },
+  { value: "14", label: "AI robot ellenőrzés", accent: "text-accent" },
+  { value: "100", label: "pontos GEO score", accent: "text-purple-600" },
+  { value: "2 perc", label: "audit idő", accent: "text-success" },
 ];
 
 export default function SocialProof() {
