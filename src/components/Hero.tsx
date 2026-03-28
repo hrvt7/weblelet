@@ -8,10 +8,10 @@ type AuditStatus = "idle" | "pending" | "scanning" | "analyzing" | "validating" 
 
 const STATUS_LABELS: Record<AuditStatus, string> = {
   idle: "",
-  pending: "Audit sorba állítva...",
+  pending: "Audit indítása...",
   scanning: "Weboldal beolvasása...",
-  analyzing: "AI elemzés folyamatban...",
-  validating: "Eredmények validálása...",
+  analyzing: "AI elemzés — kb. 60–90 mp...",
+  validating: "Eredmények ellenőrzése...",
   generating: "PDF riport generálása...",
   completed: "Kész!",
   failed: "Hiba történt, próbáld újra.",
@@ -19,11 +19,11 @@ const STATUS_LABELS: Record<AuditStatus, string> = {
 
 const STATUS_PROGRESS: Record<AuditStatus, number> = {
   idle: 0,
-  pending: 5,
-  scanning: 20,
-  analyzing: 50,
-  validating: 72,
-  generating: 88,
+  pending: 8,
+  scanning: 22,
+  analyzing: 35,   // crawl starts here, crawls up to 72
+  validating: 74,
+  generating: 87,
   completed: 100,
   failed: 0,
 };
@@ -38,6 +38,7 @@ export default function Hero() {
   const [error, setError] = useState<string | null>(null);
   const [animProgress, setAnimProgress] = useState(0);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const crawlRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Smooth progress animation
   useEffect(() => {
@@ -54,6 +55,23 @@ export default function Hero() {
     return () => clearInterval(t);
   }, [progress]);
 
+  // Crawl progress slowly during long phases so it never looks frozen
+  useEffect(() => {
+    if (crawlRef.current) clearInterval(crawlRef.current);
+    if (status === "analyzing") {
+      // Crawl from current position toward 73% over ~90s
+      crawlRef.current = setInterval(() => {
+        setProgress(prev => prev < 73 ? prev + 0.3 : prev);
+      }, 1000);
+    } else if (status === "generating") {
+      // Crawl from current position toward 96% over ~20s
+      crawlRef.current = setInterval(() => {
+        setProgress(prev => prev < 96 ? prev + 0.5 : prev);
+      }, 1000);
+    }
+    return () => { if (crawlRef.current) clearInterval(crawlRef.current); };
+  }, [status]);
+
   // Status polling
   useEffect(() => {
     if (!auditId) return;
@@ -64,17 +82,21 @@ export default function Hero() {
         const data = await res.json();
         const s = data.status as AuditStatus;
         setStatus(s);
-        setProgress(data.progress ?? STATUS_PROGRESS[s] ?? 0);
+        // Never decrease progress — only advance forward
+        const newProg = data.progress ?? STATUS_PROGRESS[s] ?? 0;
+        setProgress(prev => Math.max(prev, newProg));
         if (data.geoScore !== null && data.geoScore !== undefined) {
           setScores({ geo: data.geoScore, marketing: data.marketingScore, compliance: data.complianceScore, grade: data.complianceGrade });
         }
         if (s === "completed") {
           setPdfUrl(data.pdfUrl);
           if (pollRef.current) clearInterval(pollRef.current);
+          if (crawlRef.current) clearInterval(crawlRef.current);
         }
         if (s === "failed") {
           setError("Az audit sikertelen volt. Próbáld újra.");
           if (pollRef.current) clearInterval(pollRef.current);
+          if (crawlRef.current) clearInterval(crawlRef.current);
         }
       } catch { /* silent */ }
     }, 2500);
@@ -111,6 +133,7 @@ export default function Hero() {
 
   function reset() {
     if (pollRef.current) clearInterval(pollRef.current);
+    if (crawlRef.current) clearInterval(crawlRef.current);
     setStatus("idle");
     setAuditId(null);
     setProgress(0);
