@@ -15,46 +15,51 @@ const STATUS_PROGRESS: Record<string, number> = {
 };
 
 export async function GET(
-  _req: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  req: NextRequest,
+  { params }: { params: { id: string } }
 ) {
-  const { id } = await params;
-
+  const { id } = params;
   if (!id) {
     return NextResponse.json({ error: "Hiányzó audit ID" }, { status: 400 });
+  }
+
+  if (!SUPABASE_URL || !SERVICE_ROLE_KEY) {
+    return NextResponse.json({ error: "Szerver konfigurációs hiba" }, { status: 500 });
   }
 
   const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
 
   const { data: audit, error } = await supabase
     .from("audits")
-    .select("id, status, pdf_path, geo_score, marketing_score, compliance_score, compliance_grade, domain, url, updated_at")
+    .select(
+      "id, status, pdf_path, geo_score, marketing_score, compliance_score, compliance_grade, error_message"
+    )
     .eq("id", id)
     .single();
 
   if (error || !audit) {
+    console.error("Audit fetch error:", JSON.stringify(error));
     return NextResponse.json({ error: "Audit nem található" }, { status: 404 });
   }
 
+  const progress = STATUS_PROGRESS[audit.status] ?? 0;
   let pdfUrl: string | null = null;
 
   if (audit.status === "completed" && audit.pdf_path) {
-    // Generate 1-hour signed URL
-    const { data: signed } = await supabase.storage
-      .from("audit-pdfs")
+    const { data: signedData } = await supabase.storage
+      .from("audits")
       .createSignedUrl(audit.pdf_path, 3600);
-    pdfUrl = signed?.signedUrl ?? null;
+    pdfUrl = signedData?.signedUrl ?? null;
   }
 
   return NextResponse.json({
     status: audit.status,
-    progress: STATUS_PROGRESS[audit.status] ?? 0,
+    progress,
     pdfUrl,
-    domain: audit.domain,
     geoScore: audit.geo_score,
     marketingScore: audit.marketing_score,
     complianceScore: audit.compliance_score,
     complianceGrade: audit.compliance_grade,
-    updatedAt: audit.updated_at,
+    errorMessage: audit.error_message,
   });
 }
