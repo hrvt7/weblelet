@@ -1,13 +1,12 @@
 import FadeIn from "./FadeIn";
 
 const features = [
-  "10+ oldalas GEO riport: AI Score → Dimenzió elemzés → Akciólista",
+  "GEO riport: AI Score → Dimenzió elemzés → Akciólista",
   "Közérthető összefoglaló az elején — informatikus nélkül is érthető",
   "Technikai melléklet amit a fejlesztőnek adhatsz",
   "Megállapítások jelölve: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
   "Priorizált hibák + azonnali teendők — mit javíts először",
   "llms.txt és schema markup ellenőrzés + hiányosságok azonosítása",
-  "White-label: a te logód, a te céged neve, a te színeid",
 ];
 
 export default function SampleReport() {
@@ -48,7 +47,7 @@ export default function SampleReport() {
                       weblelet-geo-riport-2026-03.pdf
                     </div>
                     <div className="text-[11px] text-foreground-muted">
-                      10 oldal &middot; GEO Score + dimenzió elemzés
+                      GEO Score + dimenzió elemzés
                     </div>
                   </div>
                 </div>
