@@ -47,10 +47,11 @@ export default function ASZF() {
             2. A szolgáltatás leírása
           </h2>
           <p>
-            A WebLelet AI-alapú weboldal audit szolgáltatást nyújt, amely
-            magában foglalja a GEO/SEO elemzést, marketing hatékonyság
-            értékelést, jogi compliance ellenőrzést és üzleti potenciál
-            felmérést. Az elemzés eredménye PDF formátumú riport.
+            A WebLelet AI-alapú GEO (Generative Engine Optimization) audit
+            szolgáltatást nyújt. Az elemzés magában foglalja a 6-dimenziós
+            GEO score számítást, 14 AI robot ellenőrzést, valódi Perplexity
+            láthatóság mérést, llms.txt és schema markup vizsgálatot.
+            Az elemzés eredménye PDF formátumú riport.
           </p>
 
           <h2 className="text-xl font-bold text-foreground">
@@ -59,18 +60,18 @@ export default function ASZF() {
           <p>
             A megrendelés a weboldalon található kapcsolati űrlap kitöltésével
             és elküldésével jön létre. A Szolgáltató a megrendelést emailben
-            visszaigazolja. Az ingyenes diagnózis 48 órán belül, a teljes
-            audit az egyeztetett határidőn belül készül el.
+            visszaigazolja. A GEO ALAP audit 2 percen belül, a GEO PRO audit
+            1-3 munkanapon belül készül el.
           </p>
 
           <h2 className="text-xl font-bold text-foreground">
             4. Díjazás és fizetési feltételek
           </h2>
           <p>
-            Az ingyenes diagnózis (Szint 1) díjmentes. A teljes audit (Szint
-            2) díja egyedi megállapodás alapján kerül meghatározásra. A
-            fizetés a számla kiállítását követő 8 napon belül esedékes,
-            banki átutalással.
+            A GEO ALAP csomag díja 0,99 € egyszeri díj. A GEO PRO csomag díja
+            egyedi megállapodás alapján kerül meghatározásra. A fizetés a
+            számla kiállítását követő 8 napon belül esedékes, banki
+            átutalással.
           </p>
 
           <h2 className="text-xl font-bold text-foreground">
@@ -88,9 +89,10 @@ export default function ASZF() {
             6. Felelősség korlátozása
           </h2>
           <p>
-            Az audit riport tájékoztató jellegű, nem minősül jogi
-            tanácsadásnak. A jogi compliance megállapítások ügyvédi
-            felülvizsgálatot nem helyettesítenek. A Szolgáltató nem vállal
+            Az audit riport tájékoztató jellegű GEO readiness assessment —
+            megmutatja az AI keresőkben való láthatóság felkészültségét, de
+            nem garantálja a tényleges AI-citációkat. A Perplexity mérés
+            valós API-lekérdezésen alapul. A Szolgáltató nem vállal
             felelősséget a riportban foglalt javaslatok végrehajtásának
             eredményéért.
           </p>
@@ -99,7 +101,7 @@ export default function ASZF() {
             7. Elállás és felmondás
           </h2>
           <p>
-            A megrendelő az ingyenes diagnózis esetén bármikor, indokolás
+            A megrendelő a GEO ALAP csomag esetén bármikor, indokolás
             nélkül elállhat. Fizetős szolgáltatás esetén a munka
             megkezdése előtt díjmentesen, azt követően a már teljesített
             munka arányos díjának megfizetése mellett mondható fel.

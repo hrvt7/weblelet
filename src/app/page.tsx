@@ -58,7 +58,7 @@ export default function Home() {
                 name: "Mennyi ideig tart?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "A GEO ALAP csomag 2 perc alatt elkészül. A GEO PRO csomag 1-3 munkanap, mert egyedi elemzést és konzultációt tartalmaz.",
+                  text: "A GEO ALAP csomag 2 perc alatt elkészül. A GEO PRO csomag 1-3 munkanap, mert mélyebb elemzést — E-E-A-T audit, versenytárs GEO összehasonlítás, multi-platform readiness — is tartalmaz.",
                 },
               },
               {
@@ -66,7 +66,7 @@ export default function Home() {
                 name: "Mi történik az audit után?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben, kész llms.txt és schema markup kóddal. A PRO csomagban személyes konzultáción beszéljük meg a teendőket.",
+                  text: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A GEO PRO csomagban ezen felül kész schema markup kódot, llms.txt fájlt és teljes implementációs prioritáslistát is kapsz.",
                 },
               },
               {

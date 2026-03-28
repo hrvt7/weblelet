@@ -22,11 +22,11 @@ const faqs = [
   },
   {
     q: "Mennyi ideig tart?",
-    a: "A GEO ALAP csomag 2 perc alatt elkészül. A GEO PRO csomag 1-3 munkanap, mert egyedi elemzést és konzultációt tartalmaz.",
+    a: "A GEO ALAP csomag 2 perc alatt elkészül. A GEO PRO csomag 1-3 munkanap, mert mélyebb elemzést — E-E-A-T audit, versenytárs GEO összehasonlítás, multi-platform readiness — is tartalmaz.",
   },
   {
     q: "Mi történik az audit után?",
-    a: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben, kész llms.txt és schema markup kóddal. A PRO csomagban személyes konzultáción beszéljük meg a teendőket.",
+    a: "Kapsz egy PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A GEO PRO csomagban ezen felül kész schema markup kódot, llms.txt fájlt és teljes implementációs prioritáslistát is kapsz.",
   },
   {
     q: "Használhatom az ügyfeleimnek is?",
@@ -63,9 +63,7 @@ export default function FAQ() {
                 }`}
               >
                 <button
-                  onClick={() =>
-                    setOpenIndex(openIndex === i ? null : i)
-                  }
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   className="flex w-full items-center justify-between px-7 py-5 text-left cursor-pointer"
                 >
                   <span className="font-heading text-[1.05rem] font-semibold text-foreground pr-4 tracking-[-0.01em]">
@@ -76,15 +74,7 @@ export default function FAQ() {
                       openIndex === i ? "bg-primary/10 text-primary rotate-180" : "bg-surface text-foreground-muted"
                     }`}
                   >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                       <polyline points="6 9 12 15 18 9" />
                     </svg>
                   </div>
