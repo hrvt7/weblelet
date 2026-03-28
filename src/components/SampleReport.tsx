@@ -6,7 +6,7 @@ const features = [
   "Technikai melléklet amit a fejlesztőnek adhatsz",
   "Megállapítások jelölve: 🔴 Tény / 🟡 Feltételezés / 🟢 Javaslat",
   "Priorizált hibák + azonnali teendők — mit javíts először",
-  "Kész llms.txt + schema markup kód generálva",
+  "llms.txt és schema markup ellenőrzés + hiányosságok azonosítása",
   "White-label: a te logód, a te céged neve, a te színeid",
 ];
 
@@ -32,7 +32,6 @@ export default function SampleReport() {
           {/* Left - Mockup */}
           <FadeIn direction="left">
             <div className="relative max-w-md mx-auto lg:max-w-none">
-              {/* Background shadow card */}
               <div className="absolute inset-0 rounded-2xl bg-primary/5 transform rotate-1 scale-[1.01] -z-10" />
 
               <div className="rounded-2xl bg-surface-card border border-border shadow-xl p-7">
@@ -117,7 +116,7 @@ export default function SampleReport() {
           {/* Right - Feature list */}
           <FadeIn direction="right" delay={0.15}>
             <div className="space-y-6">
-              {features.map((feature, i) => (
+              {features.map((feature) => (
                 <div key={feature} className="flex items-start gap-4 group">
                   <div className="mt-0.5 h-7 w-7 shrink-0 rounded-xl bg-success/10 flex items-center justify-center group-hover:bg-success/20 transition-colors">
                     <svg
