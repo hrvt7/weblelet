@@ -59,14 +59,6 @@ export default function About() {
             <p className="mt-4 text-foreground-muted leading-relaxed max-w-xl mx-auto">
               Rendelőnk a szombathelyi Markusovszky Lajos utcai orvosi központban működik, könnyen megközelíthető helyen. Modern eszközökkel és korszerű módszerekkel dolgozunk, miközben pácienseink igényeit nagyfokú odafigyeléssel követjük.
             </p>
-            <div className="mt-8 flex justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/kreatikar-teeth-3597679.jpg"
-                alt="Modern fogpótlás és implantátum illusztráció"
-                className="rounded-2xl shadow-lg max-w-md w-full border border-border"
-              />
-            </div>
           </div>
         </FadeIn>
 

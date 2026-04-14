@@ -8,96 +8,49 @@ const services = [
     title: "Fogászati szűrővizsgálat",
     short: "Rendszeres kontroll a fogak és az íny állapotának felmérésére.",
     detail: "A félévenkénti szűrővizsgálat során áttekintjük a fogak és az íny állapotát, panoráma- vagy intraorális röntgenfelvételt készíthetünk a rejtett szuvasodások, gyökércsúcsi elváltozások vagy parodontális problémák feltárásához. A vizsgálat kiterjed a nyálkahártya, a nyelv és a szájüreg lágyszöveteinek ellenőrzésére is. A korai felismerés a leghatékonyabb megelőzés — sok fogászati probléma kezdetben teljesen tünetmentes.",
-    image: "/images/service-szurovizsgalat.jpg",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
-      </svg>
-    ),
+    image: "/images/service-1-szurovizsgalat.webp",
   },
   {
     title: "Fogmegtartó kezelések",
     short: "Tömések és gyökérkezelések korszerű, tartós anyagokkal.",
     detail: "A fogmegtartó fogászat célja a szuvas vagy sérült fogak megmentése eltávolítás helyett. Kompozit (fogszínű) tömésekkel pótoljuk a hiányzó fogszövetet — az anyag tartós, esztétikus, és a természetes fogszínhez igazítható. Előrehaladottabb esetben gyökérkezelést végzünk: eltávolítjuk a fertőzött fogbelet, kitisztítjuk és lezárjuk a gyökércsatornákat, majd a fogat tömjük vagy koronával erősítjük meg. Célunk minden menthető fog hosszú távú megtartása.",
-    image: "/images/kreatikar-dental-3599745.jpg",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-      </svg>
-    ),
+    image: "/images/service-2-fogmegtarto.webp",
   },
   {
     title: "Fogkőeltávolítás és tisztítás",
     short: "Ultrahangos fogkő-eltávolítás és polírozás az egészséges ínyért.",
     detail: "A fogkő a nyálban lévő ásványi anyagok és baktériumok lerakódása, amelyet otthoni fogmosással nem lehet eltávolítani. Ultrahangos depurátorral távolítjuk el a supra- és subgingivális fogköveket, majd speciális polírozó pasztával simítjuk a fogfelszínt — ez csökkenti az új lerakódások esélyét. A rendszeres fogkőeltávolítás megelőzi a gingivitiszt (ínygyulladást) és a parodontitiszt (fogágygyulladást), amelyek kezelés nélkül fogvesztéshez vezethetnek.",
-    image: "/images/service-fogko.jpg",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-      </svg>
-    ),
+    image: "/images/service-3-fogko.webp",
   },
   {
     title: "Fogpótlás",
     short: "Koronák, hidak és kivehető fogsorok természetes megjelenéssel.",
     detail: "Az elveszett vagy erősen sérült fogak pótlása nemcsak esztétikai, hanem funkcionális kérdés is — a hiányzó fogak megváltoztatják a rágás dinamikáját és a szomszédos fogak helyzetét. Fém-kerámia vagy teljes kerámia koronákkal erősítjük meg a gyengült fogakat, hídpótlással pótoljuk az egy vagy több fogból álló hiányt, ahol a szomszédos fogak horgonyként szolgálnak. Teljes vagy részleges kivehető fogsorokat is készítünk, amelyek a természetes fogsor megjelenését és funkcióját hűen visszaadják.",
-    image: "/images/service-fogpotlas.jpg",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-        <line x1="3" y1="9" x2="21" y2="9" />
-        <line x1="9" y1="21" x2="9" y2="9" />
-      </svg>
-    ),
+    image: "/images/service-4-fogpotlas.webp",
   },
   {
     title: "Esztétikai fogászat",
     short: "Fogfehérítés és esztétikai megoldások a magabiztos mosolyért.",
     detail: "Az esztétikai fogászat célja a mosoly természetes szépségének visszaállítása vagy javítása. Rendelői fogfehérítéssel akár több árnyalattal világosabbá tehetjük a fogakat — a kezelés biztonságos, az érzékenység átmeneti. Kompozit héjakkal (veneers) javítjuk a repedezett, elszíneződött vagy apró résekkel rendelkező fogak megjelenését. Az esztétikai töméscsere során a régi amalgám töméseket fogszínű kompozitra cseréljük, amely szinte láthatatlanul illeszkedik a foghoz.",
-    image: null, /* generálandó */
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-      </svg>
-    ),
+    image: "/images/service-5-esztetikai.webp",
   },
   {
     title: "Fogeltávolítás",
     short: "Kíméletes foghúzás, bölcsességfog eltávolítás érzéstelenítéssel.",
     detail: "A fogeltávolítás az utolsó lehetőség, amelyre akkor kerül sor, ha a fog konzervatív módszerekkel már nem menthető meg — pl. előrehaladott szuvasodás, törött gyökér, vagy súlyos parodontális érintettség esetén. A beavatkozást helyi érzéstelenítéssel végezzük, a modern technikáknak köszönhetően a folyamat kíméletes. Bölcsességfogak eltávolítására is vállalkozunk, amennyiben azok félreállnak, nyomást gyakorolnak a szomszédos fogakra, vagy visszatérő gyulladást okoznak. A beavatkozás után részletes utógondozási tanácsot adunk a gyors és szövődménymentes gyógyulás érdekében.",
-    image: "/images/service-fogeltavolitas.jpg",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
+    image: "/images/service-6-fogeltavolitas.webp",
   },
   {
     title: "Gyermekfogászat",
     short: "Barátságos fogászati élmény a legkisebbeknek.",
     detail: "A gyermekfogászatban kiemelt figyelmet fordítunk arra, hogy a gyermek számára az első fogászati élmény pozitív és stresszmentes legyen — ez megalapozza a felnőttkori fogorvos-páciens kapcsolatot. A tejfogak állapota közvetlenül befolyásolja a maradó fogak fejlődését, ezért a szuvasodás korai kezelése elengedhetetlen. Barázdazárással (fissura-záró lakkozás) védjük a frissen előtört maradó őrlőfogakat a szuvasodástól, fluoridos kezeléssel pedig erősítjük a fogzománcot. Szülőknek személyre szabott szájhigiénés tanácsadást nyújtunk.",
-    image: null, /* generálandó */
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-        <circle cx="12" cy="12" r="10" />
-        <line x1="9" y1="9" x2="9.01" y2="9" />
-        <line x1="15" y1="9" x2="15.01" y2="9" />
-      </svg>
-    ),
+    image: "/images/service-7-gyermek.webp",
   },
   {
     title: "Sürgősségi ellátás",
     short: "Akut fogfájás vagy fogászati baleset esetén mielőbbi ellátás.",
     detail: "Akut fogfájás, eltörött fog, kiesett tömés vagy fogászati trauma esetén mielőbbi ellátást biztosítunk a rendelési időben. A sürgősségi vizsgálat során azonosítjuk a fájdalom okát, szükség esetén röntgenfelvételt készítünk, és elvégezzük az akut beavatkozást — legyen az ideiglenes tömés, gyökérkezelés megkezdése, tályog megnyitása vagy a fájdalom csillapítása. Amennyiben a végleges kezelés több ülést igényel, tervet készítünk és soron kívüli időpontot biztosítunk a folytatáshoz.",
-    image: null, /* generálandó */
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <line x1="12" y1="8" x2="12" y2="12" />
-        <line x1="12" y1="16" x2="12.01" y2="16" />
-      </svg>
-    ),
+    image: "/images/service-8-surgossegi.webp",
   },
 ];
 
@@ -112,19 +65,25 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
         }`}
         onClick={() => setOpen(!open)}
       >
-        <div className="p-7">
-          <div className="flex items-start justify-between gap-4">
-            <div className="flex items-start gap-4">
-              <div className={`h-12 w-12 shrink-0 rounded-2xl flex items-center justify-center transition-colors duration-300 ${
-                open ? "bg-primary text-white" : "bg-primary/8 text-primary group-hover:bg-primary group-hover:text-white"
+        <div className="p-5 sm:p-7">
+          <div className="flex items-start justify-between gap-3">
+            <div className="flex items-start gap-3 sm:gap-4">
+              {/* Thumbnail — the same image as the expanded version, small and round */}
+              <div className={`h-12 w-12 sm:h-14 sm:w-14 shrink-0 rounded-2xl overflow-hidden transition-all duration-300 ${
+                open ? "ring-2 ring-primary/30" : "ring-1 ring-border"
               }`}>
-                {service.icon}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
-                <h3 className="font-heading text-[1.05rem] font-bold text-foreground tracking-[-0.01em]">
+                <h3 className="font-heading text-[0.95rem] sm:text-[1.05rem] font-bold text-foreground tracking-[-0.01em]">
                   {service.title}
                 </h3>
-                <p className="text-sm text-foreground-muted leading-relaxed mt-1.5">
+                <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed mt-1">
                   {service.short}
                 </p>
               </div>
@@ -139,20 +98,20 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
           </div>
         </div>
 
+        {/* Expandable detail */}
         <div className="service-expand" data-open={open}>
           <div>
-            <div className="px-7 pb-7 pt-0">
-              <div className="border-t border-border-light pt-5 ml-0 sm:ml-16">
-                {service.image && (
-                  <div className="mb-4 rounded-xl overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-40 sm:h-48 object-cover"
-                    />
-                  </div>
-                )}
+            <div className="px-5 sm:px-7 pb-6 pt-0">
+              <div className="border-t border-border-light pt-5">
+                {/* Large image */}
+                <div className="mb-5 rounded-xl overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-44 sm:h-56 object-cover"
+                  />
+                </div>
                 <p className="text-[0.9rem] text-foreground-secondary leading-[1.75]">
                   {service.detail}
                 </p>
