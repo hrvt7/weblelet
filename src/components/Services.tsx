@@ -129,8 +129,10 @@ function DesktopCard({ service, index }: { service: typeof services[number]; ind
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={service.image} alt={service.title} className="w-full h-56 object-cover" loading="lazy" />
                 </div>
-                <p className="text-[0.9rem] text-foreground-secondary leading-[1.75]">{service.detail}</p>
-                <a
+                <div className="h-[120px] overflow-y-auto">
+                  <p className="text-[0.9rem] text-foreground-secondary leading-[1.75]">{service.detail}</p>
+                </div>
+                <
                   href={service.href}
                   className="inline-flex items-center gap-2 mt-4 rounded-lg bg-primary/8 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/15 transition-colors"
                   onClick={(e) => e.stopPropagation()}
