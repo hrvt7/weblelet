@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Left — text */}
           <div className="lg:col-span-7">
             <FadeIn>
-              <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
+              <p className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">
                 Fogorvosi rendelő — Szombathely
               </p>
               <h1
