@@ -19,16 +19,14 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain object-bottom sm:object-cover sm:object-center"
+            className="w-full h-full object-contain object-top sm:object-cover sm:object-center"
           />
-          {/* Top fade — into pink bg */}
-          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-[#e8c8c0] to-transparent" />
           {/* Bottom fade */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
         </div>
 
         {/* Spacer */}
-        <div className="h-[45vh] sm:h-[55vh] lg:h-[60vh]" />
+        <div className="h-[55vh] sm:h-[60vh] lg:h-[65vh]" />
 
         {/* Title area */}
         <div className="relative bg-gradient-to-b from-transparent to-[#FCFAF8]">
