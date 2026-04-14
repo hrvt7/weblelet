@@ -61,7 +61,7 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
     <FadeIn delay={index * 0.06}>
       <div
         className={`rounded-xl sm:rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer ${
-          open ? "border-primary/25 shadow-lg col-span-2" : "border-border hover:border-primary/15 card-hover"
+          open ? "border-primary/25 shadow-lg col-span-2" : "border-border hover:border-primary/15 card-hover h-[130px] sm:h-[140px]"
         }`}
         onClick={() => setOpen(!open)}
       >
