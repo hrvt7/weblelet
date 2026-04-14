@@ -103,7 +103,7 @@ export default function Contact() {
               {/* Google Maps */}
               <div className="rounded-2xl overflow-hidden border border-border shadow-sm">
                 <iframe
-                  src="https://www.google.com/maps?q=Szombathely,+Markusovszky+Lajos+utca+8,+9700&z=16&hl=hu&output=embed"
+                  src="https://www.google.com/maps?q=47.2389614,16.6183989&z=17&hl=hu&output=embed"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}
