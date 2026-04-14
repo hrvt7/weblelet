@@ -13,20 +13,16 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
     <>
       {/* Hero with full-width background image */}
       <section className="relative pt-28 pb-0 sm:pt-36 overflow-hidden">
-        {/* Background image */}
-        <div className="absolute inset-0 -z-20">
+        {/* Image — inline, not background */}
+        <div className="w-full relative">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto"
           />
-          {/* Bottom fade only */}
-          <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
+          <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
         </div>
-
-        {/* Spacer for image */}
-        <div className="h-48 sm:h-72 lg:h-80" />
 
         {/* Title area */}
         <div className="relative bg-[#FCFAF8]">
