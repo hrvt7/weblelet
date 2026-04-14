@@ -11,25 +11,23 @@ interface ServicePageProps {
 export default function ServicePage({ title, subtitle, image, sections, relatedServices }: ServicePageProps) {
   return (
     <>
-      {/* Hero with full-width background image */}
-      <section className="relative pt-0 pb-0 sm:pt-0 overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 -z-20 bg-[#e8c8c0]">
+      {/* Pink bg behind header */}
+      <div className="bg-[#e8c8c0] h-[72px]" />
+
+      {/* Hero image + title */}
+      <section className="relative pb-0">
+        {/* Image — full width, natural height */}
+        <div className="w-full bg-[#e8c8c0]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain object-top sm:object-cover sm:object-center"
+            className="w-full h-auto"
           />
-          {/* Bottom fade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
         </div>
 
-        {/* Spacer */}
-        <div className="h-[55vh] sm:h-[60vh] lg:h-[65vh]" />
-
         {/* Title area */}
-        <div className="relative bg-gradient-to-b from-transparent to-[#FCFAF8]">
+        <div className="bg-[#FCFAF8]">
           <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 sm:pb-14">
             <FadeIn>
               <a href="/#szolgaltatasok" className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:text-primary-dark transition-colors mb-5">
