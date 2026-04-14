@@ -19,7 +19,7 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain sm:object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
           {/* Bottom fade */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
