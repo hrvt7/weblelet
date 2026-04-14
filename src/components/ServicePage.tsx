@@ -13,19 +13,23 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
     <>
       {/* Hero with full-width background image */}
       <section className="relative pt-28 pb-0 sm:pt-36 overflow-hidden">
-        {/* Image — inline, not background */}
-        <div className="w-full relative">
+        {/* Background image */}
+        <div className="absolute inset-0 -z-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={image}
             alt={title}
-            className="w-full h-auto"
+            className="w-full h-full object-contain sm:object-cover object-center"
           />
-          <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
+          {/* Bottom fade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
         </div>
 
+        {/* Spacer */}
+        <div className="h-48 sm:h-72 lg:h-80" />
+
         {/* Title area */}
-        <div className="relative bg-[#FCFAF8]">
+        <div className="relative bg-gradient-to-b from-transparent to-[#FCFAF8]">
           <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 sm:pb-14">
             <FadeIn>
               <a href="/#szolgaltatasok" className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:text-primary-dark transition-colors mb-5">
