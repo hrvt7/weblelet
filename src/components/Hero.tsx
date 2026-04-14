@@ -15,12 +15,12 @@ export default function Hero() {
           alt="Fogászati implantátum illusztráció — Dr. Köteles Renáta fogorvosi rendelő, Szombathely"
           className="w-full h-full object-cover object-[center_40%] sm:object-[center_30%]"
         />
-        {/* Desktop: softer gradient — more background visible */}
-        <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/90 via-[#FCFAF8]/70 to-[#FCFAF8]/25" />
-        {/* Mobile: top-to-bottom gradient so image is visible at top, text readable below */}
-        <div className="absolute inset-0 sm:hidden bg-gradient-to-b from-[#FCFAF8]/30 via-[#FCFAF8]/70 to-[#FCFAF8]/95" />
-        {/* Bottom fade for wave divider */}
-        <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/90" />
+        {/* Desktop: light text-area fade only on the left */}
+        <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/80 via-[#FCFAF8]/40 to-transparent" />
+        {/* Mobile: top visible, bottom fades for text */}
+        <div className="absolute inset-0 sm:hidden bg-gradient-to-b from-transparent via-[#FCFAF8]/40 to-[#FCFAF8]/90" />
+        {/* Bottom fade */}
+        <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/80" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
