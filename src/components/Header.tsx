@@ -3,10 +3,9 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "#hogyan-mukodik", label: "Hogyan működik" },
-  { href: "#mit-vizsgalunk", label: "Mit vizsgálunk" },
-  { href: "#arazas", label: "Árazás" },
-  { href: "#miert-mi", label: "Miért mi" },
+  { href: "#szolgaltatasok", label: "Szolgáltatások" },
+  { href: "#rendelesi-ido", label: "Rendelési idő" },
+  { href: "#rolunk", label: "Rólunk" },
   { href: "#kapcsolat", label: "Kapcsolat" },
 ];
 
@@ -33,22 +32,28 @@ export default function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
             <div className="relative h-9 w-9 rounded-xl bg-primary flex items-center justify-center shadow-md shadow-primary/20">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="white"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2C10 2 8 3.5 7 6C6 8.5 6 11 7 13C8.5 16 10 18 10 22" />
+                <path d="M12 2C14 2 16 3.5 17 6C18 8.5 18 11 17 13C15.5 16 14 18 14 22" />
               </svg>
             </div>
-            <span className="text-xl font-heading font-bold tracking-[-0.02em] text-foreground">
-              Web<span className="text-primary">Lelet</span>
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-base font-heading font-bold tracking-[-0.02em] text-foreground">
+                Dr. Köteles Renáta
+              </span>
+              <span className="text-[11px] text-foreground-muted font-medium">Fogorvos</span>
+            </div>
+          </a>
+
+          {/* Phone — always visible on mobile */}
+          <a
+            href="tel:+3694900887"
+            className="md:hidden flex items-center gap-1.5 text-primary font-semibold text-sm"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Hívás
           </a>
 
           {/* Desktop nav */}
@@ -63,28 +68,23 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#kapcsolat"
-              className="inline-flex items-center cursor-pointer rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-accent/20 hover:bg-accent-dark hover:shadow-md hover:shadow-accent/30 transition-all duration-200"
+              href="tel:+3694900887"
+              className="inline-flex items-center gap-2 cursor-pointer rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-primary/20 hover:bg-primary-dark hover:shadow-md transition-all duration-200"
             >
-              Audit indítása
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Időpontfoglalás
             </a>
           </nav>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 rounded-lg text-foreground hover:bg-surface-blue transition-colors"
+            className="md:hidden p-2 rounded-lg text-foreground hover:bg-surface-alt transition-colors"
             aria-label="Menü"
           >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
               {menuOpen ? (
                 <>
                   <path d="M18 6L6 18" />
@@ -111,17 +111,20 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block rounded-lg px-4 py-3 text-base font-medium text-foreground-secondary hover:bg-surface-blue hover:text-primary transition-colors"
+                className="block rounded-lg px-4 py-3 text-base font-medium text-foreground-secondary hover:bg-surface-alt hover:text-primary transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
-              href="#kapcsolat"
+              href="tel:+3694900887"
               onClick={() => setMenuOpen(false)}
-              className="block w-full text-center rounded-xl bg-accent px-5 py-3 mt-3 text-sm font-semibold text-white hover:bg-accent-dark transition-colors"
+              className="flex items-center justify-center gap-2 w-full text-center rounded-xl bg-primary px-5 py-3 mt-3 text-sm font-semibold text-white hover:bg-primary-dark transition-colors"
             >
-              Audit indítása
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Időpontfoglalás: +36 94 900-887
             </a>
           </div>
         </div>

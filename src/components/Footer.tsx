@@ -7,66 +7,56 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start gap-2.5">
             <div className="flex items-center gap-2.5">
               <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center shadow-sm shadow-primary/20">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2C10 2 8 3.5 7 6C6 8.5 6 11 7 13C8.5 16 10 18 10 22" />
+                  <path d="M12 2C14 2 16 3.5 17 6C18 8.5 18 11 17 13C15.5 16 14 18 14 22" />
                 </svg>
               </div>
               <span className="font-heading text-lg font-bold tracking-[-0.02em] text-foreground">
-                Web<span className="text-primary">Lelet</span>
+                Dr. Köteles Renáta
               </span>
             </div>
             <p className="text-sm text-foreground-muted max-w-xs text-center md:text-left">
-              AI-alapú weboldal audit: GEO optimalizálás és SEO elemzés magyar vállalkozásoknak.
+              Felnőtt fogorvosi rendelő Szombathelyen. Fájdalommentes fogászat, családias légkörben.
             </p>
           </div>
 
           {/* Navigation */}
           <div className="flex flex-col items-center md:items-start gap-3 text-sm text-foreground-muted">
             <p className="font-heading font-semibold text-foreground-secondary text-xs uppercase tracking-wider">Navigáció</p>
-            <a href="#hogyan-mukodik" className="hover:text-primary transition-colors duration-200">Hogyan működik</a>
-            <a href="#mit-vizsgalunk" className="hover:text-primary transition-colors duration-200">Mit vizsgálunk</a>
-            <a href="#arazas" className="hover:text-primary transition-colors duration-200">Weboldal audit árak</a>
-            <a href="#miert-mi" className="hover:text-primary transition-colors duration-200">Miért a WebLelet</a>
-            <a href="#kapcsolat" className="hover:text-primary transition-colors duration-200">Audit indítása</a>
+            <a href="#szolgaltatasok" className="hover:text-primary transition-colors duration-200">Szolgáltatások</a>
+            <a href="#rendelesi-ido" className="hover:text-primary transition-colors duration-200">Rendelési idő</a>
+            <a href="#rolunk" className="hover:text-primary transition-colors duration-200">Rólunk</a>
+            <a href="#kapcsolat" className="hover:text-primary transition-colors duration-200">Kapcsolat</a>
           </div>
 
-          {/* Contact + legal */}
+          {/* Contact */}
           <div className="flex flex-col items-center md:items-start gap-3 text-sm text-foreground-muted">
-            <p className="font-heading font-semibold text-foreground-secondary text-xs uppercase tracking-wider">Kapcsolat</p>
-            <a href="mailto:info@weblelet.hu" className="hover:text-primary transition-colors duration-200">
-              info@weblelet.hu
+            <p className="font-heading font-semibold text-foreground-secondary text-xs uppercase tracking-wider">Elérhetőségek</p>
+            <a href="tel:+3694900887" className="hover:text-primary transition-colors duration-200">
+              +36 94 900-887
             </a>
-            <a href="https://www.linkedin.com/company/weblelet" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors duration-200">
-              LinkedIn
+            <a href="mailto:dr.renatalarissza@yahoo.com" className="hover:text-primary transition-colors duration-200">
+              dr.renatalarissza@yahoo.com
             </a>
+            <span>9700 Szombathely, Markusovszky Lajos u. 8.</span>
             <a href="/adatvedelem" className="hover:text-primary transition-colors duration-200">
-              Adatvédelem
-            </a>
-            <a href="/aszf" className="hover:text-primary transition-colors duration-200">
-              ÁSZF
+              Adatvédelmi tájékoztató
             </a>
           </div>
         </div>
 
-        {/* SEO text + Impresszum */}
-        <div className="mt-10 pt-8 border-t border-border-light text-center text-xs text-foreground-muted leading-relaxed space-y-3">
-          <p className="max-w-2xl mx-auto">
-            A WebLelet AI-alapú weboldal audit szolgáltatás, amely GEO optimalizálást (Generative Engine Optimization) és SEO elemzést kínál magyar vállalkozásoknak. Mérd meg a weboldalad láthatóságát a ChatGPT-ben, Perplexity-ben, Gemini-ben és a Google-ben.
+        {/* Bottom */}
+        <div className="mt-10 pt-8 border-t border-border-light text-center text-xs text-foreground-muted leading-relaxed space-y-1">
+          <p>
+            <strong className="text-foreground-secondary">Dr. Köteles Renáta</strong> — Felnőtt fogorvosi rendelő
           </p>
-          <div className="space-y-1 pt-2">
-            <p>
-              <strong className="text-foreground-secondary">WebLelet</strong> — Horváth Ádám
-            </p>
-            <p>
-              9700 Szombathely &middot; info@weblelet.hu
-            </p>
-            <p>
-              Tárhelyszolgáltató: Vercel Inc. (340 S Lemon Ave #4133, Walnut, CA 91789, USA)
-            </p>
-            <p className="pt-2">
-              &copy; {new Date().getFullYear()} WebLelet. Minden jog fenntartva.
-            </p>
-          </div>
+          <p>
+            9700 Szombathely, Markusovszky Lajos u. 8. &middot; +36 94 900-887
+          </p>
+          <p className="pt-2">
+            &copy; {new Date().getFullYear()} Dr. Köteles Renáta. Minden jog fenntartva.
+          </p>
         </div>
       </div>
     </footer>

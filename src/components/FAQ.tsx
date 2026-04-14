@@ -5,44 +5,28 @@ import FadeIn from "./FadeIn";
 
 const faqs = [
   {
-    q: "Mennyibe kerül egy weboldal audit?",
-    a: "A GEO ALAP csomag 0,99 € — komplett GEO audit PDF riporttal, 6 dimenzió, 14 AI robot ellenőrzés, valódi Perplexity mérés, SEO elemzés. A GEO PRO csomag egyedi árazású, a weboldalad és az igényeid alapján.",
+    q: "Kell-e előre időpontot foglalni?",
+    a: "Igen, kérjük hívjon a +36 94 900-887 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
   },
   {
-    q: "Mi az a GEO és miért fontos 2026-ban?",
-    a: "A GEO (Generative Engine Optimization) azt vizsgálja, hogyan jelenik meg a weboldalad az AI keresőkben — ChatGPT, Perplexity, Gemini, Google AI Mode. 2026-ban a keresések 37%-a AI eszközökkel indul, és ez gyorsan nő. Az AI keresőoptimalizálás nélkül láthatatlan maradsz az új generáció számára.",
+    q: "TB-támogatott a rendelés?",
+    a: "Igen, rendelőnk NEAK szerződéssel működik. Az alapellátás társadalombiztosítás keretében igénybe vehető.",
   },
   {
-    q: "Mi a különbség a SEO és a GEO között?",
-    a: "A hagyományos SEO (keresőoptimalizálás) a Google organikus találataira fókuszál. A GEO az AI keresőkre optimalizál — ChatGPT, Perplexity, Gemini. 2026-ban mindkettő kell: a SEO a klasszikus forgalomhoz, a GEO az AI válaszokban való megjelenéshez. A WebLelet mindkettőt méri egy auditban.",
+    q: "Milyen gyakran kell szűrővizsgálatra járni?",
+    a: "Félévente javasolt a fogászati kontroll. A korai felismerés a leghatékonyabb megelőzés — sok probléma tünetmentes kezdetben.",
   },
   {
-    q: "Hogyan kerülhet be a weboldalam a ChatGPT válaszaiba?",
-    a: "A ChatGPT-ben való megjelenéshez kell: GPTBot crawler engedélyezése a robots.txt-ben, llms.txt fájl létrehozása, strukturált adatok (schema markup) beépítése, és E-E-A-T jelek erősítése (szerzői információk, adatok, források). A WebLelet GEO audit pontosan ezeket vizsgálja és konkrét javítási tervet ad.",
+    q: "Fáj a kezelés?",
+    a: "Modern érzéstelenítési módszerekkel dolgozunk, a legtöbb kezelés fájdalommentesen elvégezhető. Kérje bátran az érzéstelenítést.",
   },
   {
-    q: "Miért nem találnak rám a Google-ben?",
-    a: "A leggyakoribb okok: hiányzó vagy hibás meta címkék (title, description), nincs sitemap.xml, rossz robots.txt beállítás, lassú betöltés, nem mobilbarát design, hiányzó schema markup, gyenge tartalom. A WebLelet SEO audit ezeket mind feltárja és priorizált javítási tervet ad.",
+    q: "Gyermekeket is fogadnak?",
+    a: "Igen, gyermekfogászati ellátást is nyújtunk. Barátságos, játékos környezetben ismerkedhetnek meg a fogászattal.",
   },
   {
-    q: "Miben más ez mint a SEMrush vagy Ahrefs?",
-    a: "A SEMrush és Ahrefs hagyományos SEO eszközök. A WebLelet az AI keresőkre is elemez: 6 GEO dimenzió, valódi Perplexity mérés, AI robot hozzáférés vizsgálat, llms.txt ellenőrzés. A klasszikus SEO audit mellett megkapod az AI láthatósági képet is.",
-  },
-  {
-    q: "Mi az a GEO score és hogyan számítják?",
-    a: "A GEO score 100 pontos rendszer, Princeton/IIT Delhi KDD '24 kutatás alapján. 6 dimenzió súlyozott átlaga: AI Citability & Láthatóság (25%), Márkaautoritás (20%), Tartalom Minőség & E-E-A-T (20%), Technikai Alapok (15%), Strukturált Adatok (10%), Platform Optimalizálás (10%).",
-  },
-  {
-    q: "Mennyi ideig tart a weboldal elemzés?",
-    a: "A GEO ALAP csomag 2 perc alatt elkészül — automatizált AI elemzés. A GEO PRO csomag 1-3 munkanap, mert mélyebb elemzést tartalmaz: E-E-A-T audit, versenytárs GEO összehasonlítás, multi-platform AI readiness vizsgálat.",
-  },
-  {
-    q: "Mi történik az audit után?",
-    a: "Kapsz egy részletes PDF riportot amiben minden megállapítás jelölve van (TÉNY / BECSLÉS / JAVASLAT), prioritási sorrendben. A GEO PRO csomagban ezen felül kész schema markup kódot, llms.txt fájlt és teljes implementációs prioritáslistát is kapsz.",
-  },
-  {
-    q: "Használhatom az ügyfeleimnek is?",
-    a: "Igen. Ha ügynökség vagy, vagy ügyfélnek dolgozol, a riportot egyszerűen továbbküldheted — minden megállapítás konkrét, érthető és azonnal használható.",
+    q: "Mi a teendő sürgős fogfájás esetén?",
+    a: "Hívjon a rendelési időben a +36 94 900-887 számon, és igyekszünk mielőbb ellátni.",
   },
 ];
 
@@ -50,8 +34,8 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 sm:py-32 bg-surface-warm relative">
-      <div className="absolute inset-0 dot-grid opacity-[0.15] -z-10" />
+    <section className="py-24 sm:py-32 bg-surface-alt relative">
+      <div className="absolute inset-0 dot-grid opacity-[0.12] -z-10" />
 
       <div className="mx-auto max-w-3xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
