@@ -58,6 +58,7 @@ export default function RootLayout({
   return (
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: `if('scrollRestoration' in history) history.scrollRestoration='manual'; window.addEventListener('beforeunload',function(){window.scrollTo(0,0)})` }} />
         {/* Dentist JSON-LD */}
         <script
           type="application/ld+json"
