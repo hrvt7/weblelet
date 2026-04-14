@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import { useEffect, useRef, useState, ReactNode } from "react";
 
 interface FadeInProps {
   children: ReactNode;
@@ -16,29 +15,46 @@ export default function FadeIn({
   delay = 0,
   direction = "up",
   className = "",
-  distance = 32,
+  distance = 24,
 }: FadeInProps) {
-  const directionMap = {
-    up: { y: distance },
-    down: { y: -distance },
-    left: { x: distance },
-    right: { x: -distance },
-    none: {},
-  };
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-40px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const translate =
+    direction === "up" ? `translateY(${distance}px)` :
+    direction === "down" ? `translateY(-${distance}px)` :
+    direction === "left" ? `translateX(${distance}px)` :
+    direction === "right" ? `translateX(-${distance}px)` :
+    "none";
 
   return (
-    <motion.div
-      initial={{ opacity: 0, ...directionMap[direction] }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{
-        duration: 0.65,
-        delay,
-        ease: [0.25, 0.1, 0.25, 1],
-      }}
+    <div
+      ref={ref}
       className={className}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "none" : translate,
+        transition: `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`,
+        willChange: visible ? "auto" : "opacity, transform",
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
