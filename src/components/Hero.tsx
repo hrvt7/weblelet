@@ -11,9 +11,15 @@ export default function Hero() {
       <div className="absolute inset-0 -z-20">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/hero-bg.jpg"
+          src="/images/hero-bg-mobile.webp"
           alt="Fogászati implantátum illusztráció — Dr. Köteles Renáta fogorvosi rendelő, Szombathely"
-          className="w-full h-full object-cover object-[center_40%] sm:object-[center_30%]"
+          className="w-full h-full object-cover object-center sm:hidden"
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-bg.jpg"
+          alt=""
+          className="w-full h-full object-cover object-[center_30%] hidden sm:block"
         />
         {/* Desktop: light text-area fade only on the left */}
         <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/80 via-[#FCFAF8]/40 to-transparent" />
