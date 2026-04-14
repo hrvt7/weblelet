@@ -11,23 +11,26 @@ interface ServicePageProps {
 export default function ServicePage({ title, subtitle, image, sections, relatedServices }: ServicePageProps) {
   return (
     <>
-      {/* Hero — image then title */}
-      <section className="pt-20 sm:pt-24 pb-0">
-        {/* Image — constrained height so title is visible without scrolling */}
-        <div className="relative w-full">
+      {/* Hero with full-width background image */}
+      <section className="relative pt-28 pb-0 sm:pt-36 overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 -z-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={image}
             alt={title}
-            className="w-full h-[45vh] sm:h-[50vh] object-cover object-center"
+            className="w-full h-full object-cover object-center"
           />
-          {/* Thin bottom fade */}
-          <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
+          {/* Bottom fade only */}
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
         </div>
 
+        {/* Spacer for image */}
+        <div className="h-48 sm:h-72 lg:h-80" />
+
         {/* Title area */}
-        <div className="bg-surface">
-          <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-6 pb-10 sm:pt-8 sm:pb-14">
+        <div className="relative bg-[#FCFAF8]">
+          <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 sm:pb-14">
             <FadeIn>
               <a href="/#szolgaltatasok" className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:text-primary-dark transition-colors mb-5">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
