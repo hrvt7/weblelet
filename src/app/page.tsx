@@ -76,8 +76,8 @@ export default function Home() {
         <Hero />
         <Services />
         <BeforeAfter />
-        <Schedule />
         <About />
+        <Schedule />
         <FAQ />
         <Contact />
       </main>
