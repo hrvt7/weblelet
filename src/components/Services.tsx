@@ -91,7 +91,7 @@ function DesktopCard({ service, index }: { service: typeof services[number]; ind
     <FadeIn delay={index * 0.05}>
       <div
         className={`rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer ${
-          open ? "border-primary/25 shadow-lg sm:col-span-2" : "border-border hover:border-primary/15 card-hover h-[140px]"
+          open ? "border-primary/25 shadow-lg" : "border-border hover:border-primary/15 card-hover h-[140px]"
         }`}
         onClick={() => setOpen(!open)}
       >
@@ -188,17 +188,21 @@ export default function Services() {
           </div>
         </FadeIn>
 
-        {/* Mobile: grid of small cards linking to subpages */}
-        <div className="grid grid-cols-3 gap-3 sm:hidden">
+        {/* Mobile: grid of small cards linking to subpages — last row centered */}
+        <div className="flex flex-wrap justify-center gap-3 sm:hidden">
           {services.map((service, i) => (
-            <MobileCard key={service.title} service={service} index={i} />
+            <div key={service.title} className="w-[calc(33.333%-0.5rem)]">
+              <MobileCard service={service} index={i} />
+            </div>
           ))}
         </div>
 
-        {/* Desktop: expandable 2-col cards */}
-        <div className="hidden sm:grid sm:grid-cols-2 gap-4 lg:gap-5 max-w-5xl mx-auto">
+        {/* Desktop: expandable 2-col cards — last row centered */}
+        <div className="hidden sm:flex sm:flex-wrap sm:justify-center gap-4 lg:gap-5 max-w-5xl mx-auto">
           {services.map((service, i) => (
-            <DesktopCard key={service.title} service={service} index={i} />
+            <div key={service.title} className="w-[calc(50%-0.625rem)]">
+              <DesktopCard service={service} index={i} />
+            </div>
           ))}
         </div>
       </div>
