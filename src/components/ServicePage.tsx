@@ -21,10 +21,8 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
             alt={title}
             className="w-full h-full object-contain sm:object-cover object-center"
           />
-          {/* Desktop overlay */}
-          <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-[#FCFAF8]/60 via-[#FCFAF8]/30 to-[#FCFAF8]" />
-          {/* Mobile: image visible at top, fades to solid below */}
-          <div className="absolute inset-0 sm:hidden bg-gradient-to-b from-[#FCFAF8]/40 via-[#FCFAF8]/50 to-[#FCFAF8]" />
+          {/* Minimal bottom fade only — image at full visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
         </div>
 
         {/* Spacer to give room for the image */}
