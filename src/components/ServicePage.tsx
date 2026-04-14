@@ -22,7 +22,7 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
             className="w-full h-full object-cover object-center"
           />
           {/* Bottom fade only */}
-          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
+          <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
         </div>
 
         {/* Spacer for image */}
