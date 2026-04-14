@@ -11,31 +11,26 @@ interface ServicePageProps {
 export default function ServicePage({ title, subtitle, image, sections, relatedServices }: ServicePageProps) {
   return (
     <>
-      {/* Mobile: pink bg behind header */}
-      <div className="sm:hidden bg-[#e8c8c0] h-[72px]" />
-
-      {/* Hero */}
-      <section className="relative pb-0">
-        {/* Mobile: inline image below header */}
-        <div className="sm:hidden w-full bg-[#e8c8c0]">
+      {/* Hero with full-width background image */}
+      <section className="relative pt-28 pb-0 sm:pt-36 overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 -z-20">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={image} alt={title} className="w-full h-auto" />
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-contain sm:object-cover object-center"
+          />
+          {/* Bottom fade */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
         </div>
 
-        {/* Desktop: original background image layout */}
-        <div className="hidden sm:block relative pt-36 overflow-hidden">
-          <div className="absolute inset-0 -z-20">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={image} alt={title} className="w-full h-full object-cover object-center" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]" />
-          </div>
-          <div className="h-72 lg:h-80" />
-        </div>
+        {/* Spacer */}
+        <div className="h-48 sm:h-72 lg:h-80" />
 
         {/* Title area */}
-        <div className="bg-[#FCFAF8] sm:bg-transparent relative">
-          <div className="sm:relative sm:bg-gradient-to-b sm:from-transparent sm:to-[#FCFAF8]">
-            <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 sm:pb-14">
+        <div className="relative bg-gradient-to-b from-transparent to-[#FCFAF8]">
+          <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 sm:pb-14">
             <FadeIn>
               <a href="/#szolgaltatasok" className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:text-primary-dark transition-colors mb-5">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -53,7 +48,6 @@ export default function ServicePage({ title, subtitle, image, sections, relatedS
                 {subtitle}
               </p>
             </FadeIn>
-          </div>
           </div>
         </div>
       </section>
