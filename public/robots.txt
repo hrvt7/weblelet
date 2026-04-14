@@ -3,6 +3,9 @@ Allow: /
 
 Sitemap: https://weblelet.hu/sitemap.xml
 
+# AI keresők számára: llms.txt
+# https://weblelet.hu/llms.txt
+
 # AI crawlers - explicitly allowed
 User-agent: GPTBot
 Allow: /

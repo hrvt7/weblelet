@@ -105,7 +105,31 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* LocalBusiness JSON-LD */}
+        {/* Person JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://weblelet.hu/#person",
+              name: "Dr. Köteles Renáta",
+              jobTitle: "Fogorvos",
+              worksFor: { "@id": "https://weblelet.hu/#dentist" },
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Markusovszky Lajos u. 8.",
+                addressLocality: "Szombathely",
+                postalCode: "9700",
+                addressCountry: "HU",
+              },
+              telephone: "+3694900887",
+              email: "dr.kotelesrenata@gmail.com",
+              medicalSpecialty: "Dentistry",
+            }),
+          }}
+        />
+        {/* MedicalBusiness JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -115,6 +139,7 @@ export default function RootLayout({
               name: "Dr. Köteles Renáta — Felnőtt fogorvosi rendelő",
               url: "https://weblelet.hu",
               telephone: "+3694900887",
+              email: "dr.kotelesrenata@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Markusovszky Lajos u. 8.",
@@ -126,6 +151,7 @@ export default function RootLayout({
                 "@type": "City",
                 name: "Szombathely",
               },
+              employee: { "@id": "https://weblelet.hu/#person" },
             }),
           }}
         />

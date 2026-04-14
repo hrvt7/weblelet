@@ -1,33 +1,40 @@
-# WebLelet
+# Dr. Köteles Renáta — Fogorvos, Szombathely
 
-> AI-alapú weboldal audit és diagnosztika magyar vállalkozásoknak és marketing ügynökségeknek.
+> Felnőtt fogorvosi rendelő Szombathelyen. Fájdalommentes fogászat, családias légkörben. TB-támogatott, NEAK szerződéses ellátás.
 
-## Mit csinálunk
-A WebLelet 53 szempont alapján elemzi a weboldalakat három dimenzióban: GEO/SEO (Google és AI keresők láthatósága), Marketing (tartalom, konverzió, versenytársak) és Üzleti Potenciál (növekedési lehetőségek, döntéshozók). Az elemzés eredménye egy részletes PDF riport kész megoldásokkal — nem csak hibalistával.
+## Rólunk
+Dr. Köteles Renáta fogorvos a szombathelyi Markusovszky Lajos utcai Egészségügyi Alapellátó Központban működő felnőtt fogorvosi rendelőben végez széleskörű fogászati ellátást. Modern eszközökkel és korszerű módszerekkel dolgozunk, miközben pácienseink igényeit nagyfokú odafigyeléssel követjük. A rendelő NEAK szerződéssel működik — az alapellátás társadalombiztosítás keretében vehető igénybe.
 
 ## Szolgáltatások
-- Ingyenes diagnózis: 5 oldalas gyorsriport, 0 Ft, 48 órán belül
-- Teljes WebLelet audit: 18 oldalas részletes riport + 30 perces konzultáció, 149.000 Ft egyszeri
+- Fogászati szűrővizsgálat: félévenkénti kontroll, röntgen, szájüregi vizsgálat
+- Fogmegtartó kezelések: kompozit tömések, gyökérkezelés, fogmentés
+- Fogkőeltávolítás és tisztítás: ultrahangos depurálás, polírozás, ínygyulladás megelőzés
+- Fogpótlás: koronák, hidak, kivehető fogsorok, fém-kerámia és teljes kerámia megoldások
+- Esztétikai fogászat: fogfehérítés, kompozit héjak (veneers), esztétikai töméscsere
+- Fogeltávolítás: kíméletes foghúzás, bölcsességfog eltávolítás, utógondozás
+- Gyermekfogászat: barázdazárás, fluoridos kezelés, szájhigiénés tanácsadás
+- Sürgősségi ellátás: akut fogfájás, törött fog, kiesett tömés mielőbbi kezelése
 
-## Amit az audit tartalmaz
-- GEO/SEO elemzés 23 szempont (AI keresők: ChatGPT, Perplexity, Gemini, Google AI Overviews, Bing Copilot)
-- Marketing elemzés 18 szempont (tartalom, CRO, versenytárs, brand, növekedés)
-- Üzleti potenciál 12 szempont (döntéshozók, lehetőség értékelés, megkeresési stratégia)
-- Kész megoldások: Schema markup (JSON-LD) kód + llms.txt fájl
-- Finding címkézés: minden megállapítás tény, feltételezés vagy javaslat címkével
-- Laikus összefoglaló: az első 3 oldal technikai tudás nélkül is érthető
-- Technikai melléklet: amit a webfejlesztőnek adhatsz tovább
-
-## Hogyan működik
-1. Az ügyfél megadja a weboldala URL-jét
-2. A rendszer 53 szempont alapján elemzi az oldalt
-3. 48 órán belül emailben megkapja a PDF diagnózist kész javaslatokkal
+## Rendelési idő (2026-tól)
+- Hétfő: 13:30–19:30 (prevenciós idő: 13:30–14:30)
+- Kedd: 07:30–13:30 (prevenciós idő: 07:30–08:30)
+- Szerda: 13:30–19:30 (prevenciós idő: 13:30–14:30)
+- Csütörtök: 07:30–13:30 (prevenciós idő: 07:30–08:30)
+- Péntek: váltakozó (páros hét: 13:30–19:30, páratlan hét: 07:30–13:30)
 
 ## Elérhetőség
+- Cím: 9700 Szombathely, Markusovszky Lajos u. 8.
+- Telefon: +36 94 900-887
+- Email: dr.kotelesrenata@gmail.com
 - Weboldal: https://weblelet.hu
-- Email: info@weblelet.hu
-- Alapító: Horváth Ádám
-- Helyszín: Magyarország
+
+## Gyakran ismételt kérdések
+- Kell-e előre időpontot foglalni? Igen, telefonon a +36 94 900-887 számon.
+- TB-támogatott a rendelés? Igen, NEAK szerződéses rendelő.
+- Milyen gyakran kell kontrollra járni? Félévente javasolt.
+- Fáj a kezelés? Modern érzéstelenítéssel a legtöbb kezelés fájdalommentes.
+- Gyermekeket is fogadnak? Igen, gyermekfogászati ellátást is nyújtunk.
+- Mi a teendő sürgős fogfájás esetén? Hívjon rendelési időben: +36 94 900-887.
 
 ## Kulcsszavak
-weboldal audit, SEO audit, GEO optimalizálás, AI keresőoptimalizálás, weboldal elemzés, digitális diagnosztika, magyar vállalkozás, KKV, marketing audit, schema markup, weblelet
+fogorvos szombathely, fogászat szombathely, fogorvosi rendelő, Dr. Köteles Renáta, fogászati szűrővizsgálat, fogkőeltávolítás, fogpótlás, esztétikai fogászat, gyermekfogászat, TB fogászat, NEAK fogorvos, fogmegtartó kezelés, fájdalommentes fogászat

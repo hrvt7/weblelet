@@ -12,7 +12,7 @@ export default function Hero() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/hero-bg.jpg"
-          alt=""
+          alt="Fogászati implantátum illusztráció — Dr. Köteles Renáta fogorvosi rendelő, Szombathely"
           className="w-full h-full object-cover object-[center_40%] sm:object-[center_30%]"
         />
         {/* Desktop: softer gradient — more background visible */}
