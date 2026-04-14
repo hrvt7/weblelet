@@ -30,18 +30,18 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="flex h-[72px] items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
+          <a href="#" className="flex items-center gap-3 group">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/tooth-logo.svg"
-              alt="Fog logó"
-              className="h-9 w-9"
+              src="/images/renata.webp"
+              alt="Dr. Köteles Renáta"
+              className="h-11 w-11 rounded-full object-cover ring-2 ring-primary/20"
             />
             <div className="flex flex-col leading-tight">
-              <span className="text-base font-heading font-bold tracking-[-0.02em] text-foreground">
+              <span className="text-lg font-heading font-bold tracking-[-0.02em] text-foreground">
                 Dr. Köteles Renáta
               </span>
-              <span className="text-[11px] text-foreground-muted font-medium">Fogorvos</span>
+              <span className="text-xs text-foreground-muted font-medium">Fogorvos</span>
             </div>
           </a>
 
