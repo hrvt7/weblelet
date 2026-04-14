@@ -87,46 +87,24 @@ export default function Hero() {
             </FadeIn>
           </div>
 
-          {/* Right — schedule card */}
+          {/* Right — doctor illustration card */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <FadeIn direction="right" delay={0.2}>
               <div className="relative">
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 to-primary/10 transform rotate-2 scale-[1.02] -z-10" />
-                <div className="rounded-2xl bg-surface-card border border-border shadow-2xl shadow-primary/8 p-7 sm:p-8 max-w-sm transform lg:rotate-1 hover:rotate-0 transition-transform duration-500">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="h-11 w-11 rounded-xl bg-primary/8 flex items-center justify-center">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D9488" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                        <line x1="16" y1="2" x2="16" y2="6" />
-                        <line x1="8" y1="2" x2="8" y2="6" />
-                        <line x1="3" y1="10" x2="21" y2="10" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-sm font-heading font-bold text-foreground">Rendelési idő</div>
-                      <div className="text-xs text-foreground-muted">Hétfő – Péntek</div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2.5 text-sm">
-                    {[
-                      { day: "Hétfő", time: "13:30 – 19:30" },
-                      { day: "Kedd", time: "07:30 – 13:30" },
-                      { day: "Szerda", time: "13:30 – 19:30" },
-                      { day: "Csütörtök", time: "07:30 – 13:30" },
-                      { day: "Péntek", time: "Váltakozó" },
-                    ].map((row) => (
-                      <div key={row.day} className="flex justify-between items-center py-1.5 border-b border-border-light last:border-0">
-                        <span className="text-foreground-secondary font-medium">{row.day}</span>
-                        <span className="font-bold text-foreground">{row.time}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-5 pt-4 border-t border-border">
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-primary/10 transform rotate-2 scale-[1.02] -z-10" />
+                <div className="rounded-3xl bg-surface-card border border-border shadow-2xl shadow-primary/8 overflow-hidden max-w-sm transform lg:rotate-1 hover:rotate-0 transition-transform duration-500">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/renata.webp"
+                    alt="Dr. Köteles Renáta fogorvos"
+                    className="w-full h-auto"
+                  />
+                  <div className="p-5 text-center">
+                    <h3 className="font-heading font-bold text-foreground text-lg">Dr. Köteles Renáta</h3>
+                    <p className="text-sm text-foreground-muted mt-1">Fogorvos — Szombathely</p>
                     <a
                       href="tel:+3694900887"
-                      className="flex items-center justify-center gap-2 w-full rounded-xl bg-primary/8 text-primary font-bold text-sm py-3 hover:bg-primary/15 transition-colors"
+                      className="flex items-center justify-center gap-2 w-full rounded-xl bg-primary/8 text-primary font-bold text-sm py-3 mt-4 hover:bg-primary/15 transition-colors"
                     >
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
