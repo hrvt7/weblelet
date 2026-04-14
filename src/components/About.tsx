@@ -50,12 +50,12 @@ export default function About() {
             <FadeIn key={benefit.title} delay={i * 0.1}>
               <div className="rounded-2xl border border-border bg-surface-card overflow-hidden card-hover group h-full">
                 {/* Image */}
-                <div className="h-40 sm:h-44 overflow-hidden">
+                <div className="h-52 sm:h-56 overflow-hidden bg-[#f8f0ee]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={benefit.image}
                     alt={benefit.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                 </div>
