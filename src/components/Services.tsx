@@ -69,7 +69,7 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
     <FadeIn delay={index * 0.06}>
       <div
         className={`rounded-xl sm:rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer ${
-          open ? "border-primary/25 shadow-lg col-span-2" : "border-border hover:border-primary/15 card-hover h-[130px] sm:h-[140px]"
+          open ? "border-primary/25 shadow-lg sm:col-span-2" : "border-border hover:border-primary/15 card-hover h-auto sm:h-[140px]"
         }`}
         onClick={() => setOpen(!open)}
       >
@@ -161,7 +161,7 @@ export default function Services() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-5 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={service.title} service={service} index={i} />
           ))}
