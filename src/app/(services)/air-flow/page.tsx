@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Air-flow kezelés"
         subtitle="Kíméletes homokfúvásos fogtisztítás — fehérebb fogak, egészségesebb íny, kellemes élmény."
-        image="/images/service-airflow.webp"
+        image="/images/hero/service-airflow.webp"
         sections={[
           {
             heading: "Hogyan működik az Air-flow?",

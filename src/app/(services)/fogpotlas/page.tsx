@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Fogpótlás"
         subtitle="Az elveszett fogak pótlása nemcsak esztétikai — hanem egészségügyi kérdés is."
-        image="/images/service-4-fogpotlas.webp"
+        image="/images/hero/service-4.webp"
         sections={[
           {
             heading: "Miért fontos a fogpótlás?",

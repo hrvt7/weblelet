@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Profilaxia"
         subtitle="A megelőzés a legjobb és legolcsóbb kezelés. A rendszeres profilaxia megőrzi fogai egészségét évtizedekre."
-        image="/images/service-profilaxia.webp"
+        image="/images/hero/service-profilaxia.webp"
         sections={[
           {
             heading: "Mi az a fogászati profilaxia?",

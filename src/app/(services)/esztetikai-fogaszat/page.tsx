@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Esztétikai fogászat"
         subtitle="Mert az első benyomás a mosolynál kezdődik."
-        image="/images/service-5-esztetikai.webp"
+        image="/images/hero/service-5.webp"
         sections={[
           {
             heading: "Fogfehérítés",

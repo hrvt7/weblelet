@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Fogkőeltávolítás és tisztítás"
         subtitle="Az egészséges fogíny alapja a rendszeres professzionális tisztítás."
-        image="/images/service-3-fogko.webp"
+        image="/images/hero/service-3.webp"
         sections={[
           {
             heading: "Mi az a fogkő?",

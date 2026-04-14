@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Sürgősségi ellátás"
         subtitle="Akut fogfájás vagy fogászati baleset esetén mielőbbi ellátást biztosítunk."
-        image="/images/service-8-surgossegi.webp"
+        image="/images/hero/service-8.webp"
         sections={[
           {
             heading: "Mikor beszélünk sürgősségről?",

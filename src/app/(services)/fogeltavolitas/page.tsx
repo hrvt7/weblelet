@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Fogeltávolítás"
         subtitle="Az utolsó lehetőség, amelyet kíméletesen és megfelelő érzéstelenítéssel végzünk."
-        image="/images/service-6-fogeltavolitas.webp"
+        image="/images/hero/service-6.webp"
         sections={[
           {
             heading: "Mikor szükséges a fogeltávolítás?",

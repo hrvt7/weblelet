@@ -24,7 +24,7 @@ export default function Page() {
       <ServicePage
         title="Fogászati szűrővizsgálat"
         subtitle="A félévenkénti kontroll a fogászati megelőzés alapja. A korai felismerés a leghatékonyabb — és legolcsóbb — kezelés."
-        image="/images/service-1-szurovizsgalat.webp"
+        image="/images/hero/service-1.webp"
         sections={[
           {
             heading: "Miért fontos a rendszeres kontroll?",
