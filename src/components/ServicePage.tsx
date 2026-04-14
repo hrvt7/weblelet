@@ -11,21 +11,23 @@ interface ServicePageProps {
 export default function ServicePage({ title, subtitle, image, sections, relatedServices }: ServicePageProps) {
   return (
     <>
-      {/* Hero — image then title, no overlay */}
+      {/* Hero — image then title */}
       <section className="pt-20 sm:pt-24 pb-0">
-        {/* Full-width image — no overlay, no gradient, pure */}
-        <div className="w-full">
+        {/* Full-width image with thin bottom fade */}
+        <div className="relative w-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={image}
             alt={title}
             className="w-full h-auto"
           />
+          {/* Thin bottom fade — only last 40px */}
+          <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-b from-transparent to-[#FCFAF8]" />
         </div>
 
         {/* Title area */}
         <div className="bg-surface">
-          <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-8 pb-10 sm:pt-12 sm:pb-14">
+          <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 pt-6 pb-10 sm:pt-8 sm:pb-14">
             <FadeIn>
               <a href="/#szolgaltatasok" className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:text-primary-dark transition-colors mb-5">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
