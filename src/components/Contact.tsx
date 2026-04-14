@@ -103,7 +103,7 @@ export default function Contact() {
               {/* Google Maps */}
               <div className="rounded-2xl overflow-hidden border border-border shadow-sm">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.5!2d16.6195!3d47.2305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ea1f5d0e6d0f1%3A0x400c4290c1e11b0!2sSzombathely%2C+Markusovszky+Lajos+u.+8%2C+9700!5e0!3m2!1shu!2shu!4v1"
+                  src="https://www.google.com/maps?q=Szombathely,+Markusovszky+Lajos+utca+8,+9700&z=16&hl=hu&output=embed"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}
