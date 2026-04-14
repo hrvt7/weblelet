@@ -11,11 +11,13 @@ interface ServicePageProps {
 export default function ServicePage({ title, subtitle, image, sections, relatedServices }: ServicePageProps) {
   return (
     <>
-      {/* Mobile: pink bg + inline image */}
-      <div className="sm:hidden bg-[#e8c8c0]">
-        <div className="h-[72px]" />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={image} alt={title} className="w-full h-auto" />
+      {/* Mobile: pink bg from top through image */}
+      <div className="sm:hidden">
+        <div className="bg-[#e8c8c0]">
+          <div className="h-[72px]" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={image} alt={title} className="w-full h-auto" />
+        </div>
       </div>
 
       {/* Desktop: original background image + gradient */}
