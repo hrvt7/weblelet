@@ -9,16 +9,20 @@ const quickInfo = [
 export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-32 overflow-hidden wave-divider">
-      {/* Background image + overlay */}
+      {/* Background image + overlay — mobile-optimized */}
       <div className="absolute inset-0 -z-20">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/kreatikar-dental-3599745.jpg"
+          src="/images/kreatikar-teeth-3597679.jpg"
           alt=""
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center sm:object-[center_30%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FCFAF8]/95 via-[#FCFAF8]/90 to-[#FCFAF8]/60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FCFAF8]/70 via-transparent to-[#FCFAF8]/95" />
+        {/* Desktop: gradient from left for text readability */}
+        <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/95 via-[#FCFAF8]/85 to-[#FCFAF8]/40" />
+        {/* Mobile: stronger overlay so text is readable on small screens */}
+        <div className="absolute inset-0 sm:hidden bg-[#FCFAF8]/85" />
+        {/* Bottom fade for wave divider */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/95" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
