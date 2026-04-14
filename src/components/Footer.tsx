@@ -6,12 +6,8 @@ export default function Footer() {
           {/* Logo + description */}
           <div className="flex flex-col items-center md:items-start gap-2.5">
             <div className="flex items-center gap-2.5">
-              <div className="h-8 w-8 rounded-xl bg-primary flex items-center justify-center shadow-sm shadow-primary/20">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2C10 2 8 3.5 7 6C6 8.5 6 11 7 13C8.5 16 10 18 10 22" />
-                  <path d="M12 2C14 2 16 3.5 17 6C18 8.5 18 11 17 13C15.5 16 14 18 14 22" />
-                </svg>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/tooth-logo.svg" alt="Fog logó" className="h-8 w-8" />
               <span className="font-heading text-lg font-bold tracking-[-0.02em] text-foreground">
                 Dr. Köteles Renáta
               </span>

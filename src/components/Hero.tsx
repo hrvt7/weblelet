@@ -9,12 +9,17 @@ const quickInfo = [
 export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-32 overflow-hidden wave-divider">
-      {/* Warm mesh gradient background */}
-      <div className="absolute inset-0 -z-20 bg-[#FCFAF8]" />
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle,_#E8F0EC_0%,_transparent_70%)] -z-10 opacity-60" />
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[radial-gradient(circle,_#F5F1ED_0%,_transparent_70%)] -z-10 opacity-50" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,_#F0EBE7_0%,_transparent_60%)] -z-10 opacity-40" />
-      <div className="absolute inset-0 -z-10 dot-grid opacity-[0.15]" />
+      {/* Background image + overlay */}
+      <div className="absolute inset-0 -z-20">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/kreatikar-dental-3599745.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#FCFAF8]/95 via-[#FCFAF8]/90 to-[#FCFAF8]/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FCFAF8]/70 via-transparent to-[#FCFAF8]/95" />
+      </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">

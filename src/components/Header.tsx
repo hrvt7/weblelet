@@ -30,13 +30,13 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="flex h-[72px] items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="relative h-9 w-9 rounded-xl bg-primary flex items-center justify-center shadow-md shadow-primary/20">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2C10 2 8 3.5 7 6C6 8.5 6 11 7 13C8.5 16 10 18 10 22" />
-                <path d="M12 2C14 2 16 3.5 17 6C18 8.5 18 11 17 13C15.5 16 14 18 14 22" />
-              </svg>
-            </div>
+          <a href="#" className="flex items-center gap-2 group">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/tooth-logo.svg"
+              alt="Fog logó"
+              className="h-9 w-9"
+            />
             <div className="flex flex-col leading-tight">
               <span className="text-base font-heading font-bold tracking-[-0.02em] text-foreground">
                 Dr. Köteles Renáta
