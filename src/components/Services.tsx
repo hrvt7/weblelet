@@ -8,49 +8,49 @@ const services = [
     title: "Fogászati szűrővizsgálat",
     short: "Rendszeres kontroll a fogak és az íny állapotának felmérésére.",
     detail: "A félévenkénti szűrővizsgálat során áttekintjük a fogak és az íny állapotát, panoráma- vagy intraorális röntgenfelvételt készíthetünk a rejtett szuvasodások, gyökércsúcsi elváltozások vagy parodontális problémák feltárásához. A vizsgálat kiterjed a nyálkahártya, a nyelv és a szájüreg lágyszöveteinek ellenőrzésére is. A korai felismerés a leghatékonyabb megelőzés — sok fogászati probléma kezdetben teljesen tünetmentes.",
-    image: "/images/service-1-szurovizsgalat.webp",
+    image: "/images/service-1-szurovizsgalat.jpg",
   },
   {
     title: "Fogmegtartó kezelések",
     short: "Tömések és gyökérkezelések korszerű, tartós anyagokkal.",
     detail: "A fogmegtartó fogászat célja a szuvas vagy sérült fogak megmentése eltávolítás helyett. Kompozit (fogszínű) tömésekkel pótoljuk a hiányzó fogszövetet — az anyag tartós, esztétikus, és a természetes fogszínhez igazítható. Előrehaladottabb esetben gyökérkezelést végzünk: eltávolítjuk a fertőzött fogbelet, kitisztítjuk és lezárjuk a gyökércsatornákat, majd a fogat tömjük vagy koronával erősítjük meg. Célunk minden menthető fog hosszú távú megtartása.",
-    image: "/images/service-2-fogmegtarto.webp",
+    image: "/images/service-2-fogmegtarto.jpg",
   },
   {
     title: "Fogkőeltávolítás és tisztítás",
     short: "Ultrahangos fogkő-eltávolítás és polírozás az egészséges ínyért.",
     detail: "A fogkő a nyálban lévő ásványi anyagok és baktériumok lerakódása, amelyet otthoni fogmosással nem lehet eltávolítani. Ultrahangos depurátorral távolítjuk el a supra- és subgingivális fogköveket, majd speciális polírozó pasztával simítjuk a fogfelszínt — ez csökkenti az új lerakódások esélyét. A rendszeres fogkőeltávolítás megelőzi a gingivitiszt (ínygyulladást) és a parodontitiszt (fogágygyulladást), amelyek kezelés nélkül fogvesztéshez vezethetnek.",
-    image: "/images/service-3-fogko.webp",
+    image: "/images/service-3-fogko.jpg",
   },
   {
     title: "Fogpótlás",
     short: "Koronák, hidak és kivehető fogsorok természetes megjelenéssel.",
     detail: "Az elveszett vagy erősen sérült fogak pótlása nemcsak esztétikai, hanem funkcionális kérdés is — a hiányzó fogak megváltoztatják a rágás dinamikáját és a szomszédos fogak helyzetét. Fém-kerámia vagy teljes kerámia koronákkal erősítjük meg a gyengült fogakat, hídpótlással pótoljuk az egy vagy több fogból álló hiányt, ahol a szomszédos fogak horgonyként szolgálnak. Teljes vagy részleges kivehető fogsorokat is készítünk, amelyek a természetes fogsor megjelenését és funkcióját hűen visszaadják.",
-    image: "/images/service-4-fogpotlas.webp",
+    image: "/images/service-4-fogpotlas.jpg",
   },
   {
     title: "Esztétikai fogászat",
     short: "Fogfehérítés és esztétikai megoldások a magabiztos mosolyért.",
     detail: "Az esztétikai fogászat célja a mosoly természetes szépségének visszaállítása vagy javítása. Rendelői fogfehérítéssel akár több árnyalattal világosabbá tehetjük a fogakat — a kezelés biztonságos, az érzékenység átmeneti. Kompozit héjakkal (veneers) javítjuk a repedezett, elszíneződött vagy apró résekkel rendelkező fogak megjelenését. Az esztétikai töméscsere során a régi amalgám töméseket fogszínű kompozitra cseréljük, amely szinte láthatatlanul illeszkedik a foghoz.",
-    image: "/images/service-5-esztetikai.webp",
+    image: "/images/service-5-esztetikai.jpg",
   },
   {
     title: "Fogeltávolítás",
     short: "Kíméletes foghúzás, bölcsességfog eltávolítás érzéstelenítéssel.",
     detail: "A fogeltávolítás az utolsó lehetőség, amelyre akkor kerül sor, ha a fog konzervatív módszerekkel már nem menthető meg — pl. előrehaladott szuvasodás, törött gyökér, vagy súlyos parodontális érintettség esetén. A beavatkozást helyi érzéstelenítéssel végezzük, a modern technikáknak köszönhetően a folyamat kíméletes. Bölcsességfogak eltávolítására is vállalkozunk, amennyiben azok félreállnak, nyomást gyakorolnak a szomszédos fogakra, vagy visszatérő gyulladást okoznak. A beavatkozás után részletes utógondozási tanácsot adunk a gyors és szövődménymentes gyógyulás érdekében.",
-    image: "/images/service-6-fogeltavolitas.webp",
+    image: "/images/service-6-fogeltavolitas.jpg",
   },
   {
     title: "Gyermekfogászat",
     short: "Barátságos fogászati élmény a legkisebbeknek.",
     detail: "A gyermekfogászatban kiemelt figyelmet fordítunk arra, hogy a gyermek számára az első fogászati élmény pozitív és stresszmentes legyen — ez megalapozza a felnőttkori fogorvos-páciens kapcsolatot. A tejfogak állapota közvetlenül befolyásolja a maradó fogak fejlődését, ezért a szuvasodás korai kezelése elengedhetetlen. Barázdazárással (fissura-záró lakkozás) védjük a frissen előtört maradó őrlőfogakat a szuvasodástól, fluoridos kezeléssel pedig erősítjük a fogzománcot. Szülőknek személyre szabott szájhigiénés tanácsadást nyújtunk.",
-    image: "/images/service-7-gyermek.webp",
+    image: "/images/service-7-gyermek.jpg",
   },
   {
     title: "Sürgősségi ellátás",
     short: "Akut fogfájás vagy fogászati baleset esetén mielőbbi ellátás.",
     detail: "Akut fogfájás, eltörött fog, kiesett tömés vagy fogászati trauma esetén mielőbbi ellátást biztosítunk a rendelési időben. A sürgősségi vizsgálat során azonosítjuk a fájdalom okát, szükség esetén röntgenfelvételt készítünk, és elvégezzük az akut beavatkozást — legyen az ideiglenes tömés, gyökérkezelés megkezdése, tályog megnyitása vagy a fájdalom csillapítása. Amennyiben a végleges kezelés több ülést igényel, tervet készítünk és soron kívüli időpontot biztosítunk a folytatáshoz.",
-    image: "/images/service-8-surgossegi.webp",
+    image: "/images/service-8-surgossegi.jpg",
   },
 ];
 
@@ -76,7 +76,7 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover" loading="lazy"
               />
             </div>
             <div className="flex-1 min-w-0 text-center sm:text-left">
@@ -109,7 +109,7 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-36 sm:h-56 object-cover"
+                    className="w-full h-36 sm:h-56 object-cover" loading="lazy"
                   />
                 </div>
                 <p className="text-xs sm:text-[0.9rem] text-foreground-secondary leading-relaxed sm:leading-[1.75]">

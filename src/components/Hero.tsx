@@ -3,12 +3,6 @@
 import { useState } from "react";
 import FadeIn from "./FadeIn";
 
-const quickInfo = [
-  { icon: "shield", label: "TB-támogatott ellátás" },
-  { icon: "clock", label: "Hétfő – Péntek" },
-  { icon: "phone", label: "+36 94 900-887" },
-];
-
 export default function Hero() {
   const [bioOpen, setBioOpen] = useState(false);
   return (
@@ -17,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-20">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/kreatikar-teeth-3597679.jpg"
+          src="/images/hero-bg.jpg"
           alt=""
           className="w-full h-full object-cover object-[center_40%] sm:object-[center_30%]"
         />
@@ -72,23 +66,6 @@ export default function Hero() {
               </div>
             </FadeIn>
 
-            {/* Quick info badges */}
-            <FadeIn delay={0.36}>
-              <div className="mt-8 flex flex-wrap gap-3">
-                {quickInfo.map((item) => (
-                  <span
-                    key={item.label}
-                    className="inline-flex items-center gap-2 rounded-full bg-primary/6 border border-primary/10 px-4 py-2 text-xs font-semibold text-primary"
-                  >
-                    {item.icon === "phone" ? (
-                      <a href="tel:+3694900887" className="hover:underline">{item.label}</a>
-                    ) : (
-                      item.label
-                    )}
-                  </span>
-                ))}
-              </div>
-            </FadeIn>
           </div>
 
           {/* Right — doctor card (compact, expandable) */}
@@ -104,7 +81,7 @@ export default function Hero() {
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/renata.webp"
+                    src="/images/renata.jpg"
                     alt="Dr. Köteles Renáta fogorvos"
                     className="w-full h-auto"
                   />
