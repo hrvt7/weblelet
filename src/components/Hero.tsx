@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import FadeIn from "./FadeIn";
 
 const quickInfo = [
@@ -7,6 +10,7 @@ const quickInfo = [
 ];
 
 export default function Hero() {
+  const [bioOpen, setBioOpen] = useState(false);
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-32 overflow-hidden wave-divider">
       {/* Background image + overlay — mobile-optimized */}
@@ -17,12 +21,12 @@ export default function Hero() {
           alt=""
           className="w-full h-full object-cover object-center sm:object-[center_30%]"
         />
-        {/* Desktop: gradient from left for text readability */}
-        <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/95 via-[#FCFAF8]/85 to-[#FCFAF8]/40" />
-        {/* Mobile: stronger overlay so text is readable on small screens */}
-        <div className="absolute inset-0 sm:hidden bg-[#FCFAF8]/85" />
+        {/* Desktop: softer gradient — more background visible */}
+        <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/90 via-[#FCFAF8]/70 to-[#FCFAF8]/25" />
+        {/* Mobile: moderate overlay for text readability */}
+        <div className="absolute inset-0 sm:hidden bg-[#FCFAF8]/80" />
         {/* Bottom fade for wave divider */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/90" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
@@ -87,30 +91,62 @@ export default function Hero() {
             </FadeIn>
           </div>
 
-          {/* Right — doctor illustration card */}
+          {/* Right — doctor card (compact, expandable) */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <FadeIn direction="right" delay={0.2}>
-              <div className="relative">
+              <div className="relative max-w-[280px]">
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/5 to-primary/10 transform rotate-2 scale-[1.02] -z-10" />
-                <div className="rounded-3xl bg-surface-card border border-border shadow-2xl shadow-primary/8 overflow-hidden max-w-sm transform lg:rotate-1 hover:rotate-0 transition-transform duration-500">
+                <div
+                  className={`rounded-3xl bg-surface-card border shadow-2xl shadow-primary/8 overflow-hidden transform lg:rotate-1 hover:rotate-0 transition-all duration-500 cursor-pointer ${
+                    bioOpen ? "border-primary/20" : "border-border"
+                  }`}
+                  onClick={() => setBioOpen(!bioOpen)}
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/renata.webp"
                     alt="Dr. Köteles Renáta fogorvos"
                     className="w-full h-auto"
                   />
-                  <div className="p-5 text-center">
-                    <h3 className="font-heading font-bold text-foreground text-lg">Dr. Köteles Renáta</h3>
-                    <p className="text-sm text-foreground-muted mt-1">Fogorvos — Szombathely</p>
-                    <a
-                      href="tel:+3694900887"
-                      className="flex items-center justify-center gap-2 w-full rounded-xl bg-primary/8 text-primary font-bold text-sm py-3 mt-4 hover:bg-primary/15 transition-colors"
-                    >
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                      </svg>
-                      +36 94 900-887
-                    </a>
+                  <div className="p-4 text-center">
+                    <div className="flex items-center justify-center gap-2">
+                      <h3 className="font-heading font-bold text-foreground text-base">Dr. Köteles Renáta</h3>
+                      <div className={`h-5 w-5 rounded-md flex items-center justify-center transition-all duration-300 ${
+                        bioOpen ? "bg-primary/10 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
+                      }`}>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                          <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                      </div>
+                    </div>
+                    <p className="text-xs text-foreground-muted mt-0.5">Fogorvos — Szombathely</p>
+                  </div>
+
+                  {/* Expandable bio */}
+                  <div className="service-expand" data-open={bioOpen}>
+                    <div>
+                      <div className="px-4 pb-4 pt-0">
+                        <div className="border-t border-border-light pt-3">
+                          <p className="text-xs text-foreground-secondary leading-relaxed">
+                            Több éves szakmai tapasztalattal rendelkező fogorvos.
+                            Széleskörű fogászati ellátást nyújtok a megelőzéstől
+                            a fogpótlásig, a legmodernebb módszerekkel. Számomra
+                            fontos, hogy minden páciens nyugodt, családias légkörben
+                            kapja meg a számára legjobb kezelést.
+                          </p>
+                          <a
+                            href="tel:+3694900887"
+                            className="flex items-center justify-center gap-2 w-full rounded-xl bg-primary/8 text-primary font-bold text-xs py-2.5 mt-3 hover:bg-primary/15 transition-colors"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            +36 94 900-887
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
