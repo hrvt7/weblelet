@@ -30,7 +30,7 @@ export default function BeforeAfter() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="py-24 sm:py-32 relative">
+    <section id="munkaink" className="py-24 sm:py-32 relative">
       <div className="absolute inset-0 dot-grid opacity-[0.1] -z-10" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">

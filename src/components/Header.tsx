@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "#szolgaltatasok", label: "Szolgáltatások" },
+  { href: "#munkaink", label: "Munkáink" },
   { href: "#rendelesi-ido", label: "Rendelési idő" },
   { href: "#rolunk", label: "Rólunk" },
   { href: "#kapcsolat", label: "Kapcsolat" },
@@ -62,7 +63,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[0.9rem] font-medium text-foreground-muted hover:text-foreground transition-colors duration-200"
+                className="text-[0.9rem] font-medium text-foreground hover:text-primary transition-colors duration-200"
               >
                 {link.label}
               </a>
