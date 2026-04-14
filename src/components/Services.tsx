@@ -124,17 +124,15 @@ function DesktopCard({ service, index }: { service: typeof services[number]; ind
         <div className="service-expand" data-open={open}>
           <div>
             <div className="px-5 lg:px-6 pb-6 pt-0">
-              <div className="border-t border-border-light pt-5">
-                <div className="mb-5 rounded-xl overflow-hidden">
+              <div className="border-t border-border-light pt-5 h-[340px] flex flex-col">
+                <div className="mb-4 rounded-xl overflow-hidden shrink-0 h-[170px]">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={service.image} alt={service.title} className="w-full h-56 object-cover" loading="lazy" />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <div className="h-[120px] overflow-y-auto">
-                  <p className="text-[0.9rem] text-foreground-secondary leading-[1.75]">{service.detail}</p>
-                </div>
-                <
+                <p className="text-[0.9rem] text-foreground-secondary leading-[1.7] line-clamp-4 flex-1">{service.detail}</p>
+                <a
                   href={service.href}
-                  className="inline-flex items-center gap-2 mt-4 rounded-lg bg-primary/8 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/15 transition-colors"
+                  className="inline-flex items-center gap-2 mt-3 rounded-lg bg-primary/8 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/15 transition-colors shrink-0"
                   onClick={(e) => e.stopPropagation()}
                 >
                   Részletek megtekintése
