@@ -91,59 +91,57 @@ function DesktopCard({ service, index }: { service: typeof services[number]; ind
     <FadeIn delay={index * 0.05}>
       <div
         className={`rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer ${
-          open ? "border-primary/25 shadow-lg" : "border-border hover:border-primary/15 card-hover h-[140px]"
+          open ? "border-primary/25 shadow-lg h-[520px]" : "border-border hover:border-primary/15 card-hover h-[120px]"
         }`}
         onClick={() => setOpen(!open)}
       >
-        <div className="p-5 lg:p-6">
-          <div className="flex items-start gap-4">
-            <div className={`h-14 w-14 shrink-0 rounded-2xl overflow-hidden transition-all duration-300 ${
-              open ? "ring-2 ring-primary/30" : "ring-1 ring-border"
-            }`}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-2">
-                <h3 className="font-heading text-[1.05rem] font-bold text-foreground tracking-[-0.01em] leading-tight">
-                  {service.title}
-                </h3>
-                <div className={`shrink-0 h-7 w-7 rounded-lg flex items-center justify-center transition-all duration-300 ${
-                  open ? "bg-primary/10 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
-                }`}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </div>
+        {/* Header — always visible */}
+        <div className="p-4 lg:p-5 h-[120px] flex items-center gap-4">
+          <div className={`h-14 w-14 shrink-0 rounded-2xl overflow-hidden transition-all duration-300 ${
+            open ? "ring-2 ring-primary/30" : "ring-1 ring-border"
+          }`}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="font-heading text-[1rem] font-bold text-foreground tracking-[-0.01em] leading-tight">
+                {service.title}
+              </h3>
+              <div className={`shrink-0 h-6 w-6 rounded-md flex items-center justify-center transition-all duration-300 ${
+                open ? "bg-primary/10 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
+              }`}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
               </div>
-              <p className="text-sm text-foreground-muted leading-relaxed mt-1">{service.short}</p>
             </div>
+            <p className="text-xs text-foreground-muted leading-relaxed mt-1 line-clamp-2">{service.short}</p>
           </div>
         </div>
 
-        <div className="service-expand" data-open={open}>
-          <div>
-            <div className="px-5 lg:px-6 pb-6 pt-0">
-              <div className="border-t border-border-light pt-5 h-[340px] flex flex-col">
-                <div className="mb-4 rounded-xl overflow-hidden shrink-0 h-[170px]">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <p className="text-[0.9rem] text-foreground-secondary leading-[1.7] line-clamp-4 flex-1">{service.detail}</p>
-                <a
-                  href={service.href}
-                  className="inline-flex items-center gap-2 mt-3 rounded-lg bg-primary/8 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/15 transition-colors shrink-0"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Részletek megtekintése
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
-                </a>
+        {/* Expanded content — fixed height */}
+        {open && (
+          <div className="px-4 lg:px-5 pb-5 h-[400px] flex flex-col">
+            <div className="border-t border-border-light pt-4 flex flex-col flex-1">
+              <div className="mb-3 rounded-xl overflow-hidden shrink-0 h-[180px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
               </div>
+              <p className="text-[0.85rem] text-foreground-secondary leading-[1.7] line-clamp-5 flex-1">{service.detail}</p>
+              <a
+                href={service.href}
+                className="inline-flex items-center gap-2 mt-3 rounded-lg bg-primary/8 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/15 transition-colors shrink-0"
+                onClick={(e) => e.stopPropagation()}
+              >
+                Részletek megtekintése
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </a>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </FadeIn>
   );
