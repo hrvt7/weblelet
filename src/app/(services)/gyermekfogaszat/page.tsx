@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Gyermekfogászat"
         subtitle="Barátságos fogászati élmény a legkisebbeknek — mert az első benyomás meghatározó."
-        image="/images/service-7-gyermek.jpg"
+        image="/images/service-7-gyermek.webp"
         sections={[
           {
             heading: "Az első fogászati élmény",

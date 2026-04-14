@@ -81,7 +81,7 @@ export default function Hero() {
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/renata.jpg"
+                    src="/images/renata.webp"
                     alt="Dr. Köteles Renáta fogorvos"
                     className="w-full h-auto"
                   />

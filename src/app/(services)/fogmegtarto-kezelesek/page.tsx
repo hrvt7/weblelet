@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Fogmegtartó kezelések"
         subtitle="Célunk minden menthető fog hosszú távú megtartása — korszerű anyagokkal és technikákkal."
-        image="/images/service-2-fogmegtarto.jpg"
+        image="/images/service-2-fogmegtarto.webp"
         sections={[
           {
             heading: "Kompozit tömések",

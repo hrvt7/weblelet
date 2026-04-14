@@ -23,7 +23,7 @@ export default function Page() {
       <ServicePage
         title="Parodontológia"
         subtitle="A fogágygyulladás a felnőttkori fogvesztés leggyakoribb oka — de megelőzhető és kezelhető."
-        image="/images/service-parodontologia.jpg"
+        image="/images/service-parodontologia.webp"
         sections={[
           {
             heading: "Mi a parodontitis?",
