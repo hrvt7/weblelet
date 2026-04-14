@@ -19,14 +19,14 @@ export default function Hero() {
         <img
           src="/images/kreatikar-teeth-3597679.jpg"
           alt=""
-          className="w-full h-full object-cover object-center sm:object-[center_30%]"
+          className="w-full h-full object-cover object-[center_40%] sm:object-[center_30%]"
         />
         {/* Desktop: softer gradient — more background visible */}
         <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-[#FCFAF8]/90 via-[#FCFAF8]/70 to-[#FCFAF8]/25" />
-        {/* Mobile: moderate overlay for text readability */}
-        <div className="absolute inset-0 sm:hidden bg-[#FCFAF8]/80" />
+        {/* Mobile: top-to-bottom gradient so image is visible at top, text readable below */}
+        <div className="absolute inset-0 sm:hidden bg-gradient-to-b from-[#FCFAF8]/30 via-[#FCFAF8]/70 to-[#FCFAF8]/95" />
         {/* Bottom fade for wave divider */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/90" />
+        <div className="absolute inset-0 hidden sm:block bg-gradient-to-b from-transparent via-transparent to-[#FCFAF8]/90" />
       </div>
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">

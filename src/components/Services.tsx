@@ -60,67 +60,67 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
   return (
     <FadeIn delay={index * 0.06}>
       <div
-        className={`rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer ${
-          open ? "border-primary/25 shadow-lg" : "border-border hover:border-primary/15 card-hover"
+        className={`rounded-xl sm:rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer ${
+          open ? "border-primary/25 shadow-lg col-span-2" : "border-border hover:border-primary/15 card-hover"
         }`}
         onClick={() => setOpen(!open)}
       >
-        <div className="p-5 sm:p-7">
-          <div className="flex items-start justify-between gap-3">
-            <div className="flex items-start gap-3 sm:gap-4">
-              {/* Thumbnail — the same image as the expanded version, small and round */}
-              <div className={`h-12 w-12 sm:h-14 sm:w-14 shrink-0 rounded-2xl overflow-hidden transition-all duration-300 ${
-                open ? "ring-2 ring-primary/30" : "ring-1 ring-border"
-              }`}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="font-heading text-[0.95rem] sm:text-[1.05rem] font-bold text-foreground tracking-[-0.01em]">
+        {/* Collapsed view */}
+        <div className="p-3 sm:p-5 lg:p-7">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4">
+            {/* Thumbnail */}
+            <div className={`h-14 w-14 sm:h-14 sm:w-14 shrink-0 rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300 ${
+              open ? "ring-2 ring-primary/30" : "ring-1 ring-border"
+            }`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex-1 min-w-0 text-center sm:text-left">
+              <div className="flex items-start justify-between gap-1">
+                <h3 className="font-heading text-[0.8rem] sm:text-[1.05rem] font-bold text-foreground tracking-[-0.01em] leading-tight">
                   {service.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed mt-1">
-                  {service.short}
-                </p>
+                <div className={`hidden sm:flex shrink-0 h-7 w-7 rounded-lg items-center justify-center transition-all duration-300 ${
+                  open ? "bg-primary/10 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
+                }`}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
               </div>
-            </div>
-            <div className={`shrink-0 h-7 w-7 rounded-lg flex items-center justify-center transition-all duration-300 ${
-              open ? "bg-primary/10 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
-            }`}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
+              <p className="hidden sm:block text-xs sm:text-sm text-foreground-muted leading-relaxed mt-1">
+                {service.short}
+              </p>
             </div>
           </div>
         </div>
 
-        {/* Expandable detail */}
+        {/* Expanded detail — spans full width */}
         <div className="service-expand" data-open={open}>
           <div>
-            <div className="px-5 sm:px-7 pb-6 pt-0">
-              <div className="border-t border-border-light pt-5">
-                {/* Large image */}
-                <div className="mb-5 rounded-xl overflow-hidden">
+            <div className="px-4 sm:px-7 pb-5 sm:pb-6 pt-0">
+              <div className="border-t border-border-light pt-4 sm:pt-5">
+                <div className="mb-4 sm:mb-5 rounded-lg sm:rounded-xl overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-44 sm:h-56 object-cover"
+                    className="w-full h-36 sm:h-56 object-cover"
                   />
                 </div>
-                <p className="text-[0.9rem] text-foreground-secondary leading-[1.75]">
+                <p className="text-xs sm:text-[0.9rem] text-foreground-secondary leading-relaxed sm:leading-[1.75]">
                   {service.detail}
                 </p>
                 <a
                   href="tel:+3694900887"
-                  className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-primary hover:text-primary-dark transition-colors"
+                  className="inline-flex items-center gap-2 mt-3 sm:mt-4 text-xs sm:text-sm font-semibold text-primary hover:text-primary-dark transition-colors"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                   Időpontfoglalás: +36 94 900-887
@@ -153,7 +153,7 @@ export default function Services() {
           </div>
         </FadeIn>
 
-        <div className="grid lg:grid-cols-2 gap-4 lg:gap-5 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-5 max-w-5xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={service.title} service={service} index={i} />
           ))}
