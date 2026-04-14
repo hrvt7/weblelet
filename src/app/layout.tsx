@@ -71,7 +71,7 @@ export default function RootLayout({
                 "Felnőtt fogorvosi rendelő Szombathelyen. Széleskörű fogászati ellátás, fogmegtartó kezelések, családias légkörben. TB-támogatott, NEAK szerződéses.",
               url: "https://weblelet.hu",
               telephone: "+3694900887",
-              email: "dr.renatalarissza@yahoo.com",
+              email: "dr.kotelesrenata@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Markusovszky Lajos u. 8.",

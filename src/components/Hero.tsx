@@ -9,11 +9,12 @@ const quickInfo = [
 export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-32 overflow-hidden wave-divider">
-      {/* Mesh gradient background */}
-      <div className="absolute inset-0 -z-20 bg-white" />
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle,_#CCFBF1_0%,_transparent_70%)] -z-10 opacity-50" />
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[radial-gradient(circle,_#F0FDFA_0%,_transparent_70%)] -z-10 opacity-60" />
-      <div className="absolute inset-0 -z-10 dot-grid opacity-[0.2]" />
+      {/* Warm mesh gradient background */}
+      <div className="absolute inset-0 -z-20 bg-[#FCFAF8]" />
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(circle,_#E8F0EC_0%,_transparent_70%)] -z-10 opacity-60" />
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-[radial-gradient(circle,_#F5F1ED_0%,_transparent_70%)] -z-10 opacity-50" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,_#F0EBE7_0%,_transparent_60%)] -z-10 opacity-40" />
+      <div className="absolute inset-0 -z-10 dot-grid opacity-[0.15]" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -42,7 +43,7 @@ export default function Hero() {
               <div className="mt-9 flex flex-col sm:flex-row gap-3">
                 <a
                   href="tel:+3694900887"
-                  className="inline-flex items-center justify-center gap-2.5 rounded-2xl bg-primary px-8 py-4.5 text-[1rem] font-bold text-white shadow-xl shadow-primary/20 cta-glow whitespace-nowrap cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2.5 rounded-2xl bg-accent px-8 py-4.5 text-[1rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow whitespace-nowrap cursor-pointer"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />

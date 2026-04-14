@@ -93,8 +93,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm">Email</p>
-                    <a href="mailto:dr.renatalarissza@yahoo.com" className="text-primary text-sm hover:underline">
-                      dr.renatalarissza@yahoo.com
+                    <a href="mailto:dr.kotelesrenata@gmail.com" className="text-primary text-sm hover:underline">
+                      dr.kotelesrenata@gmail.com
                     </a>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full cursor-pointer rounded-2xl bg-primary px-8 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-primary/20 cta-glow disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {loading ? "Küldés..." : "Üzenet küldése"}
                   </button>

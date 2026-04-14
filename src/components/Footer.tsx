@@ -36,8 +36,8 @@ export default function Footer() {
             <a href="tel:+3694900887" className="hover:text-primary transition-colors duration-200">
               +36 94 900-887
             </a>
-            <a href="mailto:dr.renatalarissza@yahoo.com" className="hover:text-primary transition-colors duration-200">
-              dr.renatalarissza@yahoo.com
+            <a href="mailto:dr.kotelesrenata@gmail.com" className="hover:text-primary transition-colors duration-200">
+              dr.kotelesrenata@gmail.com
             </a>
             <span>9700 Szombathely, Markusovszky Lajos u. 8.</span>
             <a href="/adatvedelem" className="hover:text-primary transition-colors duration-200">
