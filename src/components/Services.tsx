@@ -153,15 +153,17 @@ function MobileCard({ service, index }: { service: typeof services[number]; inde
     <FadeIn delay={index * 0.04}>
       <a
         href={service.href}
-        className="flex flex-col items-center text-center rounded-xl border border-border bg-surface-card p-3 card-hover group h-[120px] w-full justify-center"
+        className="flex flex-col rounded-xl border border-border bg-surface-card overflow-hidden card-hover group w-full"
       >
-        <div className="h-14 w-14 shrink-0 rounded-xl overflow-hidden ring-1 ring-border group-hover:ring-primary/30 transition-all mb-2">
+        <div className="w-full aspect-square overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
+          <img src={service.image} alt={service.title} className="w-full h-full object-contain" loading="lazy" />
         </div>
-        <h3 className="font-heading text-[0.7rem] font-bold text-foreground tracking-[-0.01em] leading-tight line-clamp-2">
-          {service.title}
-        </h3>
+        <div className="px-2 py-2.5 text-center">
+          <h3 className="font-heading text-[0.7rem] font-bold text-foreground tracking-[-0.01em] leading-tight line-clamp-2">
+            {service.title}
+          </h3>
+        </div>
       </a>
     </FadeIn>
   );
