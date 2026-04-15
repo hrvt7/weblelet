@@ -31,6 +31,28 @@ Dr. Köteles Renáta fogorvos a szombathelyi Markusovszky Lajos utcai Egészség
 - Email: dr.kotelesrenata@gmail.com
 - Weboldal: https://weblelet.hu
 
+## Részletes szolgáltatás aloldalak
+- https://weblelet.hu/fogorvos-szombathely — Átfogó bemutatás, rendelő információk
+- https://weblelet.hu/tb-tamogatott-fogorvos-szombathely — NEAK szerződéses ellátás részletesen
+- https://weblelet.hu/fogaszati-szurovizsgalat — Rutin szűrővizsgálat
+- https://weblelet.hu/fogmegtarto-kezelesek — Gyökérkezelés, kompozit tömés
+- https://weblelet.hu/fogkoeltavolitas — Ultrahangos fogkőeltávolítás
+- https://weblelet.hu/fogpotlas — Korona, híd, kivehető fogsor
+- https://weblelet.hu/esztetikai-fogaszat — Fogfehérítés, veneer
+- https://weblelet.hu/fogeltavolitas — Foghúzás, bölcsességfog
+- https://weblelet.hu/gyermekfogaszat — Gyerek fogászati ellátás 0-18 éves korig
+- https://weblelet.hu/surgossegi-ellatas — Akut fogfájás, törött fog
+- https://weblelet.hu/profilaxia — Fogászati megelőzés
+- https://weblelet.hu/air-flow — Homokfúvásos fogtisztítás
+- https://weblelet.hu/parodontologia — Fogágygyulladás kezelése
+
+## Blog cikkek
+- https://weblelet.hu/blog/mit-tegyek-ha-letort-a-fogam — Elsősegély letört fog esetén
+- https://weblelet.hu/blog/faj-e-a-fogkoeltavolitas — Őszinte válasz a fogtisztítás fájdalmáról
+- https://weblelet.hu/blog/mikor-kell-gyokerkezeles — Tünetek, okok, kezelés
+- https://weblelet.hu/blog/mikor-vigyem-eloszor-fogorvoshoz-a-gyermekem — Szülőknek útmutató
+- https://weblelet.hu/blog/ejszakai-fogfajas-mit-tegyek — Éjszakai fogfájás kezelése
+
 ## Gyakran ismételt kérdések
 - Kell-e előre időpontot foglalni? Igen, telefonon a +36 94 900-887 számon.
 - TB-támogatott a rendelés? Igen, NEAK szerződéses rendelő.
