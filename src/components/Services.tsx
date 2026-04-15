@@ -157,9 +157,9 @@ function MobileCard({ service, index }: { service: typeof services[number]; inde
       >
         <div className="w-full aspect-square overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={service.image} alt={service.title} className="w-full h-full object-contain" loading="lazy" />
+          <img src={service.image} alt={service.title} className="w-full h-full object-cover" loading="lazy" />
         </div>
-        <div className="px-2 py-2.5 text-center">
+        <div className="px-2 py-2.5 text-center h-[3rem] flex items-center justify-center">
           <h3 className="font-heading text-[0.7rem] font-bold text-foreground tracking-[-0.01em] leading-tight line-clamp-2">
             {service.title}
           </h3>
