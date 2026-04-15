@@ -89,7 +89,7 @@ export default function Page() {
           },
           {
             heading: "Kinek javasolt a parodontológiai vizsgálat?",
-            text: "Parodontológiai kezelésre szüksége lehet, ha ínye fogmosáskor vérzik, íne vörös, duzzadt, érzékeny, íne lilás elszíneződésű (krónikus gyulladás jele), visszahúzódó ínyt tapasztal (a fog hosszabbnak látszik), rossz lehelete van, amely fogmosás után sem szűnik meg, fogközök szélesedtek, fogai 'hosszabbnak' látszanak, fogai mozognak, inognak, rossz szájíz, rágásnál a hátsó fogak fájnak. Különösen fokozott a kockázat, ha: Ön dohányos (6-7x nagyobb rizikó), cukorbeteg, szív-érrendszeri betegsége van, családban előfordult parodontitisz, terhes (hormonális hatás), stresszben él. Mindenkinek javasolt évente 1 alkalommal parodontális szűrés — tünetmentes előrehaladott eset is előfordulhat."
+            text: "Parodontológiai kezelésre szüksége lehet, ha ínye fogmosáskor vérzik, ínye vörös, duzzadt, érzékeny, ínye lilás elszíneződésű (krónikus gyulladás jele), visszahúzódó ínyt tapasztal (a fog hosszabbnak látszik), rossz lehelete van, amely fogmosás után sem szűnik meg, fogközök szélesedtek, fogai 'hosszabbnak' látszanak, fogai mozognak, inognak, rossz szájíz, rágásnál a hátsó fogak fájnak. Különösen fokozott a kockázat, ha: Ön dohányos (6-7x nagyobb rizikó), cukorbeteg, szív-érrendszeri betegsége van, családban előfordult parodontitisz, terhes (hormonális hatás), stresszben él. Mindenkinek javasolt évente 1 alkalommal parodontális szűrés — tünetmentes előrehaladott eset is előfordulhat."
           },
           {
             heading: "Diagnosztika — hogyan ismerjük fel?",

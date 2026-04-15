@@ -61,7 +61,7 @@ export default function BlogIndex() {
       </div>
 
       <section className="bg-surface pt-28 sm:pt-36 pb-8 sm:pb-12">
-        <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-5 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
               Fogászati blog
@@ -72,9 +72,9 @@ export default function BlogIndex() {
             >
               Tippek, válaszok, tudástár
             </h1>
-            <p className="mt-4 text-lg text-foreground-secondary leading-relaxed max-w-2xl">
+            <p className="mt-4 text-lg text-foreground-secondary leading-relaxed max-w-2xl mx-auto">
               Dr. Köteles Renáta cikkei a leggyakoribb fogászati kérdésekről és panaszokról —
-              szakmailag pontos, közérthetően. Ha kérdése van, hívjon: +36 94 900-887.
+              szakmailag pontos, közérthető megfogalmazásban. Ha kérdése van, hívjon: +36 94 900-887.
             </p>
           </FadeIn>
         </div>

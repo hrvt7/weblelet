@@ -67,7 +67,7 @@ const faqSchema = {
       name: "Mennyibe kerül a sürgősségi kezelés?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A sürgősségi alapellátás (fájdalomcsillapítás, tályog megnyitása, ideiglenes tömés) jogosult TB-s pácienseknek térítésmentes. A végleges kezelés (gyökérkezelés, korona, stb.) külön időpontban, a standard árazás szerint történik. Pontos tájékoztatást a vizsgálat után tudunk adni.",
+        text: "A sürgősségi alapellátás (fájdalomcsillapítás, tályog megnyitása, ideiglenes tömés) jogosult TB-s pácienseknek térítésmentes. A végleges kezelés (gyökérkezelés, korona stb.) külön időpontban, a standard árazás szerint történik. Pontos tájékoztatást a vizsgálat után tudunk adni.",
       },
     },
   ],

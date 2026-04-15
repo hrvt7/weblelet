@@ -113,7 +113,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A fogászati szűrővizsgálat és az alapellátás TB-támogatott jogosult pácienseknek. Ez magában foglalja a rutin kontrollt, alapvető röntgenfelvételt, évi egy fogkőeltávolítást, tanácsadást. Magánellátás esetén is elérhető a szolgáltatás — pontos árajánlatot egyedileg tudunk adni. Hívjon: +36 94 900-887. Ha kezelésre van szükség (tömés, gyökérkezelés, stb.), azt külön időpontban végezzük el, és részletesen egyeztetjük Önnel a lehetőségeket."
+            text: "A fogászati szűrővizsgálat és az alapellátás TB-támogatott jogosult pácienseknek. Ez magában foglalja a rutin kontrollt, alapvető röntgenfelvételt, évi egy fogkőeltávolítást, tanácsadást. Magánellátás esetén is elérhető a szolgáltatás — pontos árajánlatot egyedileg tudunk adni. Hívjon: +36 94 900-887. Ha kezelésre van szükség (tömés, gyökérkezelés stb.), azt külön időpontban végezzük el, és részletesen egyeztetjük Önnel a lehetőségeket."
           },
           {
             heading: "Gyakori kérdések",

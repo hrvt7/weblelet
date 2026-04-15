@@ -32,7 +32,7 @@ export default function BlogPost({
 
       {/* Title area */}
       <section className="bg-surface pt-28 sm:pt-36 pb-8 sm:pb-12">
-        <div className="mx-auto max-w-3xl px-5 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-5 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <a
               href="/blog"
@@ -44,7 +44,7 @@ export default function BlogPost({
               Vissza a bloghoz
             </a>
 
-            <div className="flex flex-wrap items-center gap-3 mb-4">
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-4">
               <span className="inline-block text-xs font-semibold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full">
                 {category}
               </span>
@@ -59,7 +59,7 @@ export default function BlogPost({
             >
               {title}
             </h1>
-            <p className="mt-4 text-lg text-foreground-secondary leading-relaxed">{subtitle}</p>
+            <p className="mt-4 text-lg text-foreground-secondary leading-relaxed mx-auto max-w-2xl">{subtitle}</p>
           </FadeIn>
         </div>
       </section>
