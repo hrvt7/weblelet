@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Gyökérkezelés és fogmegtartó kezelések Szombathelyen | Dr. Köteles Renáta",
-  description: "Gyökérkezelés, kompozit tömés és fogmentő kezelések Szombathelyen. Fájdalommentes, modern technikákkal. TB-támogatott rendelő. Időpont: +36 94 900-887.",
+  title: "Gyökérkezelés és fogmegtartó kezelések Budapesten | Dr. Minta Réka",
+  description: "Gyökérkezelés, kompozit tömés és fogmentő kezelések Budapesten. Fájdalommentes, modern technikákkal. TB-támogatott rendelő. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/fogmegtarto-kezelesek" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Fogmegtartó kezelések Szombathelyen"
-        subtitle="Gyökérkezelés, kompozit tömés és fogmentő beavatkozások Dr. Köteles Renáta rendelőjében. Célunk minden menthető fog hosszú távú megtartása — fájdalommentes technikákkal."
+        title="Fogmegtartó kezelések Budapesten"
+        subtitle="Gyökérkezelés, kompozit tömés és fogmentő beavatkozások Dr. Minta Réka rendelőjében. Célunk minden menthető fog hosszú távú megtartása — fájdalommentes technikákkal."
         image="/images/hero/service-2.webp"
         sections={[
           {
@@ -113,7 +113,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A konzerváló fogászati ellátás — beleértve a töméseket és gyökérkezeléseket — bizonyos keretek között TB-támogatott. A NEAK finanszírozza az alapvető kezeléseket jogosult páciensek számára érvényes TAJ-számmal. A magán fogászati ellátás esetén az ár a kezelés komplexitásától függ: egyszerű egyfelszínes tömés, több felszínes tömés, vagy többgyökerű fog gyökérkezelése eltérő időt és anyagot igényel. Pontos árajánlatot a vizsgálat után tudunk adni, amikor a kezelési terv egyedileg elkészül. Kérjen tájékoztatást: +36 94 900-887."
+            text: "A konzerváló fogászati ellátás — beleértve a töméseket és gyökérkezeléseket — bizonyos keretek között TB-támogatott. A NEAK finanszírozza az alapvető kezeléseket jogosult páciensek számára érvényes TAJ-számmal. A magán fogászati ellátás esetén az ár a kezelés komplexitásától függ: egyszerű egyfelszínes tömés, több felszínes tömés, vagy többgyökerű fog gyökérkezelése eltérő időt és anyagot igényel. Pontos árajánlatot a vizsgálat után tudunk adni, amikor a kezelési terv egyedileg elkészül. Kérjen tájékoztatást: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

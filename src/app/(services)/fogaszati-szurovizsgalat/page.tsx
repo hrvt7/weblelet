@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Fogászati szűrővizsgálat Szombathelyen — félévenkénti kontroll | Dr. Köteles Renáta",
-  description: "Fogászati szűrővizsgálat Szombathelyen: alapos kontroll, röntgen, szájüreg és íny vizsgálat. TB-támogatott. Félévenkénti megelőzés. Időpont: +36 94 900-887.",
+  title: "Fogászati szűrővizsgálat Budapesten — félévenkénti kontroll | Dr. Minta Réka",
+  description: "Fogászati szűrővizsgálat Budapesten: alapos kontroll, röntgen, szájüreg és íny vizsgálat. TB-támogatott. Félévenkénti megelőzés. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/fogaszati-szurovizsgalat" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Fogászati szűrővizsgálat Szombathelyen"
-        subtitle="Félévenkénti kontroll vizsgálat Dr. Köteles Renáta rendelőjében. A fogászati megelőzés alapja — a korai felismerés a leghatékonyabb és legolcsóbb kezelés."
+        title="Fogászati szűrővizsgálat Budapesten"
+        subtitle="Félévenkénti kontroll vizsgálat Dr. Minta Réka rendelőjében. A fogászati megelőzés alapja — a korai felismerés a leghatékonyabb és legolcsóbb kezelés."
         image="/images/hero/service-1.webp"
         sections={[
           {
@@ -104,8 +104,8 @@ export default function Page() {
             text: "Időtartam: rutin szűrővizsgálat önmagában 20-30 perc, fogkőeltávolítással együtt 45-60 perc, röntgenfelvétellel további 5-10 perc. Első vizit: kissé hosszabb (40-60 perc) a részletes anamnézis és teljes vizsgálat miatt. A vizsgálat fájdalommentes — csak vizuális és műszeres ellenőrzés. Enyhe érzékenység a szondázásnál előfordulhat, különösen ha gingivitisz van jelen. Utána: közvetlenül normál étkezés, munka, sport lehetséges. Nincsenek korlátozások. Ha kezelés is volt (pl. fogkőeltávolítás), 24 órán át kerülje a nagyon fűszeres vagy forró ételeket."
           },
           {
-            heading: "Prevenciós időszak Dr. Köteles Renáta rendelőjében",
-            text: "Rendelőnkben kiemelt prevenciós időszakot biztosítunk, amikor a szűrővizsgálatra érkező pácienseket előnyben részesítjük. Hétfő és szerda: 13:30–14:30 (a délutáni rendelés kezdete). Kedd és csütörtök: 07:30–08:30 (a délelőtti rendelés kezdete). Péntek: páros héten 13:30–14:30, páratlan héten 07:30–08:30. Ezekben az időszakokban kifejezetten a megelőző ellenőrzésekre koncentrálunk: több időt és figyelmet fordítunk a részletes vizsgálatra, a szájhigiénés tanácsadásra. Kérjük, időpont-egyeztetés céljából hívjon: +36 94 900-887."
+            heading: "Prevenciós időszak Dr. Minta Réka rendelőjében",
+            text: "Rendelőnkben kiemelt prevenciós időszakot biztosítunk, amikor a szűrővizsgálatra érkező pácienseket előnyben részesítjük. Hétfő és szerda: 13:30–14:30 (a délutáni rendelés kezdete). Kedd és csütörtök: 07:30–08:30 (a délelőtti rendelés kezdete). Péntek: páros héten 13:30–14:30, páratlan héten 07:30–08:30. Ezekben az időszakokban kifejezetten a megelőző ellenőrzésekre koncentrálunk: több időt és figyelmet fordítunk a részletes vizsgálatra, a szájhigiénés tanácsadásra. Kérjük, időpont-egyeztetés céljából hívjon: +36 30 123 4567."
           },
           {
             heading: "Mit tehet otthon a fogászati egészségéért?",
@@ -113,7 +113,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A fogászati szűrővizsgálat és az alapellátás TB-támogatott jogosult pácienseknek. Ez magában foglalja a rutin kontrollt, alapvető röntgenfelvételt, évi egy fogkőeltávolítást, tanácsadást. Magánellátás esetén is elérhető a szolgáltatás — pontos árajánlatot egyedileg tudunk adni. Hívjon: +36 94 900-887. Ha kezelésre van szükség (tömés, gyökérkezelés stb.), azt külön időpontban végezzük el, és részletesen egyeztetjük Önnel a lehetőségeket."
+            text: "A fogászati szűrővizsgálat és az alapellátás TB-támogatott jogosult pácienseknek. Ez magában foglalja a rutin kontrollt, alapvető röntgenfelvételt, évi egy fogkőeltávolítást, tanácsadást. Magánellátás esetén is elérhető a szolgáltatás — pontos árajánlatot egyedileg tudunk adni. Hívjon: +36 30 123 4567. Ha kezelésre van szükség (tömés, gyökérkezelés stb.), azt külön időpontban végezzük el, és részletesen egyeztetjük Önnel a lehetőségeket."
           },
           {
             heading: "Gyakori kérdések",

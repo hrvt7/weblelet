@@ -9,11 +9,11 @@ export default function Footer() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/images/tooth-logo.svg" alt="Fog logó" className="h-8 w-8" />
               <span className="font-heading text-lg font-bold tracking-[-0.02em] text-foreground">
-                Dr. Köteles Renáta
+                Dr. Minta Réka
               </span>
             </div>
             <p className="text-sm text-foreground-muted max-w-xs text-center md:text-left">
-              Felnőtt fogorvosi rendelő Szombathelyen. Fájdalommentes fogászat, családias légkörben.
+              Felnőtt fogorvosi rendelő Budapesten. Fájdalommentes fogászat, családias légkörben.
             </p>
           </div>
 
@@ -29,13 +29,13 @@ export default function Footer() {
           {/* Contact */}
           <div className="flex flex-col items-center md:items-start gap-3 text-sm text-foreground-muted">
             <p className="font-heading font-semibold text-foreground-secondary text-xs uppercase tracking-wider">Elérhetőségek</p>
-            <a href="tel:+3694900887" className="hover:text-primary transition-colors duration-200">
-              +36 94 900-887
+            <a href="tel:+36301234567" className="hover:text-primary transition-colors duration-200">
+              +36 30 123 4567
             </a>
-            <a href="mailto:dr.kotelesrenata@gmail.com" className="hover:text-primary transition-colors duration-200">
-              dr.kotelesrenata@gmail.com
+            <a href="mailto:info@mintarendelo.hu" className="hover:text-primary transition-colors duration-200">
+              info@mintarendelo.hu
             </a>
-            <span>9700 Szombathely, Markusovszky Lajos u. 8.</span>
+            <span>1234 Budapest, Példa utca 10.</span>
             <a href="/adatvedelem" className="hover:text-primary transition-colors duration-200">
               Adatvédelmi tájékoztató
             </a>
@@ -45,13 +45,13 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-10 pt-8 border-t border-border-light text-center text-xs text-foreground-muted leading-relaxed space-y-1">
           <p>
-            <strong className="text-foreground-secondary">Dr. Köteles Renáta</strong> — Felnőtt fogorvosi rendelő
+            <strong className="text-foreground-secondary">Dr. Minta Réka</strong> — Felnőtt fogorvosi rendelő
           </p>
           <p>
-            9700 Szombathely, Markusovszky Lajos u. 8. &middot; +36 94 900-887
+            1234 Budapest, Példa utca 10. &middot; +36 30 123 4567
           </p>
           <p className="pt-2">
-            &copy; {new Date().getFullYear()} Dr. Köteles Renáta. Minden jog fenntartva.
+            &copy; {new Date().getFullYear()} Dr. Minta Réka. Minden jog fenntartva.
           </p>
         </div>
       </div>

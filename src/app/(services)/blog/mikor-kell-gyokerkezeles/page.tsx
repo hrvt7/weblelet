@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import BlogPost from "@/components/BlogPost";
 
 export const metadata: Metadata = {
-  title: "Mikor kell gyökérkezelés? — Tünetek és jelek | Dr. Köteles Renáta",
-  description: "Mikor van szükség gyökérkezelésre? A tünetek, okok, kezelés menete fogorvostól. Elkerülheti a foghúzást — ismerje fel időben. Szombathely: +36 94 900-887.",
+  title: "Mikor kell gyökérkezelés? — Tünetek és jelek | Dr. Minta Réka",
+  description: "Mikor van szükség gyökérkezelésre? A tünetek, okok, kezelés menete fogorvostól. Elkerülheti a foghúzást — ismerje fel időben. Budapest: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/blog/mikor-kell-gyokerkezeles" },
 };
 
@@ -12,7 +12,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Mikor kell gyökérkezelés?",
   description: "A gyökérkezelés szükségességét jelző tünetek, a kezelés menete, és miért menti meg a fogát.",
-  author: { "@type": "Person", name: "Dr. Köteles Renáta", jobTitle: "Fogorvos" },
+  author: { "@type": "Person", name: "Dr. Minta Réka", jobTitle: "Fogorvos" },
   publisher: { "@id": "https://weblelet.hu/#organization" },
   datePublished: "2026-04-14",
   dateModified: "2026-04-14",
@@ -64,7 +64,7 @@ export default function Page() {
           },
           {
             heading: "Megelőzés — hogyan kerülhető el?",
-            text: "A legjobb gyökérkezelés az, amelyre nem volt szükség. Megelőzési lépések:\n\n1. Rendszeres szűrővizsgálat: félévente. A kezdődő szuvasodás 10 perces tömés, a mély már gyökérkezelés.\n\n2. Napi szájhigiéne: fogmosás 2x naponta, fogselyem, interdentális kefe. A megfelelő otthoni ápolás a szuvasodás 70%-át megelőzi.\n\n3. Évente 1 professzionális fogkőeltávolítás: eltávolítja azokat a lerakódásokat, amelyeket otthon nem ér el.\n\n4. Fluoridos fogkrém: erősíti a zománcot.\n\n5. Cukorfogyasztás csökkentése: különösen a gyakorisága fontos, nem feltétlen a mennyisége.\n\n6. Kemény tárgyak kerülése: ne harapjon jégkockát, dióhéjat, ceruzahegyet.\n\n7. Szájvédő sportoláshoz: kontaktsportoknál elengedhetetlen.\n\n8. Éjszakai fogvédő bruxizmusnál: ha éjszaka csikorgat, egyedi fogvédő megelőzi a mikrotöréseket.\n\n9. Azonnali kezelés fogfájás esetén: ne halogassa. A kezdődő pulpitis még konzervatív tömési módszerrel kezelhető (pulpakővelés) — ha várva a pulpa elhal, gyökérkezelés szükséges.\n\nForduljon hozzánk bátran: +36 94 900-887."
+            text: "A legjobb gyökérkezelés az, amelyre nem volt szükség. Megelőzési lépések:\n\n1. Rendszeres szűrővizsgálat: félévente. A kezdődő szuvasodás 10 perces tömés, a mély már gyökérkezelés.\n\n2. Napi szájhigiéne: fogmosás 2x naponta, fogselyem, interdentális kefe. A megfelelő otthoni ápolás a szuvasodás 70%-át megelőzi.\n\n3. Évente 1 professzionális fogkőeltávolítás: eltávolítja azokat a lerakódásokat, amelyeket otthon nem ér el.\n\n4. Fluoridos fogkrém: erősíti a zománcot.\n\n5. Cukorfogyasztás csökkentése: különösen a gyakorisága fontos, nem feltétlen a mennyisége.\n\n6. Kemény tárgyak kerülése: ne harapjon jégkockát, dióhéjat, ceruzahegyet.\n\n7. Szájvédő sportoláshoz: kontaktsportoknál elengedhetetlen.\n\n8. Éjszakai fogvédő bruxizmusnál: ha éjszaka csikorgat, egyedi fogvédő megelőzi a mikrotöréseket.\n\n9. Azonnali kezelés fogfájás esetén: ne halogassa. A kezdődő pulpitis még konzervatív tömési módszerrel kezelhető (pulpakővelés) — ha várva a pulpa elhal, gyökérkezelés szükséges.\n\nForduljon hozzánk bátran: +36 30 123 4567."
           },
         ]}
         relatedServices={[

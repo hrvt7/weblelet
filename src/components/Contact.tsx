@@ -66,7 +66,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm">Cím</p>
-                    <p className="text-foreground-secondary text-sm">9700 Szombathely, Markusovszky Lajos u. 8.</p>
+                    <p className="text-foreground-secondary text-sm">1234 Budapest, Példa utca 10.</p>
                   </div>
                 </div>
 
@@ -78,8 +78,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm">Telefon</p>
-                    <a href="tel:+3694900887" className="text-primary font-semibold text-sm hover:underline">
-                      +36 94 900-887
+                    <a href="tel:+36301234567" className="text-primary font-semibold text-sm hover:underline">
+                      +36 30 123 4567
                     </a>
                   </div>
                 </div>
@@ -93,8 +93,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm">Email</p>
-                    <a href="mailto:dr.kotelesrenata@gmail.com" className="text-primary text-sm hover:underline">
-                      dr.kotelesrenata@gmail.com
+                    <a href="mailto:info@mintarendelo.hu" className="text-primary text-sm hover:underline">
+                      info@mintarendelo.hu
                     </a>
                   </div>
                 </div>
@@ -103,14 +103,14 @@ export default function Contact() {
               {/* Google Maps */}
               <div className="rounded-2xl overflow-hidden border border-border shadow-sm">
                 <iframe
-                  src="https://www.google.com/maps?q=47.2389614,16.6183989&z=17&hl=hu&output=embed"
+                  src="https://www.google.com/maps?q=47.4979,19.0402&z=17&hl=hu&output=embed"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Dr. Köteles Renáta fogorvosi rendelő — térkép"
+                  title="Dr. Minta Réka fogorvosi rendelő — térkép"
                 />
               </div>
             </div>

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Parodontológia Szombathelyen — fogágygyulladás kezelés | Dr. Köteles Renáta",
-  description: "Parodontológia Szombathelyen: fogágygyulladás (parodontitis) diagnosztika és kezelés. Mély küretálás, gyökérfelszín-simítás. TB-támogatott. Időpont: +36 94 900-887.",
+  title: "Parodontológia Budapesten — fogágygyulladás kezelés | Dr. Minta Réka",
+  description: "Parodontológia Budapesten: fogágygyulladás (parodontitis) diagnosztika és kezelés. Mély küretálás, gyökérfelszín-simítás. TB-támogatott. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/parodontologia" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Parodontológia Szombathelyen"
-        subtitle="Fogágygyulladás (parodontitis) diagnosztika és kezelés Dr. Köteles Renáta rendelőjében. A felnőttkori fogvesztés #1 oka — megelőzhető és kezelhető."
+        title="Parodontológia Budapesten"
+        subtitle="Fogágygyulladás (parodontitis) diagnosztika és kezelés Dr. Minta Réka rendelőjében. A felnőttkori fogvesztés #1 oka — megelőzhető és kezelhető."
         image="/images/hero/service-parodontologia.webp"
         sections={[
           {
@@ -117,7 +117,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A parodontológiai alapellátás — mely magában foglalja a szűrővizsgálatot, a professzionális fogkőeltávolítást, és alapvető gyökérsimítást — TB-támogatott érvényes TAJ-számmal rendelkező pácienseknek. Komplexebb beavatkozások (teljes mély küretálás, parodontológiai sebészet) részben térítésmentesek, részben magánellátás keretében érhetők el. Pontos árajánlatot a diagnosztikai vizsgálat után adunk. Hívjon: +36 94 900-887."
+            text: "A parodontológiai alapellátás — mely magában foglalja a szűrővizsgálatot, a professzionális fogkőeltávolítást, és alapvető gyökérsimítást — TB-támogatott érvényes TAJ-számmal rendelkező pácienseknek. Komplexebb beavatkozások (teljes mély küretálás, parodontológiai sebészet) részben térítésmentesek, részben magánellátás keretében érhetők el. Pontos árajánlatot a diagnosztikai vizsgálat után adunk. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogPost from "@/components/BlogPost";
 
 export const metadata: Metadata = {
-  title: "Fáj-e a fogkőeltávolítás? — Őszinte válasz fogorvostól | Dr. Köteles Renáta",
+  title: "Fáj-e a fogkőeltávolítás? — Őszinte válasz fogorvostól | Dr. Minta Réka",
   description: "A leggyakoribb félelem a fogtisztítás előtt — de fáj-e valójában? Őszinte válasz fogorvostól: mi történik a kezelés alatt, mikor érezhet diszkomfortot.",
   alternates: { canonical: "https://weblelet.hu/blog/faj-e-a-fogkoeltavolitas" },
 };
@@ -12,7 +12,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Fáj-e a fogkőeltávolítás?",
   description: "Őszinte válasz egy fogorvostól a fogkőeltávolítás fájdalmáról, a kezelés menetéről, és hogyan tehető kellemesebbé.",
-  author: { "@type": "Person", name: "Dr. Köteles Renáta", jobTitle: "Fogorvos" },
+  author: { "@type": "Person", name: "Dr. Minta Réka", jobTitle: "Fogorvos" },
   publisher: { "@id": "https://weblelet.hu/#organization" },
   datePublished: "2026-04-14",
   dateModified: "2026-04-14",
@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             heading: "Miért éri meg a rendszeres fogkőeltávolítás?",
-            text: "A fogkőeltávolítás nem luxus, hanem szükséglet. Ha elhanyagolja:\n\n• Ínygyulladás (gingivitisz) — vérző, duzzadt íny.\n• Parodontitisz — csontveszteség, fogvesztés hosszú távon.\n• Rossz lehelet (halitózis).\n• Szuvasodás — a fogkő alatti baktériumok a fogzománcot is megtámadják.\n• Rosszabb esetben: szisztémás kockázatok (szív-érrendszer, cukorbetegség).\n\nMiért olcsóbb és hatékonyabb a megelőzés?\n\nEgy rutin fogkőeltávolítás (TB-támogatott, évente 1x ingyenes) megakadályozza a gyökérkezelést (20-30x drágább), fogpótlást (100-200x drágább), parodontális kezelést. A 30-45 perc kellemetlenség — ha egyáltalán — eltörpül a felmerülő előnyök mellett.\n\nFoglaljon időpontot: +36 94 900-887."
+            text: "A fogkőeltávolítás nem luxus, hanem szükséglet. Ha elhanyagolja:\n\n• Ínygyulladás (gingivitisz) — vérző, duzzadt íny.\n• Parodontitisz — csontveszteség, fogvesztés hosszú távon.\n• Rossz lehelet (halitózis).\n• Szuvasodás — a fogkő alatti baktériumok a fogzománcot is megtámadják.\n• Rosszabb esetben: szisztémás kockázatok (szív-érrendszer, cukorbetegség).\n\nMiért olcsóbb és hatékonyabb a megelőzés?\n\nEgy rutin fogkőeltávolítás (TB-támogatott, évente 1x ingyenes) megakadályozza a gyökérkezelést (20-30x drágább), fogpótlást (100-200x drágább), parodontális kezelést. A 30-45 perc kellemetlenség — ha egyáltalán — eltörpül a felmerülő előnyök mellett.\n\nFoglaljon időpontot: +36 30 123 4567."
           },
         ]}
         relatedServices={[

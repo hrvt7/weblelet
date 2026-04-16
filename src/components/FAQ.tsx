@@ -6,7 +6,7 @@ import FadeIn from "./FadeIn";
 const faqs = [
   {
     q: "Kell-e előre időpontot foglalni?",
-    a: "Igen, kérjük hívjon a +36 94 900-887 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
+    a: "Igen, kérjük hívjon a +36 30 123 4567 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
   },
   {
     q: "TB-támogatott a rendelés?",
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Mi a teendő sürgős fogfájás esetén?",
-    a: "Hívjon a rendelési időben a +36 94 900-887 számon, és igyekszünk mielőbb ellátni.",
+    a: "Hívjon a rendelési időben a +36 30 123 4567 számon, és igyekszünk mielőbb ellátni.",
   },
 ];
 

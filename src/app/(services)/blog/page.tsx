@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import FadeIn from "@/components/FadeIn";
 
 export const metadata: Metadata = {
-  title: "Fogászati blog — tippek, válaszok, tudástár | Dr. Köteles Renáta",
-  description: "Fogászati blog Szombathelyi fogorvostól: mit tegyen fogfájás esetén, mikor kell gyökérkezelés, gyermek első fogorvosi látogatása és más hasznos témák.",
+  title: "Fogászati blog — tippek, válaszok, tudástár | Dr. Minta Réka",
+  description: "Fogászati blog Budapesti fogorvostól: mit tegyen fogfájás esetén, mikor kell gyökérkezelés, gyermek első fogorvosi látogatása és más hasznos témák.",
   alternates: { canonical: "https://weblelet.hu/blog" },
 };
 
@@ -73,8 +73,8 @@ export default function BlogIndex() {
               Tippek, válaszok, tudástár
             </h1>
             <p className="mt-4 text-lg text-foreground-secondary leading-relaxed max-w-2xl mx-auto">
-              Dr. Köteles Renáta cikkei a leggyakoribb fogászati kérdésekről és panaszokról —
-              szakmailag pontos, közérthető megfogalmazásban. Ha kérdése van, hívjon: +36 94 900-887.
+              Dr. Minta Réka cikkei a leggyakoribb fogászati kérdésekről és panaszokról —
+              szakmailag pontos, közérthető megfogalmazásban. Ha kérdése van, hívjon: +36 30 123 4567.
             </p>
           </FadeIn>
         </div>

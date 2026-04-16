@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Profilaxia Szombathelyen — fogászati megelőzés | Dr. Köteles Renáta",
-  description: "Fogászati profilaxia Szombathelyen: megelőző kezelések, fluoridálás, barázdazárás, professzionális fogtisztítás. TB-támogatott. Időpont: +36 94 900-887.",
+  title: "Profilaxia Budapesten — fogászati megelőzés | Dr. Minta Réka",
+  description: "Fogászati profilaxia Budapesten: megelőző kezelések, fluoridálás, barázdazárás, professzionális fogtisztítás. TB-támogatott. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/profilaxia" },
 };
 
@@ -67,7 +67,7 @@ const faqSchema = {
       name: "Mennyibe kerül a magán profilaxia?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A profilaxia árát befolyásolja a kezelés tartalma (csak fogkőeltávolítás, vagy teljes csomag Air-flow-val és fluoridálással), a rendelői idő és az egyéni szükségletek. Pontos árajánlatot a kezelés előtti konzultáción adunk. Hívjon: +36 94 900-887.",
+        text: "A profilaxia árát befolyásolja a kezelés tartalma (csak fogkőeltávolítás, vagy teljes csomag Air-flow-val és fluoridálással), a rendelői idő és az egyéni szükségletek. Pontos árajánlatot a kezelés előtti konzultáción adunk. Hívjon: +36 30 123 4567.",
       },
     },
   ],
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Profilaxia Szombathelyen"
-        subtitle="Fogászati megelőző kezelések Dr. Köteles Renáta rendelőjében. A megelőzés a legjobb és legolcsóbb kezelés — a rendszeres profilaxia megőrzi fogai egészségét évtizedekre."
+        title="Profilaxia Budapesten"
+        subtitle="Fogászati megelőző kezelések Dr. Minta Réka rendelőjében. A megelőzés a legjobb és legolcsóbb kezelés — a rendszeres profilaxia megőrzi fogai egészségét évtizedekre."
         image="/images/hero/service-profilaxia.webp"
         sections={[
           {
@@ -121,7 +121,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A profilaxis egyes elemei TB-támogatottak jogosult pácienseknek: évente 1 fogkőeltávolítás, gyermekek komplett profilaxisa 0-18 éves korig, fluoridos lakk gyermekeknek. Magánellátás keretében a komplett felnőtt profilaxis (Air-flow, prémium fluoridálás, részletes konzultáció) külön elérhető. Az árakat egyedileg tudjuk megadni a kezelési tervnek megfelelően. Hívjon: +36 94 900-887."
+            text: "A profilaxis egyes elemei TB-támogatottak jogosult pácienseknek: évente 1 fogkőeltávolítás, gyermekek komplett profilaxisa 0-18 éves korig, fluoridos lakk gyermekeknek. Magánellátás keretében a komplett felnőtt profilaxis (Air-flow, prémium fluoridálás, részletes konzultáció) külön elérhető. Az árakat egyedileg tudjuk megadni a kezelési tervnek megfelelően. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

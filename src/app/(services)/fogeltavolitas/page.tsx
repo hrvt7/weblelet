@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Foghúzás és fogeltávolítás Szombathelyen — bölcsességfog | Dr. Köteles Renáta",
-  description: "Foghúzás, bölcsességfog eltávolítás Szombathelyen. Kíméletes, fájdalommentes helyi érzéstelenítéssel. TB-támogatott rendelő. Időpont: +36 94 900-887.",
+  title: "Foghúzás és fogeltávolítás Budapesten — bölcsességfog | Dr. Minta Réka",
+  description: "Foghúzás, bölcsességfog eltávolítás Budapesten. Kíméletes, fájdalommentes helyi érzéstelenítéssel. TB-támogatott rendelő. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/fogeltavolitas" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Foghúzás és fogeltávolítás Szombathelyen"
-        subtitle="Kíméletes foghúzás, bölcsességfog eltávolítás Dr. Köteles Renáta rendelőjében. Helyi érzéstelenítés, gondos utógondozás, részletes útmutató a gyors gyógyuláshoz."
+        title="Foghúzás és fogeltávolítás Budapesten"
+        subtitle="Kíméletes foghúzás, bölcsességfog eltávolítás Dr. Minta Réka rendelőjében. Helyi érzéstelenítés, gondos utógondozás, részletes útmutató a gyors gyógyuláshoz."
         image="/images/hero/service-6.webp"
         sections={[
           {
@@ -117,7 +117,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül a foghúzás? TB-támogatott?",
-            text: "A foghúzás TB-támogatott alapellátás érvényes TAJ-számmal rendelkező pácienseknek. Az egyszerű foghúzás (beleértve a röntgent, érzéstelenítést, beavatkozást és alap utógondozást) térítésmentes. Sebészi foghúzás, bölcsességfog eltávolítás és komplex esetek a páciens egészségügyi indokoltságától és a rendelő keretétől függően térítésmentesen vagy részleges térítéssel elérhetők. Magánellátás esetén a kezelés ára a beavatkozás komplexitásától függ. Pontos tájékoztatást a vizsgálat után adunk. Hívjon: +36 94 900-887."
+            text: "A foghúzás TB-támogatott alapellátás érvényes TAJ-számmal rendelkező pácienseknek. Az egyszerű foghúzás (beleértve a röntgent, érzéstelenítést, beavatkozást és alap utógondozást) térítésmentes. Sebészi foghúzás, bölcsességfog eltávolítás és komplex esetek a páciens egészségügyi indokoltságától és a rendelő keretétől függően térítésmentesen vagy részleges térítéssel elérhetők. Magánellátás esetén a kezelés ára a beavatkozás komplexitásától függ. Pontos tájékoztatást a vizsgálat után adunk. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Fogorvos Szombathely — Dr. Köteles Renáta felnőtt fogorvosi rendelő",
-  description: "Fogorvos Szombathelyen: TB-támogatott felnőtt fogorvosi rendelő a Markusovszky Lajos u. 8. szám alatt. Teljes körű fogászati ellátás, modern technológia. Időpont: +36 94 900-887.",
+  title: "Fogorvos Budapest — Dr. Minta Réka felnőtt fogorvosi rendelő",
+  description: "Fogorvos Budapesten: TB-támogatott felnőtt fogorvosi rendelő a Példa utca 10. szám alatt. Teljes körű fogászati ellátás, modern technológia. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/fogorvos-szombathely" },
 };
 
@@ -11,20 +11,20 @@ const dentistSchema = {
   "@context": "https://schema.org",
   "@type": "Dentist",
   "@id": "https://weblelet.hu/fogorvos-szombathely#dentist",
-  name: "Dr. Köteles Renáta — Fogorvos Szombathely",
-  description: "Felnőtt fogorvosi rendelő Szombathelyen, NEAK szerződéses alapellátás, teljes körű fogászati kezelések.",
+  name: "Dr. Minta Réka — Fogorvos Budapest",
+  description: "Felnőtt fogorvosi rendelő Budapesten, NEAK szerződéses alapellátás, teljes körű fogászati kezelések.",
   url: "https://weblelet.hu/fogorvos-szombathely",
-  telephone: "+3694900887",
+  telephone: "+36301234567",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Markusovszky Lajos u. 8.",
-    addressLocality: "Szombathely",
-    postalCode: "9700",
+    streetAddress: "Példa utca 10.",
+    addressLocality: "Budapest",
+    postalCode: "1234",
     addressCountry: "HU",
   },
   areaServed: {
     "@type": "City",
-    name: "Szombathely",
+    name: "Budapest",
   },
   medicalSpecialty: "Dentistry",
   priceRange: "$$",
@@ -36,15 +36,15 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Hol található Szombathelyen Dr. Köteles Renáta rendelője?",
+      name: "Hol található Budapesten Dr. Minta Réka rendelője?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A rendelő a 9700 Szombathely, Markusovszky Lajos u. 8. szám alatti Egészségügyi Alapellátó Központban található. A Markusovszky Kórház közvetlen közelében, ingyenes parkolással. Tömegközlekedéssel a 7-es és 10-es buszokkal érhető el.",
+        text: "A rendelő a 1234 Budapest, Példa utca 10. szám alatti Egészségügyi Alapellátó Központban található. Az Egészségügyi Központ közvetlen közelében, ingyenes parkolással. Tömegközlekedéssel a 7-es és 10-es buszokkal érhető el.",
       },
     },
     {
       "@type": "Question",
-      name: "TB-támogatott fogorvosi rendelő Szombathelyen?",
+      name: "TB-támogatott fogorvosi rendelő Budapesten?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Igen, NEAK szerződéses alapellátó fogorvosi rendelő vagyunk. Érvényes TAJ-számmal a szűrővizsgálat, fogkőeltávolítás, tömések, gyökérkezelések, foghúzás, alap fogpótlás ellátás térítésmentesen elérhető.",
@@ -71,7 +71,7 @@ const faqSchema = {
       name: "Hogyan foglaljak időpontot?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Időpontot telefonon tudunk egyeztetni: +36 94 900-887. Kérjük a rendelési időben hívjon. Akut fogfájás esetén jelezze telefonon — igyekszünk soron kívül fogadni. Új pácienseket is várunk, csak érvényes TAJ-szám és személyi igazolvány szükséges.",
+        text: "Időpontot telefonon tudunk egyeztetni: +36 30 123 4567. Kérjük a rendelési időben hívjon. Akut fogfájás esetén jelezze telefonon — igyekszünk soron kívül fogadni. Új pácienseket is várunk, csak érvényes TAJ-szám és személyi igazolvány szükséges.",
       },
     },
   ],
@@ -83,13 +83,13 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentistSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Fogorvos Szombathelyen — Dr. Köteles Renáta"
-        subtitle="Felnőtt fogorvosi rendelő a Markusovszky Lajos u. 8. szám alatt. TB-támogatott, NEAK szerződéses ellátás, teljes körű fogászati kezelések egy helyen."
+        title="Fogorvos Budapesten — Dr. Minta Réka"
+        subtitle="Felnőtt fogorvosi rendelő a Példa utca 10. szám alatt. TB-támogatott, NEAK szerződéses ellátás, teljes körű fogászati kezelések egy helyen."
         image="/images/hero/service-1.webp"
         sections={[
           {
-            heading: "Miért válasszon minket fogorvosának Szombathelyen?",
-            text: "Dr. Köteles Renáta fogorvosi rendelője a szombathelyi Egészségügyi Alapellátó Központban (Markusovszky Lajos u. 8.) működik. Célunk, hogy a páciensek kellemes, családias légkörben, modern technológiával és személyes odafigyeléssel kapják meg a szükséges ellátást — a rutin szűrővizsgálattól a komplex fogpótlásig. NEAK szerződéses alapellátó rendelő vagyunk: az alapvető kezelések TB-támogatott keretben, magánkezelés formájában is elérhetők. A rendelő könnyen megközelíthető a város bármely pontjáról, ingyenes parkolás, tömegközlekedéssel elérhető. Új pácienseket is várunk — csak TAJ-szám és személyi igazolvány szükséges az első látogatáshoz."
+            heading: "Miért válasszon minket fogorvosának Budapesten?",
+            text: "Dr. Minta Réka fogorvosi rendelője a budapesti Egészségügyi Alapellátó Központban (Példa utca 10.) működik. Célunk, hogy a páciensek kellemes, családias légkörben, modern technológiával és személyes odafigyeléssel kapják meg a szükséges ellátást — a rutin szűrővizsgálattól a komplex fogpótlásig. NEAK szerződéses alapellátó rendelő vagyunk: az alapvető kezelések TB-támogatott keretben, magánkezelés formájában is elérhetők. A rendelő könnyen megközelíthető a város bármely pontjáról, ingyenes parkolás, tömegközlekedéssel elérhető. Új pácienseket is várunk — csak TAJ-szám és személyi igazolvány szükséges az első látogatáshoz."
           },
           {
             heading: "Teljes körű fogászati ellátás egy helyen",
@@ -97,7 +97,7 @@ export default function Page() {
           },
           {
             heading: "Rendelési idő — 2026-tól",
-            text: "Hétfő: 13:30–19:30 (prevenciós idő: 13:30–14:30). Kedd: 07:30–13:30 (prevenciós idő: 07:30–08:30). Szerda: 13:30–19:30 (prevenciós idő: 13:30–14:30). Csütörtök: 07:30–13:30 (prevenciós idő: 07:30–08:30). Péntek: váltakozó — páros héten 13:30–19:30, páratlan héten 07:30–13:30 (prevenciós idő a rendelés első órája). A prevenciós időszakban a szűrővizsgálatra érkező pácienseket előnyben részesítjük. Akut fogfájás esetén a rendelési időben hívjon minket — igyekszünk soron kívül fogadni. Hétvégén és ünnepnapokon a szombathelyi Fogászati Ügyelet (ugyanazon címen, Markusovszky u. 8., tel.: +36 94 313-340) áll rendelkezésre 08:00–14:00 között."
+            text: "Hétfő: 13:30–19:30 (prevenciós idő: 13:30–14:30). Kedd: 07:30–13:30 (prevenciós idő: 07:30–08:30). Szerda: 13:30–19:30 (prevenciós idő: 13:30–14:30). Csütörtök: 07:30–13:30 (prevenciós idő: 07:30–08:30). Péntek: váltakozó — páros héten 13:30–19:30, páratlan héten 07:30–13:30 (prevenciós idő a rendelés első órája). A prevenciós időszakban a szűrővizsgálatra érkező pácienseket előnyben részesítjük. Akut fogfájás esetén a rendelési időben hívjon minket — igyekszünk soron kívül fogadni. Hétvégén és ünnepnapokon a budapesti Fogászati Ügyelet (ugyanazon címen, Példa utca 10., tel.: +36 1 123-4567) áll rendelkezésre 08:00–14:00 között."
           },
           {
             heading: "TB-támogatott vs. magán ellátás",
@@ -109,11 +109,11 @@ export default function Page() {
           },
           {
             heading: "Megközelítés — hogyan juthat el a rendelőhöz?",
-            text: "Cím: 9700 Szombathely, Markusovszky Lajos u. 8., Egészségügyi Alapellátó Központ. Autóval: a Markusovszky Kórház közvetlen közelében található, ingyenes parkolási lehetőség az épület előtt és környékén (Városligeti sporttelep parkolói). A város bármely pontjáról 5-15 perc alatt elérhető. Tömegközlekedéssel: 7-es és 10-es buszokkal, a 'Markusovszky kórház' megállóig. Megközelítés a város széléről: a belváros felől a Március 15. tér — Bajcsy-Zsilinszky út — Markusovszky Lajos utca útvonalon; a Huszár úti lakótelep felől közvetlen kapcsolat. Kerékpártárolók a központ előtt rendelkezésre állnak. Akadálymentes bejárat az épület főbejáratán keresztül."
+            text: "Cím: 1234 Budapest, Példa utca 10., Egészségügyi Alapellátó Központ. Autóval: a Példa Kórház közvetlen közelében található, ingyenes parkolási lehetőség az épület előtt és környékén (Városligeti sporttelep parkolói). A város bármely pontjáról 5-15 perc alatt elérhető. Tömegközlekedéssel: 7-es és 10-es buszokkal, a 'Példa kórház' megállóig. Megközelítés a város széléről: a belváros felől a Március 15. tér — Bajcsy-Zsilinszky út — Példa Lajos utca útvonalon; a Huszár úti lakótelep felől közvetlen kapcsolat. Kerékpártárolók a központ előtt rendelkezésre állnak. Akadálymentes bejárat az épület főbejáratán keresztül."
           },
           {
             heading: "Kinek ajánljuk rendelőnket?",
-            text: "Rendelőnk különösen alkalmas: szombathelyieknek, akik keresnek egy állandó, megbízható fogorvost a város központjához közel; Vas megyei pácienseknek, akik rendszeres fogászati ellátást szeretnének egy jól megközelíthető helyen; családoknak — gyermekfogászat is elérhető, így egy helyen intézhető a család ellátása; TB-s pácienseknek, akik a NEAK támogatott keretben szeretnének teljes körű ellátást; akut problémával küzdő pácienseknek (sürgősségi ellátás rendelési időben); időseknek, akik a rendelő megközelíthetőségét és az alapos, türelmes ellátást értékelik; fogorvosi félelemmel küzdő pácienseknek — családias, nyugodt légkör, időt adunk a bizalomépítésre; terhes anyáknak — a 2. trimeszter ideális időszak a teljes fogászati kontrollra."
+            text: "Rendelőnk különösen alkalmas: budapestieknek, akik keresnek egy állandó, megbízható fogorvost a város központjához közel; Pest megyei pácienseknek, akik rendszeres fogászati ellátást szeretnének egy jól megközelíthető helyen; családoknak — gyermekfogászat is elérhető, így egy helyen intézhető a család ellátása; TB-s pácienseknek, akik a NEAK támogatott keretben szeretnének teljes körű ellátást; akut problémával küzdő pácienseknek (sürgősségi ellátás rendelési időben); időseknek, akik a rendelő megközelíthetőségét és az alapos, türelmes ellátást értékelik; fogorvosi félelemmel küzdő pácienseknek — családias, nyugodt légkör, időt adunk a bizalomépítésre; terhes anyáknak — a 2. trimeszter ideális időszak a teljes fogászati kontrollra."
           },
           {
             heading: "Első látogatás — mit hozzon magával?",
@@ -125,7 +125,7 @@ export default function Page() {
           },
           {
             heading: "Kapcsolat — foglaljon időpontot",
-            text: "Telefon: +36 94 900-887 (rendelési időben hívjon). Email: dr.kotelesrenata@gmail.com. Cím: 9700 Szombathely, Markusovszky Lajos u. 8. Új pácienseket szívesen fogadunk. TB-s és magánellátás egyaránt elérhető. Akut fogfájás esetén jelezze telefonon — soron kívüli ellátást biztosítunk a rendelési időben. Ha kérdése van az ellátás típusairól, költségeiről, vagy az első látogatásról — hívjon nyugodtan, részletesen tájékoztatjuk."
+            text: "Telefon: +36 30 123 4567 (rendelési időben hívjon). Email: info@mintarendelo.hu. Cím: 1234 Budapest, Példa utca 10. Új pácienseket szívesen fogadunk. TB-s és magánellátás egyaránt elérhető. Akut fogfájás esetén jelezze telefonon — soron kívüli ellátást biztosítunk a rendelési időben. Ha kérdése van az ellátás típusairól, költségeiről, vagy az első látogatásról — hívjon nyugodtan, részletesen tájékoztatjuk."
           },
         ]}
         relatedServices={[

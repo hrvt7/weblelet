@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Air-flow kezelés Szombathelyen — homokfúvásos fogtisztítás | Dr. Köteles Renáta",
-  description: "Air-flow fogtisztítás Szombathelyen: kíméletes homokfúvásos módszer kávé-, tea-, dohányzás-foltokra. Fehérebb fogak fogfehérítés nélkül. Időpont: +36 94 900-887.",
+  title: "Air-flow kezelés Budapesten — homokfúvásos fogtisztítás | Dr. Minta Réka",
+  description: "Air-flow fogtisztítás Budapesten: kíméletes homokfúvásos módszer kávé-, tea-, dohányzás-foltokra. Fehérebb fogak fogfehérítés nélkül. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/air-flow" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Air-flow kezelés Szombathelyen"
-        subtitle="Kíméletes homokfúvásos fogtisztítás Dr. Köteles Renáta rendelőjében — fehérebb fogak, egészségesebb íny, kellemes élmény fogfehérítés nélkül."
+        title="Air-flow kezelés Budapesten"
+        subtitle="Kíméletes homokfúvásos fogtisztítás Dr. Minta Réka rendelőjében — fehérebb fogak, egészségesebb íny, kellemes élmény fogfehérítés nélkül."
         image="/images/hero/service-airflow.webp"
         sections={[
           {
@@ -125,7 +125,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül?",
-            text: "Az Air-flow kezelés magánellátás keretében érhető el — nem TB-támogatott. Az ár függ attól, hogy önállóan vagy kombinált csomag részeként kéri (fogkőeltávolítással együtt kedvezőbb árazás), milyen kiterjedésű tisztítás szükséges, és milyen por típust használunk. Pontos árajánlatot a kezelés előtti konzultáción adunk. Hívjon: +36 94 900-887."
+            text: "Az Air-flow kezelés magánellátás keretében érhető el — nem TB-támogatott. Az ár függ attól, hogy önállóan vagy kombinált csomag részeként kéri (fogkőeltávolítással együtt kedvezőbb árazás), milyen kiterjedésű tisztítás szükséges, és milyen por típust használunk. Pontos árajánlatot a kezelés előtti konzultáción adunk. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

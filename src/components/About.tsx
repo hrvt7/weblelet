@@ -40,7 +40,7 @@ export default function About() {
               Fogászatunk elsődleges célja pácienseink gyors és fájdalommentes kezelése, kellemes, családias légkörben.
             </p>
             <p className="mt-4 text-foreground-muted leading-relaxed max-w-xl mx-auto">
-              Rendelőnk a szombathelyi Markusovszky Lajos utcai orvosi központban működik, könnyen megközelíthető helyen. Modern eszközökkel és korszerű módszerekkel dolgozunk, miközben pácienseink igényeit nagyfokú odafigyeléssel követjük.
+              Rendelőnk a budapesti Példa utcai orvosi központban működik, könnyen megközelíthető helyen. Modern eszközökkel és korszerű módszerekkel dolgozunk, miközben pácienseink igényeit nagyfokú odafigyeléssel követjük.
             </p>
           </div>
         </FadeIn>

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Esztétikai fogászat Szombathelyen — fogfehérítés, veneers | Dr. Köteles Renáta",
-  description: "Esztétikai fogászat Szombathelyen: rendelői fogfehérítés, kompozit héjak (veneers), esztétikai töméscsere. Természetes eredmény. Időpont: +36 94 900-887.",
+  title: "Esztétikai fogászat Budapesten — fogfehérítés, veneers | Dr. Minta Réka",
+  description: "Esztétikai fogászat Budapesten: rendelői fogfehérítés, kompozit héjak (veneers), esztétikai töméscsere. Természetes eredmény. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/esztetikai-fogaszat" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Esztétikai fogászat Szombathelyen"
-        subtitle="Fogfehérítés, kompozit héjak és esztétikai töméscsere Dr. Köteles Renáta rendelőjében. Természetes, ragyogó mosoly — az első benyomás számít."
+        title="Esztétikai fogászat Budapesten"
+        subtitle="Fogfehérítés, kompozit héjak és esztétikai töméscsere Dr. Minta Réka rendelőjében. Természetes, ragyogó mosoly — az első benyomás számít."
         image="/images/hero/service-5.webp"
         sections={[
           {
@@ -117,7 +117,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül?",
-            text: "Az esztétikai fogászat magánellátás keretében érhető el — nem TB-támogatott kezeléskör. Az árazás a választott kezeléstől függ: rendelői fogfehérítés, kombinált módszer (rendelői + otthoni), kompozit héj (fogonként), esztétikai töméscsere (tömésenként). Pontos árajánlatot a konzultáción adunk, amikor felmérjük a fogak állapotát, meghatározzuk a célokat, és kidolgozzuk az egyedi kezelési tervet. Hívjon: +36 94 900-887."
+            text: "Az esztétikai fogászat magánellátás keretében érhető el — nem TB-támogatott kezeléskör. Az árazás a választott kezeléstől függ: rendelői fogfehérítés, kombinált módszer (rendelői + otthoni), kompozit héj (fogonként), esztétikai töméscsere (tömésenként). Pontos árajánlatot a konzultáción adunk, amikor felmérjük a fogak állapotát, meghatározzuk a célokat, és kidolgozzuk az egyedi kezelési tervet. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

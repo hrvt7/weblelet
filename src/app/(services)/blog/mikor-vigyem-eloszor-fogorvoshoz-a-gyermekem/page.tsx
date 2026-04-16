@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BlogPost from "@/components/BlogPost";
 
 export const metadata: Metadata = {
-  title: "Mikor vigyem először fogorvoshoz a gyermekem? | Dr. Köteles Renáta",
+  title: "Mikor vigyem először fogorvoshoz a gyermekem? | Dr. Minta Réka",
   description: "Szülőknek: mikor az ideális első fogászati látogatás, hogyan készítse fel a gyermeket, és mit tegyen ha fél. Gyakorlati tippek pozitív első élményhez.",
   alternates: { canonical: "https://weblelet.hu/blog/mikor-vigyem-eloszor-fogorvoshoz-a-gyermekem" },
 };
@@ -12,7 +12,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Mikor vigyem először fogorvoshoz a gyermekem?",
   description: "Szülőknek útmutató a gyermek első fogászati látogatásához: ideális időpont, felkészítés, mit várhat.",
-  author: { "@type": "Person", name: "Dr. Köteles Renáta", jobTitle: "Fogorvos" },
+  author: { "@type": "Person", name: "Dr. Minta Réka", jobTitle: "Fogorvos" },
   publisher: { "@id": "https://weblelet.hu/#organization" },
   datePublished: "2026-04-14",
   dateModified: "2026-04-14",
@@ -44,7 +44,7 @@ export default function Page() {
           },
           {
             heading: "Mi történik az első látogatás alatt?",
-            text: "Rendelőnkben a gyerekbarát első látogatás így zajlik:\n\n1. Érkezés és bemutatkozás (5 perc):\n• Üdvözöljük a gyermeket és a szülőt\n• Körbenézhet a rendelőben\n• Megismerkedik velem (Dr. Köteles Renátával) és az asszisztensnővel\n\n2. A 'fogászati szék' megismerése (5-10 perc):\n• Felkérjük a gyereket, hogy üljön fel (kicsiknél szülő ölében is lehet)\n• Megmutatjuk hogyan mozgatható a szék — ez gyakran 'jó játéknak' bizonyul\n• A lámpa kipróbálása, a tükör használata\n\n3. Vizsgálat (5-10 perc):\n• Játékosan 'megszámoljuk' a fogakat\n• Tükröt adunk a gyereknek, hogy ő is lássa\n• Gondosan ellenőrizzük a tejfogak és maradó fogak állapotát\n• Megfigyeljük a szájüregi lágyszöveteket, a harapást\n\n4. Szülői konzultáció (10-15 perc):\n• Megbeszéljük a gyermek fogazati állapotát\n• Tanácsadás: mit tegyenek otthon (fogmosás, étkezés, cumisüveg, szopizás)\n• Válaszolunk a szülő kérdéseire\n• Megbeszéljük a következő látogatás időpontját (általában fél év múlva)\n\n5. Jutalom:\n• Apró figyelmesség (matrica, vidám csipesz) — a gyerek már az úton azon gondolkodik, hogy legközelebb is visszajönne.\n\nÖsszesen: 20-30 perc. Fájdalom / kezelés — általában nincs az első alkalommal."
+            text: "Rendelőnkben a gyerekbarát első látogatás így zajlik:\n\n1. Érkezés és bemutatkozás (5 perc):\n• Üdvözöljük a gyermeket és a szülőt\n• Körbenézhet a rendelőben\n• Megismerkedik velem (Dr. Minta Rékával) és az asszisztensnővel\n\n2. A 'fogászati szék' megismerése (5-10 perc):\n• Felkérjük a gyereket, hogy üljön fel (kicsiknél szülő ölében is lehet)\n• Megmutatjuk hogyan mozgatható a szék — ez gyakran 'jó játéknak' bizonyul\n• A lámpa kipróbálása, a tükör használata\n\n3. Vizsgálat (5-10 perc):\n• Játékosan 'megszámoljuk' a fogakat\n• Tükröt adunk a gyereknek, hogy ő is lássa\n• Gondosan ellenőrizzük a tejfogak és maradó fogak állapotát\n• Megfigyeljük a szájüregi lágyszöveteket, a harapást\n\n4. Szülői konzultáció (10-15 perc):\n• Megbeszéljük a gyermek fogazati állapotát\n• Tanácsadás: mit tegyenek otthon (fogmosás, étkezés, cumisüveg, szopizás)\n• Válaszolunk a szülő kérdéseire\n• Megbeszéljük a következő látogatás időpontját (általában fél év múlva)\n\n5. Jutalom:\n• Apró figyelmesség (matrica, vidám csipesz) — a gyerek már az úton azon gondolkodik, hogy legközelebb is visszajönne.\n\nÖsszesen: 20-30 perc. Fájdalom / kezelés — általában nincs az első alkalommal."
           },
           {
             heading: "Mi van, ha a gyermek fél vagy nem akar együttműködni?",
@@ -56,7 +56,7 @@ export default function Page() {
           },
           {
             heading: "Mennyit fizet? TB-támogatott?",
-            text: "Jó hír: a gyermekfogászati ellátás 0-18 éves korig TELJES KÖRŰEN TB-támogatott Magyarországon. Ez magában foglalja:\n\n• Rendszeres szűrővizsgálat\n• Tejfog- és maradó fog tömés\n• Barázdazárás (maradó őrlőfogakon)\n• Fluoridos lakk\n• Foghúzás\n• Gyökérkezelés (szükség esetén)\n• Akut / sürgősségi ellátás\n\nAmi szükséges:\n• TAJ-kártya (a gyermeké)\n• Szülő személyi igazolványa\n• Gyermek személyi igazolványa vagy lakcímkártyája\n\nMagánellátás:\n• Ha gyorsabb időpontot szeretne\n• Prémium anyagok (pl. fehér esztétikai tömés a mosolyövezetben) — bár a standard kompozit tömés is térítésmentes TB-keretben\n• Speciális kiegészítő kezelések\n\nHívjon: +36 94 900-887 — részletesen tájékoztatjuk a lehetőségekről."
+            text: "Jó hír: a gyermekfogászati ellátás 0-18 éves korig TELJES KÖRŰEN TB-támogatott Magyarországon. Ez magában foglalja:\n\n• Rendszeres szűrővizsgálat\n• Tejfog- és maradó fog tömés\n• Barázdazárás (maradó őrlőfogakon)\n• Fluoridos lakk\n• Foghúzás\n• Gyökérkezelés (szükség esetén)\n• Akut / sürgősségi ellátás\n\nAmi szükséges:\n• TAJ-kártya (a gyermeké)\n• Szülő személyi igazolványa\n• Gyermek személyi igazolványa vagy lakcímkártyája\n\nMagánellátás:\n• Ha gyorsabb időpontot szeretne\n• Prémium anyagok (pl. fehér esztétikai tömés a mosolyövezetben) — bár a standard kompozit tömés is térítésmentes TB-keretben\n• Speciális kiegészítő kezelések\n\nHívjon: +36 30 123 4567 — részletesen tájékoztatjuk a lehetőségekről."
           },
         ]}
         relatedServices={[

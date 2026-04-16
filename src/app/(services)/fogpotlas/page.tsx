@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Fogpótlás Szombathelyen — korona, híd, fogsor | Dr. Köteles Renáta",
-  description: "Fogpótlás Szombathelyen: koronák, hidak, kivehető fogsorok. Fém-kerámia és teljes kerámia megoldások. TB-támogatott keretben és magánellátásban is. Időpont: +36 94 900-887.",
+  title: "Fogpótlás Budapesten — korona, híd, fogsor | Dr. Minta Réka",
+  description: "Fogpótlás Budapesten: koronák, hidak, kivehető fogsorok. Fém-kerámia és teljes kerámia megoldások. TB-támogatott keretben és magánellátásban is. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/fogpotlas" },
 };
 
@@ -40,7 +40,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "TB-támogatott a fogpótlás Szombathelyen?",
+      name: "TB-támogatott a fogpótlás Budapesten?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "A NEAK bizonyos keretek között támogatja a teljes és részleges kivehető fogsort, valamint egyes korona- és hídpótlásokat. A támogatás mértéke a páciens életkorától, egészségi állapotától és a pótlás típusától függ. A pontos jogosultságot a vizsgálat során tudjuk meghatározni.",
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Fogpótlás Szombathelyen"
-        subtitle="Korona, híd és kivehető fogsor Dr. Köteles Renáta rendelőjében. Modern anyagok, természetes megjelenés, TB-támogatott és magán ellátás egyaránt."
+        title="Fogpótlás Budapesten"
+        subtitle="Korona, híd és kivehető fogsor Dr. Minta Réka rendelőjében. Modern anyagok, természetes megjelenés, TB-támogatott és magán ellátás egyaránt."
         image="/images/hero/service-4.webp"
         sections={[
           {
@@ -113,7 +113,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott a fogpótlás?",
-            text: "A NEAK (Nemzeti Egészségbiztosítási Alapkezelő) bizonyos keretek között támogatja a fogpótlást — különösen a teljes és részleges kivehető fogsorokat, valamint egyes egyszerű koronákat és hidakat, meghatározott életkorban és egészségügyi indikációval. Rendelőnk NEAK szerződéses alapellátó rendelőként a TB-támogatott kezeléseket elérhetővé teszi jogosult páciensek számára. A magán fogpótlás ára a választott anyagtól (fém-kerámia, cirkon, e.max), a pótlás kiterjedésétől és a fogtechnikai labor költségeitől függ. Pontos árajánlatot a vizsgálat után tudunk adni, amikor a kezelési terv egyedileg kidolgozásra kerül. Kérjen tájékoztatást: +36 94 900-887."
+            text: "A NEAK (Nemzeti Egészségbiztosítási Alapkezelő) bizonyos keretek között támogatja a fogpótlást — különösen a teljes és részleges kivehető fogsorokat, valamint egyes egyszerű koronákat és hidakat, meghatározott életkorban és egészségügyi indikációval. Rendelőnk NEAK szerződéses alapellátó rendelőként a TB-támogatott kezeléseket elérhetővé teszi jogosult páciensek számára. A magán fogpótlás ára a választott anyagtól (fém-kerámia, cirkon, e.max), a pótlás kiterjedésétől és a fogtechnikai labor költségeitől függ. Pontos árajánlatot a vizsgálat után tudunk adni, amikor a kezelési terv egyedileg kidolgozásra kerül. Kérjen tájékoztatást: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

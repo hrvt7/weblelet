@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "TB-támogatott fogorvos Szombathelyen | Dr. Köteles Renáta — NEAK rendelő",
-  description: "TB-támogatott fogorvosi ellátás Szombathelyen. NEAK szerződéses rendelő: szűrés, tömés, gyökérkezelés, foghúzás társadalombiztosítás keretében. Időpont: +36 94 900-887.",
+  title: "TB-támogatott fogorvos Budapesten | Dr. Minta Réka — NEAK rendelő",
+  description: "TB-támogatott fogorvosi ellátás Budapesten. NEAK szerződéses rendelő: szűrés, tömés, gyökérkezelés, foghúzás társadalombiztosítás keretében. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/tb-tamogatott-fogorvos-szombathely" },
 };
 
@@ -15,7 +15,7 @@ const serviceSchema = {
   provider: { "@id": "https://weblelet.hu/#dentist" },
   areaServed: {
     "@type": "City",
-    name: "Szombathely",
+    name: "Budapest",
   },
 };
 
@@ -80,13 +80,13 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="TB-támogatott fogorvos Szombathelyen"
-        subtitle="NEAK szerződéses alapellátó rendelő Dr. Köteles Renáta vezetésével. Teljes körű fogászati kezelések társadalombiztosítás keretében — érvényes TAJ-számmal."
+        title="TB-támogatott fogorvos Budapesten"
+        subtitle="NEAK szerződéses alapellátó rendelő Dr. Minta Réka vezetésével. Teljes körű fogászati kezelések társadalombiztosítás keretében — érvényes TAJ-számmal."
         image="/images/hero/service-1.webp"
         sections={[
           {
             heading: "Mit jelent a TB-támogatott (NEAK) fogorvosi ellátás?",
-            text: "Magyarországon a NEAK (Nemzeti Egészségbiztosítási Alapkezelő) finanszírozza a társadalombiztosítás keretében elérhető egészségügyi ellátásokat — ebben a fogászati alapellátás is szerepel. A NEAK szerződéses fogorvosi rendelőkben az érvényes TAJ-számmal rendelkező páciensek térítésmentesen (vagy jelentősen csökkentett önrésszel) részesülhetnek alapellátásban. Rendelőnk NEAK szerződéses alapellátó fogorvosi rendelő a szombathelyi Markusovszky Lajos u. 8. szám alatt. A TB-támogatott rendszer célja: minden magyar állampolgárnak — vagyonhelyzettől függetlenül — legyen hozzáférése az alapvető fogászati ellátáshoz. A minőség ugyanaz mint a magánellátásban — ugyanazok a protokollok, ugyanaz a szakorvos, ugyanaz a modern felszerelés."
+            text: "Magyarországon a NEAK (Nemzeti Egészségbiztosítási Alapkezelő) finanszírozza a társadalombiztosítás keretében elérhető egészségügyi ellátásokat — ebben a fogászati alapellátás is szerepel. A NEAK szerződéses fogorvosi rendelőkben az érvényes TAJ-számmal rendelkező páciensek térítésmentesen (vagy jelentősen csökkentett önrésszel) részesülhetnek alapellátásban. Rendelőnk NEAK szerződéses alapellátó fogorvosi rendelő a budapesti Példa utca 10. szám alatt. A TB-támogatott rendszer célja: minden magyar állampolgárnak — vagyonhelyzettől függetlenül — legyen hozzáférése az alapvető fogászati ellátáshoz. A minőség ugyanaz mint a magánellátásban — ugyanazok a protokollok, ugyanaz a szakorvos, ugyanaz a modern felszerelés."
           },
           {
             heading: "Mit tartalmaz a TB-támogatott ellátás?",
@@ -106,7 +106,7 @@ export default function Page() {
           },
           {
             heading: "Hogyan zajlik egy TB-támogatott látogatás?",
-            text: "Időpont-egyeztetés: telefonon (+36 94 900-887) a rendelési időben. Rutin szűrővizsgálatra 1-3 hét várakozás. Akut problémával soron kívüli fogadás. Érkezés: hozza magával a szükséges dokumentumokat (személyi, TAJ, lakcím). Recepcióra érkezve az adminisztráció rögzíti adatait a NEAK rendszerben. Anamnézis: első alkalommal részletes — allergiák, gyógyszerek, egészségi állapot; később csak frissítés. Vizsgálat és kezelés: a TB-támogatott ellátás ugyanazzal a szakmai minőséggel zajlik mint a magánellátás. Dokumentáció: a kezelés a digitális nyilvántartásba kerül, a NEAK felé automatikusan elszámoljuk. Ön nem fizet a pultnál. Következő időpont: a kezelési tervnek megfelelően egyeztetjük a folytatást."
+            text: "Időpont-egyeztetés: telefonon (+36 30 123 4567) a rendelési időben. Rutin szűrővizsgálatra 1-3 hét várakozás. Akut problémával soron kívüli fogadás. Érkezés: hozza magával a szükséges dokumentumokat (személyi, TAJ, lakcím). Recepcióra érkezve az adminisztráció rögzíti adatait a NEAK rendszerben. Anamnézis: első alkalommal részletes — allergiák, gyógyszerek, egészségi állapot; később csak frissítés. Vizsgálat és kezelés: a TB-támogatott ellátás ugyanazzal a szakmai minőséggel zajlik mint a magánellátás. Dokumentáció: a kezelés a digitális nyilvántartásba kerül, a NEAK felé automatikusan elszámoljuk. Ön nem fizet a pultnál. Következő időpont: a kezelési tervnek megfelelően egyeztetjük a folytatást."
           },
           {
             heading: "Várakozási idők — reális kép",
@@ -114,11 +114,11 @@ export default function Page() {
           },
           {
             heading: "Sürgősségi ellátás — mindig TB-támogatott?",
-            text: "Igen, a sürgősségi fogászati ellátás teljes körűen TB-támogatott érvényes TAJ-számmal. A sürgősségi ellátás magában foglalja: akut fogfájás diagnózisát és kezelését, tályog megnyitását, fertőzött pulpa eltávolítását (gyökérkezelés megkezdése), ideiglenes tömés kiesett tömés helyére, törött fog ellátását, kiesett fog (avulzió) visszaültetését lehetőség szerint, gyógyszeres kezelés előírását (fájdalomcsillapító, antibiotikum). Rendelési időn belül: hívja a +36 94 900-887 számot, soron kívül fogadjuk. Rendelési időn kívül: Szombathelyen a Fogászati Ügyelet (ugyanazon a címen, Markusovszky u. 8., +36 94 313-340) 08:00–14:00 között hétvégén és ünnepnapokon. Éjszaka / életveszélyes esetben: Markusovszky Kórház sürgősségi osztály, vagy 112."
+            text: "Igen, a sürgősségi fogászati ellátás teljes körűen TB-támogatott érvényes TAJ-számmal. A sürgősségi ellátás magában foglalja: akut fogfájás diagnózisát és kezelését, tályog megnyitását, fertőzött pulpa eltávolítását (gyökérkezelés megkezdése), ideiglenes tömés kiesett tömés helyére, törött fog ellátását, kiesett fog (avulzió) visszaültetését lehetőség szerint, gyógyszeres kezelés előírását (fájdalomcsillapító, antibiotikum). Rendelési időn belül: hívja a +36 30 123 4567 számot, soron kívül fogadjuk. Rendelési időn kívül: Budapesten a Fogászati Ügyelet (ugyanazon a címen, Példa utca 10., +36 1 123-4567) 08:00–14:00 között hétvégén és ünnepnapokon. Éjszaka / életveszélyes esetben: Kórház sürgősségi osztály, vagy 112."
           },
           {
             heading: "TB + magán — okos kombinációk",
-            text: "Sok páciens a TB-támogatott keretet használja az alapellátáshoz, és magánellátást választ bizonyos kiegészítésekhez. Példák: TB-szűrés + magán Air-flow — így félévente egyszer teljes körű professzionális tisztítás. TB-fogkőeltávolítás + magán fluoridos kezelés. TB-gyökérkezelés + magán teljes kerámia korona — a funkcionális alap TB-keretben, az esztétika magánellátásban. TB-egyszerű fogsor + magán speciális rögzítési elemek (pl. implantátumra rögzíthető fogsor). TB-gyerekfogászat + magán esztétikai tömés a mosolyövezetben. Minden esetben egyedileg tervezzük meg a legjobb költséghatékony kombinációt. Ne legyen kérdése — hívjon: +36 94 900-887."
+            text: "Sok páciens a TB-támogatott keretet használja az alapellátáshoz, és magánellátást választ bizonyos kiegészítésekhez. Példák: TB-szűrés + magán Air-flow — így félévente egyszer teljes körű professzionális tisztítás. TB-fogkőeltávolítás + magán fluoridos kezelés. TB-gyökérkezelés + magán teljes kerámia korona — a funkcionális alap TB-keretben, az esztétika magánellátásban. TB-egyszerű fogsor + magán speciális rögzítési elemek (pl. implantátumra rögzíthető fogsor). TB-gyerekfogászat + magán esztétikai tömés a mosolyövezetben. Minden esetben egyedileg tervezzük meg a legjobb költséghatékony kombinációt. Ne legyen kérdése — hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések TB-támogatott ellátás kapcsán",
@@ -126,13 +126,13 @@ export default function Page() {
           },
           {
             heading: "Foglaljon időpontot",
-            text: "Telefon: +36 94 900-887 (rendelési időben). Email: dr.kotelesrenata@gmail.com. Cím: 9700 Szombathely, Markusovszky Lajos u. 8. Új TB-s pácienseket is szívesen fogadunk. Az első látogatáshoz érkezzen 10-15 perccel korábban az adminisztrációért, hozza magával a szükséges dokumentumokat. Kérdése van a jogosultságokról, a támogatott keretekről, vagy a kombinált (TB + magán) lehetőségekről? Hívjon, és részletesen tájékoztatjuk."
+            text: "Telefon: +36 30 123 4567 (rendelési időben). Email: info@mintarendelo.hu. Cím: 1234 Budapest, Példa utca 10. Új TB-s pácienseket is szívesen fogadunk. Az első látogatáshoz érkezzen 10-15 perccel korábban az adminisztrációért, hozza magával a szükséges dokumentumokat. Kérdése van a jogosultságokról, a támogatott keretekről, vagy a kombinált (TB + magán) lehetőségekről? Hívjon, és részletesen tájékoztatjuk."
           },
         ]}
         relatedServices={[
           { title: "Fogászati szűrővizsgálat", href: "/fogaszati-szurovizsgalat" },
           { title: "Fogpótlás", href: "/fogpotlas" },
-          { title: "Fogorvos Szombathely", href: "/fogorvos-szombathely" },
+          { title: "Fogorvos Budapest", href: "/fogorvos-szombathely" },
           { title: "Sürgősségi ellátás", href: "/surgossegi-ellatas" },
         ]}
       />

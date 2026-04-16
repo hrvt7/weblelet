@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Gyermekfogászat Szombathelyen — barátságos ellátás | Dr. Köteles Renáta",
-  description: "Gyermekfogászat Szombathelyen: barátságos környezet, barázdazárás, fluoridos kezelés, tejfog-ellátás. TB-támogatott. Időpont: +36 94 900-887.",
+  title: "Gyermekfogászat Budapesten — barátságos ellátás | Dr. Minta Réka",
+  description: "Gyermekfogászat Budapesten: barátságos környezet, barázdazárás, fluoridos kezelés, tejfog-ellátás. TB-támogatott. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/gyermekfogaszat" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Gyermekfogászat Szombathelyen"
-        subtitle="Barátságos fogászati ellátás a legkisebbeknek Dr. Köteles Renáta rendelőjében. Barázdazárás, fluoridos kezelés, tejfog-ellátás — az első élmény meghatározó."
+        title="Gyermekfogászat Budapesten"
+        subtitle="Barátságos fogászati ellátás a legkisebbeknek Dr. Minta Réka rendelőjében. Barázdazárás, fluoridos kezelés, tejfog-ellátás — az első élmény meghatározó."
         image="/images/hero/service-7.webp"
         sections={[
           {
@@ -109,7 +109,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A gyermekfogászati ellátás 0-18 éves korig teljes körűen TB-támogatott Magyarországon. Ez magában foglalja a szűrővizsgálatot, tejfog és maradó fog kezeléseket, barázdazárást, fluoridos kezelést, foghúzást. Diákigazolvánnyal 18-25 éves korig is részlegesen érvényes. Magánellátás esetén az árazás egyedi, a kezelés típusától függ. Hívjon tájékoztatásért: +36 94 900-887."
+            text: "A gyermekfogászati ellátás 0-18 éves korig teljes körűen TB-támogatott Magyarországon. Ez magában foglalja a szűrővizsgálatot, tejfog és maradó fog kezeléseket, barázdazárást, fluoridos kezelést, foghúzást. Diákigazolvánnyal 18-25 éves korig is részlegesen érvényes. Magánellátás esetén az árazás egyedi, a kezelés típusától függ. Hívjon tájékoztatásért: +36 30 123 4567."
           },
           {
             heading: "Gyakori szülői kérdések",

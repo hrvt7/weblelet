@@ -24,7 +24,7 @@ export default function Home() {
                 name: "Kell-e előre időpontot foglalni?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen, kérjük hívjon a +36 94 900-887 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
+                  text: "Igen, kérjük hívjon a +36 30 123 4567 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
                 },
               },
               {
@@ -64,7 +64,7 @@ export default function Home() {
                 name: "Mi a teendő sürgős fogfájás esetén?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Hívjon a rendelési időben a +36 94 900-887 számon, és igyekszünk mielőbb ellátni.",
+                  text: "Hívjon a rendelési időben a +36 30 123 4567 számon, és igyekszünk mielőbb ellátni.",
                 },
               },
             ],

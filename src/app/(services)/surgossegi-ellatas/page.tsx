@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Sürgősségi fogorvos Szombathelyen — akut fogfájás ellátás | Dr. Köteles Renáta",
-  description: "Sürgősségi fogászati ellátás Szombathelyen: akut fogfájás, törött fog, kiesett tömés azonnali kezelése. Hívjon: +36 94 900-887. Hétfő–péntek.",
+  title: "Sürgősségi fogorvos Budapesten — akut fogfájás ellátás | Dr. Minta Réka",
+  description: "Sürgősségi fogászati ellátás Budapesten: akut fogfájás, törött fog, kiesett tömés azonnali kezelése. Hívjon: +36 30 123 4567. Hétfő–péntek.",
   alternates: { canonical: "https://weblelet.hu/surgossegi-ellatas" },
 };
 
@@ -27,7 +27,7 @@ const faqSchema = {
       name: "Mit tegyek éjszakai fogfájás esetén?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Éjszakai fogfájásnál első lépésként vegyen be szokásos fájdalomcsillapítót (ibuprofen 400 mg vagy paracetamol 500 mg). Öblítse a száját langyos sós vízzel (1 dl víz + 1 teáskanál só). Kerülje a meleg italokat és ételeket, hidegeket is csak ha javulást okoz. Feküdjön magasabb párnára — a fej emelkedett helyzete csökkentheti a nyomás-érzetet. Reggel elsőként hívjon minket: +36 94 900-887.",
+        text: "Éjszakai fogfájásnál első lépésként vegyen be szokásos fájdalomcsillapítót (ibuprofen 400 mg vagy paracetamol 500 mg). Öblítse a száját langyos sós vízzel (1 dl víz + 1 teáskanál só). Kerülje a meleg italokat és ételeket, hidegeket is csak ha javulást okoz. Feküdjön magasabb párnára — a fej emelkedett helyzete csökkentheti a nyomás-érzetet. Reggel elsőként hívjon minket: +36 30 123 4567.",
       },
     },
     {
@@ -35,7 +35,7 @@ const faqSchema = {
       name: "Mit tegyek, ha letörött a fogam?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Keresse meg a letört darabot, és tegye tiszta tejbe, sós vízbe vagy nyálba — ne tisztítsa meg! A fog sejtjei így maradnak életben. Ha az íny vérzik, nyomja rá steril gézt 10-15 percig. Vegye be fájdalomcsillapítót ha szükséges. Hívjon azonnal: +36 94 900-887 — a teljesen kiesett fogat 30-60 percen belül vissza lehet ültetni (replantáció).",
+        text: "Keresse meg a letört darabot, és tegye tiszta tejbe, sós vízbe vagy nyálba — ne tisztítsa meg! A fog sejtjei így maradnak életben. Ha az íny vérzik, nyomja rá steril gézt 10-15 percig. Vegye be fájdalomcsillapítót ha szükséges. Hívjon azonnal: +36 30 123 4567 — a teljesen kiesett fogat 30-60 percen belül vissza lehet ültetni (replantáció).",
       },
     },
     {
@@ -59,7 +59,7 @@ const faqSchema = {
       name: "Hova menjek hétvégén vagy éjszaka fogfájással?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A rendelő nyitvatartási időn kívül (hétvége, ünnepnap) a szombathelyi Fogászati Ügyeletet (Markusovszky u. 8., +36 94 313-340) keresse fel 08:00–14:00 között. Éjszaka vagy életveszélyes állapot (súlyos duzzanat, magas láz, légzési nehézség) esetén a Markusovszky Kórház sürgősségi osztályára kell menni, vagy hívni a 112-t.",
+        text: "A rendelő nyitvatartási időn kívül (hétvége, ünnepnap) a budapesti Fogászati Ügyeletet (Példa utca 10., +36 1 123-4567) keresse fel 08:00–14:00 között. Éjszaka vagy életveszélyes állapot (súlyos duzzanat, magas láz, légzési nehézség) esetén a Kórház sürgősségi osztályára kell menni, vagy hívni a 112-t.",
       },
     },
     {
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Sürgősségi fogorvos Szombathelyen"
-        subtitle="Akut fogfájás, törött fog, kiesett tömés? Rendelési időben azonnali ellátást biztosítunk. Hívjon: +36 94 900-887 — Dr. Köteles Renáta rendelője."
+        title="Sürgősségi fogorvos Budapesten"
+        subtitle="Akut fogfájás, törött fog, kiesett tömés? Rendelési időben azonnali ellátást biztosítunk. Hívjon: +36 30 123 4567 — Dr. Minta Réka rendelője."
         image="/images/hero/service-8.webp"
         sections={[
           {
@@ -105,7 +105,7 @@ export default function Page() {
           },
           {
             heading: "Mikor kell azonnal kórházi ügyeletre vagy mentőt hívni?",
-            text: "Bár a legtöbb fogászati probléma várhat a rendelési idő kezdetéig, vannak esetek, amikor azonnali orvosi ellátás szükséges: súlyos arcduzzanat, amely a nyakra vagy szem körüli területre terjed (a fertőzés szisztémás szövődménye), nyelési vagy légzési nehézség, 38,5°C feletti láz fogászati panasz mellett, erős vérzés, amely 20-30 perc nyomás alatt sem áll el, tudatzavar, hányás, erős fejfájás a fogpanasz mellett. Ezekben az esetekben hívja a 112-t vagy menjen a Markusovszky Kórház sürgősségi osztályára. Éjszaka / hétvégén a szombathelyi Fogászati Ügyelet: Markusovszky u. 8., +36 94 313-340, 08:00–14:00."
+            text: "Bár a legtöbb fogászati probléma várhat a rendelési idő kezdetéig, vannak esetek, amikor azonnali orvosi ellátás szükséges: súlyos arcduzzanat, amely a nyakra vagy szem körüli területre terjed (a fertőzés szisztémás szövődménye), nyelési vagy légzési nehézség, 38,5°C feletti láz fogászati panasz mellett, erős vérzés, amely 20-30 perc nyomás alatt sem áll el, tudatzavar, hányás, erős fejfájás a fogpanasz mellett. Ezekben az esetekben hívja a 112-t vagy menjen a Kórház sürgősségi osztályára. Éjszaka / hétvégén a budapesti Fogászati Ügyelet: Példa utca 10., +36 1 123-4567, 08:00–14:00."
           },
           {
             heading: "Hogyan előzhetők meg a sürgősségi helyzetek?",
@@ -113,7 +113,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül a sürgősségi ellátás?",
-            text: "A sürgősségi alapellátás — beleértve a fájdalomcsillapítást, tályog megnyitását, ideiglenes tömést — TB-támogatott jogosult páciensek számára érvényes TAJ-számmal és személyi igazolvánnyal. A végleges kezelés (gyökérkezelés befejezése, végleges tömés, korona, fogpótlás) külön időpontban történik, a kezelés típusától függő árazással. Magánellátás esetén a sürgősségi vizsgálat és az azonnali beavatkozás költségét egyedileg tudjuk meghatározni. Hívjon: +36 94 900-887."
+            text: "A sürgősségi alapellátás — beleértve a fájdalomcsillapítást, tályog megnyitását, ideiglenes tömést — TB-támogatott jogosult páciensek számára érvényes TAJ-számmal és személyi igazolvánnyal. A végleges kezelés (gyökérkezelés befejezése, végleges tömés, korona, fogpótlás) külön időpontban történik, a kezelés típusától függő árazással. Magánellátás esetén a sürgősségi vizsgálat és az azonnali beavatkozás költségét egyedileg tudjuk meghatározni. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

@@ -33,9 +33,9 @@ export default function ASZF() {
             1. Szolgáltató adatai
           </h2>
           <p>
-            Név: Horváth Ádám (WebLelet)
+            Név: Teszt Adminisztrátor (WebLelet)
             <br />
-            Székhely: 9700 Szombathely
+            Székhely: 1234 Budapest
             <br />
             Email: info@weblelet.hu
             <br />

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
 
 export const metadata: Metadata = {
-  title: "Fogkőeltávolítás Szombathelyen — ultrahangos tisztítás | Dr. Köteles Renáta",
-  description: "Fogkőeltávolítás Szombathelyen ultrahangos módszerrel. Megelőzi az ínygyulladást és a fogvesztést. TB-támogatott rendelő, fájdalommentes kezelés. Időpont: +36 94 900-887.",
+  title: "Fogkőeltávolítás Budapesten — ultrahangos tisztítás | Dr. Minta Réka",
+  description: "Fogkőeltávolítás Budapesten ultrahangos módszerrel. Megelőzi az ínygyulladást és a fogvesztést. TB-támogatott rendelő, fájdalommentes kezelés. Időpont: +36 30 123 4567.",
   alternates: { canonical: "https://weblelet.hu/fogkoeltavolitas" },
 };
 
@@ -79,8 +79,8 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(procedureSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <ServicePage
-        title="Fogkőeltávolítás Szombathelyen"
-        subtitle="Ultrahangos fogkőeltávolítás és polírozás Dr. Köteles Renáta rendelőjében. Megelőzi az ínygyulladást, megvédi a fogakat — az egészséges mosoly alapja."
+        title="Fogkőeltávolítás Budapesten"
+        subtitle="Ultrahangos fogkőeltávolítás és polírozás Dr. Minta Réka rendelőjében. Megelőzi az ínygyulladást, megvédi a fogakat — az egészséges mosoly alapja."
         image="/images/hero/service-3.webp"
         sections={[
           {
@@ -113,7 +113,7 @@ export default function Page() {
           },
           {
             heading: "Mennyibe kerül? TB-támogatott?",
-            text: "A fogkőeltávolítás a NEAK által támogatott alapellátás része jogosult páciensek számára — évente egy alkalommal térítésmentesen igénybe vehető. Magánellátás esetén a kezelés ára az időtartamtól, a fogkő mennyiségétől, és az esetleges kiegészítő kezelésektől (Air-flow, polírozás, fluoridos kezelés) függ. Pontos árajánlatot a vizsgálat után adunk. Hívjon: +36 94 900-887."
+            text: "A fogkőeltávolítás a NEAK által támogatott alapellátás része jogosult páciensek számára — évente egy alkalommal térítésmentesen igénybe vehető. Magánellátás esetén a kezelés ára az időtartamtól, a fogkő mennyiségétől, és az esetleges kiegészítő kezelésektől (Air-flow, polírozás, fluoridos kezelés) függ. Pontos árajánlatot a vizsgálat után adunk. Hívjon: +36 30 123 4567."
           },
           {
             heading: "Gyakori kérdések",

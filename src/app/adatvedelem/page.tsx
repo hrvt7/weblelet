@@ -36,9 +36,9 @@ export default function Adatvedelem() {
             1. Adatkezelő adatai
           </h2>
           <p>
-            Név: Horváth Ádám (WebLelet)
+            Név: Teszt Adminisztrátor (WebLelet)
             <br />
-            Székhely: 9700 Szombathely
+            Székhely: 1234 Budapest
             <br />
             Email: info@weblelet.hu
           </p>
