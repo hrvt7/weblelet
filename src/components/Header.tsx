@@ -34,7 +34,7 @@ export default function Header() {
           <a href="#" className="flex items-center gap-3 group">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/renata.webp"
+              src="/images/doctor-profile.png"
               alt="Dr. Minta Réka"
               className="h-11 w-11 rounded-full object-cover ring-2 ring-primary/20"
             />

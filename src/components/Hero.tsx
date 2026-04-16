@@ -87,7 +87,7 @@ export default function Hero() {
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/images/renata.webp"
+                    src="/images/doctor-profile.png"
                     alt="Dr. Minta Réka fogorvos"
                     className="w-full h-auto"
                   />
