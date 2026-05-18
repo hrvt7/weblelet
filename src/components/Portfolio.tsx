@@ -15,6 +15,8 @@ const images = [
   { src: "/portfolio/portfolio-4.jpg", alt: "AI portré kampánykép — HRVT Studio" },
   { src: "/portfolio/portfolio-5.jpg", alt: "AI editorial fotó — HRVT Studio" },
   { src: "/portfolio/portfolio-6.jpg", alt: "AI kampányfotó — HRVT Studio" },
+  { src: "/portfolio/portfolio-7.jpg", alt: "AI kampánykép — HRVT Studio" },
+  { src: "/portfolio/portfolio-8.jpg", alt: "AI editorial — HRVT Studio" },
 ];
 
 export default function Portfolio() {
