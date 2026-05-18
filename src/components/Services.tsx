@@ -25,7 +25,7 @@ const services = [
   {
     title: "UGC Tartalom",
     short: "User Generated Content stílusú videók és képek. Hiteles, konvertáló.",
-    detail: "Az UGC (User Generated Content) ma a legjobban konvertáló tartalomtípus. Hétköznapi, hiteles megjelenés, amilyen valódi vásárlóid posztolnák. AI-val olcsóbban és gyorsabban — de ugyanaz a hatás. Termékbemutatók, vélemények, „nálam így működik" stílusú videók.",
+    detail: `Az UGC (User Generated Content) ma a legjobban konvertáló tartalomtípus. Hétköznapi, hiteles megjelenés, amilyen valódi vásárlóid posztolnák. AI-val olcsóbban és gyorsabban — de ugyanaz a hatás. Termékbemutatók, vélemények, „nálam így működik” stílusú videók.`,
     icon: "📱",
   },
   {
