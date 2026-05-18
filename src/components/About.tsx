@@ -2,20 +2,24 @@ import FadeIn from "./FadeIn";
 
 const benefits = [
   {
+    num: "01",
     title: "Stúdió minőség",
     desc: "Olyan képek és videók, amiket senki nem néz AI-nak. Valódi editorial fotózás érzése — magazinminőség, profi kompozíció, hiteles megjelenés.",
   },
   {
-    title: "90% költségmegtakarítás",
+    num: "02",
+    title: "90% megtakarítás",
     desc: "Hagyományos stúdiófotózás töredékáráért. Ugyanolyan eredmény, tized annyi pénzért — modell, stúdió, post-produkció nélkül.",
   },
   {
+    num: "03",
     title: "Gyors átfutás",
-    desc: "3-5 munkanap. Nem kell stúdiót foglalni, modellt keresni, fotóst várni, napokat utómunkázni. Megrendelés és kész tartalom egy héten belül.",
+    desc: "3-5 munkanap. Nem kell stúdiót foglalni, modellt keresni, napokat utómunkázni. Megrendelés és kész tartalom egy héten belül.",
   },
   {
+    num: "04",
     title: "Magyar piac",
-    desc: "Magyar vállalkozásoknak tervezett szolgáltatás. Értjük a piacot, az ügyfeleket, a kulturális kontextust — és magyarul kommunikálunk.",
+    desc: "Magyar vállalkozásoknak tervezett szolgáltatás. Értjük a piacot, az ügyfeleket, a kulturális kontextust.",
   },
 ];
 
@@ -26,7 +30,7 @@ export default function About() {
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
-          <div className="text-center mb-16 max-w-2xl mx-auto">
+          <div className="text-center mb-14 max-w-2xl mx-auto">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
               Miért HRVT Studio
             </p>
@@ -34,21 +38,23 @@ export default function About() {
               Stúdióminőség.{" "}
               <span className="text-highlight">Tized annyi pénzért.</span>
             </h2>
-            <p className="mt-6 text-lg text-foreground-secondary leading-relaxed max-w-xl mx-auto">
-              AI-alapú vizuális tartalom-szolgáltatás. Profi termékfotók, kampányképek és reklámvideók — gyorsabban, olcsóbban, ugyanolyan minőségben mint a klasszikus stúdiók.
-            </p>
           </div>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6">
           {benefits.map((benefit, i) => (
-            <FadeIn key={benefit.title} delay={i * 0.1}>
-              <div className="rounded-2xl border border-border bg-surface-card p-6 lg:p-7 card-hover glow-border h-full">
-                <div className="w-8 h-0.5 bg-primary mb-5 rounded-full" />
-                <h3 className="font-heading text-lg font-bold text-foreground mb-3 tracking-[-0.01em]">
+            <FadeIn key={benefit.num} delay={i * 0.1}>
+              <div className="relative rounded-2xl border border-border/60 bg-surface-card p-5 sm:p-6 lg:p-7 card-hover h-full overflow-hidden group">
+                {/* Subtle top gradient line */}
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+                {/* Number */}
+                <span className="block font-heading text-4xl sm:text-5xl font-extrabold text-primary/20 leading-none mb-4 select-none group-hover:text-primary/30 transition-colors">
+                  {benefit.num}
+                </span>
+                <h3 className="font-heading text-base sm:text-lg font-bold text-foreground mb-2 tracking-[-0.01em] leading-snug">
                   {benefit.title}
                 </h3>
-                <p className="text-[0.9rem] text-foreground-secondary leading-relaxed">
+                <p className="text-[0.82rem] sm:text-[0.88rem] text-foreground-secondary leading-relaxed">
                   {benefit.desc}
                 </p>
               </div>

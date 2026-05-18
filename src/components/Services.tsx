@@ -89,27 +89,27 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
         }`}
         onClick={() => setOpen(!open)}
       >
-        <div className="p-5 lg:p-7">
-          <div className="flex items-start gap-4">
-            <div className={`h-12 w-12 shrink-0 rounded-xl flex items-center justify-center transition-all duration-300 ${
-              open ? "bg-primary/20 text-primary" : "bg-surface-warm text-foreground-muted group-hover:text-primary group-hover:bg-primary/10"
-            }`}>
-              {service.icon}
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-2">
-                <h3 className="font-heading text-[1.05rem] font-bold text-foreground tracking-[-0.01em] leading-tight">
-                  {service.title}
-                </h3>
-                <div className={`shrink-0 h-6 w-6 rounded-md flex items-center justify-center transition-all duration-300 ${
-                  open ? "bg-primary/20 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
-                }`}>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </div>
+        <div className="p-4 sm:p-5 lg:p-7">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-start justify-between gap-2">
+              <div className={`h-10 w-10 shrink-0 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                open ? "bg-primary/20 text-primary" : "bg-surface-warm text-foreground-muted group-hover:text-primary group-hover:bg-primary/10"
+              }`}>
+                {service.icon}
               </div>
-              <p className="text-sm text-foreground-muted leading-relaxed mt-1.5">
+              <div className={`shrink-0 h-6 w-6 rounded-md flex items-center justify-center transition-all duration-300 ${
+                open ? "bg-primary/20 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
+              }`}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-heading text-[0.95rem] sm:text-[1.05rem] font-bold text-foreground tracking-[-0.01em] leading-tight">
+                {service.title}
+              </h3>
+              <p className="text-[0.78rem] sm:text-sm text-foreground-muted leading-relaxed mt-1.5">
                 {service.short}
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function Services() {
           </div>
         </FadeIn>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 max-w-6xl mx-auto">
           {services.map((service, i) => (
             <ServiceCard key={service.title} service={service} index={i} />
           ))}
