@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 const categories = [
@@ -7,7 +8,13 @@ const categories = [
   { label: "UGC Tartalom", count: "80+" },
 ];
 
-const placeholders = Array.from({ length: 6 });
+const images = [
+  { src: "/portfolio/portfolio-1.jpg", alt: "AI editorial kampánykép — HRVT Studio" },
+  { src: "/portfolio/portfolio-2.jpg", alt: "AI modell kampánykép — HRVT Studio" },
+  { src: "/portfolio/portfolio-3.jpg", alt: "AI fashion editorial — HRVT Studio" },
+  { src: "/portfolio/portfolio-4.jpg", alt: "AI portré kampánykép — HRVT Studio" },
+  { src: "/portfolio/portfolio-5.jpg", alt: "AI editorial fotó — HRVT Studio" },
+];
 
 export default function Portfolio() {
   return (
@@ -25,7 +32,7 @@ export default function Portfolio() {
               <span className="text-highlight">nem néznek AI-nak</span>
             </h2>
             <p className="mt-4 text-foreground-secondary text-base sm:text-lg leading-relaxed">
-              Magyar vállalkozásoknak készített munkáink egy része. A teljes portfólió hamarosan elérhető lesz.
+              Magyar vállalkozásoknak készített munkáink egy része.
             </p>
           </div>
         </FadeIn>
@@ -42,19 +49,19 @@ export default function Portfolio() {
           </div>
         </FadeIn>
 
-        {/* Placeholder grid */}
+        {/* Image grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto">
-          {placeholders.map((_, i) => (
-            <FadeIn key={i} delay={i * 0.05}>
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/8 to-accent/8 border border-border flex items-center justify-center">
-                <div className="text-center px-4">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary/40 mx-auto mb-2">
-                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                    <circle cx="9" cy="9" r="2" />
-                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-                  </svg>
-                  <div className="text-xs text-foreground-muted">Portfólió hamarosan</div>
-                </div>
+          {images.map((img, i) => (
+            <FadeIn key={i} delay={i * 0.07}>
+              <div className="relative aspect-[2/3] rounded-2xl overflow-hidden bg-surface-warm group">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 320px"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  quality={90}
+                />
               </div>
             </FadeIn>
           ))}
