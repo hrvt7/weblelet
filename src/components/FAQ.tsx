@@ -5,28 +5,24 @@ import FadeIn from "./FadeIn";
 
 const faqs = [
   {
-    q: "Kell-e előre időpontot foglalni?",
-    a: "Igen, kérjük hívjon a +36 30 123 4567 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
+    q: "Tényleg nem látszik rajta hogy AI?",
+    a: "Szolgáltatásunk lényege a stúdió minőség. Képeinket rendszeresen veszik valódi fotónak. Az eredmény számít, nem az eszköz — a végeredmény ugyanolyan profi, mint egy klasszikus stúdiófotózás.",
   },
   {
-    q: "TB-támogatott a rendelés?",
-    a: "Igen, rendelőnk NEAK szerződéssel működik. Az alapellátás társadalombiztosítás keretében igénybe vehető.",
+    q: "Mennyi idő alatt készül el?",
+    a: "Általában 3-5 munkanap az átfutás. Sürgős esetben 24-48 óra is megoldható, prémium gyorsítási díjjal. A pontos időt mindig előre egyeztetjük.",
   },
   {
-    q: "Milyen gyakran kell szűrővizsgálatra járni?",
-    a: "Félévente javasolt a fogászati kontroll. A korai felismerés a leghatékonyabb megelőzés — sok probléma tünetmentes kezdetben.",
+    q: "Milyen iparágaknak ajánljátok?",
+    a: "Fashion, fitness, étterem, szépségipar, e-commerce, ingatlan, automotive — bármely vizuális tartalmat igénylő vállalkozásnak. Ha kételkedsz, küldj egy üzenetet és megbeszéljük.",
   },
   {
-    q: "Fáj a kezelés?",
-    a: "Modern érzéstelenítési módszerekkel dolgozunk, a legtöbb kezelés fájdalommentesen elvégezhető. Kérje bátran az érzéstelenítést.",
+    q: "Hogyan indulhatunk el?",
+    a: "Küldj egy üzenetet az info@hrvtstudio.hu címre, és ingyenesen elkészítünk egy demó képet a termékedről vagy szolgáltatásodról. Csak utána döntesz, hogy mi a következő lépés.",
   },
   {
-    q: "Gyermekeket is fogadnak?",
-    a: "Igen, gyermekfogászati ellátást is nyújtunk. Barátságos, játékos környezetben ismerkedhetnek meg a fogászattal.",
-  },
-  {
-    q: "Mi a teendő sürgős fogfájás esetén?",
-    a: "Hívjon a rendelési időben a +36 30 123 4567 számon, és igyekszünk mielőbb ellátni.",
+    q: "Van szerződéses kötelezettség?",
+    a: "Nincs. Havi előfizetés, bármikor lemondható — semmi minimum időtartam, semmi rejtett kötelezettség. Ha nem vagy elégedett, simán lemondod a következő hónaptól.",
   },
 ];
 

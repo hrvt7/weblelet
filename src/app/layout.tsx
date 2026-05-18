@@ -22,27 +22,27 @@ const body = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://weblelet.hu"),
   title: {
-    default: "Dr. Minta Réka — Fogorvos | Budapest",
-    template: "%s | Dr. Minta Réka",
+    default: "HRVT Studio — AI Kreatív Tartalom Magyar Vállalkozásoknak",
+    template: "%s | HRVT Studio",
   },
   description:
-    "Felnőtt fogorvosi rendelő Budapesten. Fájdalommentes fogászat, családias légkörben. Fogmegtartó kezelések, fogkőeltávolítás, fogpótlás, esztétikai fogászat. TB-támogatott, NEAK szerződéses.",
+    "Profi termékfotók és reklámvideók AI technológiával. Stúdió minőség, töredékáron. Magyar kisvállalkozásoknak — havi előfizetés, bármikor lemondható.",
   keywords:
-    "fogorvos budapest, fogászat budapest, fogorvosi rendelő, Dr. Minta Réka, fogászati szűrővizsgálat, fogkőeltávolítás, fogmegtartó kezelés, fogpótlás, esztétikai fogászat, gyermekfogászat, TB fogászat, NEAK fogorvos",
+    "AI termékfotó, AI reklámvideó, kreatív tartalom, vizuális marketing, e-commerce képek, social media tartalom, UGC, brand kampány, content naptár, magyar vállalkozás, HRVT Studio",
   openGraph: {
-    title: "Dr. Minta Réka — Fogorvos | Budapest",
+    title: "HRVT Studio — AI Kreatív Tartalom Magyar Vállalkozásoknak",
     description:
-      "Felnőtt fogorvosi rendelő Budapesten. Fájdalommentes fogászat, családias légkörben. TB-támogatott ellátás.",
+      "Stúdióminőség. AI sebesség. Tized annyi pénzért. Profi termékfotók és reklámvideók magyar vállalkozásoknak.",
     url: "https://weblelet.hu",
-    siteName: "Dr. Minta Réka — Fogorvos",
+    siteName: "HRVT Studio",
     locale: "hu_HU",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Dr. Minta Réka — Fogorvos | Budapest",
+    title: "HRVT Studio — AI Kreatív Tartalom",
     description:
-      "Felnőtt fogorvosi rendelő Budapesten. Fájdalommentes fogászat, TB-támogatott ellátás.",
+      "Stúdióminőség. AI sebesség. Tized annyi pénzért. AI-alapú vizuális tartalom magyar vállalkozásoknak.",
   },
   robots: { index: true, follow: true },
   alternates: {
@@ -59,103 +59,83 @@ export default function RootLayout({
     <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)history.replaceState(null,'',location.pathname);window.scrollTo(0,0)` }} />
-        {/* Dentist JSON-LD */}
+        {/* Organization JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Dentist",
-              "@id": "https://weblelet.hu/#dentist",
-              name: "Dr. Minta Réka — Fogorvos",
+              "@type": "Organization",
+              "@id": "https://weblelet.hu/#organization",
+              name: "HRVT Studio",
+              alternateName: "HRVT Studio — AI Kreatív Tartalom",
               description:
-                "Felnőtt fogorvosi rendelő Budapesten. Széleskörű fogászati ellátás, fogmegtartó kezelések, családias légkörben. TB-támogatott, NEAK szerződéses.",
+                "AI-alapú vizuális tartalom szolgáltatás magyar vállalkozásoknak. Stúdióminőség, AI sebesség, tized annyi pénzért.",
               url: "https://weblelet.hu",
-              telephone: "+36301234567",
-              email: "info@mintarendelo.hu",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Példa utca 10.",
-                addressLocality: "Budapest",
-                postalCode: "1234",
-                addressCountry: "HU",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 47.4979,
-                longitude: 19.0402,
-              },
-              openingHoursSpecification: [
-                { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "13:30", closes: "19:30" },
-                { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "07:30", closes: "13:30" },
-                { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "13:30", closes: "19:30" },
-                { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "07:30", closes: "13:30" },
-                { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "07:30", closes: "19:30" },
-              ],
-              medicalSpecialty: "Dentistry",
-              availableService: [
-                { "@type": "MedicalProcedure", name: "Fogászati szűrővizsgálat" },
-                { "@type": "MedicalProcedure", name: "Fogmegtartó kezelések" },
-                { "@type": "MedicalProcedure", name: "Fogkőeltávolítás" },
-                { "@type": "MedicalProcedure", name: "Fogpótlás" },
-                { "@type": "MedicalProcedure", name: "Esztétikai fogászat" },
-                { "@type": "MedicalProcedure", name: "Gyermekfogászat" },
-                { "@type": "MedicalProcedure", name: "Profilaxia" },
-                { "@type": "MedicalProcedure", name: "Air-flow kezelés" },
-                { "@type": "MedicalProcedure", name: "Parodontológia" },
-              ],
-              isAcceptingNewPatients: true,
-              priceRange: "TB-támogatott",
+              email: "info@hrvtstudio.hu",
+              areaServed: { "@type": "Country", name: "Hungary" },
+              slogan: "Stúdióminőség. AI sebesség. Tized annyi pénzért.",
             }),
           }}
         />
-        {/* Person JSON-LD */}
+        {/* Service JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "https://weblelet.hu/#person",
-              name: "Dr. Minta Réka",
-              jobTitle: "Fogorvos",
-              worksFor: { "@id": "https://weblelet.hu/#dentist" },
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Példa utca 10.",
-                addressLocality: "Budapest",
-                postalCode: "1234",
-                addressCountry: "HU",
+              "@type": "Service",
+              "@id": "https://weblelet.hu/#service",
+              name: "AI Kreatív Tartalom Szolgáltatás",
+              provider: { "@id": "https://weblelet.hu/#organization" },
+              areaServed: { "@type": "Country", name: "Hungary" },
+              serviceType: "AI-alapú vizuális tartalom készítés",
+              description:
+                "AI termékfotó, reklámvideó, UGC tartalom, brand kampány és havi content naptár magyar kisvállalkozásoknak.",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "HRVT Studio csomagok",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    name: "Starter csomag",
+                    price: "120",
+                    priceCurrency: "EUR",
+                    description: "8 db AI termékfotó / hó",
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Growth csomag",
+                    price: "250",
+                    priceCurrency: "EUR",
+                    description: "20 db AI kép + 2 reklámvideó / hó",
+                  },
+                  {
+                    "@type": "Offer",
+                    name: "Pro csomag",
+                    price: "450",
+                    priceCurrency: "EUR",
+                    description: "Korlátlan kép + kampányvideók / hó",
+                  },
+                ],
               },
-              telephone: "+36301234567",
-              email: "info@mintarendelo.hu",
-              medicalSpecialty: "Dentistry",
             }),
           }}
         />
-        {/* MedicalBusiness JSON-LD */}
+        {/* WebSite JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              name: "Dr. Minta Réka — Felnőtt fogorvosi rendelő",
+              "@type": "WebSite",
+              "@id": "https://weblelet.hu/#website",
               url: "https://weblelet.hu",
-              telephone: "+36301234567",
-              email: "info@mintarendelo.hu",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Példa utca 10.",
-                addressLocality: "Budapest",
-                postalCode: "1234",
-                addressCountry: "HU",
-              },
-              areaServed: {
-                "@type": "City",
-                name: "Budapest",
-              },
-              employee: { "@id": "https://weblelet.hu/#person" },
+              name: "HRVT Studio",
+              description:
+                "AI-alapú vizuális tartalom magyar vállalkozásoknak — termékfotó, reklámvideó, UGC tartalom.",
+              publisher: { "@id": "https://weblelet.hu/#organization" },
+              inLanguage: "hu-HU",
             }),
           }}
         />

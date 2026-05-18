@@ -1,65 +1,41 @@
-# Dr. Minta Réka — Fogorvos, Budapest
+# HRVT Studio — AI Kreatív Tartalom Magyar Vállalkozásoknak
 
-> Felnőtt fogorvosi rendelő Budapesten. Fájdalommentes fogászat, családias légkörben. TB-támogatott, NEAK szerződéses ellátás.
+> Stúdióminőség. AI sebesség. Tized annyi pénzért. AI-alapú vizuális tartalom — profi termékfotók, reklámvideók és kampányok magyar kisvállalkozásoknak.
 
 ## Rólunk
-Dr. Minta Réka fogorvos a budapesti Példa utcai Egészségügyi Alapellátó Központban működő felnőtt fogorvosi rendelőben végez széleskörű fogászati ellátást. Modern eszközökkel és korszerű módszerekkel dolgozunk, miközben pácienseink igényeit nagyfokú odafigyeléssel követjük. A rendelő NEAK szerződéssel működik — az alapellátás társadalombiztosítás keretében vehető igénybe.
+A HRVT Studio AI-alapú vizuális tartalom szolgáltatás magyar vállalkozásoknak. Profi termékfotók, kampányképek és reklámvideók — gyorsabban, olcsóbban, ugyanolyan minőségben mint a klasszikus stúdiók. Olyan képek és videók, amiket senki nem néz AI-nak. Valódi editorial fotózás érzése.
+
+## Miért HRVT Studio?
+- **Stúdió minőség** — magazinminőség, profi kompozíció, hiteles megjelenés
+- **90% költségmegtakarítás** — hagyományos stúdiófotózás töredékáráért
+- **3-5 napos átfutás** — nem kell stúdiót foglalni, modellt keresni
+- **Magyar piaci tapasztalat** — magyar vállalkozásokra szabva
 
 ## Szolgáltatások
-- Fogászati szűrővizsgálat: félévenkénti kontroll, röntgen, szájüregi vizsgálat
-- Fogmegtartó kezelések: kompozit tömések, gyökérkezelés, fogmentés
-- Fogkőeltávolítás és tisztítás: ultrahangos depurálás, polírozás, ínygyulladás megelőzés
-- Fogpótlás: koronák, hidak, kivehető fogsorok, fém-kerámia és teljes kerámia megoldások
-- Esztétikai fogászat: fogfehérítés, kompozit héjak (veneers), esztétikai töméscsere
-- Fogeltávolítás: kíméletes foghúzás, bölcsességfog eltávolítás, utógondozás
-- Gyermekfogászat: barázdazárás, fluoridos kezelés, szájhigiénés tanácsadás
-- Sürgősségi ellátás: akut fogfájás, törött fog, kiesett tömés mielőbbi kezelése
-- Profilaxia: professzionális fogtisztítás, fluoridos kezelés, megelőző fogászat
-- Air-flow kezelés: kíméletes homokfúvásos fogtisztítás, elszíneződés eltávolítás
-- Parodontológia: fogágygyulladás kezelés, mély küretálás, gyökérfelszín simítás
+- **AI Termékfotó** — Professzionális termékképek fehér háttéren, több szögből. Webshop és social media ready.
+- **Editorial Kampánykép** — Modelles, helyszínes, stúdió hangulatú képek. Olyan minőség, amit senki nem néz AI-nak.
+- **AI Reklámvideó** — 15-30 másodperces social media videók. TikTok, Instagram Reels, Facebook Ads ready.
+- **UGC Tartalom** — User Generated Content stílusú videók és képek. Hiteles, konvertáló.
+- **Brand Kampány** — Teljes vizuális kampány egységes stílusban. Konzisztens brand identity.
+- **Content Naptár** — Havi tartalomterv, mikor mit posztolj. Kész szövegekkel és időzítési javaslatokkal.
 
-## Rendelési idő (2026-tól)
-- Hétfő: 13:30–19:30 (prevenciós idő: 13:30–14:30)
-- Kedd: 07:30–13:30 (prevenciós idő: 07:30–08:30)
-- Szerda: 13:30–19:30 (prevenciós idő: 13:30–14:30)
-- Csütörtök: 07:30–13:30 (prevenciós idő: 07:30–08:30)
-- Péntek: váltakozó (páros hét: 13:30–19:30, páratlan hét: 07:30–13:30)
+## Árazás
+- **STARTER — 120€/hó**: 8 db AI termékfotó, social media ready, 3 munkanapos átfutás
+- **GROWTH — 250€/hó**: 20 db AI kép, 2 db 15mp reklámvideó, havi content naptár (legnépszerűbb)
+- **PRO — 450€/hó**: korlátlan kép, 2 db kampányvideó/hó, art direction, account manager
+- **Egyedi projektek — 250-600€/projekt**: teljes kampányok, cinematic teaserek, brand launch videók
 
 ## Elérhetőség
-- Cím: 1234 Budapest, Példa utca 10.
-- Telefon: +36 30 123 4567
-- Email: info@mintarendelo.hu
+- Email: info@hrvtstudio.hu
 - Weboldal: https://weblelet.hu
-
-## Részletes szolgáltatás aloldalak
-- https://weblelet.hu/fogorvos-szombathely — Átfogó bemutatás, rendelő információk
-- https://weblelet.hu/tb-tamogatott-fogorvos-szombathely — NEAK szerződéses ellátás részletesen
-- https://weblelet.hu/fogaszati-szurovizsgalat — Rutin szűrővizsgálat
-- https://weblelet.hu/fogmegtarto-kezelesek — Gyökérkezelés, kompozit tömés
-- https://weblelet.hu/fogkoeltavolitas — Ultrahangos fogkőeltávolítás
-- https://weblelet.hu/fogpotlas — Korona, híd, kivehető fogsor
-- https://weblelet.hu/esztetikai-fogaszat — Fogfehérítés, veneer
-- https://weblelet.hu/fogeltavolitas — Foghúzás, bölcsességfog
-- https://weblelet.hu/gyermekfogaszat — Gyerek fogászati ellátás 0-18 éves korig
-- https://weblelet.hu/surgossegi-ellatas — Akut fogfájás, törött fog
-- https://weblelet.hu/profilaxia — Fogászati megelőzés
-- https://weblelet.hu/air-flow — Homokfúvásos fogtisztítás
-- https://weblelet.hu/parodontologia — Fogágygyulladás kezelése
-
-## Blog cikkek
-- https://weblelet.hu/blog/mit-tegyek-ha-letort-a-fogam — Elsősegély letört fog esetén
-- https://weblelet.hu/blog/faj-e-a-fogkoeltavolitas — Őszinte válasz a fogtisztítás fájdalmáról
-- https://weblelet.hu/blog/mikor-kell-gyokerkezeles — Tünetek, okok, kezelés
-- https://weblelet.hu/blog/mikor-vigyem-eloszor-fogorvoshoz-a-gyermekem — Szülőknek útmutató
-- https://weblelet.hu/blog/ejszakai-fogfajas-mit-tegyek — Éjszakai fogfájás kezelése
+- Ország: Magyarország
 
 ## Gyakran ismételt kérdések
-- Kell-e előre időpontot foglalni? Igen, telefonon a +36 30 123 4567 számon.
-- TB-támogatott a rendelés? Igen, NEAK szerződéses rendelő.
-- Milyen gyakran kell kontrollra járni? Félévente javasolt.
-- Fáj a kezelés? Modern érzéstelenítéssel a legtöbb kezelés fájdalommentes.
-- Gyermekeket is fogadnak? Igen, gyermekfogászati ellátást is nyújtunk.
-- Mi a teendő sürgős fogfájás esetén? Hívjon rendelési időben: +36 30 123 4567.
+- **Tényleg nem látszik rajta hogy AI?** A képeinket rendszeresen veszik valódi fotónak. Az eredmény ugyanolyan profi mint egy klasszikus stúdiófotózás.
+- **Mennyi idő alatt készül el?** 3-5 munkanap. Sürgős esetben 24-48 óra is megoldható.
+- **Milyen iparágaknak ajánljuk?** Fashion, fitness, étterem, szépségipar, e-commerce, ingatlan, automotive — bármely vizuális tartalmat igénylő vállalkozásnak.
+- **Hogyan kezdjünk el?** Küldj egy üzenetet és ingyenesen elkészítünk egy demo képet a termékedről.
+- **Van szerződéses kötelezettség?** Nincs. Havi előfizetés, bármikor lemondható.
 
 ## Kulcsszavak
-fogorvos szombathely, fogászat szombathely, fogorvosi rendelő, Dr. Minta Réka, fogászati szűrővizsgálat, fogkőeltávolítás, fogpótlás, esztétikai fogászat, gyermekfogászat, TB fogászat, NEAK fogorvos, fogmegtartó kezelés, fájdalommentes fogászat
+AI termékfotó, AI reklámvideó, AI képgenerálás, vizuális marketing, e-commerce képek, social media tartalom, UGC content, brand kampány, content naptár, magyar vállalkozás, HRVT Studio, stúdiófotózás alternatíva, AI kreatív tartalom

@@ -1,8 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
-import Schedule from "@/components/Schedule";
+import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
+import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -20,50 +21,42 @@ export default function Home() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "Kell-e előre időpontot foglalni?",
+                name: "Tényleg nem látszik rajta hogy AI?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen, kérjük hívjon a +36 30 123 4567 telefonszámon. A prevenciós időben érkező pácienseket előnyben részesítjük.",
+                  text: "Szolgáltatásunk lényege a stúdió minőség. Képeinket rendszeresen veszik valódi fotónak. Az eredmény számít, nem az eszköz — a végeredmény ugyanolyan profi, mint egy klasszikus stúdiófotózás.",
                 },
               },
               {
                 "@type": "Question",
-                name: "TB-támogatott a rendelés?",
+                name: "Mennyi idő alatt készül el?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen, rendelőnk NEAK szerződéssel működik. Az alapellátás társadalombiztosítás keretében igénybe vehető.",
+                  text: "Általában 3-5 munkanap az átfutás. Sürgős esetben 24-48 óra is megoldható, prémium gyorsítási díjjal.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Milyen gyakran kell szűrővizsgálatra járni?",
+                name: "Milyen iparágaknak ajánljátok?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Félévente javasolt a fogászati kontroll. A korai felismerés a leghatékonyabb megelőzés.",
+                  text: "Fashion, fitness, étterem, szépségipar, e-commerce, ingatlan, automotive — bármely vizuális tartalmat igénylő vállalkozásnak.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Fáj a kezelés?",
+                name: "Hogyan indulhatunk el?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Modern érzéstelenítési módszerekkel dolgozunk, a legtöbb kezelés fájdalommentesen elvégezhető.",
+                  text: "Küldj egy üzenetet az info@hrvtstudio.hu címre, és ingyenesen elkészítünk egy demó képet a termékedről. Csak utána döntesz a következő lépésről.",
                 },
               },
               {
                 "@type": "Question",
-                name: "Gyermekeket is fogadnak?",
+                name: "Van szerződéses kötelezettség?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Igen, gyermekfogászati ellátást is nyújtunk. Barátságos, játékos környezetben ismerkedhetnek meg a fogászattal.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Mi a teendő sürgős fogfájás esetén?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Hívjon a rendelési időben a +36 30 123 4567 számon, és igyekszünk mielőbb ellátni.",
+                  text: "Nincs. Havi előfizetés, bármikor lemondható — semmi minimum időtartam, semmi rejtett kötelezettség.",
                 },
               },
             ],
@@ -74,8 +67,9 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <Portfolio />
         <About />
-        <Schedule />
+        <Pricing />
         <FAQ />
         <Contact />
       </main>

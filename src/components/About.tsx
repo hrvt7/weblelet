@@ -2,24 +2,24 @@ import FadeIn from "./FadeIn";
 
 const benefits = [
   {
-    title: "Családias légkör",
-    desc: "Nálunk nem kell a fogorvostól félni. Barátságos, nyugodt környezetben dolgozunk.",
-    image: "/images/about-1-csaladias.webp",
+    title: "Stúdió minőség",
+    desc: "Olyan képek és videók, amiket senki nem néz AI-nak. Valódi editorial fotózás érzése — magazinminőség, profi kompozíció, hiteles megjelenés.",
+    icon: "✨",
   },
   {
-    title: "Modern eszközök",
-    desc: "Korszerű anyagok és digitális technológia a pontos diagnózisért és tartós eredményért.",
-    image: "/images/about-2-modern.webp",
+    title: "90% költségmegtakarítás",
+    desc: "Hagyományos stúdiófotózás töredékáráért. Ugyanolyan eredmény, tized annyi pénzért — modell, stúdió, post-produkció nélkül.",
+    icon: "💰",
   },
   {
-    title: "Fájdalommentes kezelés",
-    desc: "Megfelelő érzéstelenítéssel a kezelések kényelmesen, fájdalom nélkül zajlanak.",
-    image: "/images/about-3-fajdalommentes.webp",
+    title: "Gyors átfutás",
+    desc: "3-5 munkanap. Nem kell stúdiót foglalni, modellt keresni, fotóst várni, napokat utómunkázni. Megrendelés és kész tartalom egy héten belül.",
+    icon: "⚡",
   },
   {
-    title: "TB-támogatott ellátás",
-    desc: "NEAK szerződéses rendelő — az alapellátás társadalombiztosítás keretében igénybe vehető.",
-    image: "/images/about-4-tb.webp",
+    title: "Magyar piac",
+    desc: "Magyar vállalkozásoknak tervezett szolgáltatás. Értjük a piacot, az ügyfeleket, a kulturális kontextust — és magyarul kommunikálunk.",
+    icon: "🇭🇺",
   },
 ];
 
@@ -30,17 +30,14 @@ export default function About() {
         <FadeIn>
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
-              Rólunk
+              Miért HRVT Studio
             </p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-[-0.03em] text-foreground">
-              Miért{" "}
-              <span className="text-highlight">válasszon minket?</span>
+              Stúdióminőség.{" "}
+              <span className="text-highlight">Tized annyi pénzért.</span>
             </h2>
             <p className="mt-6 text-lg text-foreground-secondary leading-relaxed max-w-xl mx-auto">
-              Fogászatunk elsődleges célja pácienseink gyors és fájdalommentes kezelése, kellemes, családias légkörben.
-            </p>
-            <p className="mt-4 text-foreground-muted leading-relaxed max-w-xl mx-auto">
-              Rendelőnk a budapesti Példa utcai orvosi központban működik, könnyen megközelíthető helyen. Modern eszközökkel és korszerű módszerekkel dolgozunk, miközben pácienseink igényeit nagyfokú odafigyeléssel követjük.
+              A HRVT Studio AI-alapú vizuális tartalom-szolgáltatás. Profi termékfotók, kampányképek és reklámvideók — gyorsabban, olcsóbban, ugyanolyan minőségben mint a klasszikus stúdiók.
             </p>
           </div>
         </FadeIn>
@@ -48,26 +45,16 @@ export default function About() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {benefits.map((benefit, i) => (
             <FadeIn key={benefit.title} delay={i * 0.1}>
-              <div className="rounded-2xl border border-border bg-surface-card overflow-hidden card-hover group h-full">
-                {/* Image */}
-                <div className="h-52 sm:h-56 overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={benefit.image}
-                    alt={benefit.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
+              <div className="rounded-2xl border border-border bg-surface-card p-6 lg:p-7 card-hover group h-full">
+                <div className="h-14 w-14 rounded-2xl bg-primary/8 flex items-center justify-center text-2xl mb-4 group-hover:bg-primary/15 transition-colors">
+                  <span>{benefit.icon}</span>
                 </div>
-                {/* Text */}
-                <div className="p-5 lg:p-6">
-                  <h3 className="font-heading text-base font-bold text-foreground mb-2 tracking-[-0.01em]">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-[0.85rem] text-foreground-muted leading-relaxed">
-                    {benefit.desc}
-                  </p>
-                </div>
+                <h3 className="font-heading text-lg font-bold text-foreground mb-2 tracking-[-0.01em]">
+                  {benefit.title}
+                </h3>
+                <p className="text-[0.9rem] text-foreground-secondary leading-relaxed">
+                  {benefit.desc}
+                </p>
               </div>
             </FadeIn>
           ))}
