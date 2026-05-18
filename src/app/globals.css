@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Warm amber-orange palette — matches hero image */
+  /* Warm amber-orange palette */
   --color-primary: #D4860A;
   --color-primary-light: rgba(212, 134, 10, 0.15);
   --color-primary-dark: #B06E06;
@@ -10,16 +10,16 @@
   --color-accent: #E05C20;
   --color-accent-dark: #C04A14;
 
-  /* Warm amber-dark backgrounds — seamless across sections */
-  --color-surface: #130C04;
-  --color-surface-warm: #1C1208;
-  --color-surface-alt: #170E05;
-  --color-surface-card: #1E1409;
+  /* Warm amber backgrounds — VISIBLY orange-tinted */
+  --color-surface: #221400;
+  --color-surface-warm: #2A1A00;
+  --color-surface-alt: #1E1100;
+  --color-surface-card: #2E1C04;
 
   /* Warm cream text */
   --color-foreground: #F2E4C4;
   --color-foreground-secondary: #B8975A;
-  --color-foreground-muted: #6A5030;
+  --color-foreground-muted: #7A6040;
 
   /* Status */
   --color-success: #5B8B5B;
@@ -27,25 +27,23 @@
   --color-warning: #D4856A;
 
   /* Warm amber borders */
-  --color-border: #2C1E08;
-  --color-border-light: #231606;
+  --color-border: #3A2408;
+  --color-border-light: #2E1C04;
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background: var(--color-surface);
   color: var(--color-foreground);
   font-family: var(--font-body);
-  /* Seamless warm amber background texture across all sections */
   background-image:
-    radial-gradient(ellipse 120% 60% at 50% 0%, rgba(212, 134, 10, 0.07) 0%, transparent 60%),
-    radial-gradient(ellipse 80% 40% at 80% 100%, rgba(224, 92, 32, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse 140% 50% at 50% -5%, rgba(212, 134, 10, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 10% 60%, rgba(224, 92, 32, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 90% 80%, rgba(212, 134, 10, 0.06) 0%, transparent 50%);
 }
 
 ::selection {
@@ -55,53 +53,46 @@ body {
 
 /* Warm amber dot grid */
 .dot-grid {
-  background-image: radial-gradient(circle, rgba(212, 134, 10, 0.18) 0.6px, transparent 0.6px);
+  background-image: radial-gradient(circle, rgba(212, 134, 10, 0.2) 0.6px, transparent 0.6px);
   background-size: 28px 28px;
 }
 
-/* Pulse for badge */
 @keyframes pulse-soft {
   0%, 100% { box-shadow: 0 0 0 0 rgba(212, 134, 10, 0.3); }
-  50% { box-shadow: 0 0 0 10px rgba(212, 134, 10, 0); }
+  50%       { box-shadow: 0 0 0 10px rgba(212, 134, 10, 0); }
 }
 .pulse-badge { animation: pulse-soft 3s ease-in-out infinite; }
 
-/* Scroll bounce */
 @keyframes bounce-slow {
   0%, 100% { transform: translateY(0); opacity: 0.5; }
-  50% { transform: translateY(8px); opacity: 1; }
+  50%       { transform: translateY(8px); opacity: 1; }
 }
 .scroll-bounce { animation: bounce-slow 2s ease-in-out infinite; }
 
-/* Heading highlight — amber underline */
 .text-highlight {
-  background: linear-gradient(to top, rgba(212, 134, 10, 0.4) 0%, rgba(212, 134, 10, 0.4) 38%, transparent 38%);
+  background: linear-gradient(to top, rgba(212, 134, 10, 0.45) 0%, rgba(212, 134, 10, 0.45) 38%, transparent 38%);
   padding: 0 0.08em;
   color: #E8A030;
 }
 
-/* Card hover */
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .card-hover:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 134, 10, 0.2);
+  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 134, 10, 0.25);
 }
 
-/* CTA glow */
 .cta-glow { transition: all 0.3s ease; }
 .cta-glow:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 32px -4px rgba(224, 92, 32, 0.55);
 }
 
-/* Expandable service card */
 .service-expand { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s ease; }
 .service-expand[data-open="true"] { grid-template-rows: 1fr; }
 .service-expand > div { overflow: hidden; }
 
-/* Amber gradient text */
 .text-gold-gradient {
   background: linear-gradient(135deg, #D4860A 0%, #F5B030 50%, #D4860A 100%);
   -webkit-background-clip: text;
@@ -109,7 +100,6 @@ body {
   background-clip: text;
 }
 
-/* Glow border */
 .glow-border:hover {
   box-shadow: 0 0 0 1px rgba(212, 134, 10, 0.45), 0 0 24px rgba(212, 134, 10, 0.12);
 }

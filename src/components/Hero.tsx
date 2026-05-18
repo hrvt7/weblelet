@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Full-screen portrait image */}
       <Image
         src="/hero-portrait.jpg"
         alt="HRVT Studio"
@@ -16,24 +15,24 @@ export default function Hero() {
         sizes="100vw"
       />
 
-      {/* Top gradient — text readability */}
-      <div className="absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-black/55 via-black/20 to-transparent pointer-events-none" />
+      {/* Top gradient */}
+      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none" />
 
-      {/* Bottom gradient — scroll indicator */}
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/50 via-black/15 to-transparent pointer-events-none" />
+      {/* Bottom gradient */}
+      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/55 via-black/15 to-transparent pointer-events-none" />
 
-      {/* Heading — top, non-intrusive */}
-      <div className="absolute top-0 inset-x-0 pt-28 px-6 sm:px-10">
+      {/* Centered heading */}
+      <div className="absolute inset-0 flex flex-col items-center justify-start pt-24 px-6 text-center">
         <h1
           className="font-heading font-extrabold leading-[1.07] tracking-[-0.03em] text-white drop-shadow-lg"
-          style={{ fontSize: "clamp(1.75rem, 4vw + 0.5rem, 3.25rem)" }}
+          style={{ fontSize: "clamp(2rem, 5vw + 0.5rem, 3.5rem)" }}
         >
           Stúdióminőség.<br />
           <span className="text-[#E8A030]">AI sebesség.</span>
         </h1>
       </div>
 
-      {/* Scroll indicator — bottom */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 inset-x-0 flex flex-col items-center gap-2 scroll-bounce">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
           Görgess
