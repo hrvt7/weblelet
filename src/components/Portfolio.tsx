@@ -14,12 +14,13 @@ const images = [
   { src: "/portfolio/portfolio-3.jpg", alt: "AI fashion editorial — HRVT Studio" },
   { src: "/portfolio/portfolio-4.jpg", alt: "AI portré kampánykép — HRVT Studio" },
   { src: "/portfolio/portfolio-5.jpg", alt: "AI editorial fotó — HRVT Studio" },
+  { src: "/portfolio/portfolio-6.jpg", alt: "AI kampányfotó — HRVT Studio" },
 ];
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-24 sm:py-32 relative">
-      <div className="absolute inset-0 dot-grid opacity-[0.15] -z-10" />
+    <section id="portfolio" className="py-24 sm:py-32 relative bg-surface">
+      <div className="absolute inset-0 dot-grid opacity-[0.4] -z-10" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
@@ -53,7 +54,7 @@ export default function Portfolio() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto">
           {images.map((img, i) => (
             <FadeIn key={i} delay={i * 0.07}>
-              <div className="relative aspect-[2/3] rounded-2xl overflow-hidden bg-surface-warm group">
+              <div className="relative aspect-[2/3] rounded-2xl overflow-hidden bg-surface-card group ring-1 ring-border">
                 <Image
                   src={img.src}
                   alt={img.alt}
@@ -62,15 +63,16 @@ export default function Portfolio() {
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                   quality={90}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </FadeIn>
           ))}
         </div>
 
         {/* CTA */}
-        <FadeIn delay={0.3}>
-          <div className="text-center mt-12 sm:mt-16">
-            <p className="text-foreground-secondary mb-5">
+        <FadeIn delay={0.4}>
+          <div className="text-center mt-14 sm:mt-20">
+            <p className="text-foreground-muted mb-5">
               Szeretnéd látni a brand-edhez illő példát? Küldj egy üzenetet, és ingyenes demót készítünk.
             </p>
             <a

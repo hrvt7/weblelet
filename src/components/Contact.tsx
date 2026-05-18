@@ -4,7 +4,7 @@ import { useState, FormEvent } from "react";
 import FadeIn from "./FadeIn";
 
 const inputClass =
-  "w-full rounded-xl border border-border bg-surface-card px-5 py-4 text-[0.95rem] text-foreground placeholder:text-foreground-muted/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200";
+  "w-full rounded-xl border border-border bg-surface px-5 py-4 text-[0.95rem] text-foreground placeholder:text-foreground-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all duration-200";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -37,6 +37,7 @@ export default function Contact() {
   return (
     <section id="kapcsolat" className="py-24 sm:py-32 relative overflow-hidden bg-surface-alt">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
+      <div className="absolute inset-0 dot-grid opacity-[0.2] -z-10" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
@@ -60,7 +61,7 @@ export default function Contact() {
             <div className="lg:col-span-2 space-y-6">
               <div className="rounded-2xl bg-surface-card border border-border p-6 lg:p-7">
                 <div className="flex items-start gap-3 mb-5">
-                  <div className="h-11 w-11 shrink-0 rounded-xl bg-primary/8 flex items-center justify-center text-primary">
+                  <div className="h-11 w-11 shrink-0 rounded-xl bg-primary/15 flex items-center justify-center text-primary">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <rect x="3" y="5" width="18" height="14" rx="2" />
                       <path d="m3 7 9 6 9-6" />
@@ -68,7 +69,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-heading font-semibold text-foreground text-sm mb-0.5">Email</p>
-                    <a href="mailto:info@hrvtstudio.hu" className="text-primary text-sm font-medium hover:underline">
+                    <a href="mailto:info@hrvtstudio.hu" className="text-primary text-sm font-medium hover:text-primary-dark transition-colors">
                       info@hrvtstudio.hu
                     </a>
                   </div>
@@ -96,8 +97,8 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-primary/5 border border-primary/10 p-6 lg:p-7">
-                <p className="text-sm font-semibold text-foreground mb-2">💡 Tipp</p>
+              <div className="rounded-2xl bg-primary/10 border border-primary/20 p-6 lg:p-7">
+                <p className="text-sm font-semibold text-primary mb-2">💡 Tipp</p>
                 <p className="text-sm text-foreground-secondary leading-relaxed">
                   Az ingyenes demóhoz küldj egy meglévő termékfotót (akár telefonnal készült is megfelel), és írd le, milyen stílust képzelsz el. Egy munkanapon belül megkapod az AI-val elkészített verziót.
                 </p>
@@ -109,9 +110,9 @@ export default function Contact() {
           <FadeIn direction="right" delay={0.15}>
             <div className="lg:col-span-3">
               {submitted ? (
-                <div className="rounded-2xl bg-surface-card border border-success/20 p-12 text-center shadow-lg h-full flex flex-col items-center justify-center">
-                  <div className="mx-auto h-18 w-18 rounded-2xl bg-success/10 flex items-center justify-center mb-5">
-                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="2.5" strokeLinecap="round">
+                <div className="rounded-2xl bg-surface-card border border-primary/20 p-12 text-center shadow-xl h-full flex flex-col items-center justify-center">
+                  <div className="mx-auto h-18 w-18 rounded-2xl bg-success/15 flex items-center justify-center mb-5">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#5B9B6B" strokeWidth="2.5" strokeLinecap="round">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
@@ -125,7 +126,7 @@ export default function Contact() {
               ) : (
                 <form
                   onSubmit={handleSubmit}
-                  className="rounded-2xl bg-surface-card border border-border shadow-xl p-8 sm:p-10 space-y-5"
+                  className="rounded-2xl bg-surface-card border border-border shadow-2xl p-8 sm:p-10 space-y-5"
                 >
                   <h3 className="font-heading text-xl font-bold text-foreground mb-2">
                     Írj nekünk
@@ -189,7 +190,7 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-4.5 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="w-full cursor-pointer rounded-2xl bg-accent px-8 py-4 text-[1.05rem] font-bold text-white shadow-xl shadow-accent/25 cta-glow disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       {loading ? "Küldés..." : "Ingyenes demó kérése"}
                     </button>

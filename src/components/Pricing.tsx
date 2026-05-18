@@ -49,8 +49,11 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <section id="arazas" className="py-24 sm:py-32 relative">
-      <div className="absolute inset-0 dot-grid opacity-[0.15] -z-10" />
+    <section id="arazas" className="py-24 sm:py-32 relative bg-surface-alt overflow-hidden">
+      <div className="absolute inset-0 dot-grid opacity-[0.3] -z-10" />
+      {/* Glow accents */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl -z-10" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-accent/5 blur-3xl -z-10" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
@@ -73,14 +76,14 @@ export default function Pricing() {
           {tiers.map((tier, i) => (
             <FadeIn key={tier.name} delay={i * 0.1}>
               <div
-                className={`relative rounded-2xl border bg-surface-card p-6 lg:p-7 h-full flex flex-col ${
+                className={`relative rounded-2xl border p-6 lg:p-7 h-full flex flex-col transition-all duration-300 ${
                   tier.badge
-                    ? "border-primary shadow-xl shadow-primary/10 scale-[1.02]"
-                    : "border-border"
+                    ? "border-primary bg-surface-card shadow-2xl shadow-primary/15 scale-[1.02]"
+                    : "border-border bg-surface-card hover:border-primary/30 card-hover"
                 }`}
               >
                 {tier.badge && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-primary px-4 py-1 text-xs font-bold text-white shadow-md shadow-primary/30">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-primary px-4 py-1 text-xs font-bold text-[#0C0A09] shadow-lg shadow-primary/30">
                     {tier.badge}
                   </div>
                 )}
@@ -111,8 +114,8 @@ export default function Pricing() {
                   href={`mailto:info@hrvtstudio.hu?subject=${encodeURIComponent(tier.name + ' csomag — érdeklődés')}`}
                   className={`block text-center rounded-xl px-5 py-3.5 text-sm font-bold transition-all ${
                     tier.badge
-                      ? "bg-accent text-white shadow-lg shadow-accent/25 hover:shadow-xl"
-                      : "bg-primary/8 text-primary hover:bg-primary/15"
+                      ? "bg-primary text-[#0C0A09] shadow-lg shadow-primary/25 hover:bg-primary-dark"
+                      : "bg-primary/15 text-primary hover:bg-primary/25"
                   }`}
                 >
                   {tier.cta}
@@ -124,7 +127,7 @@ export default function Pricing() {
 
         {/* Custom project */}
         <FadeIn delay={0.3}>
-          <div className="mt-12 max-w-3xl mx-auto rounded-2xl border-2 border-dashed border-border bg-surface-card p-7 sm:p-9 text-center">
+          <div className="mt-12 max-w-3xl mx-auto rounded-2xl border-2 border-dashed border-primary/20 bg-surface-card p-7 sm:p-9 text-center">
             <div className="text-xs font-bold text-foreground-muted uppercase tracking-wider mb-3">
               Egyedi projektek
             </div>
@@ -137,7 +140,7 @@ export default function Pricing() {
             </p>
             <a
               href="mailto:info@hrvtstudio.hu?subject=Egyedi%20projekt%20—%20árajánlat"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary/8 px-6 py-3 text-sm font-bold text-primary hover:bg-primary/15 transition-colors"
+              className="inline-flex items-center gap-2 rounded-xl bg-primary/15 px-6 py-3 text-sm font-bold text-primary hover:bg-primary/25 transition-colors"
             >
               Árajánlat kérése
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

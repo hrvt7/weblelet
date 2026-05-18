@@ -30,8 +30,9 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 sm:py-32 bg-surface-alt relative">
-      <div className="absolute inset-0 dot-grid opacity-[0.12] -z-10" />
+    <section className="py-24 sm:py-32 bg-surface relative overflow-hidden">
+      <div className="absolute inset-0 dot-grid opacity-[0.3] -z-10" />
+      <div className="absolute top-1/2 right-0 w-80 h-80 rounded-full bg-accent/5 blur-3xl -z-10" />
 
       <div className="mx-auto max-w-3xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
@@ -50,8 +51,10 @@ export default function FAQ() {
           {faqs.map((faq, i) => (
             <FadeIn key={i} delay={i * 0.06}>
               <div
-                className={`rounded-2xl border bg-surface-card overflow-hidden transition-all duration-200 ${
-                  openIndex === i ? "border-primary/20 shadow-md" : "border-border hover:border-primary/10"
+                className={`rounded-2xl border overflow-hidden transition-all duration-200 ${
+                  openIndex === i
+                    ? "border-primary/30 shadow-lg shadow-primary/10 bg-surface-card"
+                    : "border-border bg-surface-card hover:border-primary/15"
                 }`}
               >
                 <button
@@ -63,7 +66,7 @@ export default function FAQ() {
                   </span>
                   <div
                     className={`shrink-0 h-7 w-7 rounded-lg flex items-center justify-center transition-all duration-200 ${
-                      openIndex === i ? "bg-primary/10 text-primary rotate-180" : "bg-surface text-foreground-muted"
+                      openIndex === i ? "bg-primary/20 text-primary rotate-180" : "bg-surface text-foreground-muted"
                     }`}
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">

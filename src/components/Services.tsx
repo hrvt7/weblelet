@@ -25,7 +25,7 @@ const services = [
   {
     title: "UGC Tartalom",
     short: "User Generated Content stílusú videók és képek. Hiteles, konvertáló.",
-    detail: `Az UGC (User Generated Content) ma a legjobban konvertáló tartalomtípus. Hétköznapi, hiteles megjelenés, amilyen valódi vásárlóid posztolnák. AI-val olcsóbban és gyorsabban — de ugyanaz a hatás. Termékbemutatók, vélemények, „nálam így működik” stílusú videók.`,
+    detail: `Az UGC (User Generated Content) ma a legjobban konvertáló tartalomtípus. Hétköznapi, hiteles megjelenés, amilyen valódi vásárlóid posztolnák. AI-val olcsóbban és gyorsabban — de ugyanaz a hatás. Termékbemutatók, vélemények, „nálam így működik" stílusú videók.`,
     icon: "📱",
   },
   {
@@ -48,15 +48,17 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
   return (
     <FadeIn delay={index * 0.05}>
       <div
-        className={`rounded-2xl border bg-surface-card overflow-hidden transition-all duration-300 group cursor-pointer h-full ${
-          open ? "border-primary/25 shadow-lg" : "border-border hover:border-primary/15 card-hover"
+        className={`rounded-2xl border overflow-hidden transition-all duration-300 group cursor-pointer h-full ${
+          open
+            ? "border-primary/40 shadow-lg shadow-primary/10 bg-surface-card"
+            : "border-border bg-surface-card hover:border-primary/20 card-hover glow-border"
         }`}
         onClick={() => setOpen(!open)}
       >
         <div className="p-5 lg:p-7">
           <div className="flex items-start gap-4">
             <div className={`h-14 w-14 shrink-0 rounded-2xl flex items-center justify-center text-2xl transition-all duration-300 ${
-              open ? "bg-primary text-white" : "bg-primary/8 group-hover:bg-primary/15"
+              open ? "bg-primary/20 shadow-inner" : "bg-surface-warm group-hover:bg-primary/10"
             }`}>
               <span>{service.icon}</span>
             </div>
@@ -66,7 +68,7 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
                   {service.title}
                 </h3>
                 <div className={`shrink-0 h-6 w-6 rounded-md flex items-center justify-center transition-all duration-300 ${
-                  open ? "bg-primary/10 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
+                  open ? "bg-primary/20 text-primary rotate-180" : "bg-surface-warm text-foreground-muted"
                 }`}>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
                     <polyline points="6 9 12 15 18 9" />
@@ -82,13 +84,13 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
 
         {open && (
           <div className="px-5 lg:px-7 pb-6">
-            <div className="border-t border-border-light pt-5">
+            <div className="border-t border-border pt-5">
               <p className="text-[0.9rem] text-foreground-secondary leading-[1.75]">
                 {service.detail}
               </p>
               <a
                 href="mailto:info@hrvtstudio.hu?subject=Érdeklődés%20-%20"
-                className="inline-flex items-center gap-2 mt-4 rounded-lg bg-primary/8 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/15 transition-colors"
+                className="inline-flex items-center gap-2 mt-4 rounded-lg bg-primary/15 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/25 transition-colors"
                 onClick={(e) => e.stopPropagation()}
               >
                 Demó kérése
@@ -107,6 +109,7 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
 export default function Services() {
   return (
     <section id="szolgaltatasok" className="py-24 sm:py-32 bg-surface-alt relative">
+      <div className="absolute inset-0 dot-grid opacity-[0.3] -z-10" />
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-12 sm:mb-16 max-w-2xl mx-auto">
