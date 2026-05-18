@@ -131,12 +131,11 @@ export default function Pricing() {
             <div className="text-xs font-bold text-foreground-muted uppercase tracking-wider mb-3">
               Egyedi projektek
             </div>
-            <div className="flex items-baseline justify-center gap-1 mb-3">
-              <span className="font-heading text-3xl sm:text-4xl font-extrabold text-foreground">250–600€</span>
-              <span className="text-foreground-muted text-base">/projekt</span>
-            </div>
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
+              Árajánlat kérésre
+            </h3>
             <p className="text-foreground-secondary mb-5 max-w-xl mx-auto">
-              Teljes kampányok, cinematic teaserek, brand launch videók. Egyedi igények, egyedi költségvetés — árajánlat kérésre.
+              Teljes kampányok, cinematic teaserek, brand launch videók. Egyedi igények, egyedi költségvetés.
             </p>
             <a
               href="mailto:info@hrvtstudio.hu?subject=Egyedi%20projekt%20—%20árajánlat"

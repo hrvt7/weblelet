@@ -15,7 +15,7 @@ export default function FadeIn({
   delay = 0,
   direction = "up",
   className = "",
-  distance = 24,
+  distance = 40,
 }: FadeInProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -30,7 +30,7 @@ export default function FadeIn({
           observer.disconnect();
         }
       },
-      { rootMargin: "-40px" }
+      { rootMargin: "-60px" }
     );
     observer.observe(el);
     return () => observer.disconnect();
@@ -50,7 +50,7 @@ export default function FadeIn({
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "none" : translate,
-        transition: `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`,
+        transition: `opacity 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}s, transform 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}s`,
         willChange: visible ? "auto" : "opacity, transform",
       }}
     >

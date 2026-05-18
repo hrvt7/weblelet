@@ -16,10 +16,10 @@
   --color-surface-alt: #111009;
   --color-surface-card: #1A1612;
 
-  /* Warm text on dark */
-  --color-foreground: #F5F0E8;
-  --color-foreground-secondary: #B0A090;
-  --color-foreground-muted: #6B5F55;
+  /* Text on dark */
+  --color-foreground: #F0EEE8;
+  --color-foreground-secondary: #9E9890;
+  --color-foreground-muted: #5C5850;
 
   /* Status */
   --color-success: #5B9B6B;
