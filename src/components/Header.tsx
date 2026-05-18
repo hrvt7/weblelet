@@ -24,7 +24,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0C0A09]/92 backdrop-blur-xl shadow-[0_1px_0_rgba(200,169,110,0.1)] border-b border-[#2A2418]"
+          ? "bg-[#130C04]/94 backdrop-blur-xl shadow-[0_1px_0_rgba(212,134,10,0.12)] border-b border-[#2C1E08]"
           : "bg-transparent"
       }`}
     >
@@ -74,7 +74,7 @@ export default function Header() {
             ))}
             <a
               href="mailto:info@hrvtstudio.hu"
-              className="inline-flex items-center gap-2 cursor-pointer rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-[#0C0A09] shadow-sm shadow-primary/20 hover:bg-primary-dark transition-all duration-200"
+              className="inline-flex items-center gap-2 cursor-pointer rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-[#130C04] shadow-sm shadow-primary/20 hover:bg-primary-dark transition-all duration-200"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -110,7 +110,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0C0A09]/98 backdrop-blur-xl border-t border-[#2A2418]">
+        <div className="md:hidden bg-[#130C04]/98 backdrop-blur-xl border-t border-[#2C1E08]">
           <div className="px-5 py-5 space-y-1">
             {navLinks.map((link) => (
               <a
@@ -125,7 +125,7 @@ export default function Header() {
             <a
               href="mailto:info@hrvtstudio.hu"
               onClick={() => setMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full text-center rounded-xl bg-primary px-5 py-3 mt-3 text-sm font-semibold text-[#0C0A09] hover:bg-primary-dark transition-colors"
+              className="flex items-center justify-center gap-2 w-full text-center rounded-xl bg-primary px-5 py-3 mt-3 text-sm font-semibold text-[#130C04] hover:bg-primary-dark transition-colors"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="5" width="18" height="14" rx="2" />
