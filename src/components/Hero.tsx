@@ -88,23 +88,13 @@ export default function Hero() {
           <span className="line"><span>MINŐSÉG.</span></span>
           <span className="line"><span><span className="amber">AI</span> SEBESSÉG.</span></span>
         </h1>
-        <div className="hero__meta">
-          <p className="hero__lede">
-            Profi termékfotók, editorial kampányképek és reklámvideók AI-vel — 3–5 nap alatt, töredékáron.{" "}
-            <strong style={{ color: "var(--cream)" }}>Senki nem nézi AI-nak.</strong>
-          </p>
-          <div className="hero__actions">
-            <a href="#contact" className="cta">Ingyenes demó <span className="cta__arrow">↗</span></a>
-            <a href="#services" className="cta cta--ghost">Mit csinálunk <span className="cta__arrow">↓</span></a>
-          </div>
-        </div>
       </div>
 
-      <div className="hero__strip">
-        <div className="hero__strip__cell"><span className="pulse-dot"></span>Live · Magyarország</div>
-        <div className="hero__strip__cell"><b>90%</b> költségmegtakarítás</div>
-        <div className="hero__strip__cell"><b>3–5</b> nap átfutás</div>
-        <div className="hero__strip__cell">↓ Görgess</div>
+      <div className="hero__scroll">
+        <span className="hero__scroll-text">Görgess</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
       </div>
     </header>
   );

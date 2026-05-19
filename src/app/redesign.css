@@ -246,35 +246,21 @@ body.redesign::after {
   font-weight: 600;
   margin: 0 0.1em;
 }
-.hero__meta {
-  display: flex; justify-content: space-between; align-items: end;
-  gap: 40px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-.hero__lede {
-  max-width: 460px;
-  font-size: 17px; line-height: 1.5;
-  color: var(--cream-2);
-  margin: 0;
-}
-.hero__actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
-.hero__strip {
-  position: absolute; bottom: 0; left: 0; right: 0;
+.hero__scroll {
+  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
   z-index: 2;
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 24px 32px;
-  border-top: 1px solid var(--ink-4);
-  background: rgba(10, 8, 7, 0.6);
-  backdrop-filter: blur(10px);
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--cream-3);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: scroll-bounce 2s ease-in-out infinite;
 }
-.hero__strip__cell { display: flex; align-items: center; gap: 14px; }
-.hero__strip__cell b { font-family: var(--display); font-weight: 600; color: var(--cream); font-size: 18px; letter-spacing: -0.02em; text-transform: none; }
-.hero__strip__cell .pulse-dot { width: 6px; height: 6px; border-radius: 9999px; background: var(--amber); animation: pulse 2s ease-in-out infinite; }
-@media (max-width: 800px) { .hero__strip__cell:nth-child(2), .hero__strip__cell:nth-child(3) { display: none; } }
+.hero__scroll-text {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
 
 /* ============================================================================
    BELT
