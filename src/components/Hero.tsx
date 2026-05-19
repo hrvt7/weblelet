@@ -88,6 +88,10 @@ export default function Hero() {
           <span className="line"><span>MINŐSÉG.</span></span>
           <span className="line"><span><span className="amber">AI</span> SEBESSÉG.</span></span>
         </h1>
+        <p className="hero__lede">
+          Profi termékfotók, editorial kampányképek és reklámvideók AI-al — 3–5 nap alatt, töredékáron.{" "}
+          <strong>Senki nem nézi AI-nak.</strong>
+        </p>
       </div>
 
       <div className="hero__scroll">
