@@ -65,7 +65,6 @@ export default function Why() {
           <br />
           <span className="amber">Tized</span> annyi pénzért.
         </h2>
-        <div className="bento__hint">↓ Görgess — egymásra csúsznak</div>
       </div>
 
       <div className="bento__stack">

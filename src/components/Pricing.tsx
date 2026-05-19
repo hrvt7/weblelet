@@ -66,7 +66,6 @@ export default function Pricing() {
         <h2>
           Válassz <span className="amber">csomagot</span>.
         </h2>
-        <div className="pricing__hint">↓ Görgess — egymásra csúsznak</div>
       </div>
 
       <div className="pricing__stack">

@@ -99,7 +99,6 @@ export default function Services() {
         ))}
       </div>
 
-      <div className="stack__hint">↓ Görgess — egymásra csúsznak</div>
     </section>
   );
 }
