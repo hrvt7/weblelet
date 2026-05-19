@@ -1,77 +1,36 @@
-import Header from "@/components/Header";
+"use client";
+
+import { useEffect } from "react";
+import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import Belt from "@/components/Belt";
 import Services from "@/components/Services";
-import Portfolio from "@/components/Portfolio";
-import About from "@/components/About";
 import Pricing from "@/components/Pricing";
-import Contact from "@/components/Contact";
+import Why from "@/components/Why";
 import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import "./redesign.css";
 
 export default function Home() {
+  // Add `redesign` class on body so redesign.css scopes apply,
+  // and remove it on unmount so other routes (/aszf, /adatvedelem) stay clean.
+  useEffect(() => {
+    document.body.classList.add("redesign");
+    return () => document.body.classList.remove("redesign");
+  }, []);
+
   return (
     <>
-      {/* FAQPage JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Tényleg nem látszik rajta hogy AI?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Szolgáltatásunk lényege a stúdió minőség. Képeinket rendszeresen veszik valódi fotónak. Az eredmény számít, nem az eszköz — a végeredmény ugyanolyan profi, mint egy klasszikus stúdiófotózás.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Mennyi idő alatt készül el?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Általában 3-5 munkanap az átfutás. Sürgős esetben 24-48 óra is megoldható, prémium gyorsítási díjjal.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Milyen iparágaknak ajánljátok?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Fashion, fitness, étterem, szépségipar, e-commerce, ingatlan, automotive — bármely vizuális tartalmat igénylő vállalkozásnak.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Hogyan indulhatunk el?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Küldj egy üzenetet az info@hrvtstudio.hu címre, és ingyenesen elkészítünk egy demó képet a termékedről. Csak utána döntesz a következő lépésről.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Van szerződéses kötelezettség?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Nincs. Havi előfizetés, bármikor lemondható — semmi minimum időtartam, semmi rejtett kötelezettség.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
-      <Header />
+      <Nav />
       <main>
         <Hero />
-        <Portfolio />
+        <Belt />
         <Services />
-        <About />
         <Pricing />
+        <Why />
         <FAQ />
-        <Contact />
+        <FinalCTA />
       </main>
       <Footer />
     </>

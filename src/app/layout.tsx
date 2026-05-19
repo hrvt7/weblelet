@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Outfit, Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
-
-const heading = Outfit({
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-heading",
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const body = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://weblelet.hu"),
@@ -56,9 +41,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hu" className={`${heading.variable} ${body.variable} h-full`}>
+    <html lang="hu" className="h-full">
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)history.replaceState(null,'',location.pathname);window.scrollTo(0,0)` }} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)history.replaceState(null,'',location.pathname);window.scrollTo(0,0)`,
+          }}
+        />
         {/* Organization JSON-LD */}
         <script
           type="application/ld+json"
@@ -96,27 +85,9 @@ export default function RootLayout({
                 "@type": "OfferCatalog",
                 name: "HRVT Studio csomagok",
                 itemListElement: [
-                  {
-                    "@type": "Offer",
-                    name: "Starter csomag",
-                    price: "120",
-                    priceCurrency: "EUR",
-                    description: "8 db AI termékfotó / hó",
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Growth csomag",
-                    price: "250",
-                    priceCurrency: "EUR",
-                    description: "20 db AI kép + 2 reklámvideó / hó",
-                  },
-                  {
-                    "@type": "Offer",
-                    name: "Pro csomag",
-                    price: "450",
-                    priceCurrency: "EUR",
-                    description: "Korlátlan kép + kampányvideók / hó",
-                  },
+                  { "@type": "Offer", name: "Starter csomag", price: "120", priceCurrency: "EUR", description: "8 db AI termékfotó / hó" },
+                  { "@type": "Offer", name: "Growth csomag", price: "250", priceCurrency: "EUR", description: "20 db AI kép + 2 reklámvideó / hó" },
+                  { "@type": "Offer", name: "Pro csomag", price: "450", priceCurrency: "EUR", description: "Korlátlan kép + kampányvideók / hó" },
                 ],
               },
             }),
@@ -140,7 +111,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col font-body antialiased bg-surface text-foreground">
+      <body className="min-h-full flex flex-col antialiased">
         {children}
         <Analytics />
         <SpeedInsights />

@@ -1,63 +1,32 @@
-import Image from "next/image";
-
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-surface-card py-14">
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-10 md:gap-8">
-          {/* Logo + description */}
-          <div className="flex flex-col items-center md:items-start gap-3">
-            <div className="flex items-center gap-2.5">
-              <div className="h-9 w-9 rounded-xl overflow-hidden border border-primary/20 shrink-0">
-                <Image
-                  src="/logo-icon.jpg"
-                  alt="HRVT Studio"
-                  width={36}
-                  height={36}
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <span className="font-heading text-lg font-bold tracking-[-0.02em] text-foreground">
-                HRVT Studio
-              </span>
-            </div>
-            <p className="text-sm text-foreground-muted max-w-xs text-center md:text-left leading-relaxed">
-              AI-alapú vizuális tartalom magyar vállalkozásoknak. Stúdióminőség, AI sebesség, tized annyi pénzért.
-            </p>
-          </div>
-
-          {/* Navigation */}
-          <div className="flex flex-col items-center md:items-start gap-3 text-sm text-foreground-muted">
-            <p className="font-heading font-semibold text-foreground-secondary text-xs uppercase tracking-wider">Navigáció</p>
-            <a href="#szolgaltatasok" className="hover:text-primary transition-colors duration-200">Szolgáltatások</a>
-            <a href="#portfolio" className="hover:text-primary transition-colors duration-200">Portfólió</a>
-            <a href="#arazas" className="hover:text-primary transition-colors duration-200">Árak</a>
-            <a href="#kapcsolat" className="hover:text-primary transition-colors duration-200">Kapcsolat</a>
-          </div>
-
-          {/* Contact */}
-          <div className="flex flex-col items-center md:items-start gap-3 text-sm text-foreground-muted">
-            <p className="font-heading font-semibold text-foreground-secondary text-xs uppercase tracking-wider">Elérhetőség</p>
-            <a href="mailto:info@hrvtstudio.hu" className="hover:text-primary transition-colors duration-200">
-              info@hrvtstudio.hu
-            </a>
-            <a href="/adatvedelem" className="hover:text-primary transition-colors duration-200">
-              Adatvédelmi tájékoztató
-            </a>
-            <a href="/aszf" className="hover:text-primary transition-colors duration-200">
-              ÁSZF
-            </a>
-          </div>
+    <footer className="footer">
+      <h2 className="footer__big">
+        HRVT<span className="amb">/</span>
+        <span className="ital">studio</span>
+      </h2>
+      <div className="footer__row">
+        <div className="footer__col">
+          <h4>Stúdió</h4>
+          <a href="#services">Szolgáltatások</a>
+          <a href="#why">Miért</a>
+          <a href="#pricing">Árak</a>
         </div>
-
-        {/* Bottom */}
-        <div className="mt-10 pt-8 border-t border-border text-center text-xs text-foreground-muted leading-relaxed space-y-1">
-          <p>
-            <strong className="text-foreground-secondary">HRVT Studio</strong> — AI kreatív tartalom
-          </p>
-          <p>
-            &copy; {new Date().getFullYear()} HRVT Studio. Minden jog fenntartva.
-          </p>
+        <div className="footer__col">
+          <h4>Társaság</h4>
+          <a href="#faq">GYIK</a>
+          <a href="mailto:info@hrvtstudio.hu">Kapcsolat</a>
+          <a href="#services">Portfólió</a>
+        </div>
+        <div className="footer__col">
+          <h4>Jog</h4>
+          <a href="/adatvedelem">Adatvédelem</a>
+          <a href="/aszf">ÁSZF</a>
+        </div>
+        <div className="footer__col">
+          <h4>Egyéb</h4>
+          <a href="#contact">Ingyenes demó</a>
+          <a href="mailto:info@hrvtstudio.hu">Email</a>
         </div>
       </div>
     </footer>

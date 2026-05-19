@@ -1,46 +1,111 @@
 "use client";
 
-import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    let W = 0;
+    let H = 0;
+    const WORDS = ["HRVT", "AI", "STUDIO", "EDITORIAL", "KAMPÁNY", "90%", "3 NAP", "BUDAPEST", "✨"];
+
+    type Drop = { x: number; y: number; word: string; size: number; speed: number; alpha: number; amber: boolean };
+    let drops: Drop[] = [];
+
+    function spawn(): Drop {
+      return {
+        x: Math.random() * W,
+        y: Math.random() * H,
+        word: WORDS[Math.floor(Math.random() * WORDS.length)],
+        size: 30 + Math.random() * 90,
+        speed: 0.18 + Math.random() * 0.55,
+        alpha: 0.04 + Math.random() * 0.18,
+        amber: Math.random() < 0.16,
+      };
+    }
+
+    function resize() {
+      if (!canvas || !ctx) return;
+      const parent = canvas.parentElement;
+      if (!parent) return;
+      W = parent.clientWidth;
+      H = parent.clientHeight;
+      canvas.width = W * DPR;
+      canvas.height = H * DPR;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(DPR, DPR);
+      drops = Array.from({ length: 26 }, () => spawn());
+    }
+
+    let raf = 0;
+    function draw() {
+      if (!ctx) return;
+      ctx.clearRect(0, 0, W, H);
+      for (const d of drops) {
+        ctx.save();
+        ctx.translate(d.x, d.y);
+        ctx.font = `800 ${d.size}px Bricolage Grotesque, sans-serif`;
+        ctx.fillStyle = d.amber
+          ? `rgba(212, 134, 10, ${d.alpha * 1.5})`
+          : `rgba(244, 236, 220, ${d.alpha})`;
+        ctx.fillText(d.word, 0, 0);
+        ctx.restore();
+        d.y -= d.speed;
+        if (d.y < -d.size * 1.2) {
+          d.y = H + 60;
+          d.x = Math.random() * W;
+          d.word = WORDS[Math.floor(Math.random() * WORDS.length)];
+        }
+      }
+      raf = requestAnimationFrame(draw);
+    }
+
+    window.addEventListener("resize", resize);
+    resize();
+    draw();
+
+    return () => {
+      window.removeEventListener("resize", resize);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
+
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      <Image
-        src="/hero-portrait.jpg"
-        alt="HRVT Studio"
-        fill
-        priority
-        quality={92}
-        className="object-cover object-center"
-        sizes="100vw"
-      />
+    <header className="hero">
+      <canvas ref={canvasRef}></canvas>
+      <div className="hero__vignette"></div>
 
-      {/* Top gradient */}
-      <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none" />
-
-      {/* Bottom gradient */}
-      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/55 via-black/15 to-transparent pointer-events-none" />
-
-      {/* Centered heading */}
-      <div className="absolute inset-0 flex flex-col items-center justify-start pt-24 px-6 text-center">
-        <h1
-          className="font-heading font-extrabold leading-[1.07] tracking-[-0.03em] text-white drop-shadow-lg"
-          style={{ fontSize: "clamp(2rem, 5vw + 0.5rem, 3.5rem)" }}
-        >
-          Stúdióminőség.<br />
-          <span className="text-[#E8A030]">AI sebesség.</span>
+      <div className="hero__content">
+        <h1>
+          <span className="line"><span>STÚDIÓ-</span></span>
+          <span className="line"><span>MINŐSÉG.</span></span>
+          <span className="line"><span><span className="amber">AI</span> SEBESSÉG.</span></span>
         </h1>
+        <div className="hero__meta">
+          <p className="hero__lede">
+            Profi termékfotók, editorial kampányképek és reklámvideók AI-vel — 3–5 nap alatt, töredékáron.{" "}
+            <strong style={{ color: "var(--cream)" }}>Senki nem nézi AI-nak.</strong>
+          </p>
+          <div className="hero__actions">
+            <a href="#contact" className="cta">Ingyenes demó <span className="cta__arrow">↗</span></a>
+            <a href="#services" className="cta cta--ghost">Mit csinálunk <span className="cta__arrow">↓</span></a>
+          </div>
+        </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 inset-x-0 flex flex-col items-center gap-2 scroll-bounce">
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
-          Görgess
-        </span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="2" strokeLinecap="round">
-          <polyline points="6 9 12 15 18 9" />
-        </svg>
+      <div className="hero__strip">
+        <div className="hero__strip__cell"><span className="pulse-dot"></span>Live · Magyarország</div>
+        <div className="hero__strip__cell"><b>90%</b> költségmegtakarítás</div>
+        <div className="hero__strip__cell"><b>3–5</b> nap átfutás</div>
+        <div className="hero__strip__cell">↓ Görgess</div>
       </div>
-    </section>
+    </header>
   );
 }
