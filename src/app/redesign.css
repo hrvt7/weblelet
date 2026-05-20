@@ -751,13 +751,15 @@ details.bigq p {
 }
 .footer__big {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(48px, 10vw, 160px);
-  line-height: 1;
-  letter-spacing: -0.04em;
+  font-size: 17.5vw;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
   margin: 0 0 64px;
   color: var(--cream);
   text-transform: uppercase;
-  word-break: break-word;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
 }
 .footer__big .amb { color: var(--amber); }
 .footer__big .ital { font-style: italic; font-weight: 600; }
