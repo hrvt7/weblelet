@@ -1,58 +1,15 @@
-type Tier = {
-  idx: number;
-  tag: string;
-  name: string;
-  price: string;
-  desc: string;
-  features: { k: string; v: string }[];
-  variant?: "featured" | "featured-2";
-  ctaGhost?: boolean;
-};
-
-const TIERS: Tier[] = [
+const CARDS = [
   {
-    idx: 0,
-    tag: "01 / 03 — Belépő",
-    name: "Starter",
-    price: "120€",
-    desc: "Ideális: éttermek, szalonok, kiskereskedők — heti egy poszt, havi 8 termékfotó.",
-    features: [
-      { k: "AI termékfotó", v: "8 db / hó" },
-      { k: "Formátumok", v: "1:1 · 4:5 · 9:16" },
-      { k: "Átfutás", v: "3 munkanap" },
-      { k: "Támogatás", v: "Email" },
-    ],
-    ctaGhost: true,
+    title: "Képek",
+    desc: "AI termékfotók, editorial kampányképek, trainer sheetek. Webshop, social media, hirdetés ready.",
   },
   {
-    idx: 1,
-    tag: "02 / 03 — Legnépszerűbb",
-    name: "Growth",
-    price: "250€",
-    desc: "Aktív social media jelenlétű vállalkozások — heti több poszt + havi reklámvideók.",
-    features: [
-      { k: "AI kép", v: "20 db / hó" },
-      { k: "Reklámvideó", v: "2 × 15mp / hó" },
-      { k: "Content naptár", v: "Havi" },
-      { k: "Ads ready", v: "FB · IG" },
-      { k: "Támogatás", v: "Prioritás" },
-    ],
-    variant: "featured",
+    title: "Videók",
+    desc: "15–30mp reklámvideók, UGC tartalom, cinematic teasers. TikTok, Reels, Facebook Ads ready.",
   },
   {
-    idx: 2,
-    tag: "03 / 03 — Skálázódó",
-    name: "Pro",
-    price: "450€",
-    desc: "Skálázódó brandek és e-commerce — korlátlan kép és teljes kampányvideók.",
-    features: [
-      { k: "AI kép", v: "Korlátlan" },
-      { k: "Kampányvideó", v: "2 db / hó" },
-      { k: "Art-direction", v: "Konzultáció" },
-      { k: "Account manager", v: "Dedikált" },
-      { k: "Támogatás", v: "Telefonos" },
-    ],
-    variant: "featured-2",
+    title: "Kampány",
+    desc: "Teljes vizuális kampány — képek + videók egységes stílusban. Havi együttműködés vagy egyszeri projekt.",
   },
 ];
 
@@ -60,49 +17,28 @@ export default function Pricing() {
   return (
     <section id="pricing" className="pricing">
       <div className="pricing__head">
-        <div className="eyebrow">
-          <span className="dot"></span>Árak · havi előfizetés
-        </div>
         <h2>
-          Válassz <span className="amber">csomagot</span>.
+          Minden projekt <span className="amber">egyedi</span>.
         </h2>
+        <p className="pricing__sub">
+          Nincs fix csomag — felmérjük, mire van szükséged, és ahhoz szabjuk az árat.
+          Az első demókép ingyenes.
+        </p>
       </div>
 
-      <div className="pricing__stack">
-        {TIERS.map((t) => (
-          <article
-            key={t.idx}
-            className={`tier${t.variant ? " " + t.variant : ""}`}
-            style={{ ["--idx" as string]: t.idx }}
-          >
-            <div className="tier__left">
-              <div className="tier__tag">{t.tag}</div>
-              <h3 className="tier__name">{t.name}</h3>
-              <div className="tier__price">
-                <span className="num">{t.price}</span>
-                <span className="per">/ hó</span>
-              </div>
-              <p className="tier__desc">{t.desc}</p>
-            </div>
-            <div className="tier__right">
-              <ul className="tier__features">
-                {t.features.map((f) => (
-                  <li key={f.k}>
-                    {f.k} <b>{f.v}</b>
-                  </li>
-                ))}
-              </ul>
-              <div className="tier__cta">
-                <a
-                  href="#contact"
-                  className={`cta${t.ctaGhost ? " cta--ghost" : ""}`}
-                >
-                  Demó kérése <span className="cta__arrow">→</span>
-                </a>
-              </div>
-            </div>
-          </article>
+      <div className="pricing__cards">
+        {CARDS.map((c) => (
+          <div key={c.title} className="pricing__card">
+            <h3>{c.title}</h3>
+            <p>{c.desc}</p>
+          </div>
         ))}
+      </div>
+
+      <div className="pricing__cta">
+        <a href="mailto:info@hrvtstudio.hu?subject=Ingyenes%20demó%20és%20árajánlat" className="cta">
+          Kérj ingyenes demót és egyedi árajánlatot <span className="cta__arrow">→</span>
+        </a>
       </div>
     </section>
   );

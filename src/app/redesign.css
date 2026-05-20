@@ -430,10 +430,10 @@ body.redesign::after {
 }
 
 /* ============================================================================
-   PRICING — sticky stacking tiers
+   PRICING
    ========================================================================= */
 .pricing {
-  padding: 100px 0 200px;
+  padding: 100px 0 120px;
   background: var(--ink-2);
   margin-top: 80px;
   border-top: 1px solid var(--ink-4);
@@ -441,120 +441,61 @@ body.redesign::after {
 }
 .pricing__head {
   text-align: center;
-  padding: 0 32px 64px;
+  padding: 0 32px 56px;
 }
 .pricing__head h2 {
-  margin: 16px 0 0;
+  margin: 0 0 20px;
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(56px, 9vw, 160px);
-  line-height: 0.85;
+  font-size: clamp(40px, 7vw, 96px);
+  line-height: 1.05;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--cream);
 }
 .pricing__head h2 .amber { color: var(--amber); }
-.pricing__hint {
-  margin-top: 16px;
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--cream-3);
-}
-.pricing__stack {
-  padding: 0 32px;
-  max-width: 1200px;
+.pricing__sub {
+  font-size: 17px; line-height: 1.6;
+  color: var(--cream-2);
+  max-width: 520px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
 }
-.tier {
-  position: sticky;
-  top: calc(20vh + var(--idx, 0) * 28px);
+.pricing__cards {
+  padding: 0 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pricing__card {
   background: var(--ink);
   border: 1px solid var(--ink-4);
   border-radius: 16px;
-  padding: 56px;
-  margin-bottom: 28px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
-  min-height: 380px;
-  align-items: stretch;
+  padding: 40px 32px;
   transition: border-color 0.3s;
-  box-shadow: 0 40px 80px -40px rgba(0,0,0,0.6);
 }
-.tier.featured { background: var(--amber); color: var(--ink); border-color: var(--amber); }
-.tier.featured-2 { background: var(--cream); color: var(--ink); border-color: var(--cream); }
-@media (max-width: 800px) { .tier { grid-template-columns: 1fr; gap: 28px; padding: 32px; } }
-.tier__left { display: flex; flex-direction: column; gap: 12px; }
-.tier__tag {
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--cream-3);
-}
-.tier.featured .tier__tag, .tier.featured-2 .tier__tag { color: var(--ink); opacity: 0.6; }
-.tier__name {
+.pricing__card:hover { border-color: var(--amber); }
+.pricing__card h3 {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(48px, 6vw, 96px);
-  line-height: 0.88;
-  letter-spacing: -0.04em;
+  font-size: 28px;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--cream);
+  margin: 0 0 16px;
+}
+.pricing__card p {
+  font-size: 15px; line-height: 1.6;
+  color: var(--cream-2);
   margin: 0;
 }
-.tier.featured .tier__name, .tier.featured-2 .tier__name { color: var(--ink); }
-.tier__price { display: flex; align-items: baseline; gap: 8px; margin: 8px 0 4px; }
-.tier__price .num {
-  font-family: var(--display); font-weight: 700;
-  font-size: clamp(72px, 8vw, 140px);
-  line-height: 0.85;
-  letter-spacing: -0.04em;
-  color: var(--amber);
+.pricing__cta {
+  text-align: center;
+  padding: 56px 32px 0;
 }
-.tier.featured .tier__price .num { color: var(--ink); }
-.tier.featured-2 .tier__price .num { color: var(--amber); }
-.tier__price .per { font-family: var(--sans); font-size: 18px; color: var(--cream-3); }
-.tier.featured .tier__price .per, .tier.featured-2 .tier__price .per { color: var(--ink); opacity: 0.7; }
-.tier__desc { font-size: 15px; line-height: 1.6; color: var(--cream-2); margin: 0; max-width: 380px; }
-.tier.featured .tier__desc, .tier.featured-2 .tier__desc { color: var(--ink); opacity: 0.85; }
-.tier__right { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
-.tier__features { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
-.tier__features li {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: baseline;
-  gap: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--ink-4);
-  font-size: 15px;
-  color: var(--cream);
+@media (max-width: 800px) {
+  .pricing__cards { grid-template-columns: 1fr; }
+  .pricing__card { padding: 32px 24px; }
 }
-.tier.featured .tier__features li, .tier.featured-2 .tier__features li {
-  color: var(--ink);
-  border-color: rgba(0,0,0,0.12);
-}
-.tier__features li::before {
-  content: "+";
-  color: var(--amber);
-  font-family: var(--mono);
-  font-size: 16px;
-}
-.tier.featured .tier__features li::before { color: var(--ink); }
-.tier__features li b {
-  font-family: var(--mono); font-size: 11px;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--cream-3); font-weight: 500;
-}
-.tier.featured .tier__features li b, .tier.featured-2 .tier__features li b { color: var(--ink); opacity: 0.55; }
-.tier__cta { align-self: flex-start; margin-top: 8px; }
-.tier.featured .cta { background: var(--ink); color: var(--cream); }
-.tier.featured .cta::before { background: var(--cream); }
-.tier.featured .cta:hover { color: var(--ink); }
-.tier.featured .cta__arrow { background: var(--cream); color: var(--ink); }
-.tier.featured-2 .cta { background: var(--ink); color: var(--cream); }
-.tier.featured-2 .cta::before { background: var(--amber); }
-.tier.featured-2 .cta:hover { color: var(--ink); }
-.tier.featured-2 .cta__arrow { background: var(--amber); color: var(--ink); }
 
 /* ============================================================================
    BENTO / Why — sticky stacking image cards

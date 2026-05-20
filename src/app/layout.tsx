@@ -81,14 +81,13 @@ export default function RootLayout({
               serviceType: "AI-alapú vizuális tartalom készítés",
               description:
                 "AI termékfotó, reklámvideó, UGC tartalom, brand kampány és havi content naptár magyar kisvállalkozásoknak.",
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "HRVT Studio csomagok",
-                itemListElement: [
-                  { "@type": "Offer", name: "Starter csomag", price: "120", priceCurrency: "EUR", description: "8 db AI termékfotó / hó" },
-                  { "@type": "Offer", name: "Growth csomag", price: "250", priceCurrency: "EUR", description: "20 db AI kép + 2 reklámvideó / hó" },
-                  { "@type": "Offer", name: "Pro csomag", price: "450", priceCurrency: "EUR", description: "Korlátlan kép + kampányvideók / hó" },
-                ],
+              offers: {
+                "@type": "Offer",
+                description: "Egyedi árajánlat kérésre",
+                priceSpecification: {
+                  "@type": "PriceSpecification",
+                  description: "Egyedi árajánlat — minden projekt egyedi, az első demókép ingyenes.",
+                },
               },
             }),
           }}
